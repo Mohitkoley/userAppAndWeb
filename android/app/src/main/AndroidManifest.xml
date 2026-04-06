@@ -31,7 +31,7 @@
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:extractNativeLibs="true"
-        android:label="GroFresh">
+        android:label="Oley Shop">
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:extractNativeLibs="true"

@@ -1,4 +1,4 @@
-package com.sixamtech.grofresh
+package com.oleyshop.customer
 
 import io.flutter.embedding.android.FlutterActivity
 

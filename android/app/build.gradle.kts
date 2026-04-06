@@ -14,26 +14,35 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.sixamtech.grofresh"
+    namespace = "com.oleyshop.customer"
     compileSdk = 36
+    ndkVersion = flutter.ndkVersion
 
     defaultConfig {
         multiDexEnabled = true
-        applicationId = "com.sixamtech.grofresh"
+        applicationId = "com.oleyshop.customer"
         minSdk = flutter.minSdkVersion
         targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        externalNativeBuild {
+        cmake {
+            // Arguments to pass to the NDK build system.
+            // See https://developer.android.com/ndk/guides/ndk-build for details.
+           arguments.add("-DANDROID_SUPPORT_FLEXIBLE_PAGE_SIZES=ON")
+        }
+    }
     }
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
     signingConfigs {
@@ -46,8 +55,18 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
-            signingConfig = signingConfigs.getByName("debug") // or "release" if you have real keystore
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Release configuration
+            signingConfig = signingConfigs.getByName("release")
+            isMinifyEnabled = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        debug {
+            // Debug configuration
+            signingConfig = signingConfigs.getByName("debug")
+            isMinifyEnabled = false
+           // applicationIdSuffix = ".debug"
         }
     }
 }
