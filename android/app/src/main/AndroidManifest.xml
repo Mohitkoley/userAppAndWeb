@@ -36,7 +36,7 @@
         android:fullBackupContent="false"
         android:extractNativeLibs="true"
         <meta-data
-            android:name="com.google.android.geo.API_KEY" android:value="YOUR_MAP_KEY_HERE" />
+            android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCJOlEbXZNGB3ztTNlxDTA_BZu7owRREA8" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -98,8 +98,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="YOUR_DOMAIN_HERE" android:scheme="http"/>
-                <data android:host="YOUR_DOMAIN_HERE" android:scheme="https"/>
+                <data android:host="www.oleyshop.com" android:scheme="http"/>
+                <data android:host="www.oleyshop.com" android:scheme="https"/>
 
             </intent-filter>
 
