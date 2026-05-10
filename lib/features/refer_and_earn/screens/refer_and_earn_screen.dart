@@ -27,7 +27,6 @@ import 'package:share_plus/share_plus.dart';
 
 import 'refer_hint_widget.dart';
 
-
 class ReferAndEarnScreen extends StatefulWidget {
   const ReferAndEarnScreen({super.key});
 
@@ -36,58 +35,129 @@ class ReferAndEarnScreen extends StatefulWidget {
 }
 
 class _ReferAndEarnScreenState extends State<ReferAndEarnScreen> {
-  final List<String> shareItem = ['messenger', 'whatsapp', 'gmail', 'viber', 'share' ];
+  final List<String> shareItem = [
+    'messenger',
+    'whatsapp',
+    'gmail',
+    'viber',
+    'share',
+  ];
   bool _isLoggedIn = false;
 
   @override
   void initState() {
     super.initState();
-    _isLoggedIn = Provider.of<AuthProvider>(context, listen: false).isLoggedIn();
+    _isLoggedIn = Provider.of<AuthProvider>(
+      context,
+      listen: false,
+    ).isLoggedIn();
   }
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final ConfigModel? configModel = Provider.of<SplashProvider>(context, listen: false).configModel;
+    final ConfigModel? configModel = Provider.of<SplashProvider>(
+      context,
+      listen: false,
+    ).configModel;
 
     return CustomPopScopeHandelDeepLinkWidget(
       child: Scaffold(
         appBar: ResponsiveHelper.isDesktop(context)
-            ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget())
+            ? const PreferredSize(
+                preferredSize: Size.fromHeight(100),
+                child: WebAppBarWidget(),
+              )
             : null,
-      
-        body: _isLoggedIn ? configModel != null && configModel.walletStatus! ? Consumer<ProfileProvider>(
-            builder: (context, profileProvider, _) {
-            return profileProvider.userInfoModel != null ? SingleChildScrollView(
-              padding: ResponsiveHelper.isDesktop(context) ? EdgeInsets.zero : const EdgeInsets.symmetric(
-                horizontal: Dimensions.paddingSizeDefault,
-                vertical: Dimensions.paddingSizeExtraSmall,
-              ),
-              child: Column(
-                children: [
-                  ResponsiveHelper.isDesktop(context) ? Padding(padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraLarge),
-                    child: Center(child: Text("refer_and_earn".tr, style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge))),
-                  ) : const SizedBox(),
 
-                  Center(
-                    child: Container(
-                      constraints: ResponsiveHelper.isDesktop(context) ? const BoxConstraints() :
-                      BoxConstraints(maxHeight: ResponsiveHelper.isDesktop(context)
-                          ? MediaQuery.of(context).size.height : MediaQuery.of(context).size.height * 0.7),
-                      width: ResponsiveHelper.isDesktop(context) ?  750 : 700,
-                      child: !ResponsiveHelper.isDesktop(context) ? SingleChildScrollView(
-                        child: DetailsView(size: size, shareItem: shareItem, hintList: profileProvider.hintList),
-                      ) : DetailsView(size: size, shareItem: shareItem, hintList: profileProvider.hintList),
-                    ),
-                  ),
+        body: _isLoggedIn
+            ? configModel != null && configModel.walletStatus!
+                  ? Consumer<ProfileProvider>(
+                      builder: (context, profileProvider, _) {
+                        return profileProvider.userInfoModel != null
+                            ? SingleChildScrollView(
+                                padding: ResponsiveHelper.isDesktop(context)
+                                    ? EdgeInsets.zero
+                                    : const EdgeInsets.symmetric(
+                                        horizontal:
+                                            Dimensions.paddingSizeDefault,
+                                        vertical:
+                                            Dimensions.paddingSizeExtraSmall,
+                                      ),
+                                child: Column(
+                                  children: [
+                                    ResponsiveHelper.isDesktop(context)
+                                        ? Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                              vertical: Dimensions
+                                                  .paddingSizeExtraLarge,
+                                            ),
+                                            child: Center(
+                                              child: Text(
+                                                "refer_and_earn".tr,
+                                                style: poppinsSemiBold.copyWith(
+                                                  fontSize:
+                                                      Dimensions.fontSizeLarge,
+                                                ),
+                                              ),
+                                            ),
+                                          )
+                                        : const SizedBox(),
 
-                  const FooterWebWidget(footerType: FooterType.nonSliver),
-                ],
-              ),
-            )
-                : CustomLoaderWidget(color: Theme.of(context).primaryColor);
-          }
-        ) : NoDataWidget(title: getTranslated('not_found', context)) : const NotLoggedInWidget(),
+                                    Center(
+                                      child: Container(
+                                        constraints:
+                                            ResponsiveHelper.isDesktop(context)
+                                            ? const BoxConstraints()
+                                            : BoxConstraints(
+                                                maxHeight:
+                                                    ResponsiveHelper.isDesktop(
+                                                      context,
+                                                    )
+                                                    ? MediaQuery.of(
+                                                        context,
+                                                      ).size.height
+                                                    : MediaQuery.of(
+                                                            context,
+                                                          ).size.height *
+                                                          0.7,
+                                              ),
+                                        width:
+                                            ResponsiveHelper.isDesktop(context)
+                                            ? 750
+                                            : 700,
+                                        child:
+                                            !ResponsiveHelper.isDesktop(context)
+                                            ? SingleChildScrollView(
+                                                child: DetailsView(
+                                                  size: size,
+                                                  shareItem: shareItem,
+                                                  hintList:
+                                                      profileProvider.hintList,
+                                                ),
+                                              )
+                                            : DetailsView(
+                                                size: size,
+                                                shareItem: shareItem,
+                                                hintList:
+                                                    profileProvider.hintList,
+                                              ),
+                                      ),
+                                    ),
+
+                                    const FooterWebWidget(
+                                      footerType: FooterType.nonSliver,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            : CustomLoaderWidget(
+                                color: Theme.of(context).primaryColor,
+                              );
+                      },
+                    )
+                  : NoDataWidget(title: getTranslated('not_found', context))
+            : const NotLoggedInWidget(),
       ),
     );
   }
@@ -111,71 +181,93 @@ class DetailsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<ProfileProvider>(
-        builder: (context, profileProvider, _) {
-          return profileProvider.userInfoModel != null ? Column(
-            children: [
-              Image.asset(Images.referBanner, height: _size.height * 0.3, width: _size.width * 0.7),
-              const SizedBox(height: Dimensions.paddingSizeDefault,),
+      builder: (context, profileProvider, _) {
+        return profileProvider.userInfoModel != null
+            ? Column(
+                children: [
+                  Image.asset(
+                    Images.referBanner,
+                    height: _size.height * 0.3,
+                    width: _size.width * 0.7,
+                  ),
+                  const SizedBox(height: Dimensions.paddingSizeDefault),
 
-              Text(
-                getTranslated('invite_friend_and_businesses', context),
-                textAlign: TextAlign.center,
-                style: poppinsMedium.copyWith(
-                  fontSize: Dimensions.fontSizeOverLarge,
-                  color: Theme.of(context).textTheme.bodyLarge!.color,
-                ),
-              ),
-              const SizedBox(height: Dimensions.paddingSizeSmall,),
+                  Text(
+                    getTranslated('invite_friend_and_businesses', context),
+                    textAlign: TextAlign.center,
+                    style: poppinsMedium.copyWith(
+                      fontSize: Dimensions.fontSizeOverLarge,
+                      color: Theme.of(context).textTheme.bodyLarge!.color,
+                    ),
+                  ),
+                  const SizedBox(height: Dimensions.paddingSizeSmall),
 
-              Text(
-                getTranslated('copy_your_code', context),
-                textAlign: TextAlign.center,
-                style: poppinsRegular.copyWith(
-                  fontSize: Dimensions.fontSizeDefault,
-                ),
-              ),
-              const SizedBox(height: 40),
+                  Text(
+                    getTranslated('copy_your_code', context),
+                    textAlign: TextAlign.center,
+                    style: poppinsRegular.copyWith(
+                      fontSize: Dimensions.fontSizeDefault,
+                    ),
+                  ),
+                  const SizedBox(height: 40),
 
-              Text(
-                getTranslated('your_personal_code', context),
-                textAlign: TextAlign.center,
-                style: poppinsRegular.copyWith(
-                  fontSize: Dimensions.fontSizeDefault,
-                  fontWeight: FontWeight.w200,
-                  color: Theme.of(context).hintColor,
-                ),
-              ),
-              const SizedBox(height: Dimensions.paddingSizeLarge,),
+                  Text(
+                    getTranslated('your_personal_code', context),
+                    textAlign: TextAlign.center,
+                    style: poppinsRegular.copyWith(
+                      fontSize: Dimensions.fontSizeDefault,
+                      fontWeight: FontWeight.w200,
+                      color: Theme.of(context).hintColor,
+                    ),
+                  ),
+                  const SizedBox(height: Dimensions.paddingSizeLarge),
 
-              DottedBorder(
-                options: RoundedRectDottedBorderOptions(
-                  padding: const EdgeInsets.all(4),
-                  radius: const Radius.circular(Dimensions.radiusSizeLarge),
-                  dashPattern: const [5, 5],
-                  color: Theme.of(context).primaryColor.withValues(alpha: 0.5),
-                  strokeWidth: 2,
-                ),
-                child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
-                            child: Text(profileProvider.userInfoModel!.referCode ?? '',
-                              style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeLarge),
+                  DottedBorder(
+                    options: RoundedRectDottedBorderOptions(
+                      padding: const EdgeInsets.all(4),
+                      radius: const Radius.circular(Dimensions.radiusSizeLarge),
+                      dashPattern: const [5, 5],
+                      color: Theme.of(
+                        context,
+                      ).primaryColor.withValues(alpha: 0.5),
+                      strokeWidth: 2,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: Dimensions.paddingSizeDefault,
+                            ),
+                            child: Text(
+                              profileProvider.userInfoModel!.referCode ?? '',
+                              style: poppinsRegular.copyWith(
+                                fontSize: Dimensions.fontSizeLarge,
+                              ),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                             ),
                           ),
-                      ),
+                        ),
 
-                      InkWell(
+                        InkWell(
                           borderRadius: BorderRadius.circular(10),
                           onTap: () {
-
-                            if(profileProvider.userInfoModel!.referCode != null && profileProvider.userInfoModel!.referCode  != ''){
-                              Clipboard.setData(ClipboardData(text: '${profileProvider.userInfoModel != null ? profileProvider.userInfoModel!.referCode : ''}'));
-                              showCustomSnackBarHelper(getTranslated('referral_code_copied', context), isError: false);
+                            if (profileProvider.userInfoModel!.referCode !=
+                                    null &&
+                                profileProvider.userInfoModel!.referCode !=
+                                    '') {
+                              Clipboard.setData(
+                                ClipboardData(
+                                  text:
+                                      '${profileProvider.userInfoModel != null ? profileProvider.userInfoModel!.referCode : ''}',
+                                ),
+                              );
+                              showCustomSnackBarHelper(
+                                getTranslated('referral_code_copied', context),
+                                isError: false,
+                              );
                             }
                           },
                           child: Container(
@@ -183,54 +275,74 @@ class DetailsView extends StatelessWidget {
                             height: 40,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: Theme.of(context).primaryColor, borderRadius: BorderRadius.circular(60),
+                              color: Theme.of(context).primaryColor,
+                              borderRadius: BorderRadius.circular(60),
                             ),
                             child: FittedBox(
-                              child: Text(getTranslated('copy', context),style: poppinsRegular.copyWith(
-                                fontSize: Dimensions.fontSizeExtraLarge, color: Colors.white.withValues(alpha: 0.9),
-                              )),
+                              child: Text(
+                                getTranslated('copy', context),
+                                style: poppinsRegular.copyWith(
+                                  fontSize: Dimensions.fontSizeExtraLarge,
+                                  color: Colors.white.withValues(alpha: 0.9),
+                                ),
+                              ),
                             ),
                           ),
                         ),
-
-                    ]),
-              ),
-              const SizedBox(height: Dimensions.paddingSizeExtraLarge,),
-
-              Text(
-                getTranslated('or_share', context),
-                style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeLarge),
-              ),
-
-              const SizedBox(height: Dimensions.paddingSizeExtraLarge,),
-
-              InkWell(
-                borderRadius: BorderRadius.circular(10),
-                onTap: () => SharePlus.instance.share(
-                    ShareParams(
-                      title: ReferHelper.getSignUpLink(profileProvider.userInfoModel!.referCode!),
-                      uri: Uri.tryParse('${AppConstants.webHostUrl}${RouteHelper.createAccount}?referral_code=${profileProvider.userInfoModel?.referCode ?? ''}')
-                    )
-                ),
-                child: Container(
-                  margin: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                  child: Image.asset(
-                    Images.getShareIcon('share'), height: 50, width: 50,
+                      ],
+                    ),
                   ),
-                ),
-              ),
+                  const SizedBox(height: Dimensions.paddingSizeExtraLarge),
 
-              if(ResponsiveHelper.isDesktop(context))
-                Column(children: [
-                  const SizedBox(height: Dimensions.paddingSizeDefault),
-                  ReferHintWidget(hintList: hintList),
-                  const SizedBox(height: Dimensions.paddingSizeDefault),
-                ]),
+                  Text(
+                    getTranslated('or_share', context),
+                    style: poppinsRegular.copyWith(
+                      fontSize: Dimensions.fontSizeLarge,
+                    ),
+                  ),
 
+                  const SizedBox(height: Dimensions.paddingSizeExtraLarge),
 
-            ],
-          ) : const SizedBox();
-        }
+                  InkWell(
+                    borderRadius: BorderRadius.circular(10),
+                    onTap: () => SharePlus.instance.share(
+                      ShareParams(
+                        title: ReferHelper.getSignUpLink(
+                          profileProvider.userInfoModel!.referCode!,
+                        ),
+                        uri: Uri.parse(AppConstants.webHostUrl).replace(
+                          path: RouteHelper.createAccount,
+                          queryParameters: {
+                            'referral_code':
+                                profileProvider.userInfoModel?.referCode ?? '',
+                          },
+                        ),
+                      ),
+                    ),
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: Dimensions.paddingSizeExtraSmall,
+                      ),
+                      child: Image.asset(
+                        Images.getShareIcon('share'),
+                        height: 50,
+                        width: 50,
+                      ),
+                    ),
+                  ),
+
+                  if (ResponsiveHelper.isDesktop(context))
+                    Column(
+                      children: [
+                        const SizedBox(height: Dimensions.paddingSizeDefault),
+                        ReferHintWidget(hintList: hintList),
+                        const SizedBox(height: Dimensions.paddingSizeDefault),
+                      ],
+                    ),
+                ],
+              )
+            : const SizedBox();
+      },
     );
   }
 }

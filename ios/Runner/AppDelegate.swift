@@ -1,7 +1,6 @@
 import UIKit
 import Flutter
 import GoogleMaps
-import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
 
@@ -12,8 +11,7 @@ import FBSDKLoginKit
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    FirebaseApp.configure()
-    GMSServices.provideAPIKey("YOUR_MAP_KEY_HERE")
+    GMSServices.provideAPIKey("AIzaSyCJOlEbXZNGB3ztTNlxDTA_BZu7owRREA8")
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
 

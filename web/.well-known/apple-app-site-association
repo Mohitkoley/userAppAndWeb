@@ -3,7 +3,7 @@
         "apps": [],
         "details": [
             {
-                "appID": "YOUR_TEAM_ID.YOUR_BUNDLE_ID",
+                "appID": "YOUR_TEAM_ID.com.oleyshop.customer",
                 "paths": [
                     "*"
                 ]

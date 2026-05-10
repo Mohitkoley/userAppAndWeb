@@ -5,9 +5,9 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.sixamtech.grofresh",
+      "package_name": "com.oleyshop.customer",
       "sha256_cert_fingerprints": [
-        "YOUR_SHA_256_FINGERPRINT"
+        "D1:93:C7:23:0E:74:BF:8F:91:39:79:88:E9:72:DE:A8:F3:F3:AC:87:F7:A0:A9:CE:B7:CD:D8:54:D2:53:69:87"
       ]
     }
   }

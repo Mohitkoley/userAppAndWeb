@@ -42,6 +42,7 @@ import 'package:flutter_grocery/theme/dark_theme.dart';
 import 'package:flutter_grocery/theme/light_theme.dart';
 import 'package:flutter_grocery/utill/app_constants.dart';
 import 'package:flutter_grocery/common/widgets/third_party_chat_widget.dart';
+import 'package:flutter_grocery/helper/custom_snackbar_helper.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:go_router/go_router.dart';
@@ -219,16 +220,16 @@ class MyApp extends StatefulWidget {
 Future<String?> initDynamicLinks() async {
   final appLinks = AppLinks();
   final uri = await appLinks.getInitialLink();
-  String? path;
-  if (uri != null) {
-    path = uri.path;
-  } else {
-    path = null;
-  }
-  return path;
+  return uri == null ? null : _routeFromUri(uri);
+}
+
+String _routeFromUri(Uri uri) {
+  return uri.hasQuery ? '${uri.path}?${uri.query}' : uri.path;
 }
 
 class _MyAppState extends State<MyApp> {
+  StreamSubscription<Uri>? _appLinkSubscription;
+
   @override
   void initState() {
     super.initState();
@@ -237,6 +238,10 @@ class _MyAppState extends State<MyApp> {
       Provider.of<SplashProvider>(context, listen: false).initSharedData();
       Provider.of<CartProvider>(context, listen: false).getCartData();
       _route();
+    }
+
+    if (!kIsWeb) {
+      _listenForAppLinks();
     }
   }
 
@@ -258,8 +263,57 @@ class _MyAppState extends State<MyApp> {
         }
       }
 
+      if (widget.route != null) {
+        _handleAppLinkRoute(widget.route!);
+      }
+
       _onRemoveLoader();
     });
+  }
+
+  void _listenForAppLinks() {
+    final appLinks = AppLinks();
+    _appLinkSubscription = appLinks.uriLinkStream.listen(
+      (uri) {
+        _handleAppLinkRoute(_routeFromUri(uri));
+      },
+      onError: (Object error) {
+        if (kDebugMode) {
+          print('App link error: $error');
+        }
+      },
+    );
+  }
+
+  void _handleAppLinkRoute(String route) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final appContext = Get.context;
+      if (!mounted || appContext == null) return;
+
+      final Uri uri = Uri.parse(route);
+      final String referralCode = uri.queryParameters['referral_code'] ?? '';
+      final bool isReferralSignupLink =
+          uri.path == RouteHelper.createAccount && referralCode.isNotEmpty;
+
+      if (isReferralSignupLink &&
+          Provider.of<AuthProvider>(context, listen: false).isLoggedIn()) {
+        appContext.go(RouteHelper.menu);
+        showCustomSnackBarHelper(
+          'You already have an account. Referral links are only for new sign ups.',
+          isError: false,
+          snackBarStatus: SnackBarStatus.info,
+        );
+        return;
+      }
+
+      appContext.go(route);
+    });
+  }
+
+  @override
+  void dispose() {
+    _appLinkSubscription?.cancel();
+    super.dispose();
   }
 
   void _onRemoveLoader() {
