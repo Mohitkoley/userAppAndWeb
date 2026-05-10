@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grocery/common/models/config_model.dart';
 import 'package:flutter_grocery/common/models/place_order_model.dart';
 import 'package:flutter_grocery/features/address/domain/models/address_model.dart';
+import 'package:flutter_grocery/features/auth/providers/auth_provider.dart';
 import 'package:flutter_grocery/features/auth/screens/otp_registration_screen.dart';
 import 'package:flutter_grocery/features/auth/screens/send_otp_screen.dart';
 import 'package:flutter_grocery/features/order/domain/models/order_model.dart';
@@ -273,6 +274,7 @@ class RouteHelper {
         GoRoute(
           path: login,
           builder: (context, state) => _routeHandler(context, child: const LoginScreen()),
+          redirect: _redirectLoggedInUser,
         ),
         GoRoute(
           path: forgetPassword,
@@ -339,6 +341,7 @@ class RouteHelper {
         GoRoute(
           path: createAccount,
           builder: (context, state) => _routeHandler(context, child: CreateAccountScreen(referralCode: state.uri.queryParameters['referral_code'])),
+          redirect: _redirectLoggedInUser,
         ),
         GoRoute(
           path: resetPassword,
@@ -767,6 +770,12 @@ class RouteHelper {
       Provider.of<SplashProvider>(ctx, listen: false).setPageIndex(index);
       return '/';
     }
+  }
+
+  static String? _redirectLoggedInUser(BuildContext context, GoRouterState state) {
+    final bool isLoggedIn = Provider.of<AuthProvider>(context, listen: false).isLoggedIn();
+
+    return isLoggedIn ? menu : null;
   }
 
 }
