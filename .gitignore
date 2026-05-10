@@ -49,3 +49,4 @@ android/app/.cxx
 ios/Flutter/ephemeral
 android/build/reports/problems/problems-report.html
 .codex
+graphify-out/cache
