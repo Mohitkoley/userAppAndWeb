@@ -25370,72 +25370,72 @@
       "file_type": "code",
       "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
-      "id": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
       "community": null,
-      "norm_label": "package:flutter_grocery/common/widgets/product_point_value_widget.dart"
+      "norm_label": "package:flutter_grocery/common/widgets/product_point_value_widget.dart",
+      "id": "package_flutter_grocery_common_widgets_product_point_value_widget_dart"
     },
     {
       "label": "_getCartPointValue",
       "file_type": "code",
       "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart_getcartpointvalue",
       "community": null,
-      "norm_label": "_getcartpointvalue"
+      "norm_label": "_getcartpointvalue",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart_getcartpointvalue"
     },
     {
       "label": "_getCartPointValue",
       "file_type": "code",
       "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_place_order_button_widget_dart_getcartpointvalue",
       "community": null,
-      "norm_label": "_getcartpointvalue"
+      "norm_label": "_getcartpointvalue",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_place_order_button_widget_dart_getcartpointvalue"
     },
     {
       "label": "product_point_value_widget.dart",
       "file_type": "code",
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
-      "id": "lib_common_widgets_product_point_value_widget_dart",
       "community": null,
-      "norm_label": "product_point_value_widget.dart"
+      "norm_label": "product_point_value_widget.dart",
+      "id": "lib_common_widgets_product_point_value_widget_dart"
     },
     {
       "label": "ProductPointValueWidget",
       "file_type": "code",
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_productpointvaluewidget",
       "community": null,
-      "norm_label": "productpointvaluewidget"
+      "norm_label": "productpointvaluewidget",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_productpointvaluewidget"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_build",
       "community": null,
-      "norm_label": "build"
+      "norm_label": "build",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_build"
     },
     {
       "label": "SizedBox",
       "file_type": "code",
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_sizedbox",
       "community": null,
-      "norm_label": "sizedbox"
+      "norm_label": "sizedbox",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_sizedbox"
     },
     {
       "label": "Tooltip",
       "file_type": "code",
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_tooltip",
       "community": null,
-      "norm_label": "tooltip"
+      "norm_label": "tooltip",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_tooltip"
     }
   ],
   "links": [
