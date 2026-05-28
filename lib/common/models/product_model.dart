@@ -1,8 +1,6 @@
 import 'dart:convert';
 
-
-enum DiscountType {productDiscount, categoryDiscount}
-
+enum DiscountType { productDiscount, categoryDiscount }
 
 class ProductModel {
   int? totalSize;
@@ -20,8 +18,6 @@ class ProductModel {
 
   ProductModel({this.totalSize, this.limit, this.offset, this.products, this.maxPrice, this.minPrice});
 
-
-
   ProductModel.fromJson(Map<String, dynamic> json) {
     totalSize = int.tryParse('${json['total_size']}');
     limit = int.tryParse('${json['limit']}');
@@ -34,18 +30,14 @@ class ProductModel {
     rating = int.tryParse('${json['rating']}');
     if (json['category_ids'] != null) {
       try {
-        final decoded = json['category_ids'] is String
-            ? jsonDecode(json['category_ids'])
-            : json['category_ids'];
+        final decoded = json['category_ids'] is String ? jsonDecode(json['category_ids']) : json['category_ids'];
         categories = List<int>.from(decoded);
       } catch (_) {
         categories = null;
       }
     }
 
-    flashDeal = json['flash_deal'] != null
-        ? FlashDeal.fromJson(json['flash_deal'])
-        : null;
+    flashDeal = json['flash_deal'] != null ? FlashDeal.fromJson(json['flash_deal']) : null;
 
     if (json['products'] != null) {
       products = [];
@@ -96,32 +88,36 @@ class Product {
   int? _activeReviewsCount;
   int? _maximumOrderQuantity;
   CategoryDiscount? _categoryDiscount;
+  static const int defaultPointValue = 500;
 
-  Product(
-      {int? id,
-        String? name,
-        String? description,
-        List<String>? image,
-        double? price,
-        List<Variations>? variations,
-        double? tax,
-        int? status,
-        String? createdAt,
-        String? updatedAt,
-        List<String>? attributes,
-        List<CategoryIds>? categoryIds,
-        List<ChoiceOptions>? choiceOptions,
-        double? discount,
-        double? weight,
-        String? discountType,
-        String? taxType,
-        String? unit,
-        double? capacity,
-        int? totalStock,
-        List<void>? rating,
-        int? maximumOrderQuantity,
-        CategoryDiscount? categoryDiscount,
-      }) {
+  int _pointValue = defaultPointValue;
+
+  Product({
+    int? id,
+    String? name,
+    String? description,
+    List<String>? image,
+    double? price,
+    List<Variations>? variations,
+    double? tax,
+    int? status,
+    String? createdAt,
+    String? updatedAt,
+    List<String>? attributes,
+    List<CategoryIds>? categoryIds,
+    List<ChoiceOptions>? choiceOptions,
+    double? discount,
+    double? weight,
+    String? discountType,
+    String? taxType,
+    String? unit,
+    double? capacity,
+    int? totalStock,
+    List<void>? rating,
+    int? maximumOrderQuantity,
+    CategoryDiscount? categoryDiscount,
+    int pointValue = defaultPointValue,
+  }) {
     _id = id;
     _name = name;
     _description = description;
@@ -145,6 +141,7 @@ class Product {
     _rating = rating as List<Rating>?;
     _maximumOrderQuantity = maximumOrderQuantity;
     _categoryDiscount = categoryDiscount;
+    _pointValue = pointValue;
   }
 
   int? get id => _id;
@@ -172,6 +169,7 @@ class Product {
   int? get activeReviewsCount => _activeReviewsCount;
   int? get maximumOrderQuantity => _maximumOrderQuantity;
   CategoryDiscount? get categoryDiscount => _categoryDiscount;
+  int get pointValue => _pointValue;
 
   Product.fromJson(Map<String, dynamic> json) {
     _id = json['id'];
@@ -215,21 +213,16 @@ class Product {
         _rating!.add(Rating.fromJson(v));
       });
     }
-
-
+    _pointValue = defaultPointValue;
     if (json['active_reviews'] != null) {
-
-      _activeReviews =  [];
+      _activeReviews = [];
       json['active_reviews'].forEach((v) {
         _activeReviews!.add(ActiveReview.fromJson(v));
       });
     }
     _activeReviewsCount = int.tryParse('${json['active_reviews_count']}');
     _maximumOrderQuantity = int.tryParse('${json['maximum_order_quantity']}');
-    _categoryDiscount = json['category_discount'] != null
-        ?  CategoryDiscount.fromJson(json['category_discount'])
-        : null;
-
+    _categoryDiscount = json['category_discount'] != null ? CategoryDiscount.fromJson(json['category_discount']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -251,8 +244,7 @@ class Product {
       data['category_ids'] = _categoryIds!.map((v) => v.toJson()).toList();
     }
     if (_choiceOptions != null) {
-      data['choice_options'] =
-          _choiceOptions!.map((v) => v.toJson()).toList();
+      data['choice_options'] = _choiceOptions!.map((v) => v.toJson()).toList();
     }
     data['discount'] = _discount;
     data['weight'] = _weight;
@@ -261,13 +253,14 @@ class Product {
     data['unit'] = _unit;
     data['capacity'] = _capacity;
     data['total_stock'] = _totalStock;
-     if (_rating != null) {
+    if (_rating != null) {
       data['rating'] = _rating!.map((v) => v.toJson()).toList();
     }
     data['maximum_order_quantity'] = _maximumOrderQuantity;
     if (_categoryDiscount != null) {
       data['category_discount'] = _categoryDiscount!.toJson();
     }
+    data['point_value'] = _pointValue;
 
     return data;
   }
@@ -352,6 +345,7 @@ class ChoiceOptions {
     return data;
   }
 }
+
 class Rating {
   double? _average;
 
@@ -373,19 +367,7 @@ class Rating {
 }
 
 class ActiveReview {
-  ActiveReview({
-    this.id,
-    this.productId,
-    this.userId,
-    this.comment,
-    this.attachment,
-    this.rating,
-    this.isActive,
-    this.createdAt,
-    this.updatedAt,
-    this.orderId,
-    this.customer,
-  });
+  ActiveReview({this.id, this.productId, this.userId, this.comment, this.attachment, this.rating, this.isActive, this.createdAt, this.updatedAt, this.orderId, this.customer});
 
   int? id;
   int? productId;
@@ -401,7 +383,6 @@ class ActiveReview {
 
   factory ActiveReview.fromRawJson(String str) => ActiveReview.fromJson(json.decode(str));
 
-
   factory ActiveReview.fromJson(Map<String, dynamic> json) => ActiveReview(
     id: json["id"],
     productId: json["product_id"],
@@ -413,8 +394,7 @@ class ActiveReview {
     createdAt: json["created_at"],
     updatedAt: json["updated_at"],
     orderId: json["order_id"],
-    customer:json['customer'] != null
-        ? Customer.fromJson(json['customer']) : null,
+    customer: json['customer'] != null ? Customer.fromJson(json['customer']) : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -432,29 +412,19 @@ class ActiveReview {
   };
 }
 
-
-
 class Customer {
   String? fName;
   String? lName;
   String? email;
   String? image;
 
-  Customer(
-      {
-        this.fName,
-        this.lName,
-        this.email,
-        this.image,
-      });
+  Customer({this.fName, this.lName, this.email, this.image});
 
   Customer.fromJson(Map<String, dynamic> json) {
-
     fName = json['f_name'];
     lName = json['l_name'];
     email = json['email'];
     image = json['image'];
-
   }
 
   Map<String, dynamic> toJson() {
@@ -475,13 +445,7 @@ class CategoryDiscount {
   double? discountAmount;
   double? maximumAmount;
 
-  CategoryDiscount({
-    this.id,
-    this.categoryId,
-    this.discountType,
-    this.discountAmount,
-    this.maximumAmount,
-  });
+  CategoryDiscount({this.id, this.categoryId, this.discountType, this.discountAmount, this.maximumAmount});
 
   CategoryDiscount.fromJson(Map<String, dynamic> json) {
     id = json['id'].toString();
@@ -518,21 +482,22 @@ class FlashDeal {
   int? _productId;
   String? _dealType;
 
-  FlashDeal(
-      {int? id,
-        String? title,
-        String? startDate,
-        String? endDate,
-        int? status,
-        int? featured,
-        String? backgroundColor,
-        String? textColor,
-        String? banner,
-        String? slug,
-        String? createdAt,
-        String? updatedAt,
-        int? productId,
-        String? dealType}) {
+  FlashDeal({
+    int? id,
+    String? title,
+    String? startDate,
+    String? endDate,
+    int? status,
+    int? featured,
+    String? backgroundColor,
+    String? textColor,
+    String? banner,
+    String? slug,
+    String? createdAt,
+    String? updatedAt,
+    int? productId,
+    String? dealType,
+  }) {
     _id = id;
     _title = title;
     _startDate = startDate;

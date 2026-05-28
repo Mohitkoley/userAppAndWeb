@@ -12,6 +12,7 @@ import 'package:flutter_grocery/utill/styles.dart';
 import 'package:flutter_grocery/common/widgets/custom_directionality_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_image_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_single_child_list_widget.dart';
+import 'package:flutter_grocery/common/widgets/product_point_value_widget.dart';
 import 'package:provider/provider.dart';
 
 class OrderedProductListWidget extends StatelessWidget {
@@ -24,11 +25,15 @@ class OrderedProductListWidget extends StatelessWidget {
     return CustomSingleChildListWidget(
       itemCount: orderProvider.orderDetails!.length,
       itemBuilder: (index) {
-        return orderProvider.orderDetails![index].productDetails != null ? Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          OrderedProductItem(orderDetailsModel: orderProvider.orderDetails![index]),
-          const SizedBox(height: Dimensions.paddingSizeDefault),
-
-        ]): const SizedBox.shrink();
+        return orderProvider.orderDetails![index].productDetails != null
+            ? Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  OrderedProductItem(orderDetailsModel: orderProvider.orderDetails![index]),
+                  const SizedBox(height: Dimensions.paddingSizeDefault),
+                ],
+              )
+            : const SizedBox.shrink();
       },
     );
   }
@@ -37,7 +42,7 @@ class OrderedProductListWidget extends StatelessWidget {
 class OrderedProductItem extends StatelessWidget {
   final OrderDetailsModel orderDetailsModel;
   final bool fromReview;
-  const OrderedProductItem({super.key, required this.orderDetailsModel,this.fromReview = false});
+  const OrderedProductItem({super.key, required this.orderDetailsModel, this.fromReview = false});
 
   @override
   Widget build(BuildContext context) {
@@ -50,119 +55,138 @@ class OrderedProductItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(Dimensions.radiusSizeTen),
         boxShadow: [BoxShadow(color: Colors.grey.withValues(alpha: 0.1), spreadRadius: 1, blurRadius: 5)],
       ),
-      child: Row(children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(Dimensions.radiusSizeTen),
-          child: CustomImageWidget(
-            placeholder: Images.placeHolder,
-            image: '${splashProvider.baseUrls?.productImageUrl}/'
-                '${(orderDetailsModel.productDetails?.image?.isNotEmpty??false)
-                ? (orderDetailsModel.productDetails?.image?[0] ?? '') : ''}',
-            height: 80, width: 80, fit: BoxFit.cover,
+      child: Row(
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(Dimensions.radiusSizeTen),
+            child: CustomImageWidget(
+              placeholder: Images.placeHolder,
+              image:
+                  '${splashProvider.baseUrls?.productImageUrl}/'
+                  '${(orderDetailsModel.productDetails?.image?.isNotEmpty ?? false) ? (orderDetailsModel.productDetails?.image?[0] ?? '') : ''}',
+              height: 80,
+              width: 80,
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        const SizedBox(width: Dimensions.paddingSizeSmall),
+          const SizedBox(width: Dimensions.paddingSizeSmall),
 
-        Expanded(
-          child: ResponsiveHelper.isDesktop(context) ? Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          Expanded(
+            child: ResponsiveHelper.isDesktop(context)
+                ? Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: 200,
+                            child: Text(
+                              orderDetailsModel.productDetails?.name ?? '',
+                              style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeDefault),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
 
-            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              SizedBox(width: 200, child: Text(
-                orderDetailsModel.productDetails?.name ?? '',
-                style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeDefault),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              )),
+                          if (!fromReview) OrderedProductVariationWidget(orderDetailsModel: orderDetailsModel),
+                          if (!fromReview) const SizedBox(height: Dimensions.paddingSizeExtraSmall),
+                          if (!fromReview) ProductPointValueWidget(pointValue: orderDetailsModel.productDetails?.pointValue ?? 500, compact: true),
+                        ],
+                      ),
 
-              if(!fromReview) OrderedProductVariationWidget(orderDetailsModel: orderDetailsModel),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text('${getTranslated('quantity', context)} :', style: poppinsRegular.copyWith(color: Theme.of(context).disabledColor)),
+                            const SizedBox(width: Dimensions.paddingSizeExtraSmall),
 
+                            Text(orderDetailsModel.quantity.toString(), style: poppinsMedium),
+                          ],
+                        ),
+                      ),
 
-            ]),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            orderDetailsModel.discountOnProduct! > 0
+                                ? CustomDirectionalityWidget(
+                                    child: Text(
+                                      PriceConverterHelper.convertPrice(context, orderDetailsModel.price!.toDouble()),
+                                      style: poppinsRegular.copyWith(
+                                        decoration: TextDecoration.lineThrough,
+                                        fontSize: Dimensions.fontSizeSmall,
+                                        color: Theme.of(context).hintColor.withValues(alpha: 0.6),
+                                      ),
+                                    ),
+                                  )
+                                : const SizedBox(),
+                            SizedBox(width: orderDetailsModel.discountOnProduct! > 0 ? Dimensions.paddingSizeExtraSmall : 0),
 
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-              
-                Text('${getTranslated('quantity', context)} :', style: poppinsRegular.copyWith(color: Theme.of(context).disabledColor)),
-                const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-              
-                Text(orderDetailsModel.quantity.toString(), style: poppinsMedium),
-              
-              ]),
-            ),
+                            CustomDirectionalityWidget(
+                              child: Text(PriceConverterHelper.convertPrice(context, orderDetailsModel.price! - orderDetailsModel.discountOnProduct!.toDouble()), style: poppinsBold),
+                            ),
+                            const SizedBox(width: 5),
+                          ],
+                        ),
+                      ),
+                    ],
+                  )
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        orderDetailsModel.productDetails!.name!,
+                        style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeSmall),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-              
-                orderDetailsModel.discountOnProduct! > 0 ? CustomDirectionalityWidget(
-                  child: Text(
-                    PriceConverterHelper.convertPrice(context, orderDetailsModel.price!.toDouble()),
-                    style: poppinsRegular.copyWith(
-                      decoration: TextDecoration.lineThrough,
-                      fontSize: Dimensions.fontSizeSmall,
-                      color: Theme.of(context).hintColor.withValues(alpha: 0.6),
-                    ),
+                      if (!fromReview)
+                        Row(
+                          children: [
+                            Text('${getTranslated('quantity', context)} :', style: poppinsRegular),
+                            const SizedBox(width: Dimensions.paddingSizeExtraSmall),
+
+                            Text(orderDetailsModel.quantity.toString(), style: poppinsMedium),
+                          ],
+                        ),
+                      if (!fromReview) const SizedBox(height: Dimensions.paddingSizeExtraSmall),
+
+                      Row(
+                        children: [
+                          orderDetailsModel.discountOnProduct! > 0
+                              ? CustomDirectionalityWidget(
+                                  child: Text(
+                                    PriceConverterHelper.convertPrice(context, orderDetailsModel.price!.toDouble()),
+                                    style: poppinsRegular.copyWith(
+                                      decoration: TextDecoration.lineThrough,
+                                      fontSize: Dimensions.fontSizeSmall,
+                                      color: Theme.of(context).hintColor.withValues(alpha: 0.6),
+                                    ),
+                                  ),
+                                )
+                              : const SizedBox(),
+                          SizedBox(width: orderDetailsModel.discountOnProduct! > 0 ? Dimensions.paddingSizeExtraSmall : 0),
+
+                          CustomDirectionalityWidget(
+                            child: Text(PriceConverterHelper.convertPrice(context, orderDetailsModel.price! - orderDetailsModel.discountOnProduct!.toDouble()), style: poppinsRegular),
+                          ),
+                          const SizedBox(width: 5),
+                        ],
+                      ),
+
+                      if (!fromReview) OrderedProductVariationWidget(orderDetailsModel: orderDetailsModel),
+                      if (!fromReview) const SizedBox(height: Dimensions.paddingSizeExtraSmall),
+                      if (!fromReview) ProductPointValueWidget(pointValue: orderDetailsModel.productDetails?.pointValue ?? 500, compact: true),
+                    ],
                   ),
-                ) : const SizedBox(),
-                SizedBox(width: orderDetailsModel.discountOnProduct! > 0 ? Dimensions.paddingSizeExtraSmall : 0),
-              
-                CustomDirectionalityWidget(child: Text(
-                  PriceConverterHelper.convertPrice(context, orderDetailsModel.price! - orderDetailsModel.discountOnProduct!.toDouble()),
-                  style: poppinsBold,
-                )),
-                const SizedBox(width: 5),
-              ]),
-            ),
-
-          ]) : Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-
-            Text(
-              orderDetailsModel.productDetails!.name!,
-              style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeSmall),
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-            ),
-            const SizedBox(height: Dimensions.paddingSizeExtraSmall),
-
-            if(!fromReview) Row(children: [
-              Text('${getTranslated('quantity', context)} :', style: poppinsRegular),
-              const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-
-              Text(orderDetailsModel.quantity.toString(), style: poppinsMedium),
-            ]),
-            if(!fromReview) const SizedBox(height: Dimensions.paddingSizeExtraSmall),
-
-            Row(children: [
-
-              orderDetailsModel.discountOnProduct! > 0 ? CustomDirectionalityWidget(
-                child: Text(
-                  PriceConverterHelper.convertPrice(context, orderDetailsModel.price!.toDouble()),
-                  style: poppinsRegular.copyWith(
-                    decoration: TextDecoration.lineThrough,
-                    fontSize: Dimensions.fontSizeSmall,
-                    color: Theme.of(context).hintColor.withValues(alpha: 0.6),
-                  ),
-                ),
-              ) : const SizedBox(),
-              SizedBox(width: orderDetailsModel.discountOnProduct! > 0 ? Dimensions.paddingSizeExtraSmall : 0),
-
-              CustomDirectionalityWidget(child: Text(
-                PriceConverterHelper.convertPrice(context, orderDetailsModel.price! - orderDetailsModel.discountOnProduct!.toDouble()),
-                style: poppinsRegular,
-              )),
-              const SizedBox(width: 5),
-            ]),
-
-            if(!fromReview) OrderedProductVariationWidget(orderDetailsModel: orderDetailsModel),
-          ]),
-        ),
-      ]),
+          ),
+        ],
+      ),
     );
   }
 }
-
-
-

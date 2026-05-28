@@ -1,6 +1,3 @@
-
-
-
 class PlaceOrderModel {
   List<Cart>? _cart;
   double? _couponDiscountAmount;
@@ -28,10 +25,7 @@ class PlaceOrderModel {
   String? _callBack;
   String? _orderId;
   String? _switchOfflineToDigital;
-
-
-
-
+  int? _pointValue;
 
   PlaceOrderModel copyWith({String? paymentMethod, String? transactionReference}) {
     _paymentMethod = paymentMethod;
@@ -39,45 +33,42 @@ class PlaceOrderModel {
     return this;
   }
 
-  PlaceOrderModel setOfflinePayment({
-    required String paymentBy,
-    required String transactionReference,
-    required String paymentNote,
-  }) {
+  PlaceOrderModel setOfflinePayment({required String paymentBy, required String transactionReference, required String paymentNote}) {
     _transactionReference = transactionReference;
     _paymentBy = paymentBy;
     _paymentNote = paymentNote;
     return this;
   }
 
-  PlaceOrderModel(
-      {List<Cart>? cart,
-        double? couponDiscountAmount,
-        String? couponDiscountTitle,
-        double? orderAmount,
-        String? orderType,
-        int? branchId,
-        int? deliveryAddressId,
-        int? timeSlotId,
-        String? deliveryDate,
-        String? paymentMethod,
-        String? orderNote,
-        String? couponCode,
-        double? distance,
-        String? transactionReference,
-        String? paymentBy,
-        String? paymentNote,
-        OfflinePaymentInfo? paymentInfo,
-        String? isPartial,
-        int? selectedDeliveryArea,
-        double? bringChangeAmount,
-        String? isGuest,
-        String? customerId,
-        String? paymentPlatform,
-        String? callBack,
-        String? orderId,
-        String? shwitchToDigital,
-      }) {
+  PlaceOrderModel({
+    List<Cart>? cart,
+    double? couponDiscountAmount,
+    String? couponDiscountTitle,
+    double? orderAmount,
+    String? orderType,
+    int? branchId,
+    int? deliveryAddressId,
+    int? timeSlotId,
+    String? deliveryDate,
+    String? paymentMethod,
+    String? orderNote,
+    String? couponCode,
+    double? distance,
+    String? transactionReference,
+    String? paymentBy,
+    String? paymentNote,
+    OfflinePaymentInfo? paymentInfo,
+    String? isPartial,
+    int? selectedDeliveryArea,
+    double? bringChangeAmount,
+    String? isGuest,
+    String? customerId,
+    String? paymentPlatform,
+    String? callBack,
+    String? orderId,
+    String? shwitchToDigital,
+    int pointValue = 500,
+  }) {
     _cart = cart;
     _couponDiscountAmount = couponDiscountAmount;
     _couponDiscountTitle = couponDiscountTitle;
@@ -104,6 +95,7 @@ class PlaceOrderModel {
     _callBack = callBack;
     _orderId = orderId;
     _switchOfflineToDigital = shwitchToDigital;
+    _pointValue = pointValue;
   }
 
   List<Cart>? get cart => _cart;
@@ -132,6 +124,7 @@ class PlaceOrderModel {
   String? get orderId => _orderId;
   String? get callBack => _callBack;
   String? get switchOfflineToDigital => _switchOfflineToDigital;
+  int? get pointValue => _pointValue;
 
   PlaceOrderModel.fromJson(Map<String, dynamic> json) {
     if (json['cart'] != null) {
@@ -153,7 +146,7 @@ class PlaceOrderModel {
     _couponCode = json['coupon_code'];
     _distance = json['distance'];
     _selectedDeliveryArea = json['selected_delivery_area'];
-    if(json['payment_info'] != null){
+    if (json['payment_info'] != null) {
       _paymentInfo = json['payment_info'];
     }
     _isPartial = json['is_partial'];
@@ -164,6 +157,8 @@ class PlaceOrderModel {
     _callBack = json['call_back'];
     _orderId = json['order_id'];
     _switchOfflineToDigital = json['switch_offline_to_digital'];
+    final int parsedPointValue = json['point_value'] != null ? int.tryParse(json['point_value'].toString()) ?? 500 : 500;
+    _pointValue = parsedPointValue > 0 ? parsedPointValue : 500;
   }
 
   Map<String, dynamic> toJson() {
@@ -184,16 +179,16 @@ class PlaceOrderModel {
     data['coupon_code'] = _couponCode;
     data['distance'] = _distance;
     data['selected_delivery_area'] = selectedDeliveryArea;
-    if(_transactionReference != null) {
+    if (_transactionReference != null) {
       data['transaction_reference'] = _transactionReference;
     }
-    if(_paymentBy != null) {
+    if (_paymentBy != null) {
       data['payment_by'] = _paymentBy;
     }
-    if(_paymentNote != null) {
+    if (_paymentNote != null) {
       data['payment_note'] = _paymentNote;
     }
-    if(_paymentInfo != null){
+    if (_paymentInfo != null) {
       data['payment_info'] = _paymentInfo?.toJson();
     }
     data['is_partial'] = _isPartial;
@@ -204,6 +199,7 @@ class PlaceOrderModel {
     data['call_back'] = _callBack;
     data['order_id'] = _orderId;
     data['switch_offline_to_digital'] = _switchOfflineToDigital;
+    data['point_value'] = _pointValue;
     return data;
   }
 }
@@ -216,15 +212,9 @@ class Cart {
   double? _discountAmount;
   int? _quantity;
   double? _taxAmount;
+  int? _pointValue;
 
-  Cart(
-      {int? productId,
-        double? price,
-        String? variant,
-        List<Variation>? variation,
-        double? discountAmount,
-        int? quantity,
-        double? taxAmount}) {
+  Cart({int? productId, double? price, String? variant, List<Variation>? variation, double? discountAmount, int? quantity, double? taxAmount, int pointValue = 500}) {
     _productId = productId;
     _price = price;
     _variant = variant;
@@ -232,6 +222,7 @@ class Cart {
     _discountAmount = discountAmount;
     _quantity = quantity;
     _taxAmount = taxAmount;
+    _pointValue = pointValue;
   }
 
   int? get productId => _productId;
@@ -241,6 +232,7 @@ class Cart {
   double? get discountAmount => _discountAmount;
   int? get quantity => _quantity;
   double? get taxAmount => _taxAmount;
+  int? get pointValue => _pointValue;
 
   Cart.fromJson(Map<String, dynamic> json) {
     _productId = json['product_id'];
@@ -255,6 +247,8 @@ class Cart {
     _discountAmount = json['discount_amount'].toDouble();
     _quantity = json['quantity'];
     _taxAmount = json['tax_amount'].toDouble();
+    final int parsedPointValue = json['point_value'] != null ? int.tryParse(json['point_value'].toString()) ?? 500 : 500;
+    _pointValue = parsedPointValue > 0 ? parsedPointValue : 500;
   }
 
   Map<String, dynamic> toJson() {
@@ -268,6 +262,7 @@ class Cart {
     data['discount_amount'] = _discountAmount;
     data['quantity'] = _quantity;
     data['tax_amount'] = _taxAmount;
+    data['point_value'] = _pointValue;
     return data;
   }
 }
@@ -292,18 +287,13 @@ class Variation {
   }
 }
 
-class OfflinePaymentInfo{
+class OfflinePaymentInfo {
   final String? paymentName;
   final String? paymentNote;
   final List<Map<String, dynamic>?>? methodFields;
   final List<Map<String, String>>? methodInformation;
 
-  OfflinePaymentInfo(
-      {this.paymentName,
-        this.paymentNote,
-        this.methodFields,
-        this.methodInformation});
-
+  OfflinePaymentInfo({this.paymentName, this.paymentNote, this.methodFields, this.methodInformation});
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};

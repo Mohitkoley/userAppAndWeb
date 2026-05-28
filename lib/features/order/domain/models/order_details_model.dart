@@ -16,26 +16,24 @@ class OrderDetailsModel {
   bool? isVatInclude;
   Map<String, dynamic>? formattedVariation;
 
-
-
-  OrderDetailsModel(
-      {this.id,
-      this.productId,
-      this.orderId,
-      this.price,
-      this.productDetails,
-      this.discountOnProduct,
-      this.discountType,
-      this.quantity,
-      this.taxAmount,
-      this.createdAt,
-      this.updatedAt,
-      this.variant,
-        this.timeSlotId,
-        // this.variation,
-        this.isVatInclude,
-        this.formattedVariation,
-      });
+  OrderDetailsModel({
+    this.id,
+    this.productId,
+    this.orderId,
+    this.price,
+    this.productDetails,
+    this.discountOnProduct,
+    this.discountType,
+    this.quantity,
+    this.taxAmount,
+    this.createdAt,
+    this.updatedAt,
+    this.variant,
+    this.timeSlotId,
+    // this.variation,
+    this.isVatInclude,
+    this.formattedVariation,
+  });
 
   OrderDetailsModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -51,18 +49,15 @@ class OrderDetailsModel {
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
     isVatInclude = '${json['vat_status']}' == 'included';
-    if(json['variant'] != null){
+    if (json['variant'] != null) {
       variant = json['variant'];
     }
-    try{
+    try {
       timeSlotId = json['time_slot_id'];
-
-    }catch(e){
+    } catch (e) {
       timeSlotId = int.parse(json['time_slot_id']);
     }
     formattedVariation = json['formatted_variation'];
-
-
   }
 
   Map<String, dynamic> toJson() {
@@ -105,23 +100,26 @@ class ProductDetails {
   double? discount;
   String? discountType;
   String? taxType;
+  int pointValue = 500;
 
-  ProductDetails(
-      {this.id,
-      this.name,
-      this.description,
-      this.image,
-      this.price,
-      this.categoryIds,
-      this.capacity,
-      this.unit,
-      this.tax,
-      this.status,
-      this.createdAt,
-      this.updatedAt,
-      this.discount,
-      this.discountType,
-      this.taxType});
+  ProductDetails({
+    this.id,
+    this.name,
+    this.description,
+    this.image,
+    this.price,
+    this.categoryIds,
+    this.capacity,
+    this.unit,
+    this.tax,
+    this.status,
+    this.createdAt,
+    this.updatedAt,
+    this.discount,
+    this.discountType,
+    this.taxType,
+    this.pointValue = 500,
+  });
 
   ProductDetails.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -144,6 +142,7 @@ class ProductDetails {
     discount = json['discount'].toDouble();
     discountType = json['discount_type'];
     taxType = json['tax_type'];
+    pointValue = 500;
   }
 
   Map<String, dynamic> toJson() {
@@ -165,6 +164,7 @@ class ProductDetails {
     data['discount'] = discount;
     data['discount_type'] = discountType;
     data['tax_type'] = taxType;
+    data['point_value'] = pointValue;
     return data;
   }
 }
