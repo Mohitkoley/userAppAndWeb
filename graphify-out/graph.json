@@ -24,7 +24,7 @@
     {
       "label": "package:flutter/material.dart",
       "file_type": "code",
-      "source_file": "lib/localization/language_constraints.dart",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter/material.dart",
@@ -42,7 +42,7 @@
     {
       "label": "package:flutter/foundation.dart",
       "file_type": "code",
-      "source_file": "lib/localization/language_constraints.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter/foundation.dart",
@@ -51,7 +51,7 @@
     {
       "label": "package:flutter_grocery/main.dart",
       "file_type": "code",
-      "source_file": "lib/localization/app_localization.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/main.dart",
@@ -411,7 +411,7 @@
     {
       "label": "dart:io",
       "file_type": "code",
-      "source_file": "lib/helper/file_validation_helper.dart",
+      "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "dart:io",
@@ -519,7 +519,7 @@
     {
       "label": "package:flutter_grocery/helper/responsive_helper.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/responsive_helper.dart",
@@ -528,7 +528,7 @@
     {
       "label": "package:flutter_grocery/helper/route_helper.dart",
       "file_type": "code",
-      "source_file": "lib/helper/api_checker_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/route_helper.dart",
@@ -537,7 +537,7 @@
     {
       "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
@@ -555,7 +555,7 @@
     {
       "label": "package:flutter_grocery/common/providers/cart_provider.dart",
       "file_type": "code",
-      "source_file": "lib/helper/order_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/cart_provider.dart",
@@ -582,7 +582,7 @@
     {
       "label": "package:flutter_grocery/features/coupon/providers/coupon_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/cart/widgets/cart_button_widget.dart",
+      "source_file": "lib/features/cart/widgets/cart_item_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/coupon/providers/coupon_provider.dart",
@@ -618,7 +618,7 @@
     {
       "label": "package:flutter_grocery/features/address/providers/location_provider.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/address/providers/location_provider.dart",
@@ -654,7 +654,7 @@
     {
       "label": "package:flutter_grocery/features/order/providers/order_provider.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order/providers/order_provider.dart",
@@ -663,7 +663,7 @@
     {
       "label": "package:flutter_grocery/common/providers/product_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/product/widgets/product_description_widget.dart",
+      "source_file": "lib/features/product/widgets/product_title_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/product_provider.dart",
@@ -672,7 +672,7 @@
     {
       "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
@@ -690,7 +690,7 @@
     {
       "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
@@ -699,7 +699,7 @@
     {
       "label": "package:flutter_grocery/common/providers/theme_provider.dart",
       "file_type": "code",
-      "source_file": "lib/utill/color_resources.dart",
+      "source_file": "lib/features/cart/widgets/cart_item_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/theme_provider.dart",
@@ -753,7 +753,7 @@
     {
       "label": "package:flutter_grocery/utill/app_constants.dart",
       "file_type": "code",
-      "source_file": "lib/localization/app_localization.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/utill/app_constants.dart",
@@ -771,7 +771,7 @@
     {
       "label": "package:flutter_grocery/helper/custom_snackbar_helper.dart",
       "file_type": "code",
-      "source_file": "lib/helper/file_validation_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/custom_snackbar_helper.dart",
@@ -807,7 +807,7 @@
     {
       "label": "package:provider/provider.dart",
       "file_type": "code",
-      "source_file": "lib/utill/color_resources.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:provider/provider.dart",
@@ -1257,7 +1257,7 @@
     {
       "label": "package:flutter_grocery/localization/app_localization.dart",
       "file_type": "code",
-      "source_file": "lib/localization/language_constraints.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/localization/app_localization.dart",
@@ -1266,7 +1266,7 @@
     {
       "label": "package:flutter_grocery/utill/images.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/utill/images.dart",
@@ -1437,7 +1437,7 @@
     {
       "label": "package:flutter_grocery/common/models/config_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/config_model.dart",
@@ -1455,7 +1455,7 @@
     {
       "label": "package:flutter_grocery/localization/language_constraints.dart",
       "file_type": "code",
-      "source_file": "lib/helper/date_converter_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/localization/language_constraints.dart",
@@ -1464,7 +1464,7 @@
     {
       "label": "package:flutter_grocery/utill/dimensions.dart",
       "file_type": "code",
-      "source_file": "lib/helper/custom_snackbar_helper.dart",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/utill/dimensions.dart",
@@ -1473,7 +1473,7 @@
     {
       "label": "package:flutter_grocery/utill/styles.dart",
       "file_type": "code",
-      "source_file": "lib/helper/custom_snackbar_helper.dart",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/utill/styles.dart",
@@ -1482,7 +1482,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_directionality_widget.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/price_item_widget.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_directionality_widget.dart",
@@ -1491,7 +1491,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_loader_widget.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_loader_widget.dart",
@@ -1887,7 +1887,7 @@
     {
       "label": "dart:convert",
       "file_type": "code",
-      "source_file": "lib/localization/app_localization.dart",
+      "source_file": "lib/common/models/product_model.dart",
       "source_location": null,
       "community": null,
       "norm_label": "dart:convert",
@@ -2004,7 +2004,7 @@
     {
       "label": "package:flutter_grocery/helper/price_converter_helper.dart",
       "file_type": "code",
-      "source_file": "lib/helper/cart_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/price_converter_helper.dart",
@@ -2175,7 +2175,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_single_child_list_widget.dart",
       "file_type": "code",
-      "source_file": "lib/features/review/widgets/product_review_widget.dart",
+      "source_file": "lib/features/order/widgets/ordered_product_list_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_single_child_list_widget.dart",
@@ -2400,7 +2400,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_button_widget.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/custom_alert_dialog_widget.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_button_widget.dart",
@@ -2571,7 +2571,7 @@
     {
       "label": "package:flutter_grocery/features/order/domain/models/offline_payment_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order/domain/models/offline_payment_model.dart",
@@ -2580,7 +2580,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_image_widget.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/footer_web_widget.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_image_widget.dart",
@@ -2895,7 +2895,7 @@
     {
       "label": "package:flutter_grocery/common/models/place_order_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/place_order_model.dart",
@@ -2913,7 +2913,7 @@
     {
       "label": "package:flutter_grocery/common/models/cart_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/cart_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/cart_model.dart",
@@ -2940,7 +2940,7 @@
     {
       "label": "package:flutter_grocery/features/order/domain/models/order_details_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/order_helper.dart",
+      "source_file": "lib/features/order/widgets/ordered_product_list_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order/domain/models/order_details_model.dart",
@@ -2958,7 +2958,7 @@
     {
       "label": "package:flutter_grocery/common/models/product_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/cart_helper.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/product_model.dart",
@@ -2994,7 +2994,7 @@
     {
       "label": "package:flutter_grocery/helper/order_helper.dart",
       "file_type": "code",
-      "source_file": "lib/features/order_track/screens/track_map_screen_web.dart",
+      "source_file": "lib/features/order/widgets/re_order_dialog_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/order_helper.dart",
@@ -3921,7 +3921,7 @@
     {
       "label": "package:flutter_grocery/utill/color_resources.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/web_product_shimmer_widget.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/utill/color_resources.dart",
@@ -5802,7 +5802,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/on_hover_widget.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/custom_slider_list_widget.dart",
+      "source_file": "lib/common/widgets/product_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/on_hover_widget.dart",
@@ -12345,7 +12345,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_tooltip.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/features/cart/widgets/cart_item_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_tooltip.dart",
@@ -12642,7 +12642,7 @@
     {
       "label": "package:flutter_grocery/features/order/enums/delivery_charge_type.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order/enums/delivery_charge_type.dart",
@@ -12651,7 +12651,7 @@
     {
       "label": "package:flutter_grocery/helper/checkout_helper.dart",
       "file_type": "code",
-      "source_file": "lib/features/address/widgets/add_address_widget.dart",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/checkout_helper.dart",
@@ -14217,7 +14217,7 @@
     {
       "label": "package:flutter/cupertino.dart",
       "file_type": "code",
-      "source_file": "lib/helper/custom_snackbar_helper.dart",
+      "source_file": "lib/features/cart/widgets/cart_item_widget.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter/cupertino.dart",
@@ -25364,6 +25364,78 @@
       "community": null,
       "norm_label": "gettranslated",
       "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_localization_language_constraints_dart_gettranslated"
+    },
+    {
+      "label": "package:flutter_grocery/common/widgets/product_point_value_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/common/widgets/product_widget.dart",
+      "source_location": null,
+      "id": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
+      "community": null,
+      "norm_label": "package:flutter_grocery/common/widgets/product_point_value_widget.dart"
+    },
+    {
+      "label": "_getCartPointValue",
+      "file_type": "code",
+      "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart_getcartpointvalue",
+      "community": null,
+      "norm_label": "_getcartpointvalue"
+    },
+    {
+      "label": "_getCartPointValue",
+      "file_type": "code",
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_place_order_button_widget_dart_getcartpointvalue",
+      "community": null,
+      "norm_label": "_getcartpointvalue"
+    },
+    {
+      "label": "product_point_value_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "id": "lib_common_widgets_product_point_value_widget_dart",
+      "community": null,
+      "norm_label": "product_point_value_widget.dart"
+    },
+    {
+      "label": "ProductPointValueWidget",
+      "file_type": "code",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_productpointvaluewidget",
+      "community": null,
+      "norm_label": "productpointvaluewidget"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_build",
+      "community": null,
+      "norm_label": "build"
+    },
+    {
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_sizedbox",
+      "community": null,
+      "norm_label": "sizedbox"
+    },
+    {
+      "label": "Tooltip",
+      "file_type": "code",
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_tooltip",
+      "community": null,
+      "norm_label": "tooltip"
     }
   ],
   "links": [
@@ -28450,6 +28522,18 @@
       "_tgt": "package_flutter_material_dart",
       "source": "package_flutter_material_dart",
       "target": "lib_localization_language_constraints_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "package_flutter_material_dart",
+      "source": "package_flutter_material_dart",
+      "target": "lib_common_widgets_product_point_value_widget_dart"
     },
     {
       "relation": "imports",
@@ -50547,6 +50631,18 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "package_flutter_grocery_utill_dimensions_dart",
+      "source": "package_flutter_grocery_utill_dimensions_dart",
+      "target": "lib_common_widgets_product_point_value_widget_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
       "source_location": null,
       "weight": 1.0,
@@ -52330,6 +52426,18 @@
       "_tgt": "package_flutter_grocery_utill_styles_dart",
       "source": "package_flutter_grocery_utill_styles_dart",
       "target": "lib_helper_custom_snackbar_helper_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "package_flutter_grocery_utill_styles_dart",
+      "source": "package_flutter_grocery_utill_styles_dart",
+      "target": "lib_common_widgets_product_point_value_widget_dart"
     },
     {
       "relation": "imports",
@@ -62436,6 +62544,18 @@
       "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_order_widgets_re_order_dialog_widget_dart_container"
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/order/widgets/re_order_dialog_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_order_widgets_re_order_dialog_widget_dart",
+      "_tgt": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
+      "source": "lib_features_order_widgets_re_order_dialog_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_product_point_value_widget_dart"
+    },
+    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -63226,6 +63346,18 @@
       "_tgt": "package_flutter_grocery_features_order_widgets_ordered_product_variation_widget_dart",
       "source": "lib_features_order_widgets_ordered_product_list_widget_dart",
       "target": "package_flutter_grocery_features_order_widgets_ordered_product_variation_widget_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/order/widgets/ordered_product_list_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_order_widgets_ordered_product_list_widget_dart",
+      "_tgt": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
+      "source": "lib_features_order_widgets_ordered_product_list_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_product_point_value_widget_dart"
     },
     {
       "relation": "defines",
@@ -73632,6 +73764,18 @@
       "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_product_widgets_product_title_widget_dart_sizedbox"
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/product/widgets/product_title_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_product_widgets_product_title_widget_dart",
+      "_tgt": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
+      "source": "lib_features_product_widgets_product_title_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_product_point_value_widget_dart"
+    },
+    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -75579,6 +75723,18 @@
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart_getcartpointvalue",
+      "source": "lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_payment_method_bottom_sheet_widget_dart_getcartpointvalue"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "lib/features/checkout/widgets/payment_button_widget.dart",
       "source_location": null,
       "weight": 1.0,
@@ -76882,6 +77038,18 @@
       "_tgt": "package_flutter_grocery_features_checkout_widgets_upside_expansion_widget_dart",
       "source": "lib_features_checkout_widgets_place_order_button_widget_dart",
       "target": "package_flutter_grocery_features_checkout_widgets_upside_expansion_widget_dart"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/checkout/widgets/place_order_button_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_checkout_widgets_place_order_button_widget_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_place_order_button_widget_dart_getcartpointvalue",
+      "source": "lib_features_checkout_widgets_place_order_button_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_checkout_widgets_place_order_button_widget_dart_getcartpointvalue"
     },
     {
       "relation": "defines",
@@ -81120,6 +81288,18 @@
       "target": "package_flutter_grocery_features_cart_widgets_discounted_price_widget_dart"
     },
     {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/cart/widgets/cart_item_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_cart_widgets_cart_item_widget_dart",
+      "_tgt": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
+      "source": "lib_features_cart_widgets_cart_item_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_product_point_value_widget_dart"
+    },
+    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -83710,6 +83890,18 @@
       "_tgt": "wish_button_widget_dart",
       "source": "lib_common_widgets_product_widget_dart",
       "target": "wish_button_widget_dart"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_widget_dart",
+      "_tgt": "package_flutter_grocery_common_widgets_product_point_value_widget_dart",
+      "source": "lib_common_widgets_product_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_product_point_value_widget_dart"
     },
     {
       "relation": "defines",
@@ -90226,6 +90418,54 @@
       "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_localization_language_constraints_dart_gettranslated",
       "source": "lib_localization_language_constraints_dart",
       "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_localization_language_constraints_dart_gettranslated"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_productpointvaluewidget",
+      "source": "lib_common_widgets_product_point_value_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_productpointvaluewidget"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_build",
+      "source": "lib_common_widgets_product_point_value_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_build"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_sizedbox",
+      "source": "lib_common_widgets_product_point_value_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_sizedbox"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_common_widgets_product_point_value_widget_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_tooltip",
+      "source": "lib_common_widgets_product_point_value_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_tooltip"
     }
   ],
   "hyperedges": []
