@@ -6,7 +6,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kDebugMode, kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+// import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:flutter_grocery/common/enums/app_mode_enum.dart';
 import 'package:flutter_grocery/common/enums/data_source_enum.dart';
 import 'package:flutter_grocery/features/auth/providers/verification_provider.dart';
@@ -118,12 +118,12 @@ Future<void> main() async {
     );
 
     if (AppConstants.appMode != AppMode.demo) {
-      await FacebookAuth.instance.webAndDesktopInitialize(
-        appId: "1216934565526698",
-        cookie: true,
-        xfbml: true,
-        version: "v15.0",
-      );
+      // await FacebookAuth.instance.webAndDesktopInitialize(
+      //   appId: "1216934565526698",
+      //   cookie: true,
+      //   xfbml: true,
+      //   version: "v15.0",
+      // );
     }
   }
 
@@ -195,9 +195,9 @@ Future<void> main() async {
           create: (context) => di.sl<OrderImageNoteProvider>(),
         ),
         ChangeNotifierProvider(create: (context) => di.sl<TrackerProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<FacebookLoginProvider>(),
-        ),
+        // ChangeNotifierProvider(
+        //   create: (context) => di.sl<FacebookLoginProvider>(),
+        // ),
         ChangeNotifierProvider(
           create: (context) => di.sl<SearchFilterProvider>(),
         ),

@@ -6,11 +6,13 @@
     "configurations": [
         
         {
-            "name": "userAppAndWeb (Flutter Chrome)",
+            "name": "debug",
             "program": "lib/main.dart",
-            "deviceId": "chrome",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "args": [
+                "--android-skip-build-dependency-validation"
+            ]
         }
     ]
 }

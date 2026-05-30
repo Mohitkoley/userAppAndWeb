@@ -56,49 +56,103 @@ import 'common/reposotories/news_letter_repo.dart';
 final sl = GetIt.instance;
 final database = AppDatabase();
 
-
 Future<void> init() async {
   // Core
-  sl.registerLazySingleton(() => DioClient(AppConstants.baseUrl, sl(), loggingInterceptor: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(
+    () => DioClient(
+      AppConstants.baseUrl,
+      sl(),
+      loggingInterceptor: sl(),
+      sharedPreferences: sl(),
+    ),
+  );
 
   // Repository
-  sl.registerLazySingleton(() => DataSyncRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => SplashRepo(sharedPreferences: sl(), dioClient: sl()));
+  sl.registerLazySingleton(
+    () => DataSyncRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => SplashRepo(sharedPreferences: sl(), dioClient: sl()),
+  );
   sl.registerLazySingleton(() => OnBoardingRepo(dioClient: sl()));
-  sl.registerLazySingleton(() => CategoryRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => ProductRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => SearchRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => ChatRepo(dioClient: sl(),sharedPreferences: sl()));
-  sl.registerLazySingleton(() => AuthRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(
+    () => CategoryRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => ProductRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => SearchRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => ChatRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => AuthRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
   sl.registerLazySingleton(() => CartRepo(sharedPreferences: sl()));
   sl.registerLazySingleton(() => CouponRepo(dioClient: sl()));
-  sl.registerLazySingleton(() => OrderRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => LocationRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => ProfileRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => BannerRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(
+    () => OrderRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => LocationRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => ProfileRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => BannerRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
   sl.registerLazySingleton(() => NotificationRepo(dioClient: sl()));
   sl.registerLazySingleton(() => LanguageRepo(dioClient: sl()));
   sl.registerLazySingleton(() => NewsLetterRepo(dioClient: sl()));
-  sl.registerLazySingleton(() => WishListRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => WalletRepo(dioClient: sl(), sharedPreferences: sl()));
-  sl.registerLazySingleton(() => TrackerRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(
+    () => WishListRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => WalletRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
+  sl.registerLazySingleton(
+    () => TrackerRepo(dioClient: sl(), sharedPreferences: sl()),
+  );
 
   // Provider
   // sl.registerLazySingleton(() => DataSyncProvider());
   sl.registerFactory(() => ThemeProvider(sharedPreferences: sl()));
-  sl.registerFactory(() => LocalizationProvider(dioClient: sl(), sharedPreferences: sl(), languageRepo: sl()));
+  sl.registerFactory(
+    () => LocalizationProvider(
+      dioClient: sl(),
+      sharedPreferences: sl(),
+      languageRepo: sl(),
+    ),
+  );
   sl.registerFactory(() => SplashProvider(splashRepo: sl()));
   sl.registerFactory(() => OnBoardingProvider(onboardingRepo: sl()));
-  sl.registerFactory(() => CategoryProvider(categoryRepo: sl(), productRepo: sl(), searchRepo: sl()));
-  sl.registerFactory(() => ProductProvider(productRepo: sl(), searchRepo: sl()));
+  sl.registerFactory(
+    () => CategoryProvider(
+      categoryRepo: sl(),
+      productRepo: sl(),
+      searchRepo: sl(),
+    ),
+  );
+  sl.registerFactory(
+    () => ProductProvider(productRepo: sl(), searchRepo: sl()),
+  );
   sl.registerFactory(() => SearchProvider(searchRepo: sl()));
-  sl.registerFactory(() => ChatProvider(chatRepo: sl(),notificationRepo: sl()));
+  sl.registerFactory(
+    () => ChatProvider(chatRepo: sl(), notificationRepo: sl()),
+  );
   sl.registerFactory(() => AuthProvider(authRepo: sl()));
   sl.registerFactory(() => CartProvider(cartRepo: sl()));
   sl.registerFactory(() => CouponProvider(couponRepo: sl()));
-  sl.registerFactory(() => LocationProvider(locationRepo: sl(),sharedPreferences: sl()));
+  sl.registerFactory(
+    () => LocationProvider(locationRepo: sl(), sharedPreferences: sl()),
+  );
   sl.registerFactory(() => ProfileProvider(profileRepo: sl()));
-  sl.registerFactory(() => OrderProvider(orderRepo: sl(), sharedPreferences: sl()));
+  sl.registerFactory(
+    () => OrderProvider(orderRepo: sl(), sharedPreferences: sl()),
+  );
   sl.registerFactory(() => BannerProvider(bannerRepo: sl()));
   sl.registerFactory(() => NotificationProvider(notificationRepo: sl()));
   sl.registerFactory(() => LanguageProvider(languageRepo: sl()));
@@ -110,9 +164,8 @@ Future<void> init() async {
   sl.registerFactory(() => VerificationProvider(authRepo: sl()));
   sl.registerFactory(() => OrderImageNoteProvider());
   sl.registerFactory(() => TrackerProvider(trackerRepo: sl()));
-  sl.registerFactory(() => FacebookLoginProvider());
+  // sl.registerFactory(() => FacebookLoginProvider());
   sl.registerFactory(() => SearchFilterProvider());
-
 
   // External
   final sharedPreferences = await SharedPreferences.getInstance();
