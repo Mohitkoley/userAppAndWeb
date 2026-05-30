@@ -16,7 +16,14 @@ class ProductModel {
   int? rating;
   List<int>? categories;
 
-  ProductModel({this.totalSize, this.limit, this.offset, this.products, this.maxPrice, this.minPrice});
+  ProductModel({
+    this.totalSize,
+    this.limit,
+    this.offset,
+    this.products,
+    this.maxPrice,
+    this.minPrice,
+  });
 
   ProductModel.fromJson(Map<String, dynamic> json) {
     totalSize = int.tryParse('${json['total_size']}');
@@ -30,14 +37,18 @@ class ProductModel {
     rating = int.tryParse('${json['rating']}');
     if (json['category_ids'] != null) {
       try {
-        final decoded = json['category_ids'] is String ? jsonDecode(json['category_ids']) : json['category_ids'];
+        final decoded = json['category_ids'] is String
+            ? jsonDecode(json['category_ids'])
+            : json['category_ids'];
         categories = List<int>.from(decoded);
       } catch (_) {
         categories = null;
       }
     }
 
-    flashDeal = json['flash_deal'] != null ? FlashDeal.fromJson(json['flash_deal']) : null;
+    flashDeal = json['flash_deal'] != null
+        ? FlashDeal.fromJson(json['flash_deal'])
+        : null;
 
     if (json['products'] != null) {
       products = [];
@@ -205,7 +216,9 @@ class Product {
     _discountType = json['discount_type'];
     _taxType = json['tax_type'];
     _unit = json['unit'];
-    _capacity = json['capacity'] != null ? json['capacity'].toDouble() : json['capacity'];
+    _capacity = json['capacity'] != null
+        ? json['capacity'].toDouble()
+        : json['capacity'];
     _totalStock = json['total_stock'];
     if (json['rating'] != null) {
       _rating = [];
@@ -213,7 +226,7 @@ class Product {
         _rating!.add(Rating.fromJson(v));
       });
     }
-    _pointValue = defaultPointValue;
+    _pointValue = json['point_value'] ?? defaultPointValue;
     if (json['active_reviews'] != null) {
       _activeReviews = [];
       json['active_reviews'].forEach((v) {
@@ -222,7 +235,9 @@ class Product {
     }
     _activeReviewsCount = int.tryParse('${json['active_reviews_count']}');
     _maximumOrderQuantity = int.tryParse('${json['maximum_order_quantity']}');
-    _categoryDiscount = json['category_discount'] != null ? CategoryDiscount.fromJson(json['category_discount']) : null;
+    _categoryDiscount = json['category_discount'] != null
+        ? CategoryDiscount.fromJson(json['category_discount'])
+        : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -367,7 +382,19 @@ class Rating {
 }
 
 class ActiveReview {
-  ActiveReview({this.id, this.productId, this.userId, this.comment, this.attachment, this.rating, this.isActive, this.createdAt, this.updatedAt, this.orderId, this.customer});
+  ActiveReview({
+    this.id,
+    this.productId,
+    this.userId,
+    this.comment,
+    this.attachment,
+    this.rating,
+    this.isActive,
+    this.createdAt,
+    this.updatedAt,
+    this.orderId,
+    this.customer,
+  });
 
   int? id;
   int? productId;
@@ -381,7 +408,8 @@ class ActiveReview {
   int? orderId;
   Customer? customer;
 
-  factory ActiveReview.fromRawJson(String str) => ActiveReview.fromJson(json.decode(str));
+  factory ActiveReview.fromRawJson(String str) =>
+      ActiveReview.fromJson(json.decode(str));
 
   factory ActiveReview.fromJson(Map<String, dynamic> json) => ActiveReview(
     id: json["id"],
@@ -394,7 +422,9 @@ class ActiveReview {
     createdAt: json["created_at"],
     updatedAt: json["updated_at"],
     orderId: json["order_id"],
-    customer: json['customer'] != null ? Customer.fromJson(json['customer']) : null,
+    customer: json['customer'] != null
+        ? Customer.fromJson(json['customer'])
+        : null,
   );
 
   Map<String, dynamic> toJson() => {
@@ -445,7 +475,13 @@ class CategoryDiscount {
   double? discountAmount;
   double? maximumAmount;
 
-  CategoryDiscount({this.id, this.categoryId, this.discountType, this.discountAmount, this.maximumAmount});
+  CategoryDiscount({
+    this.id,
+    this.categoryId,
+    this.discountType,
+    this.discountAmount,
+    this.maximumAmount,
+  });
 
   CategoryDiscount.fromJson(Map<String, dynamic> json) {
     id = json['id'].toString();

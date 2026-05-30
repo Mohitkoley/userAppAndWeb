@@ -1,11 +1,935 @@
 {
   "nodes": [
     {
+      "id": "ios_runner_generatedpluginregistrant_m",
+      "label": "GeneratedPluginRegistrant.m",
+      "file_type": "code",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L1"
+    },
+    {
+      "id": "runner_generatedpluginregistrant_generatedpluginregistrant",
+      "label": "GeneratedPluginRegistrant",
+      "file_type": "code",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L159"
+    },
+    {
+      "id": "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
+      "label": "-registerWithRegistry",
+      "file_type": "code",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L161"
+    },
+    {
+      "id": "ios_flutter_ephemeral_flutter_lldb_helper_py",
+      "label": "flutter_lldb_helper.py",
+      "file_type": "code",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "label": "handle_new_rx_page()",
+      "file_type": "code",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "ephemeral_flutter_lldb_helper_lldb_init_module",
+      "label": "__lldb_init_module()",
+      "file_type": "code",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "ephemeral_flutter_lldb_helper_rationale_8",
+      "label": "Intercept NOTIFY_DEBUGGER_ABOUT_RX_PAGES and touch the pages.",
+      "file_type": "rationale",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L8"
+    },
+    {
       "id": "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_package_swift",
       "label": "Package.swift",
       "file_type": "code",
       "source_file": "ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift",
       "source_location": "L1"
+    },
+    {
+      "id": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "label": "GeneratedPluginRegistrant.java",
+      "file_type": "code",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L1"
+    },
+    {
+      "id": "plugins_generatedpluginregistrant_generatedpluginregistrant",
+      "label": "GeneratedPluginRegistrant",
+      "file_type": "code",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L14"
+    },
+    {
+      "id": "plugins_generatedpluginregistrant_generatedpluginregistrant_registerwith",
+      "label": ".registerWith()",
+      "file_type": "code",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L17"
+    },
+    {
+      "id": "lib_main_dart",
+      "label": "main.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_myapp",
+      "label": "MyApp",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_myappstate",
+      "label": "_MyAppState",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_get",
+      "label": "Get",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_routefromuri",
+      "label": "_routeFromUri",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_route",
+      "label": "_route",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_listenforapplinks",
+      "label": "_listenForAppLinks",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_handleapplinkroute",
+      "label": "_handleAppLinkRoute",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_onremoveloader",
+      "label": "_onRemoveLoader",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_async",
+      "label": "dart:async",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_io",
+      "label": "dart:io",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_ui",
+      "label": "dart:ui",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_firebase_core_firebase_core_dart",
+      "label": "package:firebase_core/firebase_core.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_firebase_messaging_firebase_messaging_dart",
+      "label": "package:firebase_messaging/firebase_messaging.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_foundation_dart",
+      "label": "package:flutter/foundation.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_app_mode_enum_dart",
+      "label": "package:flutter_grocery/common/enums/app_mode_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_data_source_enum_dart",
+      "label": "package:flutter_grocery/common/enums/data_source_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/verification_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_providers_image_note_provider_dart",
+      "label": "package:flutter_grocery/features/order/providers/image_note_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_track_providers_tracker_provider_dart",
+      "label": "package:flutter_grocery/features/order_track/providers/tracker_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_review_providers_review_provider_dart",
+      "label": "package:flutter_grocery/features/review/providers/review_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_screens_splash_screen_dart",
+      "label": "package:flutter_grocery/features/splash/screens/splash_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_responsive_helper_dart",
+      "label": "package:flutter_grocery/helper/responsive_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_route_helper_dart",
+      "label": "package:flutter_grocery/helper/route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_home_providers_banner_provider_dart",
+      "label": "package:flutter_grocery/features/home/providers/banner_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_cart_provider_dart",
+      "label": "package:flutter_grocery/common/providers/cart_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_category_providers_category_provider_dart",
+      "label": "package:flutter_grocery/features/category/providers/category_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_chat_providers_chat_provider_dart",
+      "label": "package:flutter_grocery/features/chat/providers/chat_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_coupon_providers_coupon_provider_dart",
+      "label": "package:flutter_grocery/features/coupon/providers/coupon_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_home_providers_flash_deal_provider_dart",
+      "label": "package:flutter_grocery/features/home/providers/flash_deal_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_language_provider_dart",
+      "label": "package:flutter_grocery/common/providers/language_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_localization_provider_dart",
+      "label": "package:flutter_grocery/common/providers/localization_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_providers_location_provider_dart",
+      "label": "package:flutter_grocery/features/address/providers/location_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_news_letter_provider_dart",
+      "label": "package:flutter_grocery/common/providers/news_letter_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_notification_providers_notification_provider_dart",
+      "label": "package:flutter_grocery/features/notification/providers/notification_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_onboarding_providers_onboarding_provider_dart",
+      "label": "package:flutter_grocery/features/onboarding/providers/onboarding_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_providers_order_provider_dart",
+      "label": "package:flutter_grocery/features/order/providers/order_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_product_provider_dart",
+      "label": "package:flutter_grocery/common/providers/product_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_search_providers_search_provider_dart",
+      "label": "package:flutter_grocery/features/search/providers/search_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_theme_provider_dart",
+      "label": "package:flutter_grocery/common/providers/theme_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_search_filter_provider_dart",
+      "label": "package:flutter_grocery/common/providers/search_filter_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_providers_wallet_provider_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/providers/wallet_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wishlist_providers_wishlist_provider_dart",
+      "label": "package:flutter_grocery/features/wishlist/providers/wishlist_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_theme_dark_theme_dart",
+      "label": "package:flutter_grocery/theme/dark_theme.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_theme_light_theme_dart",
+      "label": "package:flutter_grocery/theme/light_theme.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_app_constants_dart",
+      "label": "package:flutter_grocery/utill/app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_third_party_chat_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/third_party_chat_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "label": "package:flutter_grocery/helper/custom_snackbar_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_local_notifications_flutter_local_notifications_dart",
+      "label": "package:flutter_local_notifications/flutter_local_notifications.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_localizations_flutter_localizations_dart",
+      "label": "package:flutter_localizations/flutter_localizations.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_go_router_go_router_dart",
+      "label": "package:go_router/go_router.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_url_strategy_url_strategy_dart",
+      "label": "package:url_strategy/url_strategy.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "di_container_dart",
+      "label": "di_container.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "features_auth_providers_facebook_login_provider_dart",
+      "label": "features/auth/providers/facebook_login_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "helper_notification_helper_dart",
+      "label": "helper/notification_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "localization_app_localization_dart",
+      "label": "localization/app_localization.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "common_widgets_cookies_widget_dart",
+      "label": "common/widgets/cookies_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_universal_html_html_dart",
+      "label": "package:universal_html/html.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_app_links_app_links_dart",
+      "label": "package:app_links/app_links.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_di_container_dart",
+      "label": "di_container.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_dio_dio_dart",
+      "label": "package:dio/dio.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_reposotories_data_sync_repo_dart",
+      "label": "package:flutter_grocery/common/reposotories/data_sync_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_data_datasource_local_cache_response_dart",
+      "label": "package:flutter_grocery/data/datasource/local/cache_response.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_reposotories_auth_repo_dart",
+      "label": "package:flutter_grocery/features/auth/domain/reposotories/auth_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_facebook_login_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/facebook_login_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/verification_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_home_domain_reposotories_banner_repo_dart",
+      "label": "package:flutter_grocery/features/home/domain/reposotories/banner_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_reposotories_cart_repo_dart",
+      "label": "package:flutter_grocery/common/reposotories/cart_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_category_domain_reposotories_category_repo_dart",
+      "label": "package:flutter_grocery/features/category/domain/reposotories/category_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_chat_domain_reposotories_chat_repo_dart",
+      "label": "package:flutter_grocery/features/chat/domain/reposotories/chat_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_coupon_domain_reposotories_coupon_repo_dart",
+      "label": "package:flutter_grocery/features/coupon/domain/reposotories/coupon_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_reposotories_language_repo_dart",
+      "label": "package:flutter_grocery/common/reposotories/language_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_domain_reposotories_location_repo_dart",
+      "label": "package:flutter_grocery/features/address/domain/reposotories/location_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_notification_domain_reposotories_notification_repo_dart",
+      "label": "package:flutter_grocery/features/notification/domain/reposotories/notification_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_onboarding_domain_reposotories_onboarding_repo_dart",
+      "label": "package:flutter_grocery/features/onboarding/domain/reposotories/onboarding_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_domain_reposotories_order_repo_dart",
+      "label": "package:flutter_grocery/features/order/domain/reposotories/order_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_reposotories_product_repo_dart",
+      "label": "package:flutter_grocery/common/reposotories/product_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_providers_image_note_provider_dart",
+      "label": "package:flutter_grocery/features/order/providers/image_note_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_track_domain_repositories_time_repo_dart",
+      "label": "package:flutter_grocery/features/order_track/domain/repositories/time_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_track_providers_tracker_provider_dart",
+      "label": "package:flutter_grocery/features/order_track/providers/tracker_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_domain_reposotories_profile_repo_dart",
+      "label": "package:flutter_grocery/features/profile/domain/reposotories/profile_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_review_providers_review_provider_dart",
+      "label": "package:flutter_grocery/features/review/providers/review_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_search_domain_reposotories_search_repo_dart",
+      "label": "package:flutter_grocery/features/search/domain/reposotories/search_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_domain_reposotories_splash_repo_dart",
+      "label": "package:flutter_grocery/features/splash/domain/reposotories/splash_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_domain_reposotories_wallet_repo_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/domain/reposotories/wallet_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wishlist_domain_reposotories_wishlist_repo_dart",
+      "label": "package:flutter_grocery/features/wishlist/domain/reposotories/wishlist_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_home_providers_banner_provider_dart",
+      "label": "package:flutter_grocery/features/home/providers/banner_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_cart_provider_dart",
+      "label": "package:flutter_grocery/common/providers/cart_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_category_providers_category_provider_dart",
+      "label": "package:flutter_grocery/features/category/providers/category_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_chat_providers_chat_provider_dart",
+      "label": "package:flutter_grocery/features/chat/providers/chat_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_coupon_providers_coupon_provider_dart",
+      "label": "package:flutter_grocery/features/coupon/providers/coupon_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_home_providers_flash_deal_provider_dart",
+      "label": "package:flutter_grocery/features/home/providers/flash_deal_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_language_provider_dart",
+      "label": "package:flutter_grocery/common/providers/language_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_localization_provider_dart",
+      "label": "package:flutter_grocery/common/providers/localization_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_providers_location_provider_dart",
+      "label": "package:flutter_grocery/features/address/providers/location_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_news_letter_provider_dart",
+      "label": "package:flutter_grocery/common/providers/news_letter_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_notification_providers_notification_provider_dart",
+      "label": "package:flutter_grocery/features/notification/providers/notification_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_onboarding_providers_onboarding_provider_dart",
+      "label": "package:flutter_grocery/features/onboarding/providers/onboarding_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_providers_order_provider_dart",
+      "label": "package:flutter_grocery/features/order/providers/order_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_product_provider_dart",
+      "label": "package:flutter_grocery/common/providers/product_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_search_providers_search_provider_dart",
+      "label": "package:flutter_grocery/features/search/providers/search_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_theme_provider_dart",
+      "label": "package:flutter_grocery/common/providers/theme_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_search_filter_provider_dart",
+      "label": "package:flutter_grocery/common/providers/search_filter_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_providers_wallet_provider_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/providers/wallet_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wishlist_providers_wishlist_provider_dart",
+      "label": "package:flutter_grocery/features/wishlist/providers/wishlist_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_app_constants_dart",
+      "label": "package:flutter_grocery/utill/app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_get_it_get_it_dart",
+      "label": "package:get_it/get_it.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_shared_preferences_shared_preferences_dart",
+      "label": "package:shared_preferences/shared_preferences.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "data_datasource_remote_dio_dio_client_dart",
+      "label": "data/datasource/remote/dio/dio_client.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "data_datasource_remote_dio_logging_interceptor_dart",
+      "label": "data/datasource/remote/dio/logging_interceptor.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "common_reposotories_news_letter_repo_dart",
+      "label": "common/reposotories/news_letter_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
     },
     {
       "id": "lib_features_order_domain_models_order_details_model_dart",
@@ -397,6 +1321,783 @@
       "label": "package:provider/provider.dart",
       "file_type": "code",
       "source_file": "lib/features/order/widgets/ordered_product_list_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_auth_providers_auth_provider_dart",
+      "label": "auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_authprovider",
+      "label": "AuthProvider",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_updateregistrationerrormessage",
+      "label": "updateRegistrationErrorMessage",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_setcountsocialloginoptions",
+      "label": "setCountSocialLoginOptions",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_login",
+      "label": "login",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_updateauthtoken",
+      "label": "updateAuthToken",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_onchangeremembermestatus",
+      "label": "onChangeRememberMeStatus",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_isloggedin",
+      "label": "isLoggedIn",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_saveusernumberandpassword",
+      "label": "saveUserNumberAndPassword",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_getusertoken",
+      "label": "getUserToken",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_toggleisnumberlogin",
+      "label": "toggleIsNumberLogin",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_socialloginmodel",
+      "label": "SocialLoginModel",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_sociallogin",
+      "label": "socialLogin",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_onchangeloadingstatus",
+      "label": "onChangeLoadingStatus",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_async",
+      "label": "dart:async",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_convert",
+      "label": "dart:convert",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_developer",
+      "label": "dart:developer",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_firebase_auth_firebase_auth_dart",
+      "label": "package:firebase_auth/firebase_auth.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_foundation_dart",
+      "label": "package:flutter/foundation.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_api_response_model_dart",
+      "label": "package:flutter_grocery/common/models/api_response_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_error_response_model_dart",
+      "label": "package:flutter_grocery/common/models/error_response_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_config_model_dart",
+      "label": "package:flutter_grocery/common/models/config_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_response_model_dart",
+      "label": "package:flutter_grocery/common/models/response_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_models_signup_model_dart",
+      "label": "package:flutter_grocery/features/auth/domain/models/signup_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_models_user_log_data_dart",
+      "label": "package:flutter_grocery/features/auth/domain/models/user_log_data.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_models_social_login_model_dart",
+      "label": "package:flutter_grocery/features/auth/domain/models/social_login_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_reposotories_auth_repo_dart",
+      "label": "package:flutter_grocery/features/auth/domain/reposotories/auth_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_enum_from_page_enum_dart",
+      "label": "package:flutter_grocery/features/auth/enum/from_page_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_enum_social_login_options_enum_dart",
+      "label": "package:flutter_grocery/features/auth/enum/social_login_options_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_enum_verification_type_enum_dart",
+      "label": "package:flutter_grocery/features/auth/enum/verification_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_facebook_login_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/facebook_login_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/verification_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_domain_models_userinfo_model_dart",
+      "label": "package:flutter_grocery/features/profile/domain/models/userinfo_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_auth_helper_dart",
+      "label": "package:flutter_grocery/helper/auth_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_phone_number_checker_helper_dart",
+      "label": "package:flutter_grocery/helper/phone_number_checker_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_route_helper_dart",
+      "label": "package:flutter_grocery/helper/route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_app_localization_dart",
+      "label": "package:flutter_grocery/localization/app_localization.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_language_constraints_dart",
+      "label": "package:flutter_grocery/localization/language_constraints.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_main_dart",
+      "label": "package:flutter_grocery/main.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_providers_cart_provider_dart",
+      "label": "package:flutter_grocery/common/providers/cart_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wishlist_providers_wishlist_provider_dart",
+      "label": "package:flutter_grocery/features/wishlist/providers/wishlist_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "label": "package:flutter_grocery/helper/custom_snackbar_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_app_constants_dart",
+      "label": "package:flutter_grocery/utill/app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_google_sign_in_google_sign_in_dart",
+      "label": "package:google_sign_in/google_sign_in.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "helper_api_checker_helper_dart",
+      "label": "../../../helper/api_checker_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_auth_providers_facebook_login_provider_dart",
+      "label": "facebook_login_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/providers/facebook_login_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_auth_widgets_social_login_widget_dart",
+      "label": "social_login_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_socialloginwidget",
+      "label": "SocialLoginWidget",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_socialloginwidgetstate",
+      "label": "_SocialLoginWidgetState",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_socialloginbuttonwidget",
+      "label": "SocialLoginButtonWidget",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_route",
+      "label": "route",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_row",
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_sizedbox",
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_container",
+      "label": "Container",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_config_model_dart",
+      "label": "package:flutter_grocery/common/models/config_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_alert_dialog_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_alert_dialog_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_models_social_login_model_dart",
+      "label": "package:flutter_grocery/features/auth/domain/models/social_login_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_enum_social_login_options_enum_dart",
+      "label": "package:flutter_grocery/features/auth/enum/social_login_options_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_widgets_existing_account_bottom_sheet_dart",
+      "label": "package:flutter_grocery/features/auth/widgets/existing_account_bottom_sheet.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_domain_models_userinfo_model_dart",
+      "label": "package:flutter_grocery/features/profile/domain/models/userinfo_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_auth_helper_dart",
+      "label": "package:flutter_grocery/helper/auth_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_responsive_helper_dart",
+      "label": "package:flutter_grocery/helper/responsive_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_route_helper_dart",
+      "label": "package:flutter_grocery/helper/route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_language_constraints_dart",
+      "label": "package:flutter_grocery/localization/language_constraints.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_app_constants_dart",
+      "label": "package:flutter_grocery/utill/app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_dimensions_dart",
+      "label": "package:flutter_grocery/utill/dimensions.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_images_dart",
+      "label": "package:flutter_grocery/utill/images.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_styles_dart",
+      "label": "package:flutter_grocery/utill/styles.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_sign_in_with_apple_sign_in_with_apple_dart",
+      "label": "package:sign_in_with_apple/sign_in_with_apple.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "label": "only_social_login_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_onlysocialloginwidget",
+      "label": "OnlySocialLoginWidget",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_onlysocialloginwidgetstate",
+      "label": "_OnlySocialLoginWidgetState",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_route",
+      "label": "route",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_custompopscopewidget",
+      "label": "CustomPopScopeWidget",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sizedbox",
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_inkwell",
+      "label": "InkWell",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sliverfillremaining",
+      "label": "SliverFillRemaining",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "label": "package:flutter_grocery/common/enums/footer_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_config_model_dart",
+      "label": "package:flutter_grocery/common/models/config_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_alert_dialog_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_alert_dialog_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_asset_image_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_asset_image_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_pop_scope_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_pop_scope_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/footer_web_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_web_app_bar_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/web_app_bar_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_domain_models_social_login_model_dart",
+      "label": "package:flutter_grocery/features/auth/domain/models/social_login_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_enum_social_login_options_enum_dart",
+      "label": "package:flutter_grocery/features/auth/enum/social_login_options_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_widgets_existing_account_bottom_sheet_dart",
+      "label": "package:flutter_grocery/features/auth/widgets/existing_account_bottom_sheet.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_domain_models_userinfo_model_dart",
+      "label": "package:flutter_grocery/features/profile/domain/models/userinfo_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_auth_helper_dart",
+      "label": "package:flutter_grocery/helper/auth_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_responsive_helper_dart",
+      "label": "package:flutter_grocery/helper/responsive_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_route_helper_dart",
+      "label": "package:flutter_grocery/helper/route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_language_constraints_dart",
+      "label": "package:flutter_grocery/localization/language_constraints.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_app_constants_dart",
+      "label": "package:flutter_grocery/utill/app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_dimensions_dart",
+      "label": "package:flutter_grocery/utill/dimensions.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_images_dart",
+      "label": "package:flutter_grocery/utill/images.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_styles_dart",
+      "label": "package:flutter_grocery/utill/styles.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_sign_in_with_apple_sign_in_with_apple_dart",
+      "label": "package:sign_in_with_apple/sign_in_with_apple.dart",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null
     },
     {
@@ -1721,9 +3422,339 @@
       "file_type": "code",
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
       "source_location": null
+    },
+    {
+      "id": "lib_utill_app_constants_dart",
+      "label": "app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_utill_app_constants_dart_appconstants",
+      "label": "AppConstants",
+      "file_type": "code",
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_local_caches_type_enum_dart",
+      "label": "package:flutter_grocery/common/enums/local_caches_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_language_model_dart",
+      "label": "package:flutter_grocery/common/models/language_model.dart",
+      "file_type": "code",
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_app_mode_enum_dart",
+      "label": "package:flutter_grocery/common/enums/app_mode_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null
+    },
+    {
+      "id": "images_dart",
+      "label": "images.dart",
+      "file_type": "code",
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null
     }
   ],
   "edges": [
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "generatedpluginregistrant",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "applinksiosplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "apptrackingtransparencyplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "audioplayersdarwinplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "connectivityplusplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "emojipickerflutterplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fltfirebaseauthplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fltfirebasecoreplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fltfirebasemessagingplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "inappwebviewflutterplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "flutterkeyboardvisibilityplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "flutterlocalnotificationsplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fluttertoastplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "geocodingplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "geolocatorplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fgmgooglemapsplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fltgooglesigninplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fltimagepickerplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fpppackageinfoplusplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "pointerinterceptoriosplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "fppshareplusplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "sharedpreferencesplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "signinwithappleplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "sqfliteplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "sqlite3flutterlibsplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "urllauncherplugin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L154",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_runner_generatedpluginregistrant_m",
+      "target": "runner_generatedpluginregistrant_generatedpluginregistrant",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "runner_generatedpluginregistrant_generatedpluginregistrant",
+      "target": "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_flutter_ephemeral_flutter_lldb_helper_py",
+      "target": "lldb",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_flutter_ephemeral_flutter_lldb_helper_py",
+      "target": "ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "ios_flutter_ephemeral_flutter_lldb_helper_py",
+      "target": "ephemeral_flutter_lldb_helper_lldb_init_module",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "ephemeral_flutter_lldb_helper_rationale_8",
+      "target": "ephemeral_flutter_lldb_helper_handle_new_rx_page",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
     {
       "source": "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_package_swift",
       "target": "packagedescription",
@@ -1731,6 +3762,1260 @@
       "confidence": "EXTRACTED",
       "source_file": "ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "target": "keep",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "target": "nonnull",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "target": "log",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "target": "flutterengine",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java",
+      "target": "plugins_generatedpluginregistrant_generatedpluginregistrant",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "plugins_generatedpluginregistrant_generatedpluginregistrant",
+      "target": "plugins_generatedpluginregistrant_generatedpluginregistrant_registerwith",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_myapp",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_myappstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_get",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_routefromuri",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_route",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_listenforapplinks",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_handleapplinkroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_onremoveloader",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_main_dart_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "dart_io",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "dart_ui",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_firebase_core_firebase_core_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_firebase_messaging_firebase_messaging_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_enums_app_mode_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_enums_data_source_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_order_providers_image_note_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_order_track_providers_tracker_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_review_providers_review_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_splash_screens_splash_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_helper_responsive_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_helper_route_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_home_providers_banner_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_cart_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_category_providers_category_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_chat_providers_chat_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_coupon_providers_coupon_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_home_providers_flash_deal_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_language_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_localization_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_address_providers_location_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_news_letter_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_notification_providers_notification_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_onboarding_providers_onboarding_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_order_providers_order_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_product_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_search_providers_search_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_theme_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_providers_search_filter_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_providers_wallet_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_wishlist_providers_wishlist_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_theme_dark_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_theme_light_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_utill_app_constants_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_common_widgets_third_party_chat_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_local_notifications_flutter_local_notifications_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_flutter_localizations_flutter_localizations_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_go_router_go_router_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_url_strategy_url_strategy_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "di_container_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "features_auth_providers_facebook_login_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "helper_notification_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "localization_app_localization_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "common_widgets_cookies_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_universal_html_html_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
+      "target": "package_app_links_app_links_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_dio_dio_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_reposotories_data_sync_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_data_datasource_local_cache_response_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_auth_domain_reposotories_auth_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_auth_providers_facebook_login_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_home_domain_reposotories_banner_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_reposotories_cart_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_category_domain_reposotories_category_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_chat_domain_reposotories_chat_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_coupon_domain_reposotories_coupon_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_reposotories_language_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_address_domain_reposotories_location_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_notification_domain_reposotories_notification_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_onboarding_domain_reposotories_onboarding_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_order_domain_reposotories_order_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_reposotories_product_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_order_providers_image_note_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_order_track_domain_repositories_time_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_order_track_providers_tracker_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_profile_domain_reposotories_profile_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_review_providers_review_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_search_domain_reposotories_search_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_splash_domain_reposotories_splash_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_domain_reposotories_wallet_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_wishlist_domain_reposotories_wishlist_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_home_providers_banner_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_cart_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_category_providers_category_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_chat_providers_chat_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_coupon_providers_coupon_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_home_providers_flash_deal_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_language_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_localization_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_address_providers_location_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_news_letter_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_notification_providers_notification_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_onboarding_providers_onboarding_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_order_providers_order_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_product_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_search_providers_search_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_theme_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_common_providers_search_filter_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_providers_wallet_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_wishlist_providers_wishlist_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_utill_app_constants_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_get_it_get_it_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_shared_preferences_shared_preferences_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "data_datasource_remote_dio_dio_client_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "data_datasource_remote_dio_logging_interceptor_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "common_reposotories_news_letter_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
       "weight": 1.0
     },
     {
@@ -2260,6 +5545,1076 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/order/widgets/ordered_product_list_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_authprovider",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_updateregistrationerrormessage",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_setcountsocialloginoptions",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_login",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_updateauthtoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_onchangeremembermestatus",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_isloggedin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_saveusernumberandpassword",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_getusertoken",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_toggleisnumberlogin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_socialloginmodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_sociallogin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_providers_auth_provider_dart_onchangeloadingstatus",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "dart_async",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "dart_convert",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "dart_developer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_firebase_auth_firebase_auth_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_common_models_api_response_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_common_models_error_response_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_common_models_config_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_common_models_response_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_domain_models_signup_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_domain_models_user_log_data_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_domain_models_social_login_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_domain_reposotories_auth_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_enum_from_page_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_enum_social_login_options_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_enum_verification_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_providers_facebook_login_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_profile_domain_models_userinfo_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_helper_auth_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_helper_phone_number_checker_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_helper_route_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_localization_app_localization_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_localization_language_constraints_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_main_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_common_providers_cart_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_features_wishlist_providers_wishlist_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_flutter_grocery_utill_app_constants_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_google_sign_in_google_sign_in_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_providers_auth_provider_dart",
+      "target": "helper_api_checker_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_socialloginwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_socialloginwidgetstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_socialloginbuttonwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_route",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_row",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_sizedbox",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_social_login_widget_dart_container",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_common_models_config_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_alert_dialog_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_features_auth_domain_models_social_login_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_features_auth_enum_social_login_options_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_features_auth_widgets_existing_account_bottom_sheet_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_features_profile_domain_models_userinfo_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_helper_auth_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_helper_responsive_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_helper_route_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_localization_language_constraints_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_utill_app_constants_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_utill_dimensions_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_utill_images_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_flutter_grocery_utill_styles_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_social_login_widget_dart",
+      "target": "package_sign_in_with_apple_sign_in_with_apple_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/social_login_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_onlysocialloginwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_onlysocialloginwidgetstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_route",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_custompopscopewidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sizedbox",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_inkwell",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sliverfillremaining",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_models_config_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_alert_dialog_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_asset_image_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_pop_scope_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_web_app_bar_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_features_auth_domain_models_social_login_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_features_auth_enum_social_login_options_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_features_auth_widgets_existing_account_bottom_sheet_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_features_profile_domain_models_userinfo_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_helper_auth_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_helper_responsive_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_helper_route_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_localization_language_constraints_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_utill_app_constants_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_utill_dimensions_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_utill_images_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_flutter_grocery_utill_styles_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "package_sign_in_with_apple_sign_in_with_apple_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "weight": 1.0
     },
@@ -4070,6 +8425,56 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/common/widgets/product_point_value_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_utill_app_constants_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_utill_app_constants_dart_appconstants",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_utill_app_constants_dart",
+      "target": "package_flutter_grocery_common_enums_local_caches_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_utill_app_constants_dart",
+      "target": "package_flutter_grocery_common_models_language_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_utill_app_constants_dart",
+      "target": "package_flutter_grocery_common_enums_app_mode_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/utill/app_constants.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_utill_app_constants_dart",
+      "target": "images_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/utill/app_constants.dart",
       "source_location": null,
       "weight": 1.0
     }

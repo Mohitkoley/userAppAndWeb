@@ -151,7 +151,7 @@
       "label": "GeneratedPluginRegistrant",
       "file_type": "code",
       "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
-      "source_location": "L171",
+      "source_location": "L159",
       "community": null,
       "norm_label": "generatedpluginregistrant",
       "id": "runner_generatedpluginregistrant_generatedpluginregistrant"
@@ -160,7 +160,7 @@
       "label": "-registerWithRegistry",
       "file_type": "code",
       "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
-      "source_location": "L173",
+      "source_location": "L161",
       "community": null,
       "norm_label": "-registerwithregistry",
       "id": "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry"
@@ -402,7 +402,7 @@
     {
       "label": "dart:async",
       "file_type": "code",
-      "source_file": "lib/common/widgets/web_app_bar_widget.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "dart:async",
@@ -420,7 +420,7 @@
     {
       "label": "dart:ui",
       "file_type": "code",
-      "source_file": "lib/features/checkout/screens/checkout_screen.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "dart:ui",
@@ -438,7 +438,7 @@
     {
       "label": "package:firebase_messaging/firebase_messaging.dart",
       "file_type": "code",
-      "source_file": "lib/helper/notification_helper.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:firebase_messaging/firebase_messaging.dart",
@@ -465,7 +465,7 @@
     {
       "label": "package:flutter_grocery/common/enums/data_source_enum.dart",
       "file_type": "code",
-      "source_file": "lib/helper/data_sync_helper.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/enums/data_source_enum.dart",
@@ -474,7 +474,7 @@
     {
       "label": "package:flutter_grocery/features/auth/providers/verification_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/profile/widgets/profile_menu_web_widget.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/providers/verification_provider.dart",
@@ -483,7 +483,7 @@
     {
       "label": "package:flutter_grocery/features/order/providers/image_note_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/checkout/widgets/image_note_upload_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order/providers/image_note_provider.dart",
@@ -492,7 +492,7 @@
     {
       "label": "package:flutter_grocery/features/order_track/providers/tracker_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/order_track/screens/track_map_screen_web.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order_track/providers/tracker_provider.dart",
@@ -501,7 +501,7 @@
     {
       "label": "package:flutter_grocery/features/review/providers/review_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/review/widgets/deliver_man_review_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/review/providers/review_provider.dart",
@@ -510,7 +510,7 @@
     {
       "label": "package:flutter_grocery/features/splash/screens/splash_screen.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/splash/screens/splash_screen.dart",
@@ -546,7 +546,7 @@
     {
       "label": "package:flutter_grocery/features/home/providers/banner_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/home/widgets/banners_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/home/providers/banner_provider.dart",
@@ -564,7 +564,7 @@
     {
       "label": "package:flutter_grocery/features/category/providers/category_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/web_app_bar_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/category/providers/category_provider.dart",
@@ -573,7 +573,7 @@
     {
       "label": "package:flutter_grocery/features/chat/providers/chat_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/chat/widgets/emoji_picker_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/chat/providers/chat_provider.dart",
@@ -591,7 +591,7 @@
     {
       "label": "package:flutter_grocery/features/home/providers/flash_deal_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/home/widgets/flash_deal_home_card_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/home/providers/flash_deal_provider.dart",
@@ -600,7 +600,7 @@
     {
       "label": "package:flutter_grocery/common/providers/language_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/web_app_bar_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/language_provider.dart",
@@ -609,7 +609,7 @@
     {
       "label": "package:flutter_grocery/common/providers/localization_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/footer_web_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/localization_provider.dart",
@@ -627,7 +627,7 @@
     {
       "label": "package:flutter_grocery/common/providers/news_letter_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/footer_web_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/news_letter_provider.dart",
@@ -636,7 +636,7 @@
     {
       "label": "package:flutter_grocery/features/notification/providers/notification_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/notification/screens/notification_screen.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/notification/providers/notification_provider.dart",
@@ -645,7 +645,7 @@
     {
       "label": "package:flutter_grocery/features/onboarding/providers/onboarding_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/onboarding/screens/on_boarding_screen.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/onboarding/providers/onboarding_provider.dart",
@@ -681,7 +681,7 @@
     {
       "label": "package:flutter_grocery/features/search/providers/search_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/web_app_bar_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/search/providers/search_provider.dart",
@@ -708,7 +708,7 @@
     {
       "label": "package:flutter_grocery/common/providers/search_filter_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/search_filter_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/providers/search_filter_provider.dart",
@@ -717,7 +717,7 @@
     {
       "label": "package:flutter_grocery/features/wallet_and_loyalty/providers/wallet_provider.dart",
       "file_type": "code",
-      "source_file": "lib/features/wallet_and_loyalty/widgets/add_fund_dialogue_widget.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/wallet_and_loyalty/providers/wallet_provider.dart",
@@ -726,7 +726,7 @@
     {
       "label": "package:flutter_grocery/features/wishlist/providers/wishlist_provider.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/wish_button_widget.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/wishlist/providers/wishlist_provider.dart",
@@ -762,7 +762,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/third_party_chat_widget.dart",
       "file_type": "code",
-      "source_file": "lib/features/menu/screens/main_screen.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/third_party_chat_widget.dart",
@@ -780,7 +780,7 @@
     {
       "label": "package:flutter_local_notifications/flutter_local_notifications.dart",
       "file_type": "code",
-      "source_file": "lib/helper/notification_helper.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_local_notifications/flutter_local_notifications.dart",
@@ -798,7 +798,7 @@
     {
       "label": "package:go_router/go_router.dart",
       "file_type": "code",
-      "source_file": "lib/helper/route_helper.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:go_router/go_router.dart",
@@ -850,12 +850,12 @@
       "id": "helper_notification_helper_dart"
     },
     {
-      "label": "../../../localization/app_localization.dart",
+      "label": "localization/app_localization.dart",
       "file_type": "code",
-      "source_file": "lib/features/category/screens/all_categories_screen.dart",
+      "source_file": "lib/main.dart",
       "source_location": null,
       "community": null,
-      "norm_label": "../../../localization/app_localization.dart",
+      "norm_label": "localization/app_localization.dart",
       "id": "localization_app_localization_dart"
     },
     {
@@ -897,7 +897,7 @@
     {
       "label": "package:dio/dio.dart",
       "file_type": "code",
-      "source_file": "lib/helper/data_sync_helper.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:dio/dio.dart",
@@ -906,7 +906,7 @@
     {
       "label": "package:flutter_grocery/common/reposotories/data_sync_repo.dart",
       "file_type": "code",
-      "source_file": "lib/common/reposotories/product_repo.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/reposotories/data_sync_repo.dart",
@@ -915,7 +915,7 @@
     {
       "label": "package:flutter_grocery/data/datasource/local/cache_response.dart",
       "file_type": "code",
-      "source_file": "lib/helper/data_sync_helper.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/data/datasource/local/cache_response.dart",
@@ -924,7 +924,7 @@
     {
       "label": "package:flutter_grocery/features/auth/domain/reposotories/auth_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/auth/providers/verification_provider.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/domain/reposotories/auth_repo.dart",
@@ -942,7 +942,7 @@
     {
       "label": "package:flutter_grocery/features/home/domain/reposotories/banner_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/home/providers/banner_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/home/domain/reposotories/banner_repo.dart",
@@ -951,7 +951,7 @@
     {
       "label": "package:flutter_grocery/common/reposotories/cart_repo.dart",
       "file_type": "code",
-      "source_file": "lib/common/providers/cart_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/reposotories/cart_repo.dart",
@@ -960,7 +960,7 @@
     {
       "label": "package:flutter_grocery/features/category/domain/reposotories/category_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/category/providers/category_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/category/domain/reposotories/category_repo.dart",
@@ -969,7 +969,7 @@
     {
       "label": "package:flutter_grocery/features/chat/domain/reposotories/chat_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/chat/providers/chat_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/chat/domain/reposotories/chat_repo.dart",
@@ -978,7 +978,7 @@
     {
       "label": "package:flutter_grocery/features/coupon/domain/reposotories/coupon_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/coupon/providers/coupon_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/coupon/domain/reposotories/coupon_repo.dart",
@@ -987,7 +987,7 @@
     {
       "label": "package:flutter_grocery/common/reposotories/language_repo.dart",
       "file_type": "code",
-      "source_file": "lib/common/providers/language_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/reposotories/language_repo.dart",
@@ -996,7 +996,7 @@
     {
       "label": "package:flutter_grocery/features/address/domain/reposotories/location_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/address/providers/location_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/address/domain/reposotories/location_repo.dart",
@@ -1005,7 +1005,7 @@
     {
       "label": "package:flutter_grocery/features/notification/domain/reposotories/notification_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/notification/providers/notification_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/notification/domain/reposotories/notification_repo.dart",
@@ -1014,7 +1014,7 @@
     {
       "label": "package:flutter_grocery/features/onboarding/domain/reposotories/onboarding_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/onboarding/providers/onboarding_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/onboarding/domain/reposotories/onboarding_repo.dart",
@@ -1023,7 +1023,7 @@
     {
       "label": "package:flutter_grocery/features/order/domain/reposotories/order_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/review/providers/review_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order/domain/reposotories/order_repo.dart",
@@ -1032,7 +1032,7 @@
     {
       "label": "package:flutter_grocery/common/reposotories/product_repo.dart",
       "file_type": "code",
-      "source_file": "lib/common/providers/product_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/reposotories/product_repo.dart",
@@ -1041,7 +1041,7 @@
     {
       "label": "package:flutter_grocery/features/order_track/domain/repositories/time_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/order_track/providers/tracker_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/order_track/domain/repositories/time_repo.dart",
@@ -1050,7 +1050,7 @@
     {
       "label": "package:flutter_grocery/features/profile/domain/reposotories/profile_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/profile/providers/profile_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/profile/domain/reposotories/profile_repo.dart",
@@ -1059,7 +1059,7 @@
     {
       "label": "package:flutter_grocery/features/search/domain/reposotories/search_repo.dart",
       "file_type": "code",
-      "source_file": "lib/common/providers/product_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/search/domain/reposotories/search_repo.dart",
@@ -1068,7 +1068,7 @@
     {
       "label": "package:flutter_grocery/features/splash/domain/reposotories/splash_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/splash/providers/splash_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/splash/domain/reposotories/splash_repo.dart",
@@ -1077,7 +1077,7 @@
     {
       "label": "package:flutter_grocery/features/wallet_and_loyalty/domain/reposotories/wallet_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/wallet_and_loyalty/providers/wallet_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/wallet_and_loyalty/domain/reposotories/wallet_repo.dart",
@@ -1086,7 +1086,7 @@
     {
       "label": "package:flutter_grocery/features/wishlist/domain/reposotories/wishlist_repo.dart",
       "file_type": "code",
-      "source_file": "lib/features/wishlist/providers/wishlist_provider.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/wishlist/domain/reposotories/wishlist_repo.dart",
@@ -1095,7 +1095,7 @@
     {
       "label": "package:get_it/get_it.dart",
       "file_type": "code",
-      "source_file": "lib/localization/app_localization.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:get_it/get_it.dart",
@@ -1104,19 +1104,19 @@
     {
       "label": "package:shared_preferences/shared_preferences.dart",
       "file_type": "code",
-      "source_file": "lib/data/datasource/remote/dio/dio_client.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:shared_preferences/shared_preferences.dart",
       "id": "package_shared_preferences_shared_preferences_dart"
     },
     {
-      "label": "../../data/datasource/remote/dio/dio_client.dart",
+      "label": "data/datasource/remote/dio/dio_client.dart",
       "file_type": "code",
-      "source_file": "lib/common/reposotories/news_letter_repo.dart",
+      "source_file": "lib/di_container.dart",
       "source_location": null,
       "community": null,
-      "norm_label": "../../data/datasource/remote/dio/dio_client.dart",
+      "norm_label": "data/datasource/remote/dio/dio_client.dart",
       "id": "data_datasource_remote_dio_dio_client_dart"
     },
     {
@@ -1221,7 +1221,7 @@
     {
       "label": "package:flutter_grocery/common/models/api_response_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/data_sync_helper.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/api_response_model.dart",
@@ -1428,7 +1428,7 @@
     {
       "label": "package:flutter_grocery/common/enums/footer_type_enum.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/footer_web_widget.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/enums/footer_type_enum.dart",
@@ -1500,7 +1500,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/footer_web_widget.dart",
       "file_type": "code",
-      "source_file": "lib/features/wishlist/screens/wishlist_screen.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/footer_web_widget.dart",
@@ -1536,7 +1536,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/web_app_bar_widget.dart",
       "file_type": "code",
-      "source_file": "lib/features/wishlist/screens/wishlist_screen.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/web_app_bar_widget.dart",
@@ -2328,7 +2328,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_asset_image_widget.dart",
       "file_type": "code",
-      "source_file": "lib/common/widgets/custom_text_field_widget.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_asset_image_widget.dart",
@@ -2967,7 +2967,7 @@
     {
       "label": "package:flutter_grocery/common/models/response_model.dart",
       "file_type": "code",
-      "source_file": "lib/features/address/providers/location_provider.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/response_model.dart",
@@ -3660,7 +3660,7 @@
     {
       "label": "package:flutter_grocery/features/profile/domain/models/userinfo_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/checkout_helper.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/profile/domain/models/userinfo_model.dart",
@@ -4857,7 +4857,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_alert_dialog_widget.dart",
       "file_type": "code",
-      "source_file": "lib/features/checkout/widgets/image_note_upload_widget.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_alert_dialog_widget.dart",
@@ -7737,7 +7737,7 @@
     {
       "label": "dart:developer",
       "file_type": "code",
-      "source_file": "lib/helper/phone_number_checker_helper.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "dart:developer",
@@ -7746,7 +7746,7 @@
     {
       "label": "package:firebase_auth/firebase_auth.dart",
       "file_type": "code",
-      "source_file": "lib/features/auth/providers/verification_provider.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:firebase_auth/firebase_auth.dart",
@@ -7755,7 +7755,7 @@
     {
       "label": "package:flutter_grocery/common/models/error_response_model.dart",
       "file_type": "code",
-      "source_file": "lib/helper/api_checker_helper.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/models/error_response_model.dart",
@@ -7764,7 +7764,7 @@
     {
       "label": "package:flutter_grocery/features/auth/domain/models/signup_model.dart",
       "file_type": "code",
-      "source_file": "lib/features/auth/domain/reposotories/auth_repo.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/domain/models/signup_model.dart",
@@ -7773,7 +7773,7 @@
     {
       "label": "package:flutter_grocery/features/auth/domain/models/user_log_data.dart",
       "file_type": "code",
-      "source_file": "lib/features/auth/widgets/existing_account_bottom_sheet.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/domain/models/user_log_data.dart",
@@ -7791,7 +7791,7 @@
     {
       "label": "package:flutter_grocery/features/auth/enum/from_page_enum.dart",
       "file_type": "code",
-      "source_file": "lib/features/profile/widgets/profile_menu_web_widget.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/enum/from_page_enum.dart",
@@ -7809,7 +7809,7 @@
     {
       "label": "package:flutter_grocery/features/auth/enum/verification_type_enum.dart",
       "file_type": "code",
-      "source_file": "lib/features/profile/widgets/profile_menu_web_widget.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/features/auth/enum/verification_type_enum.dart",
@@ -7818,7 +7818,7 @@
     {
       "label": "package:flutter_grocery/helper/auth_helper.dart",
       "file_type": "code",
-      "source_file": "lib/features/profile/widgets/profile_menu_web_widget.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/auth_helper.dart",
@@ -7827,7 +7827,7 @@
     {
       "label": "package:flutter_grocery/helper/phone_number_checker_helper.dart",
       "file_type": "code",
-      "source_file": "lib/helper/auth_helper.dart",
+      "source_file": "lib/features/auth/providers/auth_provider.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/helper/phone_number_checker_helper.dart",
@@ -8322,7 +8322,7 @@
     {
       "label": "package:flutter_grocery/common/widgets/custom_pop_scope_widget.dart",
       "file_type": "code",
-      "source_file": "lib/features/onboarding/screens/on_boarding_screen.dart",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
       "source_location": null,
       "community": null,
       "norm_label": "package:flutter_grocery/common/widgets/custom_pop_scope_widget.dart",
@@ -25436,6 +25436,15 @@
       "community": null,
       "norm_label": "tooltip",
       "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_common_widgets_product_point_value_widget_dart_tooltip"
+    },
+    {
+      "label": "SliverFillRemaining",
+      "file_type": "code",
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sliverfillremaining",
+      "community": null,
+      "norm_label": "sliverfillremaining"
     }
   ],
   "links": [
@@ -29475,7 +29484,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
-      "source_location": "L171",
+      "source_location": "L159",
       "weight": 1.0,
       "_src": "ios_runner_generatedpluginregistrant_m",
       "_tgt": "runner_generatedpluginregistrant_generatedpluginregistrant",
@@ -29487,7 +29496,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ios/Runner/GeneratedPluginRegistrant.m",
-      "source_location": "L173",
+      "source_location": "L161",
       "weight": 1.0,
       "_src": "runner_generatedpluginregistrant_generatedpluginregistrant",
       "_tgt": "runner_generatedpluginregistrant_generatedpluginregistrant_registerwithregistry",
@@ -70450,6 +70459,18 @@
       "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_inkwell",
       "source": "lib_features_auth_widgets_only_social_login_screen_dart",
       "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_inkwell"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "_tgt": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sliverfillremaining",
+      "source": "lib_features_auth_widgets_only_social_login_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_auth_widgets_only_social_login_screen_dart_sliverfillremaining"
     },
     {
       "relation": "defines",

@@ -1,3 +1,5 @@
+import 'product_model.dart';
+
 class PlaceOrderModel {
   List<Cart>? _cart;
   double? _couponDiscountAmount;
@@ -27,13 +29,20 @@ class PlaceOrderModel {
   String? _switchOfflineToDigital;
   int? _pointValue;
 
-  PlaceOrderModel copyWith({String? paymentMethod, String? transactionReference}) {
+  PlaceOrderModel copyWith({
+    String? paymentMethod,
+    String? transactionReference,
+  }) {
     _paymentMethod = paymentMethod;
     _transactionReference = transactionReference;
     return this;
   }
 
-  PlaceOrderModel setOfflinePayment({required String paymentBy, required String transactionReference, required String paymentNote}) {
+  PlaceOrderModel setOfflinePayment({
+    required String paymentBy,
+    required String transactionReference,
+    required String paymentNote,
+  }) {
     _transactionReference = transactionReference;
     _paymentBy = paymentBy;
     _paymentNote = paymentNote;
@@ -157,8 +166,9 @@ class PlaceOrderModel {
     _callBack = json['call_back'];
     _orderId = json['order_id'];
     _switchOfflineToDigital = json['switch_offline_to_digital'];
-    final int parsedPointValue = json['point_value'] != null ? int.tryParse(json['point_value'].toString()) ?? 500 : 500;
-    _pointValue = parsedPointValue > 0 ? parsedPointValue : 500;
+    _pointValue =
+        int.tryParse(json['point_value']?.toString() ?? '') ??
+        Product.defaultPointValue;
   }
 
   Map<String, dynamic> toJson() {
@@ -214,7 +224,16 @@ class Cart {
   double? _taxAmount;
   int? _pointValue;
 
-  Cart({int? productId, double? price, String? variant, List<Variation>? variation, double? discountAmount, int? quantity, double? taxAmount, int pointValue = 500}) {
+  Cart({
+    int? productId,
+    double? price,
+    String? variant,
+    List<Variation>? variation,
+    double? discountAmount,
+    int? quantity,
+    double? taxAmount,
+    int pointValue = 500,
+  }) {
     _productId = productId;
     _price = price;
     _variant = variant;
@@ -247,8 +266,9 @@ class Cart {
     _discountAmount = json['discount_amount'].toDouble();
     _quantity = json['quantity'];
     _taxAmount = json['tax_amount'].toDouble();
-    final int parsedPointValue = json['point_value'] != null ? int.tryParse(json['point_value'].toString()) ?? 500 : 500;
-    _pointValue = parsedPointValue > 0 ? parsedPointValue : 500;
+    _pointValue =
+        int.tryParse(json['point_value']?.toString() ?? '') ??
+        Product.defaultPointValue;
   }
 
   Map<String, dynamic> toJson() {
@@ -293,7 +313,12 @@ class OfflinePaymentInfo {
   final List<Map<String, dynamic>?>? methodFields;
   final List<Map<String, String>>? methodInformation;
 
-  OfflinePaymentInfo({this.paymentName, this.paymentNote, this.methodFields, this.methodInformation});
+  OfflinePaymentInfo({
+    this.paymentName,
+    this.paymentNote,
+    this.methodFields,
+    this.methodInformation,
+  });
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
