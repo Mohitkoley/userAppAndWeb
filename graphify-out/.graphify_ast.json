@@ -92,24 +92,17 @@
       "source_location": "L8"
     },
     {
-      "id": "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_package_swift",
-      "label": "Package.swift",
-      "file_type": "code",
-      "source_file": "ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift",
-      "source_location": "L1"
-    },
-    {
-      "id": "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_sources_fluttergeneratedpluginswiftpackage_fluttergeneratedpluginswiftpackage_swift",
-      "label": "FlutterGeneratedPluginSwiftPackage.swift",
-      "file_type": "code",
-      "source_file": "ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Sources/FlutterGeneratedPluginSwiftPackage/FlutterGeneratedPluginSwiftPackage.swift",
-      "source_location": "L1"
-    },
-    {
       "id": "android_build_gradle_kts",
       "label": "build.gradle.kts",
       "file_type": "code",
       "source_file": "android/build.gradle.kts",
+      "source_location": "L1"
+    },
+    {
+      "id": "android_settings_gradle_kts",
+      "label": "settings.gradle.kts",
+      "file_type": "code",
+      "source_file": "android/settings.gradle.kts",
       "source_location": "L1"
     },
     {
@@ -386,6 +379,13 @@
       "source_location": null
     },
     {
+      "id": "package_flutter_grocery_features_member_providers_member_provider_dart",
+      "label": "package:flutter_grocery/features/member/providers/member_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/main.dart",
+      "source_location": null
+    },
+    {
       "id": "package_flutter_grocery_common_providers_language_provider_dart",
       "label": "package:flutter_grocery/common/providers/language_provider.dart",
       "file_type": "code",
@@ -568,13 +568,6 @@
       "source_location": null
     },
     {
-      "id": "features_auth_providers_facebook_login_provider_dart",
-      "label": "features/auth/providers/facebook_login_provider.dart",
-      "file_type": "code",
-      "source_file": "lib/main.dart",
-      "source_location": null
-    },
-    {
       "id": "helper_notification_helper_dart",
       "label": "helper/notification_helper.dart",
       "file_type": "code",
@@ -645,13 +638,6 @@
       "source_location": null
     },
     {
-      "id": "package_flutter_grocery_features_auth_providers_facebook_login_provider_dart",
-      "label": "package:flutter_grocery/features/auth/providers/facebook_login_provider.dart",
-      "file_type": "code",
-      "source_file": "lib/di_container.dart",
-      "source_location": null
-    },
-    {
       "id": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
       "label": "package:flutter_grocery/features/auth/providers/verification_provider.dart",
       "file_type": "code",
@@ -661,6 +647,20 @@
     {
       "id": "package_flutter_grocery_features_home_domain_reposotories_banner_repo_dart",
       "label": "package:flutter_grocery/features/home/domain/reposotories/banner_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_domain_reposotories_member_repo_dart",
+      "label": "package:flutter_grocery/features/member/domain/reposotories/member_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/di_container.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_providers_member_provider_dart",
+      "label": "package:flutter_grocery/features/member/providers/member_provider.dart",
       "file_type": "code",
       "source_file": "lib/di_container.dart",
       "source_location": null
@@ -1286,6 +1286,307 @@
       "label": "package:shimmer_animation/shimmer_animation.dart",
       "file_type": "code",
       "source_file": "lib/features/wallet_and_loyalty/screens/loyalty_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "label": "wallet_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_walletscreen",
+      "label": "WalletScreen",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_walletscreenstate",
+      "label": "_WalletScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_wallettitleview",
+      "label": "_WalletTitleView",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_tabbuttonmodel",
+      "label": "TabButtonModel",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_popscope",
+      "label": "PopScope",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_refreshindicator",
+      "label": "RefreshIndicator",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_expanded",
+      "label": "Expanded",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_sizedbox",
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_webbonusview",
+      "label": "WebBonusView",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_wallethistorylistwidget",
+      "label": "WalletHistoryListWidget",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_footerwebwidget",
+      "label": "FooterWebWidget",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_padding",
+      "label": "Padding",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_stack",
+      "label": "Stack",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_foundation_dart",
+      "label": "package:flutter/foundation.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "label": "package:flutter_grocery/common/enums/footer_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_indicator_circle_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/indicator_circle_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_responsive_helper_dart",
+      "label": "package:flutter_grocery/helper/responsive_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_route_helper_dart",
+      "label": "package:flutter_grocery/helper/route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_wallet_helper_dart",
+      "label": "package:flutter_grocery/helper/wallet_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_language_constraints_dart",
+      "label": "package:flutter_grocery/localization/language_constraints.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_main_dart",
+      "label": "package:flutter_grocery/main.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_providers_wallet_provider_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/providers/wallet_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_dimensions_dart",
+      "label": "package:flutter_grocery/utill/dimensions.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_styles_dart",
+      "label": "package:flutter_grocery/utill/styles.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_loader_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_loader_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_shadow_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_shadow_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "label": "package:flutter_grocery/helper/custom_snackbar_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/footer_web_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_not_login_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/not_login_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_web_app_bar_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/web_app_bar_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_widgets_bonus_slider_widget_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/widgets/bonus_slider_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_widgets_wallet_card_widget_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/widgets/wallet_card_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_widgets_wallet_history_list_widget_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/widgets/wallet_history_list_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_widgets_wallet_uses_manual_widget_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/widgets/wallet_uses_manual_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
       "source_location": null
     },
     {
@@ -3081,6 +3382,13 @@
       "source_location": null
     },
     {
+      "id": "package_flutter_grocery_features_member_screens_member_screen_dart",
+      "label": "package:flutter_grocery/features/member/screens/member_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/features/splash/providers/splash_provider.dart",
+      "source_location": null
+    },
+    {
       "id": "package_flutter_grocery_features_menu_domain_models_main_screen_model_dart",
       "label": "package:flutter_grocery/features/menu/domain/models/main_screen_model.dart",
       "file_type": "code",
@@ -3981,6 +4289,559 @@
       "label": "package:sign_in_with_apple/sign_in_with_apple.dart",
       "file_type": "code",
       "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_member_providers_member_provider_dart",
+      "label": "member_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_providers_member_provider_dart_memberprovider",
+      "label": "MemberProvider",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_providers_member_provider_dart_getmemberdashboard",
+      "label": "getMemberDashboard",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_api_response_model_dart",
+      "label": "package:flutter_grocery/common/models/api_response_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_response_model_dart",
+      "label": "package:flutter_grocery/common/models/response_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_domain_models_member_matrix_model_dart",
+      "label": "package:flutter_grocery/features/member/domain/models/member_matrix_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_domain_reposotories_member_repo_dart",
+      "label": "package:flutter_grocery/features/member/domain/reposotories/member_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_api_checker_helper_dart",
+      "label": "package:flutter_grocery/helper/api_checker_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_main_dart",
+      "label": "package:flutter_grocery/main.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_member_screens_member_screen_dart",
+      "label": "member_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_memberscreen",
+      "label": "MemberScreen",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_memberscreenstate",
+      "label": "_MemberScreenState",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_responsivetwocolumn",
+      "label": "_ResponsiveTwoColumn",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_sectioncard",
+      "label": "_SectionCard",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_statussection",
+      "label": "_StatusSection",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_metrictile",
+      "label": "_MetricTile",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_transferpointssection",
+      "label": "_TransferPointsSection",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_teamsection",
+      "label": "_TeamSection",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_incentivesection",
+      "label": "_IncentiveSection",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_treesection",
+      "label": "_TreeSection",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_treenodeview",
+      "label": "_TreeNodeView",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_levelssection",
+      "label": "_LevelsSection",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_inforow",
+      "label": "_InfoRow",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_emptytext",
+      "label": "_EmptyText",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_initstate",
+      "label": "initState",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_dispose",
+      "label": "dispose",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_custompopscopehandeldeeplinkwidget",
+      "label": "CustomPopScopeHandelDeepLinkWidget",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_center",
+      "label": "Center",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_refreshindicator",
+      "label": "RefreshIndicator",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_memberpointstatuswidget",
+      "label": "MemberPointStatusWidget",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_sizedbox",
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_layoutbuilder",
+      "label": "LayoutBuilder",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_column",
+      "label": "Column",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_row",
+      "label": "Row",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_container",
+      "label": "Container",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_padding",
+      "label": "Padding",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_text",
+      "label": "Text",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_button_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_button_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_loader_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_loader_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_pop_scope_handel_deep_link_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_pop_scope_handel_deep_link_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/footer_web_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_not_login_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/not_login_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_web_app_bar_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/web_app_bar_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "label": "package:flutter_grocery/common/enums/footer_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_domain_models_member_matrix_model_dart",
+      "label": "package:flutter_grocery/features/member/domain/models/member_matrix_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_providers_member_provider_dart",
+      "label": "package:flutter_grocery/features/member/providers/member_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_widgets_member_point_status_widget_dart",
+      "label": "package:flutter_grocery/features/profile/widgets/member_point_status_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "label": "package:flutter_grocery/helper/custom_snackbar_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_responsive_helper_dart",
+      "label": "package:flutter_grocery/helper/responsive_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_language_constraints_dart",
+      "label": "package:flutter_grocery/localization/language_constraints.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_dimensions_dart",
+      "label": "package:flutter_grocery/utill/dimensions.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_styles_dart",
+      "label": "package:flutter_grocery/utill/styles.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_member_domain_reposotories_member_repo_dart",
+      "label": "member_repo.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_reposotories_member_repo_dart_memberrepo",
+      "label": "MemberRepo",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_api_response_model_dart",
+      "label": "package:flutter_grocery/common/models/api_response_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_data_datasource_remote_dio_dio_client_dart",
+      "label": "package:flutter_grocery/data/datasource/remote/dio/dio_client.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_data_datasource_remote_exception_api_error_handler_dart",
+      "label": "package:flutter_grocery/data/datasource/remote/exception/api_error_handler.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_app_constants_dart",
+      "label": "package:flutter_grocery/utill/app_constants.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null
+    },
+    {
+      "id": "lib_features_member_domain_models_member_matrix_model_dart",
+      "label": "member_matrix_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixstatusmodel",
+      "label": "MatrixStatusModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixreferralmodel",
+      "label": "MatrixReferralModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixlevelinfomodel",
+      "label": "MatrixLevelInfoModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixteammodel",
+      "label": "MatrixTeamModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixteammembermodel",
+      "label": "MatrixTeamMemberModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixtreenodemodel",
+      "label": "MatrixTreeNodeModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixincentivehistorymodel",
+      "label": "MatrixIncentiveHistoryModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixincentivemodel",
+      "label": "MatrixIncentiveModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixlevelmodel",
+      "label": "MatrixLevelModel",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_parseint",
+      "label": "_parseInt",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_parsedouble",
+      "label": "_parseDouble",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_parsebool",
+      "label": "_parseBool",
+      "file_type": "code",
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
       "source_location": null
     },
     {
@@ -5713,6 +6574,181 @@
       "source_location": null
     },
     {
+      "id": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "label": "menu_list_web_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_menulistwebwidget",
+      "label": "MenuListWebWidget",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_build",
+      "label": "build",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_customscrollview",
+      "label": "CustomScrollView",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_sizedbox",
+      "label": "SizedBox",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_footerwebwidget",
+      "label": "FooterWebWidget",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "label": "package:flutter_grocery/common/enums/footer_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_asset_image_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_asset_image_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_image_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_image_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_menu_domain_models_menu_model_dart",
+      "label": "package:flutter_grocery/features/menu/domain/models/menu_model.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_menu_widgets_sign_out_dialog_widget_dart",
+      "label": "package:flutter_grocery/features/menu/widgets/sign_out_dialog_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_route_helper_dart",
+      "label": "package:flutter_grocery/helper/route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_localization_language_constraints_dart",
+      "label": "package:flutter_grocery/localization/language_constraints.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "label": "package:flutter_grocery/features/profile/providers/profile_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_dimensions_dart",
+      "label": "package:flutter_grocery/utill/dimensions.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_images_dart",
+      "label": "package:flutter_grocery/utill/images.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_utill_styles_dart",
+      "label": "package:flutter_grocery/utill/styles.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "label": "package:flutter_grocery/common/widgets/footer_web_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "helper_dialog_helper_dart",
+      "label": "../../../helper/dialog_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "acount_delete_dialog_widget_dart",
+      "label": "acount_delete_dialog_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
+      "id": "menu_item_web_widget_dart",
+      "label": "menu_item_web_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null
+    },
+    {
       "id": "lib_features_cart_widgets_cart_item_widget_dart",
       "label": "cart_item_widget.dart",
       "file_type": "code",
@@ -7092,6 +8128,860 @@
       "source_location": null
     },
     {
+      "id": "lib_helper_route_helper_dart",
+      "label": "route_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_routehelper",
+      "label": "RouteHelper",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getmainroute",
+      "label": "getMainRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_navigateroute",
+      "label": "_navigateRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getloginroute",
+      "label": "getLoginRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_gettermsroute",
+      "label": "getTermsRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getpolicyroute",
+      "label": "getPolicyRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getaboutusroute",
+      "label": "getAboutUsRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getfaqroute",
+      "label": "getFaqRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getupdateroute",
+      "label": "getUpdateRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getselectlocationroute",
+      "label": "getSelectLocationRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsendotpscreen",
+      "label": "getSendOtpScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getotpregistration",
+      "label": "getOtpRegistration",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsplashroute",
+      "label": "getSplashRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getorderdetailsroute",
+      "label": "getOrderDetailsRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getverifyroute",
+      "label": "getVerifyRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getnewpassroute",
+      "label": "getNewPassRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getaddaddressroute",
+      "label": "getAddAddressRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getupdateaddressroute",
+      "label": "getUpdateAddressRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getpaymentroute",
+      "label": "getPaymentRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcheckoutroute",
+      "label": "getCheckoutRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordertrackingroute",
+      "label": "getOrderTrackingRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_gettrackmapscreen",
+      "label": "getTrackMapScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcategoryproductsroute",
+      "label": "getCategoryProductsRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getproductdetailsroute",
+      "label": "getProductDetailsRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getproductimagesroute",
+      "label": "getProductImagesRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getprofileeditroute",
+      "label": "getProfileEditRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_gethomeitemroute",
+      "label": "getHomeItemRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getmaintenanceroute",
+      "label": "getMaintenanceRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsearchresultroute",
+      "label": "getSearchResultRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getchatroute",
+      "label": "getChatRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcontactroute",
+      "label": "getContactRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getfavoriteroute",
+      "label": "getFavoriteRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getwalletroute",
+      "label": "getWalletRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getmemberroute",
+      "label": "getMemberRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getreferandearnroute",
+      "label": "getReferAndEarnRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getreturnpolicyroute",
+      "label": "getReturnPolicyRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcancellationpolicyroute",
+      "label": "getCancellationPolicyRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getrefundpolicyroute",
+      "label": "getRefundPolicyRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getloyaltyscreen",
+      "label": "getLoyaltyScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcreateaccount",
+      "label": "getCreateAccount",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcartscreen",
+      "label": "getCartScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsearchproduct",
+      "label": "getSearchProduct",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getprofilemenus",
+      "label": "getProfileMenus",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getprofilescreen",
+      "label": "getProfileScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getonboardingscreen",
+      "label": "getOnboardingScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getnotificationscreen",
+      "label": "getNotificationScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getaddresslistscreen",
+      "label": "getAddressListScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getorderlistscreen",
+      "label": "getOrderListScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getallcategoryscreen",
+      "label": "getAllCategoryScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getforgetpasswordscreen",
+      "label": "getForgetPasswordScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getimagepreviewscreen",
+      "label": "getImagePreviewScreen",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordermapinforoute",
+      "label": "getOrderMapInfoRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordersearchroute",
+      "label": "getOrderSearchRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcouponroute",
+      "label": "getCouponRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordersuccessroute",
+      "label": "getOrderSuccessRoute",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_routehandler",
+      "label": "_routeHandler",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_redirecturl",
+      "label": "_redirectUrl",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_ismaintenance",
+      "label": "isMaintenance",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "dart_convert",
+      "label": "dart:convert",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_widgets_order_map_info_widget_dart",
+      "label": "package:flutter_grocery/features/order/widgets/order_map_info_widget.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_product_screens_preview_screen_dart",
+      "label": "package:flutter_grocery/features/product/screens/preview_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_responsive_helper_dart",
+      "label": "package:flutter_grocery/helper/responsive_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_main_dart",
+      "label": "package:flutter_grocery/main.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_go_router_go_router_dart",
+      "label": "package:go_router/go_router.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_foundation_dart",
+      "label": "package:flutter/foundation.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_config_model_dart",
+      "label": "package:flutter_grocery/common/models/config_model.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_models_place_order_model_dart",
+      "label": "package:flutter_grocery/common/models/place_order_model.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_domain_models_address_model_dart",
+      "label": "package:flutter_grocery/features/address/domain/models/address_model.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "label": "package:flutter_grocery/features/auth/providers/auth_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_otp_registration_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/otp_registration_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_send_otp_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/send_otp_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_domain_models_order_model_dart",
+      "label": "package:flutter_grocery/features/order/domain/models/order_model.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_enums_html_type_enum_dart",
+      "label": "package:flutter_grocery/common/enums/html_type_enum.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_track_screens_track_map_screen_dart",
+      "label": "package:flutter_grocery/features/order_track/screens/track_map_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_helper_maintenance_helper_dart",
+      "label": "package:flutter_grocery/helper/maintenance_helper.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "label": "package:flutter_grocery/features/splash/providers/splash_provider.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_screens_add_new_address_screen_dart",
+      "label": "package:flutter_grocery/features/address/screens/add_new_address_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_screens_address_list_screen_dart",
+      "label": "package:flutter_grocery/features/address/screens/address_list_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_address_screens_select_location_screen_dart",
+      "label": "package:flutter_grocery/features/address/screens/select_location_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_create_account_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/create_account_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_login_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/login_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_maintainance_screens_maintainance_screen_dart",
+      "label": "package:flutter_grocery/features/maintainance/screens/maintainance_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_cart_screens_cart_screen_dart",
+      "label": "package:flutter_grocery/features/cart/screens/cart_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_category_screens_all_categories_screen_dart",
+      "label": "package:flutter_grocery/features/category/screens/all_categories_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_chat_screens_chat_screen_dart",
+      "label": "package:flutter_grocery/features/chat/screens/chat_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_checkout_screens_checkout_screen_dart",
+      "label": "package:flutter_grocery/features/checkout/screens/checkout_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_checkout_screens_order_success_screen_dart",
+      "label": "package:flutter_grocery/features/checkout/screens/order_success_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_payment_screens_payment_screen_dart",
+      "label": "package:flutter_grocery/features/payment/screens/payment_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_payment_screens_web_payment_screen_dart",
+      "label": "package:flutter_grocery/features/payment/screens/web_payment_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_support_screens_support_screen_dart",
+      "label": "package:flutter_grocery/features/support/screens/support_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_coupon_screens_coupon_screen_dart",
+      "label": "package:flutter_grocery/features/coupon/screens/coupon_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_create_new_password_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/create_new_password_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_forgot_password_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/forgot_password_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_auth_screens_verification_screen_dart",
+      "label": "package:flutter_grocery/features/auth/screens/verification_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_home_screens_home_item_screen_dart",
+      "label": "package:flutter_grocery/features/home/screens/home_item_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_html_screens_html_viewer_screen_dart",
+      "label": "package:flutter_grocery/features/html/screens/html_viewer_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_member_screens_member_screen_dart",
+      "label": "package:flutter_grocery/features/member/screens/member_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_screens_loyalty_screen_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/screens/loyalty_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_menu_screens_menu_screen_dart",
+      "label": "package:flutter_grocery/features/menu/screens/menu_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_common_widgets_custom_tooltip_dart",
+      "label": "package:flutter_grocery/common/widgets/custom_tooltip.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_notification_screens_notification_screen_dart",
+      "label": "package:flutter_grocery/features/notification/screens/notification_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_onboarding_screens_on_boarding_screen_dart",
+      "label": "package:flutter_grocery/features/onboarding/screens/on_boarding_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_screens_order_list_screen_dart",
+      "label": "package:flutter_grocery/features/order/screens/order_list_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_screens_order_details_screen_dart",
+      "label": "package:flutter_grocery/features/order/screens/order_details_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_screens_order_search_screen_dart",
+      "label": "package:flutter_grocery/features/order/screens/order_search_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_order_track_screens_track_order_screen_dart",
+      "label": "package:flutter_grocery/features/order_track/screens/track_order_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_product_screens_category_product_screen_dart",
+      "label": "package:flutter_grocery/features/product/screens/category_product_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_product_screens_product_image_screen_dart",
+      "label": "package:flutter_grocery/features/product/screens/product_image_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_product_screens_product_details_screen_dart",
+      "label": "package:flutter_grocery/features/product/screens/product_details_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_screens_profile_edit_screen_dart",
+      "label": "package:flutter_grocery/features/profile/screens/profile_edit_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_profile_screens_profile_screen_dart",
+      "label": "package:flutter_grocery/features/profile/screens/profile_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_refer_and_earn_screens_refer_and_earn_screen_dart",
+      "label": "package:flutter_grocery/features/refer_and_earn/screens/refer_and_earn_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_search_screens_search_result_screen_dart",
+      "label": "package:flutter_grocery/features/search/screens/search_result_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_search_screens_search_screen_dart",
+      "label": "package:flutter_grocery/features/search/screens/search_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_menu_screens_setting_screen_dart",
+      "label": "package:flutter_grocery/features/menu/screens/setting_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_splash_screens_splash_screen_dart",
+      "label": "package:flutter_grocery/features/splash/screens/splash_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_update_screens_update_screen_dart",
+      "label": "package:flutter_grocery/features/update/screens/update_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "label": "package:flutter_grocery/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_flutter_grocery_features_wishlist_screens_wishlist_screen_dart",
+      "label": "package:flutter_grocery/features/wishlist/screens/wishlist_screen.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
+      "id": "package_provider_provider_dart",
+      "label": "package:provider/provider.dart",
+      "file_type": "code",
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null
+    },
+    {
       "id": "lib_utill_app_constants_dart",
       "label": "app_constants.dart",
       "file_type": "code",
@@ -7471,15 +9361,6 @@
       "confidence": "EXTRACTED",
       "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
       "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "ios_flutter_ephemeral_packages_fluttergeneratedpluginswiftpackage_package_swift",
-      "target": "packagedescription",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "ios/Flutter/ephemeral/Packages/FlutterGeneratedPluginSwiftPackage/Package.swift",
-      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -7878,6 +9759,16 @@
     },
     {
       "source": "lib_main_dart",
+      "target": "package_flutter_grocery_features_member_providers_member_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/main.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_main_dart",
       "target": "package_flutter_grocery_common_providers_language_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
@@ -8138,16 +10029,6 @@
     },
     {
       "source": "lib_main_dart",
-      "target": "features_auth_providers_facebook_login_provider_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/main.dart",
-      "source_location": null,
-      "weight": 1.0
-    },
-    {
-      "source": "lib_main_dart",
       "target": "helper_notification_helper_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
@@ -8238,16 +10119,6 @@
     },
     {
       "source": "lib_di_container_dart",
-      "target": "package_flutter_grocery_features_auth_providers_facebook_login_provider_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "lib/di_container.dart",
-      "source_location": null,
-      "weight": 1.0
-    },
-    {
-      "source": "lib_di_container_dart",
       "target": "package_flutter_grocery_features_auth_providers_verification_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
@@ -8259,6 +10130,26 @@
     {
       "source": "lib_di_container_dart",
       "target": "package_flutter_grocery_features_home_domain_reposotories_banner_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_member_domain_reposotories_member_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/di_container.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_di_container_dart",
+      "target": "package_flutter_grocery_features_member_providers_member_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -9143,6 +11034,426 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/wallet_and_loyalty/screens/loyalty_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_walletscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_walletscreenstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_wallettitleview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_tabbuttonmodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_popscope",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_refreshindicator",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_expanded",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_sizedbox",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_webbonusview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_wallethistorylistwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_footerwebwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_padding",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_wallet_screen_dart_stack",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_indicator_circle_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_helper_responsive_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_helper_route_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_helper_wallet_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_localization_language_constraints_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_main_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_providers_wallet_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_utill_dimensions_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_utill_styles_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_loader_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_shadow_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_not_login_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_web_app_bar_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_widgets_bonus_slider_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_widgets_wallet_card_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_widgets_wallet_history_list_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_widgets_wallet_uses_manual_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/wallet_and_loyalty/screens/wallet_screen.dart",
       "source_location": null,
       "weight": 1.0
     },
@@ -11608,6 +13919,16 @@
     },
     {
       "source": "lib_features_splash_providers_splash_provider_dart",
+      "target": "package_flutter_grocery_features_member_screens_member_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/splash/providers/splash_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_splash_providers_splash_provider_dart",
       "target": "package_flutter_grocery_features_menu_domain_models_main_screen_model_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
@@ -12853,6 +15174,756 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/features/auth/widgets/only_social_login_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_providers_member_provider_dart_memberprovider",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_providers_member_provider_dart_getmemberdashboard",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_common_models_api_response_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_common_models_response_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_features_member_domain_models_member_matrix_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_features_member_domain_reposotories_member_repo_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_helper_api_checker_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_flutter_grocery_main_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_providers_member_provider_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/providers/member_provider.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_memberscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_memberscreenstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_responsivetwocolumn",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_sectioncard",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_statussection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_metrictile",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_transferpointssection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_teamsection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_incentivesection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_treesection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_treenodeview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_levelssection",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_inforow",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_emptytext",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_initstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_dispose",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_custompopscopehandeldeeplinkwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_center",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_refreshindicator",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_memberpointstatuswidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_sizedbox",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_layoutbuilder",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_column",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_row",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_container",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_padding",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_screens_member_screen_dart_text",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_button_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_loader_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_pop_scope_handel_deep_link_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_not_login_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_widgets_web_app_bar_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_features_member_domain_models_member_matrix_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_features_member_providers_member_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_features_profile_widgets_member_point_status_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_helper_custom_snackbar_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_helper_responsive_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_localization_language_constraints_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_utill_dimensions_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_flutter_grocery_utill_styles_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_screens_member_screen_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/screens/member_screen.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_reposotories_member_repo_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_reposotories_member_repo_dart_memberrepo",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_reposotories_member_repo_dart",
+      "target": "package_flutter_grocery_common_models_api_response_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_reposotories_member_repo_dart",
+      "target": "package_flutter_grocery_data_datasource_remote_dio_dio_client_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_reposotories_member_repo_dart",
+      "target": "package_flutter_grocery_data_datasource_remote_exception_api_error_handler_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_reposotories_member_repo_dart",
+      "target": "package_flutter_grocery_utill_app_constants_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/reposotories/member_repo.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixstatusmodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixreferralmodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixlevelinfomodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixteammodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixteammembermodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixtreenodemodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixincentivehistorymodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixincentivemodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_matrixlevelmodel",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_parseint",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_parsedouble",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_member_domain_models_member_matrix_model_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_member_domain_models_member_matrix_model_dart_parsebool",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/member/domain/models/member_matrix_model.dart",
       "source_location": null,
       "weight": 1.0
     },
@@ -15207,6 +18278,246 @@
       "weight": 1.0
     },
     {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_menulistwebwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_build",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_customscrollview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_sizedbox",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_menu_widgets_menu_list_web_widget_dart_footerwebwidget",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_common_enums_footer_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_asset_image_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_image_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_features_menu_domain_models_menu_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_features_menu_widgets_sign_out_dialog_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_helper_route_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_localization_language_constraints_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_features_profile_providers_profile_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_utill_dimensions_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_utill_images_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_utill_styles_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_flutter_grocery_common_widgets_footer_web_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "helper_dialog_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "acount_delete_dialog_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_menu_widgets_menu_list_web_widget_dart",
+      "target": "menu_item_web_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/features/menu/widgets/menu_list_web_widget.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
       "source": "lib_features_cart_widgets_cart_item_widget_dart",
       "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_cart_widgets_cart_item_widget_dart_cartitemwidget",
       "relation": "defines",
@@ -17043,6 +20354,1216 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "lib/helper/cart_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_routehelper",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getmainroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_navigateroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getloginroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_gettermsroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getpolicyroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getaboutusroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getfaqroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getupdateroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getselectlocationroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsendotpscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getotpregistration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsplashroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getorderdetailsroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getverifyroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getnewpassroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getaddaddressroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getupdateaddressroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getpaymentroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcheckoutroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordertrackingroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_gettrackmapscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcategoryproductsroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getproductdetailsroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getproductimagesroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getprofileeditroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_gethomeitemroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getmaintenanceroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsearchresultroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getchatroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcontactroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getfavoriteroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getwalletroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getmemberroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getreferandearnroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getreturnpolicyroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcancellationpolicyroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getrefundpolicyroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getloyaltyscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcreateaccount",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcartscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getsearchproduct",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getprofilemenus",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getprofilescreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getonboardingscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getnotificationscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getaddresslistscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getorderlistscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getallcategoryscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getforgetpasswordscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getimagepreviewscreen",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordermapinforoute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordersearchroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getcouponroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_getordersuccessroute",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_routehandler",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_redirecturl",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_helper_route_helper_dart_ismaintenance",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "dart_convert",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_widgets_order_map_info_widget_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_product_screens_preview_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_helper_responsive_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_main_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_go_router_go_router_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_foundation_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_common_models_config_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_common_models_place_order_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_address_domain_models_address_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_providers_auth_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_otp_registration_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_send_otp_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_domain_models_order_model_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_common_enums_html_type_enum_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_track_screens_track_map_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_helper_maintenance_helper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_splash_providers_splash_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_address_screens_add_new_address_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_address_screens_address_list_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_address_screens_select_location_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_create_account_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_login_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_maintainance_screens_maintainance_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_cart_screens_cart_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_category_screens_all_categories_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_chat_screens_chat_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_checkout_screens_checkout_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_checkout_screens_order_success_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_payment_screens_payment_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_payment_screens_web_payment_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_support_screens_support_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_coupon_screens_coupon_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_create_new_password_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_forgot_password_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_auth_screens_verification_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_home_screens_home_item_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_html_screens_html_viewer_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_member_screens_member_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_screens_loyalty_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_menu_screens_menu_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_common_widgets_custom_tooltip_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_notification_screens_notification_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_onboarding_screens_on_boarding_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_screens_order_list_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_screens_order_details_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_screens_order_search_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_order_track_screens_track_order_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_product_screens_category_product_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_product_screens_product_image_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_product_screens_product_details_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_profile_screens_profile_edit_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_profile_screens_profile_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_refer_and_earn_screens_refer_and_earn_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_search_screens_search_result_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_search_screens_search_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_menu_screens_setting_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_splash_screens_splash_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_update_screens_update_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_wallet_and_loyalty_screens_wallet_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_flutter_grocery_features_wishlist_screens_wishlist_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_helper_route_helper_dart",
+      "target": "package_provider_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/helper/route_helper.dart",
       "source_location": null,
       "weight": 1.0
     },
