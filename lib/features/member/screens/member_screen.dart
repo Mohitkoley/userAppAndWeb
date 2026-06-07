@@ -19,7 +19,9 @@ import 'package:flutter_grocery/utill/styles.dart';
 import 'package:provider/provider.dart';
 
 class MemberScreen extends StatefulWidget {
-  const MemberScreen({super.key});
+  final bool showAppBar;
+
+  const MemberScreen({super.key, this.showAppBar = true});
 
   @override
   State<MemberScreen> createState() => _MemberScreenState();
@@ -54,13 +56,15 @@ class _MemberScreenState extends State<MemberScreen> {
   Widget build(BuildContext context) {
     return CustomPopScopeHandelDeepLinkWidget(
       child: Scaffold(
-        appBar: ResponsiveHelper.isDesktop(context)
-            ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget())
-            : AppBar(
-                title: Text(getTranslated('member_network', context), style: poppinsMedium.copyWith(color: Theme.of(context).primaryColor)),
-                backgroundColor: Theme.of(context).cardColor,
-                iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
-              ),
+        appBar: widget.showAppBar
+            ? ResponsiveHelper.isDesktop(context)
+                  ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget())
+                  : AppBar(
+                      title: Text(getTranslated('member_network', context), style: poppinsMedium.copyWith(color: Theme.of(context).primaryColor)),
+                      backgroundColor: Theme.of(context).cardColor,
+                      iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
+                    )
+            : null,
         body: !_isLoggedIn
             ? const NotLoggedInWidget()
             : Consumer<MemberProvider>(

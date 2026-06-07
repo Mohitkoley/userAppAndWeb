@@ -15,6 +15,7 @@ import 'package:flutter_grocery/features/chat/screens/chat_screen.dart';
 import 'package:flutter_grocery/features/coupon/screens/coupon_screen.dart';
 import 'package:flutter_grocery/features/home/screens/home_screens.dart';
 import 'package:flutter_grocery/features/html/screens/html_viewer_screen.dart';
+import 'package:flutter_grocery/features/member/screens/member_screen.dart';
 import 'package:flutter_grocery/features/menu/domain/models/main_screen_model.dart';
 import 'package:flutter_grocery/features/menu/screens/setting_screen.dart';
 import 'package:flutter_grocery/features/order/domain/models/offline_payment_model.dart';
@@ -226,8 +227,9 @@ class SplashProvider extends ChangeNotifier {
       MainScreenModel(const AddressListScreen(), 'address', Images.location, true),
       MainScreenModel(const CouponScreen(), 'coupon', Images.coupon, true),
       MainScreenModel(const ChatScreen(orderId: "", profileImage: "", userName: "", senderType: "admin"), 'live_chat', Images.chat, true),
-      MainScreenModel(const WalletScreen(), 'wallet', Images.wallet, _configModel?.walletStatus ?? false),
+      MainScreenModel(const WalletScreen(), 'wallet', Images.wallet, true),
       MainScreenModel(const LoyaltyScreen(), 'loyalty_point', Images.loyaltyIcon, _configModel?.loyaltyPointStatus ?? false),
+      MainScreenModel(const MemberScreen(showAppBar: false), 'member_network', Images.referralIcon, true),
       MainScreenModel(const ReferAndEarnScreen(showAppBar: false), 'referAndEarn', Images.referralIcon, _configModel?.referEarnStatus ?? false),
       MainScreenModel(const SettingsScreen(), 'settings', Images.settings, true),
       MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.termsAndCondition), 'terms_and_condition', Images.termsAndConditions, true),
