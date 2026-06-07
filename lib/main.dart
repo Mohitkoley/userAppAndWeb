@@ -3,8 +3,7 @@ import 'dart:io';
 import 'dart:ui';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/foundation.dart'
-    show defaultTargetPlatform, kDebugMode, kIsWeb;
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, kDebugMode, kIsWeb;
 import 'package:flutter/material.dart';
 // import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:flutter_grocery/common/enums/app_mode_enum.dart';
@@ -23,6 +22,7 @@ import 'package:flutter_grocery/features/category/providers/category_provider.da
 import 'package:flutter_grocery/features/chat/providers/chat_provider.dart';
 import 'package:flutter_grocery/features/coupon/providers/coupon_provider.dart';
 import 'package:flutter_grocery/features/home/providers/flash_deal_provider.dart';
+import 'package:flutter_grocery/features/member/providers/member_provider.dart';
 import 'package:flutter_grocery/common/providers/language_provider.dart';
 import 'package:flutter_grocery/common/providers/localization_provider.dart';
 import 'package:flutter_grocery/features/address/providers/location_provider.dart';
@@ -49,15 +49,13 @@ import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'di_container.dart' as di;
-import 'features/auth/providers/facebook_login_provider.dart';
 import 'helper/notification_helper.dart';
 import 'localization/app_localization.dart';
 import 'common/widgets/cookies_widget.dart';
 import 'package:universal_html/html.dart' as html;
 import 'package:app_links/app_links.dart';
 
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 late AndroidNotificationChannel channel;
@@ -70,24 +68,11 @@ Future<void> main() async {
   try {
     if (kIsWeb) {
       await Firebase.initializeApp(
-        options: const FirebaseOptions(
-          apiKey: "AIzaSyA_bmwUlrOdffxegB9A16_D-EOZ2k04Sec",
-          authDomain: "oley-shop.firebaseapp.com",
-          projectId: "oley-shop",
-          storageBucket: "oley-shop.firebasestorage.app",
-          messagingSenderId: "977728681518",
-          appId: "1:977728681518:web:89aaec07f7180f6d9f91bf",
-          measurementId: "G-6V4W99CYB6",
-        ),
+        options: const FirebaseOptions(apiKey: "AIzaSyA_bmwUlrOdffxegB9A16_D-EOZ2k04Sec", authDomain: "oley-shop.firebaseapp.com", projectId: "oley-shop", storageBucket: "oley-shop.firebasestorage.app", messagingSenderId: "977728681518", appId: "1:977728681518:web:89aaec07f7180f6d9f91bf", measurementId: "G-6V4W99CYB6"),
       );
     } else if (Platform.isAndroid) {
       await Firebase.initializeApp(
-        options: const FirebaseOptions(
-          apiKey: "AIzaSyBBb9LFqXIvIT7DgvDI2uvuM_T47K_WL8M",
-          appId: "1:977728681518:android:22d5a9ddd2fb89109f91bf",
-          messagingSenderId: "977728681518",
-          projectId: "oley-shop",
-        ),
+        options: const FirebaseOptions(apiKey: "AIzaSyBBb9LFqXIvIT7DgvDI2uvuM_T47K_WL8M", appId: "1:977728681518:android:22d5a9ddd2fb89109f91bf", messagingSenderId: "977728681518", projectId: "oley-shop"),
       );
     } else {
       await Firebase.initializeApp();
@@ -106,15 +91,7 @@ Future<void> main() async {
     }
   } else {
     await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: "AIzaSyA_bmwUlrOdffxegB9A16_D-EOZ2k04Sec",
-        authDomain: "oley-shop.firebaseapp.com",
-        projectId: "oley-shop",
-        storageBucket: "oley-shop.firebasestorage.app",
-        messagingSenderId: "977728681518",
-        appId: "1:977728681518:web:89aaec07f7180f6d9f91bf",
-        measurementId: "G-6V4W99CYB6",
-      ),
+      options: const FirebaseOptions(apiKey: "AIzaSyA_bmwUlrOdffxegB9A16_D-EOZ2k04Sec", authDomain: "oley-shop.firebaseapp.com", projectId: "oley-shop", storageBucket: "oley-shop.firebasestorage.app", messagingSenderId: "977728681518", appId: "1:977728681518:web:89aaec07f7180f6d9f91bf", measurementId: "G-6V4W99CYB6"),
     );
 
     if (AppConstants.appMode != AppMode.demo) {
@@ -133,20 +110,12 @@ Future<void> main() async {
     if (!kIsWeb) {
       path = await initDynamicLinks();
 
-      channel = const AndroidNotificationChannel(
-        'high_importance_channel',
-        'High Importance Notifications',
-        importance: Importance.high,
-      );
+      channel = const AndroidNotificationChannel('high_importance_channel', 'High Importance Notifications', importance: Importance.high);
     }
 
     await NotificationHelper.initialize(flutterLocalNotificationsPlugin);
     FirebaseMessaging.onBackgroundMessage(myBackgroundMessageHandler);
-    await flutterLocalNotificationsPlugin
-        .resolvePlatformSpecificImplementation<
-          AndroidFlutterLocalNotificationsPlugin
-        >()
-        ?.createNotificationChannel(channel);
+    await flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()?.createNotificationChannel(channel);
   } catch (e) {
     if (kDebugMode) {
       print('error---> ${e.toString()}');
@@ -157,13 +126,9 @@ Future<void> main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => di.sl<ThemeProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<LocalizationProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<LocalizationProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<SplashProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<OnBoardingProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<OnBoardingProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<CategoryProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<ProductProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<SearchProvider>()),
@@ -175,32 +140,21 @@ Future<void> main() async {
         ChangeNotifierProvider(create: (context) => di.sl<ProfileProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<OrderProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<BannerProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<NotificationProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<NotificationProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<LanguageProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<NewsLetterProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<NewsLetterProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<WishListProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<WalletAndLoyaltyProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<WalletAndLoyaltyProvider>()),
+        ChangeNotifierProvider(create: (context) => di.sl<MemberProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<FlashDealProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<ReviewProvider>()),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<VerificationProvider>(),
-        ),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<OrderImageNoteProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<VerificationProvider>()),
+        ChangeNotifierProvider(create: (context) => di.sl<OrderImageNoteProvider>()),
         ChangeNotifierProvider(create: (context) => di.sl<TrackerProvider>()),
         // ChangeNotifierProvider(
         //   create: (context) => di.sl<FacebookLoginProvider>(),
         // ),
-        ChangeNotifierProvider(
-          create: (context) => di.sl<SearchFilterProvider>(),
-        ),
+        ChangeNotifierProvider(create: (context) => di.sl<SearchFilterProvider>()),
       ],
       child: MyApp(isWeb: !kIsWeb, route: path),
     ),
@@ -246,14 +200,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   void _route() {
-    final SplashProvider splashProvider = Provider.of<SplashProvider>(
-      context,
-      listen: false,
-    );
+    final SplashProvider splashProvider = Provider.of<SplashProvider>(context, listen: false);
 
-    splashProvider.initConfig(context, source: DataSourceEnum.local).then((
-      value,
-    ) async {
+    splashProvider.initConfig(context, source: DataSourceEnum.local).then((value) async {
       if (value != null) {
         splashProvider.getDeliveryInfo();
 
@@ -292,17 +241,11 @@ class _MyAppState extends State<MyApp> {
 
       final Uri uri = Uri.parse(route);
       final String referralCode = uri.queryParameters['referral_code'] ?? '';
-      final bool isReferralSignupLink =
-          uri.path == RouteHelper.createAccount && referralCode.isNotEmpty;
+      final bool isReferralSignupLink = uri.path == RouteHelper.createAccount && referralCode.isNotEmpty;
 
-      if (isReferralSignupLink &&
-          Provider.of<AuthProvider>(context, listen: false).isLoggedIn()) {
+      if (isReferralSignupLink && Provider.of<AuthProvider>(context, listen: false).isLoggedIn()) {
         appContext.go(RouteHelper.menu);
-        showCustomSnackBarHelper(
-          'You already have an account. Referral links are only for new sign ups.',
-          isError: false,
-          snackBarStatus: SnackBarStatus.info,
-        );
+        showCustomSnackBarHelper('You already have an account. Referral links are only for new sign ups.', isError: false, snackBarStatus: SnackBarStatus.info);
         return;
       }
 
@@ -336,41 +279,19 @@ class _MyAppState extends State<MyApp> {
       builder: (context, splashProvider, child) {
         return (kIsWeb && splashProvider.configModel == null)
             ? const SizedBox()
-            : (!kIsWeb &&
-                  splashProvider.configModel == null &&
-                  widget.route != null)
+            : (!kIsWeb && splashProvider.configModel == null && widget.route != null)
             ? Material(child: SplashLogoWidget())
             : MaterialApp.router(
                 routerConfig: RouteHelper.goRoutes,
                 debugShowCheckedModeBanner: false,
-                title: splashProvider.configModel != null
-                    ? splashProvider.configModel!.ecommerceName ?? ''
-                    : AppConstants.appName,
-                theme: Provider.of<ThemeProvider>(context).darkTheme
-                    ? dark
-                    : light,
+                title: splashProvider.configModel != null ? splashProvider.configModel!.ecommerceName ?? '' : AppConstants.appName,
+                theme: Provider.of<ThemeProvider>(context).darkTheme ? dark : light,
                 locale: Provider.of<LocalizationProvider>(context).locale,
-                localizationsDelegates: const [
-                  AppLocalization.delegate,
-                  GlobalMaterialLocalizations.delegate,
-                  GlobalWidgetsLocalizations.delegate,
-                  GlobalCupertinoLocalizations.delegate,
-                ],
+                localizationsDelegates: const [AppLocalization.delegate, GlobalMaterialLocalizations.delegate, GlobalWidgetsLocalizations.delegate, GlobalCupertinoLocalizations.delegate],
                 supportedLocales: locals,
-                scrollBehavior: const MaterialScrollBehavior().copyWith(
-                  dragDevices: {
-                    PointerDeviceKind.mouse,
-                    PointerDeviceKind.touch,
-                    PointerDeviceKind.stylus,
-                    PointerDeviceKind.unknown,
-                  },
-                ),
+                scrollBehavior: const MaterialScrollBehavior().copyWith(dragDevices: {PointerDeviceKind.mouse, PointerDeviceKind.touch, PointerDeviceKind.stylus, PointerDeviceKind.unknown}),
                 builder: (context, child) => MediaQuery(
-                  data: MediaQuery.of(context).copyWith(
-                    textScaler: TextScaler.linear(
-                      MediaQuery.sizeOf(context).width < 380 ? 0.8 : 1,
-                    ),
-                  ),
+                  data: MediaQuery.of(context).copyWith(textScaler: TextScaler.linear(MediaQuery.sizeOf(context).width < 380 ? 0.8 : 1)),
                   child: Scaffold(
                     body: SafeArea(
                       top: false,
@@ -384,36 +305,15 @@ class _MyAppState extends State<MyApp> {
                               child: Align(
                                 alignment: Alignment.bottomRight,
                                 child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 50,
-                                    horizontal: 20,
-                                  ),
-                                  child: ThirdPartyChatWidget(
-                                    configModel: splashProvider.configModel!,
-                                  ),
+                                  padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+                                  child: ThirdPartyChatWidget(configModel: splashProvider.configModel!),
                                 ),
                               ),
                             ),
 
-                          if (kIsWeb &&
-                              splashProvider.configModel!.cookiesManagement !=
-                                  null &&
-                              splashProvider
-                                  .configModel!
-                                  .cookiesManagement!
-                                  .status! &&
-                              !splashProvider.getAcceptCookiesStatus(
-                                splashProvider
-                                    .configModel!
-                                    .cookiesManagement!
-                                    .content,
-                              ) &&
-                              splashProvider.cookiesShow)
+                          if (kIsWeb && splashProvider.configModel!.cookiesManagement != null && splashProvider.configModel!.cookiesManagement!.status! && !splashProvider.getAcceptCookiesStatus(splashProvider.configModel!.cookiesManagement!.content) && splashProvider.cookiesShow)
                             const Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.bottomCenter,
-                                child: CookiesWidget(),
-                              ),
+                              child: Align(alignment: Alignment.bottomCenter, child: CookiesWidget()),
                             ),
                         ],
                       ),

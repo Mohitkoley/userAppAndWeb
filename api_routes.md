@@ -222,3 +222,35 @@ total_point_value >= next_milestone
 ```
 
 The current `next_milestone` is `6500`. This value is only the membership threshold. It is not a checkout minimum, and checkout should not be blocked below 6500 points.
+
+## Member Matrix Flow
+
+These routes power the member network screen:
+
+```text
+GET /api/v1/customer/matrix/status
+GET /api/v1/customer/matrix/team
+GET /api/v1/customer/matrix/tree?depth=2
+GET /api/v1/customer/matrix/incentive-history
+GET /api/v1/customer/matrix/levels
+POST /api/v1/customer/transfer-points
+```
+
+`POST /api/v1/customer/transfer-points` sends:
+
+```json
+{
+  "to_user_id": 2,
+  "amount": 100
+}
+```
+
+The app refreshes profile/member status and the matrix dashboard after a successful transfer, because the receiver may become a member after crossing the `6500` point threshold.
+
+Existing wallet and loyalty routes are already used by the wallet/loyalty flow:
+
+```text
+GET /api/v1/customer/wallet-transactions
+GET /api/v1/customer/loyalty-point-transactions
+POST /api/v1/customer/transfer-point-to-wallet
+```

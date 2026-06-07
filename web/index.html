@@ -39,7 +39,7 @@
   <meta name="twitter:title" content="Online Grocery Store | Fresh Groceries Delivered to Your Door">
   <meta name="twitter:description" content="Shop fresh groceries, fruits, vegetables, meat, and daily essentials online. Fast delivery, great prices, and a smooth shopping experience. Order now!">
   <meta name="twitter:image" content="oleyshop.com/assets/meta_banner.png">
-  <meta name="twitter:site" content="@oleyshop>
+  <meta name="twitter:site" content="@oleyshop">
   <meta name="twitter:creator" content="@oleyshop">
 
   <!-- Robots and SEO -->
@@ -122,20 +122,17 @@
 
 
 <script>
-  window.addEventListener('load', function(ev) {
-    {{flutter_js}}
-    {{flutter_build_config}}
+  {{flutter_js}}
+  {{flutter_build_config}}
 
+  window.addEventListener('load', function() {
     _flutter.loader.load({
-      serviceWorker: {
+      serviceWorkerSettings: {
         serviceWorkerVersion: {{flutter_service_worker_version}},
       },
       onEntrypointLoaded: function(engineInitializer) {
-        let config = { renderer: 'html' };
-        engineInitializer.initializeEngine(config).then(function(appRunner) {
+        engineInitializer.initializeEngine({renderer: 'html'}).then(function(appRunner) {
           appRunner.runApp();
-
-
         });
       }
     });

@@ -25451,144 +25451,144 @@
       "file_type": "code",
       "source_file": "lib/features/wallet_and_loyalty/screens/loyalty_screen.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_loyalty_screen_dart_systemuioverlaystyle",
       "community": null,
-      "norm_label": "systemuioverlaystyle"
+      "norm_label": "systemuioverlaystyle",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_wallet_and_loyalty_screens_loyalty_screen_dart_systemuioverlaystyle"
     },
     {
       "label": "package:flutter_grocery/features/profile/widgets/member_point_status_widget.dart",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/profile_details_widget.dart",
       "source_location": null,
-      "id": "package_flutter_grocery_features_profile_widgets_member_point_status_widget_dart",
       "community": null,
-      "norm_label": "package:flutter_grocery/features/profile/widgets/member_point_status_widget.dart"
+      "norm_label": "package:flutter_grocery/features/profile/widgets/member_point_status_widget.dart",
+      "id": "package_flutter_grocery_features_profile_widgets_member_point_status_widget_dart"
     },
     {
       "label": "getMemberStatus",
       "file_type": "code",
       "source_file": "lib/features/profile/providers/profile_provider.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_providers_profile_provider_dart_getmemberstatus",
       "community": null,
-      "norm_label": "getmemberstatus"
+      "norm_label": "getmemberstatus",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_providers_profile_provider_dart_getmemberstatus"
     },
     {
       "label": "package:flutter_grocery/features/profile/domain/models/member_status_model.dart",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "package_flutter_grocery_features_profile_domain_models_member_status_model_dart",
       "community": null,
-      "norm_label": "package:flutter_grocery/features/profile/domain/models/member_status_model.dart"
+      "norm_label": "package:flutter_grocery/features/profile/domain/models/member_status_model.dart",
+      "id": "package_flutter_grocery_features_profile_domain_models_member_status_model_dart"
     },
     {
       "label": "member_status_model.dart",
       "file_type": "code",
       "source_file": "lib/features/profile/domain/models/member_status_model.dart",
       "source_location": null,
-      "id": "lib_features_profile_domain_models_member_status_model_dart",
       "community": null,
-      "norm_label": "member_status_model.dart"
+      "norm_label": "member_status_model.dart",
+      "id": "lib_features_profile_domain_models_member_status_model_dart"
     },
     {
       "label": "MemberStatusModel",
       "file_type": "code",
       "source_file": "lib/features/profile/domain/models/member_status_model.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_domain_models_member_status_model_dart_memberstatusmodel",
       "community": null,
-      "norm_label": "memberstatusmodel"
+      "norm_label": "memberstatusmodel",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_domain_models_member_status_model_dart_memberstatusmodel"
     },
     {
       "label": "_parseBool",
       "file_type": "code",
       "source_file": "lib/features/profile/domain/models/member_status_model.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_domain_models_member_status_model_dart_parsebool",
       "community": null,
-      "norm_label": "_parsebool"
+      "norm_label": "_parsebool",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_domain_models_member_status_model_dart_parsebool"
     },
     {
       "label": "_parseBool",
       "file_type": "code",
       "source_file": "lib/features/profile/domain/models/userinfo_model.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_domain_models_userinfo_model_dart_parsebool",
       "community": null,
-      "norm_label": "_parsebool"
+      "norm_label": "_parsebool",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_domain_models_userinfo_model_dart_parsebool"
     },
     {
       "label": "member_point_status_widget.dart",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "lib_features_profile_widgets_member_point_status_widget_dart",
       "community": null,
-      "norm_label": "member_point_status_widget.dart"
+      "norm_label": "member_point_status_widget.dart",
+      "id": "lib_features_profile_widgets_member_point_status_widget_dart"
     },
     {
       "label": "MemberPointStatusWidget",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_memberpointstatuswidget",
       "community": null,
-      "norm_label": "memberpointstatuswidget"
+      "norm_label": "memberpointstatuswidget",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_memberpointstatuswidget"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_build",
       "community": null,
-      "norm_label": "build"
+      "norm_label": "build",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_build"
     },
     {
       "label": "Container",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_container",
       "community": null,
-      "norm_label": "container"
+      "norm_label": "container",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_container"
     },
     {
       "label": "Column",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_column",
       "community": null,
-      "norm_label": "column"
+      "norm_label": "column",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_column"
     },
     {
       "label": "SizedBox",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_sizedbox",
       "community": null,
-      "norm_label": "sizedbox"
+      "norm_label": "sizedbox",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_sizedbox"
     },
     {
       "label": "Row",
       "file_type": "code",
       "source_file": "lib/features/profile/widgets/member_point_status_widget.dart",
       "source_location": null,
-      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_row",
       "community": null,
-      "norm_label": "row"
+      "norm_label": "row",
+      "id": "users_mohitkoley_flutter_projects_freelance_oleyshop_userappandweb_lib_features_profile_widgets_member_point_status_widget_dart_row"
     },
     {
       "label": "product_model.dart",
       "file_type": "code",
       "source_file": "lib/common/models/review_model.dart",
       "source_location": null,
-      "id": "product_model_dart",
       "community": null,
-      "norm_label": "product_model.dart"
+      "norm_label": "product_model.dart",
+      "id": "product_model_dart"
     }
   ],
   "links": [

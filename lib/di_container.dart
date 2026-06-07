@@ -2,9 +2,10 @@ import 'package:dio/dio.dart';
 import 'package:flutter_grocery/common/reposotories/data_sync_repo.dart';
 import 'package:flutter_grocery/data/datasource/local/cache_response.dart';
 import 'package:flutter_grocery/features/auth/domain/reposotories/auth_repo.dart';
-import 'package:flutter_grocery/features/auth/providers/facebook_login_provider.dart';
 import 'package:flutter_grocery/features/auth/providers/verification_provider.dart';
 import 'package:flutter_grocery/features/home/domain/reposotories/banner_repo.dart';
+import 'package:flutter_grocery/features/member/domain/reposotories/member_repo.dart';
+import 'package:flutter_grocery/features/member/providers/member_provider.dart';
 import 'package:flutter_grocery/common/reposotories/cart_repo.dart';
 import 'package:flutter_grocery/features/category/domain/reposotories/category_repo.dart';
 import 'package:flutter_grocery/features/chat/domain/reposotories/chat_repo.dart';
@@ -58,107 +59,54 @@ final database = AppDatabase();
 
 Future<void> init() async {
   // Core
-  sl.registerLazySingleton(
-    () => DioClient(
-      AppConstants.baseUrl,
-      sl(),
-      loggingInterceptor: sl(),
-      sharedPreferences: sl(),
-    ),
-  );
+  sl.registerLazySingleton(() => DioClient(AppConstants.baseUrl, sl(), loggingInterceptor: sl(), sharedPreferences: sl()));
 
   // Repository
-  sl.registerLazySingleton(
-    () => DataSyncRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => SplashRepo(sharedPreferences: sl(), dioClient: sl()),
-  );
+  sl.registerLazySingleton(() => DataSyncRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => SplashRepo(sharedPreferences: sl(), dioClient: sl()));
   sl.registerLazySingleton(() => OnBoardingRepo(dioClient: sl()));
-  sl.registerLazySingleton(
-    () => CategoryRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => ProductRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => SearchRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => ChatRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => AuthRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
+  sl.registerLazySingleton(() => CategoryRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => ProductRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => SearchRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => ChatRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => AuthRepo(dioClient: sl(), sharedPreferences: sl()));
   sl.registerLazySingleton(() => CartRepo(sharedPreferences: sl()));
   sl.registerLazySingleton(() => CouponRepo(dioClient: sl()));
-  sl.registerLazySingleton(
-    () => OrderRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => LocationRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => ProfileRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => BannerRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
+  sl.registerLazySingleton(() => OrderRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => LocationRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => ProfileRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => BannerRepo(dioClient: sl(), sharedPreferences: sl()));
   sl.registerLazySingleton(() => NotificationRepo(dioClient: sl()));
   sl.registerLazySingleton(() => LanguageRepo(dioClient: sl()));
   sl.registerLazySingleton(() => NewsLetterRepo(dioClient: sl()));
-  sl.registerLazySingleton(
-    () => WishListRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => WalletRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
-  sl.registerLazySingleton(
-    () => TrackerRepo(dioClient: sl(), sharedPreferences: sl()),
-  );
+  sl.registerLazySingleton(() => WishListRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => WalletRepo(dioClient: sl(), sharedPreferences: sl()));
+  sl.registerLazySingleton(() => MemberRepo(dioClient: sl()));
+  sl.registerLazySingleton(() => TrackerRepo(dioClient: sl(), sharedPreferences: sl()));
 
   // Provider
   // sl.registerLazySingleton(() => DataSyncProvider());
   sl.registerFactory(() => ThemeProvider(sharedPreferences: sl()));
-  sl.registerFactory(
-    () => LocalizationProvider(
-      dioClient: sl(),
-      sharedPreferences: sl(),
-      languageRepo: sl(),
-    ),
-  );
+  sl.registerFactory(() => LocalizationProvider(dioClient: sl(), sharedPreferences: sl(), languageRepo: sl()));
   sl.registerFactory(() => SplashProvider(splashRepo: sl()));
   sl.registerFactory(() => OnBoardingProvider(onboardingRepo: sl()));
-  sl.registerFactory(
-    () => CategoryProvider(
-      categoryRepo: sl(),
-      productRepo: sl(),
-      searchRepo: sl(),
-    ),
-  );
-  sl.registerFactory(
-    () => ProductProvider(productRepo: sl(), searchRepo: sl()),
-  );
+  sl.registerFactory(() => CategoryProvider(categoryRepo: sl(), productRepo: sl(), searchRepo: sl()));
+  sl.registerFactory(() => ProductProvider(productRepo: sl(), searchRepo: sl()));
   sl.registerFactory(() => SearchProvider(searchRepo: sl()));
-  sl.registerFactory(
-    () => ChatProvider(chatRepo: sl(), notificationRepo: sl()),
-  );
+  sl.registerFactory(() => ChatProvider(chatRepo: sl(), notificationRepo: sl()));
   sl.registerFactory(() => AuthProvider(authRepo: sl()));
   sl.registerFactory(() => CartProvider(cartRepo: sl()));
   sl.registerFactory(() => CouponProvider(couponRepo: sl()));
-  sl.registerFactory(
-    () => LocationProvider(locationRepo: sl(), sharedPreferences: sl()),
-  );
+  sl.registerFactory(() => LocationProvider(locationRepo: sl(), sharedPreferences: sl()));
   sl.registerFactory(() => ProfileProvider(profileRepo: sl()));
-  sl.registerFactory(
-    () => OrderProvider(orderRepo: sl(), sharedPreferences: sl()),
-  );
+  sl.registerFactory(() => OrderProvider(orderRepo: sl(), sharedPreferences: sl()));
   sl.registerFactory(() => BannerProvider(bannerRepo: sl()));
   sl.registerFactory(() => NotificationProvider(notificationRepo: sl()));
   sl.registerFactory(() => LanguageProvider(languageRepo: sl()));
   sl.registerFactory(() => NewsLetterProvider(newsLetterRepo: sl()));
   sl.registerFactory(() => WishListProvider(wishListRepo: sl()));
   sl.registerFactory(() => WalletAndLoyaltyProvider(walletRepo: sl()));
+  sl.registerFactory(() => MemberProvider(memberRepo: sl()));
   sl.registerFactory(() => FlashDealProvider(productRepo: sl()));
   sl.registerFactory(() => ReviewProvider(orderRepo: sl()));
   sl.registerFactory(() => VerificationProvider(authRepo: sl()));

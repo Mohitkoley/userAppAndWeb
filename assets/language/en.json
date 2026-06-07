@@ -749,7 +749,25 @@
   "membership_progress": "Membership Progress",
   "membership_achieved": "Membership achieved",
   "points_left_to_become_member": "points left to become member",
-  "points": "points"
+  "points": "points",
+  "member_network": "Member Network",
+  "matrix_status": "Matrix Status",
+  "current_level": "Current Level",
+  "position": "Position",
+  "team_members": "Team Members",
+  "direct_active": "Direct Active",
+  "next_level": "Next Level",
+  "remaining_members": "Remaining Members",
+  "transfer_points": "Transfer Points",
+  "receiver_user_id": "Receiver User ID",
+  "transfer": "Transfer",
+  "enter_receiver_user_id": "Enter receiver user ID",
+  "enter_valid_point_amount": "Enter valid point amount",
+  "incentive_history": "Incentive History",
+  "matrix_tree": "Matrix Tree",
+  "matrix_levels": "Matrix Levels",
+  "level": "Level",
+  "required_members": "Required Members"
 
 
 

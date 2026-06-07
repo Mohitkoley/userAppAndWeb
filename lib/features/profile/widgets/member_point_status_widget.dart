@@ -20,7 +20,7 @@ class MemberPointStatusWidget extends StatelessWidget {
     final int nextMilestone = (memberStatusModel?.nextMilestone ?? membershipPointTarget) > 0 ? memberStatusModel?.nextMilestone ?? membershipPointTarget : membershipPointTarget;
     final int totalPointValue = memberStatusModel?.totalPointValue ?? userInfoModel?.totalPointValue ?? 0;
     final bool isMember = (memberStatusModel?.isMember ?? userInfoModel?.isMember ?? false) || totalPointValue >= nextMilestone;
-    final int remainingPointValue = memberStatusModel?.remainingPoints ?? (nextMilestone - totalPointValue).clamp(0, nextMilestone).toInt();
+    final int remainingPointValue = (memberStatusModel?.remainingPoints ?? (nextMilestone - totalPointValue)).clamp(0, nextMilestone).toInt();
     final double progress = memberStatusModel != null ? (memberStatusModel!.progressPercent / 100).clamp(0.0, 1.0).toDouble() : (totalPointValue / nextMilestone).clamp(0.0, 1.0).toDouble();
     final Color statusColor = isMember ? Theme.of(context).primaryColor : Theme.of(context).hintColor;
 
