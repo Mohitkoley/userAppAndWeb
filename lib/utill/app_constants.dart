@@ -11,9 +11,8 @@ class AppConstants {
   static const AppMode appMode = AppMode.release;
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
   static const String fontFamily = 'Poppins';
-  // static const String baseUrl = 'https://oleyshop.com/admin';
-  static const String baseUrl =
-      'https://wupeak-ip-42-108-66-122.tunnelmole.net';
+  static const String baseUrl = 'https://oleyshop.com/admin';
+  // static const String baseUrl = 'https://rzgrss-ip-49-36-181-155.tunnelmole.net';
   static const String webHostUrl = 'https://oleyshop.com';
   static const String googleServerClientId =
       '977728681518-d349j92n47l8m4eksmfg1a8deid6sqsu.apps.googleusercontent.com';
@@ -45,6 +44,8 @@ class AppConstants {
   static const String couponUri = '/api/v1/coupon/list';
   static const String couponApplyUri = '/api/v1/coupon/apply?code=';
   static const String customerInfoUri = '/api/v1/customer/info';
+  static const String customerMemberStatusUri =
+      '/api/v1/customer/member-status';
   static const String updateProfileUri = '/api/v1/customer/update-profile';
   static const String addressListUri = '/api/v1/customer/address/list';
   static const String removeAddressUri =

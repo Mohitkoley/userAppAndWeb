@@ -728,5 +728,12 @@
   "4_plus_rating": "4★ فأعلى",
   "3_plus_rating": "3★ فأعلى",
   "2_plus_rating": "2★ فأعلى",
-  "1_plus_rating": "1★ فأعلى"
+  "1_plus_rating": "1★ فأعلى",
+  "total_point_value": "إجمالي قيمة النقاط",
+  "member": "عضو",
+  "not_member": "لست عضوا",
+  "membership_progress": "تقدم العضوية",
+  "membership_achieved": "تم تحقيق العضوية",
+  "points_left_to_become_member": "نقطة متبقية لتصبح عضوا",
+  "points": "نقاط"
 }

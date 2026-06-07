@@ -36,7 +36,6 @@ import 'package:universal_html/html.dart' as html;
 
 class PlaceOrderButtonWidget extends StatelessWidget {
   static const int _defaultProductPointValue = 500;
-  static const int _minimumCartPointValue = 6500;
 
   final bool fromOfflinePayment;
   final double? discount;
@@ -97,7 +96,6 @@ class PlaceOrderButtonWidget extends StatelessWidget {
           final double total = deliveryCharge + amount;
           final List<CartModel> cartList = Provider.of<CartProvider>(context).cartList;
           final int cartPointValue = _getCartPointValue(cartList);
-          final bool canPlaceOrder = fromOfflinePayment || cartPointValue >= _minimumCartPointValue;
 
           return orderProvider.isLoading && !ResponsiveHelper.isDesktop(context)
               ? Center(child: CustomLoaderWidget(color: Theme.of(context).primaryColor))
@@ -144,109 +142,97 @@ class PlaceOrderButtonWidget extends StatelessWidget {
                       CustomButtonWidget(
                         isLoading: orderProvider.isLoading,
                         borderRadius: fromOfflinePayment ? Dimensions.radiusSizeLarge : Dimensions.radiusSizeDefault,
-                        buttonText: fromOfflinePayment
-                            ? getTranslated('confirm_payment', context)
-                            : canPlaceOrder
-                            ? getTranslated('place_order', context)
-                            : 'Add more item to make $_minimumCartPointValue',
-                        onPressed: canPlaceOrder
-                            ? () async {
-                                final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
-                                final ProfileProvider profileProvider = Provider.of<ProfileProvider>(context, listen: false);
+                        buttonText: fromOfflinePayment ? getTranslated('confirm_payment', context) : getTranslated('place_order', context),
+                        onPressed: () async {
+                          final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
+                          final ProfileProvider profileProvider = Provider.of<ProfileProvider>(context, listen: false);
 
-                                if (fromOfflinePayment && orderProvider.getOfflinePaymentData().isEmpty) {
-                                  showCustomSnackBarHelper(getTranslated('input_your_data_properly', context), isError: true);
-                                } else if (!isSelfPickup && orderProvider.addressIndex == -1) {
-                                  // showCustomSnackBarHelper(getTranslated('select_delivery_address', context),isError: true);
+                          if (fromOfflinePayment && orderProvider.getOfflinePaymentData().isEmpty) {
+                            showCustomSnackBarHelper(getTranslated('input_your_data_properly', context), isError: true);
+                          } else if (!isSelfPickup && orderProvider.addressIndex == -1) {
+                            // showCustomSnackBarHelper(getTranslated('select_delivery_address', context),isError: true);
 
-                                  showDialog(context: context, builder: (_) => const AddAddressDialogWidget());
-                                } else if ((CheckOutHelper.getDeliveryChargeType() == DeliveryChargeType.area.name) && (orderProvider.selectedAreaID == null) && !isSelfPickup) {
-                                  await scrollController?.animateTo(0, duration: const Duration(milliseconds: 100), curve: Curves.ease);
-                                  _openDropdown();
-                                } else if ((orderProvider.selectedPaymentMethod == null ? (orderProvider.selectedOfflineValue == null) : orderProvider.selectedPaymentMethod == null)) {
-                                  //showCustomSnackBarHelper(getTranslated('add_a_payment_method', context));
-                                  ResponsiveHelper().showDialogOrBottomSheet(context, PaymentMethodBottomSheetWidget(totalPrice: total + (weight ?? 0)), isScrollControlled: true);
-                                } else if (orderProvider.timeSlots == null || orderProvider.timeSlots!.isEmpty) {
-                                  showCustomSnackBarHelper(getTranslated('select_a_time', context), isError: true);
-                                } else if (!isSelfPickup && isKmWiseCharge && orderProvider.distance == -1) {
-                                  showCustomSnackBarHelper(getTranslated('delivery_fee_not_set_yet', context), isError: true);
-                                } else if (orderProvider.partialAmount != null &&
-                                    orderProvider.partialAmount! > 0 &&
-                                    orderProvider.paymentMethod == null &&
-                                    orderProvider.selectedOfflineMethod == null &&
-                                    orderProvider.paymentMethodIndex != 1) {
-                                  // Show payment dialog when warning is displayed
-                                  ResponsiveHelper().showDialogOrBottomSheet(context, PaymentMethodBottomSheetWidget(totalPrice: total + (weight ?? 0)), isScrollControlled: true);
-                                } else {
-                                  String? hostname = html.window.location.hostname;
-                                  String protocol = html.window.location.protocol;
-                                  String port = html.window.location.port;
+                            showDialog(context: context, builder: (_) => const AddAddressDialogWidget());
+                          } else if ((CheckOutHelper.getDeliveryChargeType() == DeliveryChargeType.area.name) && (orderProvider.selectedAreaID == null) && !isSelfPickup) {
+                            await scrollController?.animateTo(0, duration: const Duration(milliseconds: 100), curve: Curves.ease);
+                            _openDropdown();
+                          } else if ((orderProvider.selectedPaymentMethod == null ? (orderProvider.selectedOfflineValue == null) : orderProvider.selectedPaymentMethod == null)) {
+                            //showCustomSnackBarHelper(getTranslated('add_a_payment_method', context));
+                            ResponsiveHelper().showDialogOrBottomSheet(context, PaymentMethodBottomSheetWidget(totalPrice: total + (weight ?? 0)), isScrollControlled: true);
+                          } else if (orderProvider.timeSlots == null || orderProvider.timeSlots!.isEmpty) {
+                            showCustomSnackBarHelper(getTranslated('select_a_time', context), isError: true);
+                          } else if (!isSelfPickup && isKmWiseCharge && orderProvider.distance == -1) {
+                            showCustomSnackBarHelper(getTranslated('delivery_fee_not_set_yet', context), isError: true);
+                          } else if (orderProvider.partialAmount != null && orderProvider.partialAmount! > 0 && orderProvider.paymentMethod == null && orderProvider.selectedOfflineMethod == null && orderProvider.paymentMethodIndex != 1) {
+                            // Show payment dialog when warning is displayed
+                            ResponsiveHelper().showDialogOrBottomSheet(context, PaymentMethodBottomSheetWidget(totalPrice: total + (weight ?? 0)), isScrollControlled: true);
+                          } else {
+                            String? hostname = html.window.location.hostname;
+                            String protocol = html.window.location.protocol;
+                            String port = html.window.location.port;
 
-                                  List<Cart> carts = [];
+                            List<Cart> carts = [];
 
-                                  for (int index = 0; index < cartList.length; index++) {
-                                    Cart cart = Cart(
-                                      productId: cartList[index].id,
-                                      price: cartList[index].price,
-                                      discountAmount: cartList[index].discountedPrice,
-                                      quantity: cartList[index].quantity,
-                                      taxAmount: cartList[index].tax,
-                                      variant: '',
-                                      variation: [Variation(type: cartList[index].variation?.type)],
-                                      pointValue: cartList[index].product?.pointValue ?? _defaultProductPointValue,
-                                    );
-                                    carts.add(cart);
-                                  }
+                            for (int index = 0; index < cartList.length; index++) {
+                              Cart cart = Cart(
+                                productId: cartList[index].id,
+                                price: cartList[index].price,
+                                discountAmount: cartList[index].discountedPrice,
+                                quantity: cartList[index].quantity,
+                                taxAmount: cartList[index].tax,
+                                variant: '',
+                                variation: [Variation(type: cartList[index].variation?.type)],
+                                pointValue: cartList[index].product?.pointValue ?? _defaultProductPointValue,
+                              );
+                              carts.add(cart);
+                            }
 
-                                  PlaceOrderModel placeOrderBody = PlaceOrderModel(
-                                    cart: carts,
-                                    orderType: checkOutData?.orderType,
-                                    couponCode: checkOutData?.couponCode,
-                                    orderNote: checkOutData?.orderNote,
-                                    branchId: configModel!.branches![orderProvider.branchIndex].id,
-                                    deliveryAddressId: !isSelfPickup ? Provider.of<LocationProvider>(context, listen: false).addressList![orderProvider.addressIndex].id : 0,
-                                    distance: isSelfPickup ? 0 : orderProvider.distance,
-                                    couponDiscountAmount: Provider.of<CouponProvider>(context, listen: false).discount,
-                                    timeSlotId: orderProvider.timeSlots![orderProvider.selectTimeSlot].id,
-                                    paymentMethod: orderProvider.selectedOfflineValue != null ? 'offline_payment' : orderProvider.selectedPaymentMethod!.getWay!,
-                                    deliveryDate: orderProvider.getDateList()[orderProvider.selectDateSlot],
-                                    couponDiscountTitle: '',
-                                    orderAmount: (checkOutData!.amount ?? 0) + (orderProvider.deliveryCharge ?? 0) + (weight ?? 0),
-                                    pointValue: cartPointValue,
-                                    selectedDeliveryArea: orderProvider.selectedAreaID,
+                            PlaceOrderModel placeOrderBody = PlaceOrderModel(
+                              cart: carts,
+                              orderType: checkOutData?.orderType,
+                              couponCode: checkOutData?.couponCode,
+                              orderNote: checkOutData?.orderNote,
+                              branchId: configModel!.branches![orderProvider.branchIndex].id,
+                              deliveryAddressId: !isSelfPickup ? Provider.of<LocationProvider>(context, listen: false).addressList![orderProvider.addressIndex].id : 0,
+                              distance: isSelfPickup ? 0 : orderProvider.distance,
+                              couponDiscountAmount: Provider.of<CouponProvider>(context, listen: false).discount,
+                              timeSlotId: orderProvider.timeSlots![orderProvider.selectTimeSlot].id,
+                              paymentMethod: orderProvider.selectedOfflineValue != null ? 'offline_payment' : orderProvider.selectedPaymentMethod!.getWay!,
+                              deliveryDate: orderProvider.getDateList()[orderProvider.selectDateSlot],
+                              couponDiscountTitle: '',
+                              orderAmount: (checkOutData!.amount ?? 0) + (orderProvider.deliveryCharge ?? 0) + (weight ?? 0),
+                              pointValue: cartPointValue,
+                              selectedDeliveryArea: orderProvider.selectedAreaID,
 
-                                    isPartial: orderProvider.partialAmount == null ? '0' : '1',
-                                    bringChangeAmount: orderProvider.bringChangeAmount,
-                                    isGuest: authProvider.isLoggedIn() ? "0" : "1",
-                                    customerId: authProvider.isLoggedIn() ? profileProvider.userInfoModel?.id.toString() : '',
-                                    paymentPlatform: kIsWeb ? 'web' : 'app',
-                                    callBack: ResponsiveHelper.isWeb()
-                                        ? '$protocol//$hostname${kDebugMode ? ':$port' : ''}${RouteHelper.orderWebPayment}'
-                                        : '${AppConstants.baseUrl}${RouteHelper.orderSuccessful}',
-                                  );
+                              isPartial: orderProvider.partialAmount == null ? '0' : '1',
+                              bringChangeAmount: orderProvider.bringChangeAmount,
+                              isGuest: authProvider.isLoggedIn() ? "0" : "1",
+                              customerId: authProvider.isLoggedIn() ? profileProvider.userInfoModel?.id.toString() : '',
+                              paymentPlatform: kIsWeb ? 'web' : 'app',
+                              callBack: ResponsiveHelper.isWeb() ? '$protocol//$hostname${kDebugMode ? ':$port' : ''}${RouteHelper.orderWebPayment}' : '${AppConstants.baseUrl}${RouteHelper.orderSuccessful}',
+                            );
 
-                                  if (placeOrderBody.paymentMethod == 'wallet_payment' || placeOrderBody.paymentMethod == 'cash_on_delivery' || placeOrderBody.paymentMethod == 'offline_payment') {
-                                    orderProvider.placeOrder(placeOrderBody, _callback);
-                                  } else {
-                                    final String placeOrder = convert.base64Url.encode(convert.utf8.encode(convert.jsonEncode(placeOrderBody.toJson())));
+                            if (placeOrderBody.paymentMethod == 'wallet_payment' || placeOrderBody.paymentMethod == 'cash_on_delivery' || placeOrderBody.paymentMethod == 'offline_payment') {
+                              orderProvider.placeOrder(placeOrderBody, _callback);
+                            } else {
+                              final String placeOrder = convert.base64Url.encode(convert.utf8.encode(convert.jsonEncode(placeOrderBody.toJson())));
 
-                                    final paymentUrl = await orderProvider.placeDigitalOrder(context, placeOrderBody);
+                              final paymentUrl = await orderProvider.placeDigitalOrder(context, placeOrderBody);
 
-                                    if (paymentUrl != null) {
-                                      orderProvider.clearPlaceOrder().then(
-                                        (_) => orderProvider.setPlaceOrder(placeOrder).then((value) {
-                                          if (ResponsiveHelper.isWeb()) {
-                                            html.window.open(paymentUrl, "_self");
-                                          } else {
-                                            RouteHelper.getPaymentRoute(url: paymentUrl, action: RouteAction.pushNamedAndRemoveUntil);
-                                          }
-                                        }),
-                                      );
+                              if (paymentUrl != null) {
+                                orderProvider.clearPlaceOrder().then(
+                                  (_) => orderProvider.setPlaceOrder(placeOrder).then((value) {
+                                    if (ResponsiveHelper.isWeb()) {
+                                      html.window.open(paymentUrl, "_self");
+                                    } else {
+                                      RouteHelper.getPaymentRoute(url: paymentUrl, action: RouteAction.pushNamedAndRemoveUntil);
                                     }
-                                  }
-                                }
+                                  }),
+                                );
                               }
-                            : null,
+                            }
+                          }
+                        },
                       ),
                     ],
                   ),

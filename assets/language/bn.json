@@ -706,5 +706,12 @@
   "4_plus_rating": "৪★ এবং বেশি",
   "3_plus_rating": "৩★ এবং বেশি",
   "2_plus_rating": "২★ এবং বেশি",
-  "1_plus_rating": "১★ এবং বেশি"
+  "1_plus_rating": "১★ এবং বেশি",
+  "total_point_value": "মোট পয়েন্ট ভ্যালু",
+  "member": "সদস্য",
+  "not_member": "সদস্য নন",
+  "membership_progress": "সদস্যতার অগ্রগতি",
+  "membership_achieved": "সদস্যতা অর্জিত হয়েছে",
+  "points_left_to_become_member": "সদস্য হতে বাকি পয়েন্ট",
+  "points": "পয়েন্ট"
 }

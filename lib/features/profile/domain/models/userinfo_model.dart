@@ -17,27 +17,22 @@ class UserInfoModel {
   String? referCode;
   double? walletBalance;
   double? point;
+  int totalPointValue = 0;
+  bool isMember = false;
   OrderModel? lastIncompleteOfflineBooking;
 
-  UserInfoModel(
-      {this.id,
-        this.fName,
-        this.lName,
-        this.email,
-        this.image,
-        this.isPhoneVerified,
-        this.emailVerifiedAt,
-        this.createdAt,
-        this.updatedAt,
-        this.emailVerificationToken,
-        this.phone,
-        this.cmFirebaseToken,
-        this.loginMedium,
-        this.referCode,
-        this.walletBalance,
-        this.point,
-        this.lastIncompleteOfflineBooking,
-      });
+  UserInfoModel({this.id, this.fName, this.lName, this.email, this.image, this.isPhoneVerified, this.emailVerifiedAt, this.createdAt, this.updatedAt, this.emailVerificationToken, this.phone, this.cmFirebaseToken, this.loginMedium, this.referCode, this.walletBalance, this.point, this.totalPointValue = 0, this.isMember = false, this.lastIncompleteOfflineBooking});
+
+  static bool _parseBool(dynamic value) {
+    if (value is bool) {
+      return value;
+    } else if (value is num) {
+      return value == 1;
+    }
+
+    final String stringValue = '${value ?? ''}'.toLowerCase();
+    return stringValue == 'true' || stringValue == '1';
+  }
 
   UserInfoModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -56,9 +51,9 @@ class UserInfoModel {
     referCode = json['referral_code'];
     walletBalance = double.tryParse('${json['wallet_balance']}');
     point = double.tryParse('${json['loyalty_point']}');
-    lastIncompleteOfflineBooking = json['last_incomplete_offline_booking'] != null
-        ? OrderModel.fromJson(json['last_incomplete_offline_booking'])
-        : null;
+    totalPointValue = int.tryParse('${json['total_point_value'] ?? 0}') ?? 0;
+    isMember = _parseBool(json['is_member']);
+    lastIncompleteOfflineBooking = json['last_incomplete_offline_booking'] != null ? OrderModel.fromJson(json['last_incomplete_offline_booking']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -79,6 +74,8 @@ class UserInfoModel {
     data['referral_code'] = referCode;
     data['wallet_balance'] = walletBalance;
     data['point'] = point;
+    data['total_point_value'] = totalPointValue;
+    data['is_member'] = isMember;
     return data;
   }
 }

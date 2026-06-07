@@ -34,7 +34,7 @@ import 'package:flutter_grocery/utill/app_constants.dart';
 import 'package:flutter_grocery/utill/images.dart';
 import 'package:provider/provider.dart';
 
-class SplashProvider extends ChangeNotifier  {
+class SplashProvider extends ChangeNotifier {
   final SplashRepo? splashRepo;
   SplashProvider({required this.splashRepo});
 
@@ -48,8 +48,6 @@ class SplashProvider extends ChangeNotifier  {
   List<OfflinePaymentModel?>? _offlinePaymentModelList;
   List<MainScreenModel> _screenList = [];
 
-
-
   List<MainScreenModel> get screenList => _screenList;
   ConfigModel? get configModel => _configModel;
   List<DeliveryInfoModel>? get deliveryInfoModelList => _deliveryInfoModelList;
@@ -60,105 +58,85 @@ class SplashProvider extends ChangeNotifier  {
   bool get cookiesShow => _cookiesShow;
   List<OfflinePaymentModel?>? get offlinePaymentModelList => _offlinePaymentModelList;
 
-
-
-  void _startTimer (DateTime startTime){
-    Timer.periodic(const Duration(seconds: 30), (Timer timer){
-
+  void _startTimer(DateTime startTime) {
+    Timer.periodic(const Duration(seconds: 30), (Timer timer) {
       DateTime now = DateTime.now();
 
       if (now.isAfter(startTime) || now.isAtSameMomentAs(startTime)) {
         timer.cancel();
         RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
       }
-
     });
   }
 
   Future<ConfigModel?> initConfig(BuildContext context, {bool fromNotification = false, DataSourceEnum source = DataSourceEnum.local}) async {
-    if(source == DataSourceEnum.local) {
-      ApiResponseModel<CacheResponseData> responseModel =  await splashRepo!.getConfig(source: DataSourceEnum.local);
+    if (source == DataSourceEnum.local) {
+      ApiResponseModel<CacheResponseData> responseModel = await splashRepo!.getConfig(source: DataSourceEnum.local);
 
-      if(responseModel.isSuccess) {
-
+      if (responseModel.isSuccess) {
         _configModel = ConfigModel.fromJson(jsonDecode(responseModel.response!.response));
         _baseUrls = _configModel?.baseUrls;
-        if(context.mounted){
+        if (context.mounted) {
           _onConfigAction(context, fromNotification);
         }
-
       }
 
-      if(context.mounted){
-        initConfig(context, fromNotification: fromNotification, source:  DataSourceEnum.client);
+      if (context.mounted) {
+        initConfig(context, fromNotification: fromNotification, source: DataSourceEnum.client);
       }
-
-
-    }else {
+    } else {
       ApiResponseModel<Response> apiResponseModel = await splashRepo!.getConfig(source: DataSourceEnum.client);
 
-      if(apiResponseModel.isSuccess) {
+      if (apiResponseModel.isSuccess) {
         _configModel = ConfigModel.fromJson(apiResponseModel.response?.data);
         _baseUrls = _configModel?.baseUrls;
 
-        if(context.mounted){
+        if (context.mounted) {
           await _onConfigAction(context, fromNotification);
         }
-
-
       }
     }
-
-
 
     return _configModel;
   }
 
   Future<void> _onConfigAction(BuildContext context, bool fromNotification) async {
     if (_configModel != null) {
-
-
-
-      if(!MaintenanceHelper.isMaintenanceModeEnable(configModel)){
-        if(MaintenanceHelper.checkWebMaintenanceMode(configModel) || MaintenanceHelper.checkCustomerMaintenanceMode(configModel)){
-          if(MaintenanceHelper.isCustomizeMaintenance(configModel)){
-
+      if (!MaintenanceHelper.isMaintenanceModeEnable(configModel)) {
+        if (MaintenanceHelper.checkWebMaintenanceMode(configModel) || MaintenanceHelper.checkCustomerMaintenanceMode(configModel)) {
+          if (MaintenanceHelper.isCustomizeMaintenance(configModel)) {
             DateTime now = DateTime.now();
             DateTime specifiedDateTime = DateTime.parse(_configModel!.maintenanceMode!.maintenanceTypeAndDuration!.startDate!);
 
             Duration difference = specifiedDateTime.difference(now);
 
-            if(difference.inMinutes > 0 && (difference.inMinutes < 60 || difference.inMinutes == 60)){
+            if (difference.inMinutes > 0 && (difference.inMinutes < 60 || difference.inMinutes == 60)) {
               _startTimer(specifiedDateTime);
             }
-
           }
         }
       }
 
-      if(fromNotification){
-        if(MaintenanceHelper.isMaintenanceModeEnable(configModel) && (MaintenanceHelper.checkCustomerMaintenanceMode(configModel) || MaintenanceHelper.checkWebMaintenanceMode(configModel))) {
+      if (fromNotification) {
+        if (MaintenanceHelper.isMaintenanceModeEnable(configModel) && (MaintenanceHelper.checkCustomerMaintenanceMode(configModel) || MaintenanceHelper.checkWebMaintenanceMode(configModel))) {
           RouteHelper.getMaintenanceRoute(action: RouteAction.pushNamedAndRemoveUntil);
-        }else if (!MaintenanceHelper.isMaintenanceModeEnable(configModel) && ModalRoute.of(context)?.settings.name == RouteHelper.maintenance){
+        } else if (!MaintenanceHelper.isMaintenanceModeEnable(configModel) && ModalRoute.of(context)?.settings.name == RouteHelper.maintenance) {
           RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
         }
       }
 
       final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
 
-      if(authProvider.getGuestId() == null && !authProvider.isLoggedIn()){
-         authProvider.addOrUpdateGuest();
-         authProvider.subscribeToTopic();
+      if (authProvider.getGuestId() == null && !authProvider.isLoggedIn()) {
+        authProvider.addOrUpdateGuest();
+        authProvider.subscribeToTopic();
       }
 
       initializeScreenList();
 
-
-
       notifyListeners();
     }
   }
-
 
   void setFirstTimeConnectionCheck(bool isChecked) {
     _firstTimeConnectionCheck = isChecked;
@@ -180,7 +158,8 @@ class SplashProvider extends ChangeNotifier  {
   void setFromSetting(bool isSetting) {
     _fromSetting = isSetting;
   }
-  String? getLanguageCode(){
+
+  String? getLanguageCode() {
     return splashRepo!.sharedPreferences!.getString(AppConstants.languageCode);
   }
 
@@ -193,21 +172,20 @@ class SplashProvider extends ChangeNotifier  {
   }
 
   void cookiesStatusChange(String? data) {
-    if(data != null){
+    if (data != null) {
       splashRepo!.sharedPreferences!.setString(AppConstants.cookingManagement, data);
     }
     _cookiesShow = false;
     notifyListeners();
   }
 
-  bool getAcceptCookiesStatus(String? data) => splashRepo!.sharedPreferences!.getString(AppConstants.cookingManagement) != null
-      && splashRepo!.sharedPreferences!.getString(AppConstants.cookingManagement) == data;
+  bool getAcceptCookiesStatus(String? data) => splashRepo!.sharedPreferences!.getString(AppConstants.cookingManagement) != null && splashRepo!.sharedPreferences!.getString(AppConstants.cookingManagement) == data;
 
   Future<void> getOfflinePaymentMethod(bool isReload) async {
-    if(_offlinePaymentModelList == null || isReload){
+    if (_offlinePaymentModelList == null || isReload) {
       _offlinePaymentModelList = null;
     }
-    if(_offlinePaymentModelList == null){
+    if (_offlinePaymentModelList == null) {
       ApiResponseModel apiResponse = await splashRepo!.getOfflinePaymentMethod();
       if (apiResponse.response != null && apiResponse.response!.statusCode == 200) {
         _offlinePaymentModelList = [];
@@ -215,20 +193,18 @@ class SplashProvider extends ChangeNotifier  {
         apiResponse.response?.data.forEach((v) {
           _offlinePaymentModelList?.add(OfflinePaymentModel.fromJson(v));
         });
-
       } else {
         ApiCheckerHelper.checkApi(apiResponse);
       }
       notifyListeners();
     }
-
   }
 
-  Future<void> getDeliveryInfo() async{
+  Future<void> getDeliveryInfo() async {
     DataSyncHelper.fetchAndSyncData(
-      fetchFromLocal: ()=> splashRepo!.getDeliveryInfo<CacheResponseData>(source: DataSourceEnum.local),
-      fetchFromClient: ()=> splashRepo!.getDeliveryInfo(source: DataSourceEnum.client),
-      onResponse: (data, _){
+      fetchFromLocal: () => splashRepo!.getDeliveryInfo<CacheResponseData>(source: DataSourceEnum.local),
+      fetchFromClient: () => splashRepo!.getDeliveryInfo(source: DataSourceEnum.client),
+      onResponse: (data, _) {
         _deliveryInfoModelList = [];
 
         data.forEach((deliveryInfo) {
@@ -237,11 +213,9 @@ class SplashProvider extends ChangeNotifier  {
         notifyListeners();
       },
     );
-
   }
 
   void initializeScreenList() {
-
     _screenList = [
       MainScreenModel(const HomeScreen(), 'home', Images.home, true),
       MainScreenModel(const AllCategoriesScreen(), 'all_categories', Images.list, true),
@@ -251,10 +225,10 @@ class SplashProvider extends ChangeNotifier  {
       MainScreenModel(const OrderSearchScreen(), 'order_track', Images.orderDetails, true),
       MainScreenModel(const AddressListScreen(), 'address', Images.location, true),
       MainScreenModel(const CouponScreen(), 'coupon', Images.coupon, true),
-      MainScreenModel(const ChatScreen(orderId: "", profileImage:  "", userName: "", senderType: "admin"), 'live_chat', Images.chat, true),
+      MainScreenModel(const ChatScreen(orderId: "", profileImage: "", userName: "", senderType: "admin"), 'live_chat', Images.chat, true),
       MainScreenModel(const WalletScreen(), 'wallet', Images.wallet, _configModel?.walletStatus ?? false),
       MainScreenModel(const LoyaltyScreen(), 'loyalty_point', Images.loyaltyIcon, _configModel?.loyaltyPointStatus ?? false),
-      MainScreenModel(const ReferAndEarnScreen(), 'referAndEarn', Images.referralIcon, _configModel?.referEarnStatus ?? false),
+      MainScreenModel(const ReferAndEarnScreen(showAppBar: false), 'referAndEarn', Images.referralIcon, _configModel?.referEarnStatus ?? false),
       MainScreenModel(const SettingsScreen(), 'settings', Images.settings, true),
       MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.termsAndCondition), 'terms_and_condition', Images.termsAndConditions, true),
       MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.privacyPolicy), 'privacy_policy', Images.privacyPolicy, true),
@@ -265,5 +239,4 @@ class SplashProvider extends ChangeNotifier  {
       MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.faq), 'faq', Images.faq, true),
     ];
   }
-
 }

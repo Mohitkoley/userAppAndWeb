@@ -742,7 +742,14 @@
   "4_plus_rating": "4+ Rating",
   "3_plus_rating": "3+ Rating",
   "2_plus_rating": "2+ Rating",
-  "1_plus_rating": "1+ Rating"
+  "1_plus_rating": "1+ Rating",
+  "total_point_value": "Total Point Value",
+  "member": "Member",
+  "not_member": "Not Member",
+  "membership_progress": "Membership Progress",
+  "membership_achieved": "Membership achieved",
+  "points_left_to_become_member": "points left to become member",
+  "points": "points"
 
 
 
