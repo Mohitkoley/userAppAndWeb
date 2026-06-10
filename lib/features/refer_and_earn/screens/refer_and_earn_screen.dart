@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_grocery/common/enums/footer_type_enum.dart';
 import 'package:flutter_grocery/common/models/config_model.dart';
+import 'package:flutter_grocery/common/widgets/custom_app_bar_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_pop_scope_handel_deep_link_widget.dart';
 import 'package:flutter_grocery/features/refer_and_earn/helper/refer_helper.dart';
 import 'package:flutter_grocery/helper/responsive_helper.dart';
@@ -28,132 +29,70 @@ import 'package:share_plus/share_plus.dart';
 import 'refer_hint_widget.dart';
 
 class ReferAndEarnScreen extends StatefulWidget {
-  const ReferAndEarnScreen({super.key});
+  final bool showAppBar;
+  const ReferAndEarnScreen({super.key, this.showAppBar = true});
 
   @override
   State<ReferAndEarnScreen> createState() => _ReferAndEarnScreenState();
 }
 
 class _ReferAndEarnScreenState extends State<ReferAndEarnScreen> {
-  final List<String> shareItem = [
-    'messenger',
-    'whatsapp',
-    'gmail',
-    'viber',
-    'share',
-  ];
+  final List<String> shareItem = ['messenger', 'whatsapp', 'gmail', 'viber', 'share'];
   bool _isLoggedIn = false;
 
   @override
   void initState() {
     super.initState();
-    _isLoggedIn = Provider.of<AuthProvider>(
-      context,
-      listen: false,
-    ).isLoggedIn();
+    _isLoggedIn = Provider.of<AuthProvider>(context, listen: false).isLoggedIn();
   }
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final ConfigModel? configModel = Provider.of<SplashProvider>(
-      context,
-      listen: false,
-    ).configModel;
+    final ConfigModel? configModel = Provider.of<SplashProvider>(context, listen: false).configModel;
 
     return CustomPopScopeHandelDeepLinkWidget(
       child: Scaffold(
-        appBar: ResponsiveHelper.isDesktop(context)
-            ? const PreferredSize(
-                preferredSize: Size.fromHeight(100),
-                child: WebAppBarWidget(),
-              )
+        appBar: widget.showAppBar
+            ? ResponsiveHelper.isDesktop(context)
+                  ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget())
+                  : CustomAppBarWidget(title: getTranslated('refer_and_earn', context)) as PreferredSizeWidget
             : null,
 
         body: _isLoggedIn
-            ? configModel != null && configModel.walletStatus!
+            ? configModel != null && (configModel.referEarnStatus ?? false)
                   ? Consumer<ProfileProvider>(
                       builder: (context, profileProvider, _) {
                         return profileProvider.userInfoModel != null
                             ? SingleChildScrollView(
-                                padding: ResponsiveHelper.isDesktop(context)
-                                    ? EdgeInsets.zero
-                                    : const EdgeInsets.symmetric(
-                                        horizontal:
-                                            Dimensions.paddingSizeDefault,
-                                        vertical:
-                                            Dimensions.paddingSizeExtraSmall,
-                                      ),
+                                padding: ResponsiveHelper.isDesktop(context) ? EdgeInsets.zero : const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeExtraSmall),
                                 child: Column(
                                   children: [
                                     ResponsiveHelper.isDesktop(context)
                                         ? Padding(
-                                            padding: const EdgeInsets.symmetric(
-                                              vertical: Dimensions
-                                                  .paddingSizeExtraLarge,
-                                            ),
+                                            padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraLarge),
                                             child: Center(
-                                              child: Text(
-                                                "refer_and_earn".tr,
-                                                style: poppinsSemiBold.copyWith(
-                                                  fontSize:
-                                                      Dimensions.fontSizeLarge,
-                                                ),
-                                              ),
+                                              child: Text("refer_and_earn".tr, style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge)),
                                             ),
                                           )
                                         : const SizedBox(),
 
                                     Center(
-                                      child: Container(
-                                        constraints:
-                                            ResponsiveHelper.isDesktop(context)
-                                            ? const BoxConstraints()
-                                            : BoxConstraints(
-                                                maxHeight:
-                                                    ResponsiveHelper.isDesktop(
-                                                      context,
-                                                    )
-                                                    ? MediaQuery.of(
-                                                        context,
-                                                      ).size.height
-                                                    : MediaQuery.of(
-                                                            context,
-                                                          ).size.height *
-                                                          0.7,
-                                              ),
-                                        width:
-                                            ResponsiveHelper.isDesktop(context)
-                                            ? 750
-                                            : 700,
-                                        child:
-                                            !ResponsiveHelper.isDesktop(context)
+                                      child: ConstrainedBox(
+                                        constraints: BoxConstraints(maxWidth: ResponsiveHelper.isDesktop(context) ? 750 : double.infinity),
+                                        child: !ResponsiveHelper.isDesktop(context)
                                             ? SingleChildScrollView(
-                                                child: DetailsView(
-                                                  size: size,
-                                                  shareItem: shareItem,
-                                                  hintList:
-                                                      profileProvider.hintList,
-                                                ),
+                                                child: DetailsView(size: size, shareItem: shareItem, hintList: profileProvider.hintList),
                                               )
-                                            : DetailsView(
-                                                size: size,
-                                                shareItem: shareItem,
-                                                hintList:
-                                                    profileProvider.hintList,
-                                              ),
+                                            : DetailsView(size: size, shareItem: shareItem, hintList: profileProvider.hintList),
                                       ),
                                     ),
 
-                                    const FooterWebWidget(
-                                      footerType: FooterType.nonSliver,
-                                    ),
+                                    const FooterWebWidget(footerType: FooterType.nonSliver),
                                   ],
                                 ),
                               )
-                            : CustomLoaderWidget(
-                                color: Theme.of(context).primaryColor,
-                              );
+                            : CustomLoaderWidget(color: Theme.of(context).primaryColor);
                       },
                     )
                   : NoDataWidget(title: getTranslated('not_found', context))
@@ -167,12 +106,7 @@ class _ReferAndEarnScreenState extends State<ReferAndEarnScreen> {
 //     ? const SizedBox() : ReferHintWidget(hintList: hintList),
 
 class DetailsView extends StatelessWidget {
-  const DetailsView({
-    super.key,
-    required Size size,
-    required this.shareItem,
-    required this.hintList,
-  }) : _size = size;
+  const DetailsView({super.key, required Size size, required this.shareItem, required this.hintList}) : _size = size;
 
   final Size _size;
   final List<String> shareItem;
@@ -185,66 +119,41 @@ class DetailsView extends StatelessWidget {
         return profileProvider.userInfoModel != null
             ? Column(
                 children: [
-                  Image.asset(
-                    Images.referBanner,
-                    height: _size.height * 0.3,
-                    width: _size.width * 0.7,
-                  ),
+                  Image.asset(Images.referBanner, height: _size.height * 0.3, width: _size.width * 0.7),
                   const SizedBox(height: Dimensions.paddingSizeDefault),
 
                   Text(
                     getTranslated('invite_friend_and_businesses', context),
                     textAlign: TextAlign.center,
-                    style: poppinsMedium.copyWith(
-                      fontSize: Dimensions.fontSizeOverLarge,
-                      color: Theme.of(context).textTheme.bodyLarge!.color,
-                    ),
+                    style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeOverLarge, color: Theme.of(context).textTheme.bodyLarge!.color),
                   ),
                   const SizedBox(height: Dimensions.paddingSizeSmall),
 
                   Text(
                     getTranslated('copy_your_code', context),
                     textAlign: TextAlign.center,
-                    style: poppinsRegular.copyWith(
-                      fontSize: Dimensions.fontSizeDefault,
-                    ),
+                    style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeDefault),
                   ),
                   const SizedBox(height: 40),
 
                   Text(
                     getTranslated('your_personal_code', context),
                     textAlign: TextAlign.center,
-                    style: poppinsRegular.copyWith(
-                      fontSize: Dimensions.fontSizeDefault,
-                      fontWeight: FontWeight.w200,
-                      color: Theme.of(context).hintColor,
-                    ),
+                    style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeDefault, fontWeight: FontWeight.w200, color: Theme.of(context).hintColor),
                   ),
                   const SizedBox(height: Dimensions.paddingSizeLarge),
 
                   DottedBorder(
-                    options: RoundedRectDottedBorderOptions(
-                      padding: const EdgeInsets.all(4),
-                      radius: const Radius.circular(Dimensions.radiusSizeLarge),
-                      dashPattern: const [5, 5],
-                      color: Theme.of(
-                        context,
-                      ).primaryColor.withValues(alpha: 0.5),
-                      strokeWidth: 2,
-                    ),
+                    options: RoundedRectDottedBorderOptions(padding: const EdgeInsets.all(4), radius: const Radius.circular(Dimensions.radiusSizeLarge), dashPattern: const [5, 5], color: Theme.of(context).primaryColor.withValues(alpha: 0.5), strokeWidth: 2),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: Dimensions.paddingSizeDefault,
-                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
                             child: Text(
                               profileProvider.userInfoModel!.referCode ?? '',
-                              style: poppinsRegular.copyWith(
-                                fontSize: Dimensions.fontSizeLarge,
-                              ),
+                              style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeLarge),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -254,37 +163,20 @@ class DetailsView extends StatelessWidget {
                         InkWell(
                           borderRadius: BorderRadius.circular(10),
                           onTap: () {
-                            if (profileProvider.userInfoModel!.referCode !=
-                                    null &&
-                                profileProvider.userInfoModel!.referCode !=
-                                    '') {
-                              Clipboard.setData(
-                                ClipboardData(
-                                  text:
-                                      '${profileProvider.userInfoModel != null ? profileProvider.userInfoModel!.referCode : ''}',
-                                ),
-                              );
-                              showCustomSnackBarHelper(
-                                getTranslated('referral_code_copied', context),
-                                isError: false,
-                              );
+                            if (profileProvider.userInfoModel!.referCode != null && profileProvider.userInfoModel!.referCode != '') {
+                              Clipboard.setData(ClipboardData(text: '${profileProvider.userInfoModel != null ? profileProvider.userInfoModel!.referCode : ''}'));
+                              showCustomSnackBarHelper(getTranslated('referral_code_copied', context), isError: false);
                             }
                           },
                           child: Container(
                             width: 85,
                             height: 40,
                             alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              color: Theme.of(context).primaryColor,
-                              borderRadius: BorderRadius.circular(60),
-                            ),
+                            decoration: BoxDecoration(color: Theme.of(context).primaryColor, borderRadius: BorderRadius.circular(60)),
                             child: FittedBox(
                               child: Text(
                                 getTranslated('copy', context),
-                                style: poppinsRegular.copyWith(
-                                  fontSize: Dimensions.fontSizeExtraLarge,
-                                  color: Colors.white.withValues(alpha: 0.9),
-                                ),
+                                style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeExtraLarge, color: Colors.white.withValues(alpha: 0.9)),
                               ),
                             ),
                           ),
@@ -294,12 +186,7 @@ class DetailsView extends StatelessWidget {
                   ),
                   const SizedBox(height: Dimensions.paddingSizeExtraLarge),
 
-                  Text(
-                    getTranslated('or_share', context),
-                    style: poppinsRegular.copyWith(
-                      fontSize: Dimensions.fontSizeLarge,
-                    ),
-                  ),
+                  Text(getTranslated('or_share', context), style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeLarge)),
 
                   const SizedBox(height: Dimensions.paddingSizeExtraLarge),
 
@@ -307,27 +194,13 @@ class DetailsView extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     onTap: () => SharePlus.instance.share(
                       ShareParams(
-                        title: ReferHelper.getSignUpLink(
-                          profileProvider.userInfoModel!.referCode!,
-                        ),
-                        uri: Uri.parse(AppConstants.webHostUrl).replace(
-                          path: RouteHelper.createAccount,
-                          queryParameters: {
-                            'referral_code':
-                                profileProvider.userInfoModel?.referCode ?? '',
-                          },
-                        ),
+                        title: ReferHelper.getSignUpLink(profileProvider.userInfoModel!.referCode!),
+                        uri: Uri.parse(AppConstants.webHostUrl).replace(path: RouteHelper.createAccount, queryParameters: {'referral_code': profileProvider.userInfoModel?.referCode ?? ''}),
                       ),
                     ),
                     child: Container(
-                      margin: const EdgeInsets.symmetric(
-                        horizontal: Dimensions.paddingSizeExtraSmall,
-                      ),
-                      child: Image.asset(
-                        Images.getShareIcon('share'),
-                        height: 50,
-                        width: 50,
-                      ),
+                      margin: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
+                      child: Image.asset(Images.getShareIcon('share'), height: 50, width: 50),
                     ),
                   ),
 

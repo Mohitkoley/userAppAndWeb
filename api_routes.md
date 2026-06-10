@@ -173,27 +173,17 @@ Backend should accept and preserve `point_value`, because after successful digit
 POST /api/v1/customer/order/place
 ```
 
-## Minimum Cart Points Rule
+## Cart Point Total
 
-Current frontend rule:
-
-```text
-Minimum total cart point_value = 6500
-```
-
-The checkout button is disabled until:
+The app sends total cart points for order storage/accounting:
 
 ```text
-sum(product point_value * quantity) >= 6500
+root point_value = sum(product point_value * quantity)
 ```
 
-With default `500` points per product unit, the user needs at least:
+There is no frontend minimum point-value rule at checkout. The checkout button should remain available for any cart total, and normal checkout validations still apply for address, delivery area, payment method, time slot, and delivery fee state.
 
-```text
-13 units * 500 = 6500
-```
-
-Backend should enforce the same rule on final order placement:
+Backend should continue validating that the root point total matches the cart item total on final order placement:
 
 ```text
 POST /api/v1/customer/order/place
@@ -202,7 +192,65 @@ POST /api/v1/customer/order/place
 Recommended backend validation:
 
 ```text
-Reject order if root point_value < 6500
 Reject order if root point_value does not match cart item total
 ```
 
+## Customer Membership Status
+
+This route returns the user's membership progress:
+
+```text
+GET /api/v1/customer/member-status
+```
+
+Response fields:
+
+```json
+{
+  "total_point_value": 0,
+  "is_member": false,
+  "next_milestone": 6500,
+  "progress_percent": 0,
+  "remaining_points": 6500
+}
+```
+
+The app uses this route for membership progress and status. A user becomes a member after reaching:
+
+```text
+total_point_value >= next_milestone
+```
+
+The current `next_milestone` is `6500`. This value is only the membership threshold. It is not a checkout minimum, and checkout should not be blocked below 6500 points.
+
+## Member Matrix Flow
+
+These routes power the member network screen:
+
+```text
+GET /api/v1/customer/matrix/status
+GET /api/v1/customer/matrix/team
+GET /api/v1/customer/matrix/tree?depth=2
+GET /api/v1/customer/matrix/incentive-history
+GET /api/v1/customer/matrix/levels
+POST /api/v1/customer/transfer-points
+```
+
+`POST /api/v1/customer/transfer-points` sends:
+
+```json
+{
+  "to_user_id": 2,
+  "amount": 100
+}
+```
+
+The app refreshes profile/member status and the matrix dashboard after a successful transfer, because the receiver may become a member after crossing the `6500` point threshold.
+
+Existing wallet and loyalty routes are already used by the wallet/loyalty flow:
+
+```text
+GET /api/v1/customer/wallet-transactions
+GET /api/v1/customer/loyalty-point-transactions
+POST /api/v1/customer/transfer-point-to-wallet
+```

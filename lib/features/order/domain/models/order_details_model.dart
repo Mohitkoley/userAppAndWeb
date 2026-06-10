@@ -40,7 +40,10 @@ class OrderDetailsModel {
     productId = json['product_id'];
     orderId = json['order_id'];
     price = json['price'].toDouble();
-    productDetails = json['product_details'] != null && json['product_details'] != "" ? ProductDetails.fromJson(json['product_details']) : null;
+    productDetails =
+        json['product_details'] != null && json['product_details'] != ""
+        ? ProductDetails.fromJson(json['product_details'])
+        : null;
     // variation = json['variation'];
     discountOnProduct = json['discount_on_product'].toDouble();
     discountType = json['discount_type'];
@@ -142,7 +145,7 @@ class ProductDetails {
     discount = json['discount'].toDouble();
     discountType = json['discount_type'];
     taxType = json['tax_type'];
-    pointValue = 500;
+    pointValue = json['point_value'] ?? 500;
   }
 
   Map<String, dynamic> toJson() {

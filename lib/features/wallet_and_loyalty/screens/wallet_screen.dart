@@ -1,8 +1,6 @@
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_grocery/common/enums/footer_type_enum.dart';
-import 'package:flutter_grocery/common/models/config_model.dart';
 import 'package:flutter_grocery/common/widgets/indicator_circle_widget.dart';
 import 'package:flutter_grocery/helper/responsive_helper.dart';
 import 'package:flutter_grocery/helper/route_helper.dart';
@@ -19,7 +17,6 @@ import 'package:flutter_grocery/common/widgets/custom_loader_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_shadow_widget.dart';
 import 'package:flutter_grocery/helper/custom_snackbar_helper.dart';
 import 'package:flutter_grocery/common/widgets/footer_web_widget.dart';
-import 'package:flutter_grocery/common/widgets/no_data_widget.dart';
 import 'package:flutter_grocery/common/widgets/not_login_widget.dart';
 import 'package:flutter_grocery/common/widgets/web_app_bar_widget.dart';
 import 'package:flutter_grocery/features/wallet_and_loyalty/widgets/bonus_slider_widget.dart';
@@ -42,7 +39,6 @@ class _WalletScreenState extends State<WalletScreen> {
   final bool _isLoggedIn = Provider.of<AuthProvider>(Get.context!, listen: false).isLoggedIn();
   List<PopupMenuEntry> entryList = [];
 
-
   @override
   void initState() {
     super.initState();
@@ -53,42 +49,34 @@ class _WalletScreenState extends State<WalletScreen> {
     walletProvide.setWalletFilerType('all', isUpdate: false);
 
     Future.delayed(const Duration(milliseconds: 500)).then((value) {
-      if(widget.status != null &&  widget.status!.contains('success')){
-
-        if(!kIsWeb || (kIsWeb && widget.token != null && walletProvide.checkToken(widget.token!))){
+      if (widget.status != null && widget.status!.contains('success')) {
+        if (!kIsWeb || (kIsWeb && widget.token != null && walletProvide.checkToken(widget.token!))) {
           showCustomSnackBarHelper(getTranslated('add_fund_successful', Get.context!), isError: false);
         }
-
-      }else if(widget.status != null && widget.status!.contains('fail')){
+      } else if (widget.status != null && widget.status!.contains('fail')) {
         showCustomSnackBarHelper(getTranslated('add_fund_failed', Get.context!));
       }
     });
 
-    if(_isLoggedIn){
+    if (_isLoggedIn) {
       walletProvide.getWalletBonusList(false);
       Provider.of<ProfileProvider>(Get.context!, listen: false).getUserInfo(true);
       walletProvide.getLoyaltyTransactionList('1', false, true, isEarning: walletProvide.selectedTabButtonIndex == 1);
 
       scrollController.addListener(() {
-        if (scrollController.position.pixels == scrollController.position.maxScrollExtent
-            && walletProvide.transactionList != null
-            && !walletProvide.isLoading) {
-
+        if (scrollController.position.pixels == scrollController.position.maxScrollExtent && walletProvide.transactionList != null && !walletProvide.isLoading) {
           int pageSize = (walletProvide.popularPageSize! / 10).ceil();
           if (walletProvide.offset < pageSize) {
             walletProvide.setOffset = walletProvide.offset + 1;
             walletProvide.updatePagination(true);
 
-
-            walletProvide.getLoyaltyTransactionList(
-              walletProvide.offset.toString(), false, true, isEarning: walletProvide.selectedTabButtonIndex == 1,
-            );
+            walletProvide.getLoyaltyTransactionList(walletProvide.offset.toString(), false, true, isEarning: walletProvide.selectedTabButtonIndex == 1);
           }
         }
       });
     }
-
   }
+
   @override
   void dispose() {
     super.dispose();
@@ -97,13 +85,12 @@ class _WalletScreenState extends State<WalletScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final ConfigModel? configModel = Provider.of<SplashProvider>(context, listen: false).configModel;
     final SplashProvider splashProvider = Provider.of<SplashProvider>(context, listen: false);
 
     return PopScope(
       canPop: ResponsiveHelper.isWeb() ? true : false,
       onPopInvokedWithResult: (bool didPop, _) {
-        if(didPop) return;
+        if (didPop) return;
 
         if (Navigator.canPop(context) && !ResponsiveHelper.isDesktop(context)) {
           Navigator.pop(context);
@@ -117,103 +104,126 @@ class _WalletScreenState extends State<WalletScreen> {
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: Theme.of(context).cardColor,
-        appBar: ResponsiveHelper.isDesktop(context)
-            ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget())
-            : null,
+        appBar: ResponsiveHelper.isDesktop(context) ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget()) : null,
 
-        body: Consumer<WalletAndLoyaltyProvider>(builder: (context, walletProvider, _) {
-          entryList = WalletHelper.getPopupMenuList(walletFilterList: walletProvider.walletFilterList, type: walletProvider.type);
+        body: Consumer<WalletAndLoyaltyProvider>(
+          builder: (context, walletProvider, _) {
+            entryList = WalletHelper.getPopupMenuList(walletFilterList: walletProvider.walletFilterList, type: walletProvider.type);
 
-          return RefreshIndicator(
-            onRefresh: () async{
-              walletProvider.getLoyaltyTransactionList('1', true, true);
-              Provider.of<ProfileProvider>(context, listen: false).getUserInfo(true);
-            },
-            child: _isLoggedIn ? configModel != null && configModel.walletStatus! ? CustomScrollView(controller: scrollController, slivers: [
-                if(!ResponsiveHelper.isDesktop(context)) SliverAppBar(
-                  backgroundColor: Theme.of(context).canvasColor,
-                  expandedHeight: 200,
-                  collapsedHeight: 200,
-                  pinned: true, floating: true,
-                  automaticallyImplyLeading: false,
-                  flexibleSpace: const SafeArea(
-                    child: Padding(
-                      padding: EdgeInsets.only(top: Dimensions.paddingSizeSmall),
-                      child: WalletCardWidget(),
-                    ),
-                  ),
-                ),
+            return RefreshIndicator(
+              onRefresh: () async {
+                walletProvider.getLoyaltyTransactionList('1', true, true);
+                Provider.of<ProfileProvider>(context, listen: false).getUserInfo(true);
+              },
+              child: _isLoggedIn
+                  ? CustomScrollView(
+                      controller: scrollController,
+                      slivers: [
+                        if (!ResponsiveHelper.isDesktop(context))
+                          SliverAppBar(
+                            backgroundColor: Theme.of(context).canvasColor,
+                            expandedHeight: 200,
+                            collapsedHeight: 200,
+                            pinned: true,
+                            floating: true,
+                            automaticallyImplyLeading: false,
+                            flexibleSpace: const SafeArea(
+                              child: Padding(
+                                padding: EdgeInsets.only(top: Dimensions.paddingSizeSmall),
+                                child: WalletCardWidget(),
+                              ),
+                            ),
+                          ),
 
-               if(!ResponsiveHelper.isDesktop(context)) SliverToBoxAdapter(child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault).copyWith(bottom: Dimensions.paddingSizeDefault),
-                  child: _WalletTitleView(entryList: entryList),
-                )),
+                        if (!ResponsiveHelper.isDesktop(context))
+                          SliverToBoxAdapter(
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault).copyWith(bottom: Dimensions.paddingSizeDefault),
+                              child: _WalletTitleView(entryList: entryList),
+                            ),
+                          ),
 
-              if(!ResponsiveHelper.isDesktop(context)) SliverToBoxAdapter(child: Consumer<ProfileProvider>(
-                    builder: (context, profileProvider, _) {
-                      return _isLoggedIn ? profileProvider.userInfoModel != null ? const SizedBox(width: Dimensions.webScreenWidth, child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          BonusSliderWidget(),
+                        if (!ResponsiveHelper.isDesktop(context))
+                          SliverToBoxAdapter(
+                            child: Consumer<ProfileProvider>(
+                              builder: (context, profileProvider, _) {
+                                return _isLoggedIn
+                                    ? profileProvider.userInfoModel != null
+                                          ? const SizedBox(
+                                              width: Dimensions.webScreenWidth,
+                                              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [BonusSliderWidget(), WalletHistoryListWidget()]),
+                                            )
+                                          : Center(child: CustomLoaderWidget(color: Theme.of(context).primaryColor))
+                                    : const NotLoggedInWidget();
+                              },
+                            ),
+                          ),
 
-                          WalletHistoryListWidget(),
-                        ],
-                      )) : Center(child: CustomLoaderWidget(color: Theme.of(context).primaryColor)) : const NotLoggedInWidget();
-                    }
-                )),
+                        if (ResponsiveHelper.isDesktop(context))
+                          SliverToBoxAdapter(
+                            child: Center(
+                              child: SizedBox(
+                                width: Dimensions.webScreenWidth,
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    const Expanded(
+                                      flex: 1,
+                                      child: CustomShadowWidget(
+                                        margin: EdgeInsets.symmetric(vertical: Dimensions.paddingSizeSmall),
+                                        child: Column(
+                                          children: [
+                                            SizedBox(height: Dimensions.paddingSizeDefault),
 
-              if(ResponsiveHelper.isDesktop(context))  SliverToBoxAdapter(child: Center(child: SizedBox(
-                width: Dimensions.webScreenWidth,
-                child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  const Expanded(flex: 1, child: CustomShadowWidget(
-                    margin: EdgeInsets.symmetric(vertical: Dimensions.paddingSizeSmall),
-                    child: Column(children: [
-                      SizedBox(height: Dimensions.paddingSizeDefault),
+                                            WalletCardWidget(),
+                                            SizedBox(height: Dimensions.paddingSizeDefault),
 
-                      WalletCardWidget(),
-                      SizedBox(height: Dimensions.paddingSizeDefault),
+                                            WalletUsesManualWidget(),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(width: Dimensions.paddingSizeDefault),
 
-                      WalletUsesManualWidget(),
-                    ]),
-                  )),
-                  const SizedBox(width: Dimensions.paddingSizeDefault),
+                                    Expanded(
+                                      flex: 2,
+                                      child: CustomShadowWidget(
+                                        margin: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeSmall),
+                                        child: Column(
+                                          children: [
+                                            const WebBonusView(),
 
-                  Expanded(flex: 2, child: CustomShadowWidget(
-                    margin: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeSmall),
-                    child: Column(children: [
-                      const WebBonusView(),
+                                            Padding(
+                                              padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
+                                              child: _WalletTitleView(entryList: entryList),
+                                            ),
+                                            const SizedBox(height: Dimensions.paddingSizeDefault),
 
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeDefault),
-                        child: _WalletTitleView(entryList: entryList),
-                      ),
-                      const SizedBox(height: Dimensions.paddingSizeDefault),
+                                            const WalletHistoryListWidget(),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
 
-                      const WalletHistoryListWidget()
-
-
-
-
-                    ]),
-                  )),
-                ]),
-              ))),
-
-              const FooterWebWidget(footerType: FooterType.sliver),
-
-            ]) : NoDataWidget(title: getTranslated('not_found', context)) : const NotLoggedInWidget(),
-          );
-        }),
+                        const FooterWebWidget(footerType: FooterType.sliver),
+                      ],
+                    )
+                  : const NotLoggedInWidget(),
+            );
+          },
+        ),
       ),
     );
   }
 }
 
-
 class _WalletTitleView extends StatelessWidget {
-  const _WalletTitleView({
-    required this.entryList,
-  });
+  const _WalletTitleView({required this.entryList});
 
   final List<PopupMenuEntry> entryList;
 
@@ -221,58 +231,48 @@ class _WalletTitleView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: Dimensions.paddingSizeExtraLarge),
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        Text(getTranslated('wallet_history', context), style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge)),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(getTranslated('wallet_history', context), style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge)),
 
-        Consumer<WalletAndLoyaltyProvider>(builder: (context, walletProvider, _) {
-          return Stack(
-            children: [
-              PopupMenuButton<dynamic>(
-                  offset: const Offset(-20, 20),
-                  itemBuilder: (BuildContext context) => entryList,
-                  onSelected: (dynamic value) {
-                    walletProvider.setWalletFilerType(walletProvider.walletFilterList[value].value!);
-                    walletProvider.getLoyaltyTransactionList('1', false, true);
-                  },
-                  padding: const EdgeInsets.symmetric(horizontal: 2),
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(Dimensions.radiusSizeDefault)),
-                  ),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(width: 1, color: Theme.of(context).hintColor.withValues(alpha: 0.5)),
-                      borderRadius: BorderRadius.circular(Dimensions.radiusSizeSmall),
+          Consumer<WalletAndLoyaltyProvider>(
+            builder: (context, walletProvider, _) {
+              return Stack(
+                children: [
+                  PopupMenuButton<dynamic>(
+                    offset: const Offset(-20, 20),
+                    itemBuilder: (BuildContext context) => entryList,
+                    onSelected: (dynamic value) {
+                      walletProvider.setWalletFilerType(walletProvider.walletFilterList[value].value!);
+                      walletProvider.getLoyaltyTransactionList('1', false, true);
+                    },
+                    padding: const EdgeInsets.symmetric(horizontal: 2),
+                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(Dimensions.radiusSizeDefault))),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(width: 1, color: Theme.of(context).hintColor.withValues(alpha: 0.5)),
+                        borderRadius: BorderRadius.circular(Dimensions.radiusSizeSmall),
+                      ),
+                      child: Icon(Icons.short_text, color: Theme.of(context).textTheme.displayLarge?.color),
                     ),
-                    child: Icon(Icons.short_text, color: Theme.of(context).textTheme.displayLarge?.color),
                   ),
-              ),
 
-              if(walletProvider.type != 'all') Positioned(
-                right: 2,
-                top: 2,
-                child: ActiveStatusIndicatorWidget(),
-              )
-          ],
-          );
-        }),
-      ]),
+                  if (walletProvider.type != 'all') Positioned(right: 2, top: 2, child: ActiveStatusIndicatorWidget()),
+                ],
+              );
+            },
+          ),
+        ],
+      ),
     );
   }
 }
 
-
-class TabButtonModel{
+class TabButtonModel {
   final String? buttonText;
   final String buttonIcon;
   final Function onTap;
 
   TabButtonModel(this.buttonText, this.buttonIcon, this.onTap);
-
-
 }
-
-
-
-
-
-

@@ -39,7 +39,7 @@
   <meta name="twitter:title" content="Online Grocery Store | Fresh Groceries Delivered to Your Door">
   <meta name="twitter:description" content="Shop fresh groceries, fruits, vegetables, meat, and daily essentials online. Fast delivery, great prices, and a smooth shopping experience. Order now!">
   <meta name="twitter:image" content="oleyshop.com/assets/meta_banner.png">
-  <meta name="twitter:site" content="@oleyshop>
+  <meta name="twitter:site" content="@oleyshop">
   <meta name="twitter:creator" content="@oleyshop">
 
   <!-- Robots and SEO -->
@@ -48,6 +48,7 @@
 
 
   <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="flutter_grocery">
@@ -59,26 +60,19 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
 
 
-  <title>GroFresh</title>
+  <title>Oleyshop</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <style>.grecaptcha-badge { visibility: hidden;} </style>
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = {{flutter_service_worker_version}};
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js?version=8.0" defer></script>
-
 </head>
 <body>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJOlEbXZNGB3ztTNlxDTA_BZu7owRREA8&callback=Function.prototype"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJOlEbXZNGB3ztTNlxDTA_BZu7owRREA8&loading=async&callback=Function.prototype" async></script>
 
-<script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
+<script type="application/javascript" src="assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
 
 
 
@@ -122,24 +116,7 @@
 
 
 <script>
-  window.addEventListener('load', function(ev) {
-    {{flutter_js}}
-    {{flutter_build_config}}
-
-    _flutter.loader.load({
-      serviceWorker: {
-        serviceWorkerVersion: {{flutter_service_worker_version}},
-      },
-      onEntrypointLoaded: function(engineInitializer) {
-        let config = { renderer: 'html' };
-        engineInitializer.initializeEngine(config).then(function(appRunner) {
-          appRunner.runApp();
-
-
-        });
-      }
-    });
-  });
+  {{flutter_bootstrap_js}}
 </script>
 
 

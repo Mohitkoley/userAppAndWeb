@@ -742,7 +742,32 @@
   "4_plus_rating": "4+ Rating",
   "3_plus_rating": "3+ Rating",
   "2_plus_rating": "2+ Rating",
-  "1_plus_rating": "1+ Rating"
+  "1_plus_rating": "1+ Rating",
+  "total_point_value": "Total Point Value",
+  "member": "Member",
+  "not_member": "Not Member",
+  "membership_progress": "Membership Progress",
+  "membership_achieved": "Membership achieved",
+  "points_left_to_become_member": "points left to become member",
+  "points": "points",
+  "member_network": "Member Network",
+  "matrix_status": "Matrix Status",
+  "current_level": "Current Level",
+  "position": "Position",
+  "team_members": "Team Members",
+  "direct_active": "Direct Active",
+  "next_level": "Next Level",
+  "remaining_members": "Remaining Members",
+  "transfer_points": "Transfer Points",
+  "receiver_user_id": "Receiver User ID",
+  "transfer": "Transfer",
+  "enter_receiver_user_id": "Enter receiver user ID",
+  "enter_valid_point_amount": "Enter valid point amount",
+  "incentive_history": "Incentive History",
+  "matrix_tree": "Matrix Tree",
+  "matrix_levels": "Matrix Levels",
+  "level": "Level",
+  "required_members": "Required Members"
 
 
 

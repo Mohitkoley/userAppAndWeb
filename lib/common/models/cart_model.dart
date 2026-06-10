@@ -1,4 +1,4 @@
-import 'package:flutter_grocery/common/models/product_model.dart';
+import 'product_model.dart';
 
 class CartModel {
   int? _id;
@@ -15,9 +15,21 @@ class CartModel {
   int? _stock;
   Product? _product;
 
-
-  CartModel(this._id, this._image, this._name, this._price, this._discountedPrice, this._quantity, this._variation, this._discount,
-       this._tax, this._capacity, this._unit, this._stock, this._product);
+  CartModel(
+    this._id,
+    this._image,
+    this._name,
+    this._price,
+    this._discountedPrice,
+    this._quantity,
+    this._variation,
+    this._discount,
+    this._tax,
+    this._capacity,
+    this._unit,
+    this._stock,
+    this._product,
+  );
 
   CartModel copyWith() {
     return CartModel(
@@ -37,8 +49,6 @@ class CartModel {
     );
   }
 
-
-
   Variations? get variation => _variation;
   // ignore: unnecessary_getters_setters
   int? get quantity => _quantity;
@@ -46,6 +56,7 @@ class CartModel {
   set quantity(int? value) {
     _quantity = value;
   }
+
   double? get price => _price;
   double? get capacity => _capacity;
   String? get unit => _unit;
@@ -56,8 +67,7 @@ class CartModel {
   double? get discount => _discount;
   double? get tax => _tax;
   int? get stock => _stock;
-  Product? get product =>_product;
-
+  Product? get product => _product;
 
   CartModel.fromJson(Map<String, dynamic> json) {
     _id = json['id'];
@@ -66,14 +76,17 @@ class CartModel {
     _price = json['price'];
     _discountedPrice = json['discounted_price'];
     _quantity = json['quantity'];
-    _variation = json['variations'] != null ? Variations.fromJson(json['variations']) : null;
+    _variation = json['variations'] != null
+        ? Variations.fromJson(json['variations'])
+        : null;
     _discount = json['discount'];
     _tax = json['tax'];
     _capacity = json['capacity'];
     _unit = json['unit'];
     _stock = json['stock'];
-    _product = json['product'] != null ? Product.fromJson(json['product']) : null;
-
+    _product = json['product'] != null
+        ? Product.fromJson(json['product'])
+        : null;
   }
 
   Map<String, dynamic> toJson() {

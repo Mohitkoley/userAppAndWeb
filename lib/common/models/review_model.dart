@@ -1,4 +1,4 @@
-import 'package:flutter_grocery/common/models/product_model.dart';
+import 'product_model.dart';
 
 class ReviewModel {
   Reviews? reviews;
@@ -7,8 +7,12 @@ class ReviewModel {
   ReviewModel({this.reviews, this.rating});
 
   ReviewModel.fromJson(Map<String, dynamic> json) {
-    reviews = json['reviews'] != null ? Reviews.fromJson(json['reviews']) : null;
-    rating = json['rating_info'] != null ? Rating.fromJson(json['rating_info']) : null;
+    reviews = json['reviews'] != null
+        ? Reviews.fromJson(json['reviews'])
+        : null;
+    rating = json['rating_info'] != null
+        ? Rating.fromJson(json['rating_info'])
+        : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -29,11 +33,7 @@ class Reviews {
   int? limit;
   int? offset;
 
-  Reviews(
-      {this.reviewList,
-        this.totalSize,
-        this.limit,
-        this.offset});
+  Reviews({this.reviewList, this.totalSize, this.limit, this.offset});
 
   Reviews.fromJson(Map<String, dynamic> json) {
     if (json['reviews'] != null) {
@@ -59,7 +59,6 @@ class Reviews {
   }
 }
 
-
 class Review {
   int? id;
   int? productId;
@@ -72,17 +71,18 @@ class Review {
   int? orderId;
   Customer? user;
 
-  Review(
-      {this.id,
-        this.productId,
-        this.userId,
-        this.comment,
-        this.attachment,
-        this.rating,
-        this.createdAt,
-        this.updatedAt,
-        this.orderId,
-        this.user});
+  Review({
+    this.id,
+    this.productId,
+    this.userId,
+    this.comment,
+    this.attachment,
+    this.rating,
+    this.createdAt,
+    this.updatedAt,
+    this.orderId,
+    this.user,
+  });
 
   Review.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -117,10 +117,8 @@ class Review {
   }
 }
 
-
-
 class Rating {
-  int ? ratingCount;
+  int? ratingCount;
   double? averageRating;
   List<RatingGroupCount>? ratingGroupCount;
 
@@ -142,8 +140,9 @@ class Rating {
     data['rating_review'] = ratingCount;
     data['average_rating'] = averageRating;
     if (ratingGroupCount != null) {
-      data['rating_group_count'] =
-          ratingGroupCount!.map((v) => v.toJson()).toList();
+      data['rating_group_count'] = ratingGroupCount!
+          .map((v) => v.toJson())
+          .toList();
     }
     return data;
   }
@@ -156,7 +155,9 @@ class RatingGroupCount {
   RatingGroupCount({this.reviewRating, this.total});
 
   RatingGroupCount.fromJson(Map<String, dynamic> json) {
-    reviewRating = json['rating'] != null ? double.parse(json['rating'].toString()) : null;
+    reviewRating = json['rating'] != null
+        ? double.parse(json['rating'].toString())
+        : null;
     total = json['total'] != null ? int.parse(json['total'].toString()) : null;
   }
 
