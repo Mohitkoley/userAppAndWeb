@@ -113,7 +113,7 @@ class CartItemWidget extends StatelessWidget {
                                       ),
                                     ),
                                     const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-                                    ProductPointValueWidget(pointValue: cart.product?.pointValue ?? 500, compact: true),
+                                    ProductPointValueWidget(pointValue: (cart.product?.pointValue ?? 500) * (cart.quantity ?? 0), compact: true),
                                   ],
                                 ),
                                 const SizedBox(height: Dimensions.paddingSizeExtraSmall),
@@ -175,7 +175,7 @@ class CartItemWidget extends StatelessWidget {
                                         ),
                                       ),
                                       const SizedBox(width: Dimensions.paddingSizeDefault),
-                                      ProductPointValueWidget(pointValue: cart.product?.pointValue ?? 500, compact: true),
+                                      ProductPointValueWidget(pointValue: (cart.product?.pointValue ?? 500) * (cart.quantity ?? 0), compact: true),
                                       const SizedBox(width: Dimensions.paddingSizeDefault),
 
                                       DiscountedPriceWidget(cart: cart, isUnitPrice: false),

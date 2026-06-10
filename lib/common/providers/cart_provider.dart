@@ -174,6 +174,15 @@ class CartProvider extends ChangeNotifier {
     }
     return total;
   }
+
+  int getTotalCartPointValue() {
+    int total = 0;
+    for (CartModel cart in _cartList) {
+      total += (cart.product?.pointValue ?? Product.defaultPointValue) * (cart.quantity ?? 0);
+    }
+    return total;
+  }
+
   int getCartQuantityByProductId(int productId) {
     int total = 0;
     for (CartModel cart in _cartList) {

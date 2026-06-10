@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_grocery/common/providers/cart_provider.dart';
 import 'package:flutter_grocery/common/widgets/custom_alert_dialog_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_asset_image_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_directionality_widget.dart';
@@ -99,7 +100,24 @@ class TotalAmountWidget extends StatelessWidget {
 
           CustomDirectionalityWidget(child: PriceConverterHelper.convertAnimationPrice(context, deliveryCharge + (weight ?? 0.0))),
 
+      ]),
+      const SizedBox(height: Dimensions.paddingSizeExtraSmall),
+
+      Consumer<CartProvider>(
+        builder: (context, cartProvider, _) => Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          Text(
+            getTranslated('total_point_value', context),
+            style: poppinsRegular.copyWith(
+              color: Theme.of(context).hintColor.withValues(alpha: 0.5),
+              fontSize: Dimensions.fontSizeDefault,
+            ),
+          ),
+          Text(
+            '${cartProvider.getTotalCartPointValue()} ${getTranslated('points', context)}',
+            style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeDefault),
+          ),
         ]),
+      ),
       const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [

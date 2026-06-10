@@ -47,16 +47,6 @@ class PlaceOrderButtonWidget extends StatelessWidget {
   final String? orderId;
   const PlaceOrderButtonWidget({super.key, this.fromOfflinePayment = false, this.discount, this.couponDiscount, this.tax, this.scrollController, this.dropdownKey, this.weight, this.orderId});
 
-  int _getCartPointValue(List<CartModel> cartList) {
-    int total = 0;
-
-    for (final cart in cartList) {
-      total += (cart.product?.pointValue ?? _defaultProductPointValue) * (cart.quantity ?? 0);
-    }
-
-    return total;
-  }
-
   void _openDropdown() {
     final dropdownContext = dropdownKey?.currentContext;
 
@@ -94,8 +84,9 @@ class PlaceOrderButtonWidget extends StatelessWidget {
           final double deliveryCharge = orderProvider.deliveryCharge ?? 0;
           final double amount = checkOutData?.amount ?? 0;
           final double total = deliveryCharge + amount;
-          final List<CartModel> cartList = Provider.of<CartProvider>(context).cartList;
-          final int cartPointValue = _getCartPointValue(cartList);
+          final CartProvider cartProvider = Provider.of<CartProvider>(context);
+          final List<CartModel> cartList = cartProvider.cartList;
+          final int cartPointValue = cartProvider.getTotalCartPointValue();
 
           return orderProvider.isLoading && !ResponsiveHelper.isDesktop(context)
               ? Center(child: CustomLoaderWidget(color: Theme.of(context).primaryColor))
@@ -108,19 +99,37 @@ class PlaceOrderButtonWidget extends StatelessWidget {
                         ResponsiveHelper.isDesktop(context)
                             ? AmountWidget(total: total, weight: weight)
                             : UpsideExpansionWidget(
-                                title: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                title: Column(
                                   children: [
-                                    Text(
-                                      getTranslated('total_amount', context),
-                                      style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          getTranslated('total_amount', context),
+                                          style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
+                                        ),
+                                        CustomDirectionalityWidget(
+                                          child: PriceConverterHelper.convertAnimationPrice(
+                                            context,
+                                            total + (weight ?? 0),
+                                            textStyle: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeExtraLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    CustomDirectionalityWidget(
-                                      child: PriceConverterHelper.convertAnimationPrice(
-                                        context,
-                                        total + (weight ?? 0),
-                                        textStyle: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeExtraLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
-                                      ),
+                                    const SizedBox(height: Dimensions.paddingSizeExtraSmall),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          getTranslated('total_point_value', context),
+                                          style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).textTheme.bodyMedium?.color),
+                                        ),
+                                        Text(
+                                          '$cartPointValue ${getTranslated('points', context)}',
+                                          style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).primaryColor),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
