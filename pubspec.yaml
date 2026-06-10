@@ -71,6 +71,7 @@ dependencies:
   animated_flip_counter: ^0.3.4
   emoji_picker_flutter: ^4.4.0
   html: ^0.15.6
+  flutter_app_functions: ^0.0.5
 
 
 
