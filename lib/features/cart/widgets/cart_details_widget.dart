@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_grocery/common/providers/cart_provider.dart';
 import 'package:flutter_grocery/common/widgets/price_item_widget.dart';
 import 'package:flutter_grocery/features/cart/widgets/coupon_widget.dart';
 import 'package:flutter_grocery/features/cart/widgets/delivery_option_widget.dart';
@@ -128,6 +129,15 @@ class CartDetailsWidget extends StatelessWidget {
                   fontSize: Dimensions.fontSizeExtraLarge,
                 ),
               ),
+              const SizedBox(height: Dimensions.paddingSizeSmall),
+
+              Consumer<CartProvider>(
+                builder: (context, cartProvider, _) => PriceItemWidget(
+                  title: getTranslated('total_point_value', context),
+                  subTitle: '${cartProvider.getTotalCartPointValue()} ${getTranslated('points', context)}',
+                  style: poppinsBold.copyWith(fontSize: Dimensions.fontSizeExtraLarge),
+                ),
+              ),
             ],
           ),
         ),
@@ -135,5 +145,4 @@ class CartDetailsWidget extends StatelessWidget {
     );
   }
 }
-
 
