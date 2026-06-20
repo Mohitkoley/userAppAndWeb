@@ -50,7 +50,7 @@ ios/Flutter/ephemeral
 android/build/reports/problems/problems-report.html
 .codex
 graphify-out/cache
+graphify-out/.*
 
 .opencode
 .sisyphus
-graphify-out/.graphify_root
