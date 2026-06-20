@@ -1,0 +1,3 @@
+  warning: could not transcribe /Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/raw/notification.mp3: Video transcription requires faster-whisper. Run: pip install 'graphifyy[video]'
+  warning: could not transcribe /Users/mohitkoley/StudioProjects/userAppAndWeb/assets/notification.wav: Video transcription requires faster-whisper. Run: pip install 'graphifyy[video]'
+[]

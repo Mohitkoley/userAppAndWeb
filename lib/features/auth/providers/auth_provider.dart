@@ -620,7 +620,11 @@ class AuthProvider with ChangeNotifier {
               loginType: FromPage.otp.name,
             ),
           );
+<<<<<<< HEAD
           RouteHelper.getMainRoute(action: RouteAction.pushReplacement);
+=======
+          RouteHelper.getRouteAfterLogin(action: RouteAction.pushReplacement);
+>>>>>>> origin/development
         } else if (tempToken != null) {
           RouteHelper.getOtpRegistration(
             tempToken,

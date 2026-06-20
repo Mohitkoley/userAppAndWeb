@@ -204,7 +204,11 @@ class _OtpRegistrationScreenState extends State<OtpRegistrationScreen> {
                                   } else {
                                     authProvider.clearUserLogData();
                                   }
+<<<<<<< HEAD
                                   RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+=======
+                                  RouteHelper.getRouteAfterLogin();
+>>>>>>> origin/development
                                 }
                               });
                             }else{
@@ -217,7 +221,11 @@ class _OtpRegistrationScreenState extends State<OtpRegistrationScreen> {
                                   final (responseModel, tempToken) = value;
                                   if(responseModel.isSuccess && tempToken == null) {
                                     authProvider.clearUserLogData();
+<<<<<<< HEAD
                                      RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+=======
+                                     RouteHelper.getRouteAfterLogin();
+>>>>>>> origin/development
                                   }else if(responseModel.isSuccess && tempToken != null){
                                     final VerificationProvider verificationProvider = Provider.of<VerificationProvider>(Get.context!, listen: false);
                                     final ConfigModel configModel = Provider.of<SplashProvider>(Get.context!, listen: false).configModel!;

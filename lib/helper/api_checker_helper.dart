@@ -14,6 +14,7 @@ import 'package:provider/provider.dart';
 class ApiCheckerHelper {
   static void checkApi(ApiResponseModel apiResponse) {
     ErrorResponseModel error = getError(apiResponse);
+<<<<<<< HEAD
 
     if((error.errors?[0].code == '401' || error.errors![0].code == 'auth-001' &&  ModalRoute.of(Get.context!)?.settings.name != RouteHelper.login)) {
       Provider.of<SplashProvider>(Get.context!, listen: false).removeSharedData();
@@ -40,13 +41,46 @@ class ApiCheckerHelper {
   }
 
   static Future<String> getStreamedResponseError(http.StreamedResponse response) async {
+=======
+    final Errors firstError = error.errors!.first;
+    final bool isUnauthorized =
+        firstError.code == '401' || firstError.code == 'auth-001';
+    final bool isLoginRoute =
+        ModalRoute.of(Get.context!)?.settings.name == RouteHelper.login;
+
+    if (isUnauthorized && !isLoginRoute) {
+      Provider.of<SplashProvider>(
+        Get.context!,
+        listen: false,
+      ).removeSharedData();
+      Provider.of<SplashProvider>(Get.context!, listen: false).setPageIndex(0);
+      RouteHelper.getLoginRoute(action: RouteAction.push);
+    } else {
+      showCustomSnackBarHelper(getTranslated(firstError.message, Get.context!));
+    }
+  }
+
+  static ErrorResponseModel getError(ApiResponseModel apiResponse) {
+    return ErrorResponseModel.fromJson(apiResponse.error);
+  }
+
+  static Future<String> getStreamedResponseError(
+    http.StreamedResponse response,
+  ) async {
+>>>>>>> origin/development
     String errorMessage = '${response.statusCode} ${response.reasonPhrase}';
 
     try {
       String responseBody = await response.stream.bytesToString();
       Map<String, dynamic> responseMap = jsonDecode(responseBody);
 
+<<<<<<< HEAD
       ErrorResponseModel errorResponse = ErrorResponseModel.fromJson(responseMap);
+=======
+      ErrorResponseModel errorResponse = ErrorResponseModel.fromJson(
+        responseMap,
+      );
+>>>>>>> origin/development
 
       if (errorResponse.errors != null && errorResponse.errors!.isNotEmpty) {
         errorMessage = errorResponse.errors!.first.message ?? errorMessage;
@@ -57,5 +91,9 @@ class ApiCheckerHelper {
 
     return errorMessage;
   }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> origin/development

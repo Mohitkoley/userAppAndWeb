@@ -209,6 +209,7 @@ void _showBottomSheet(BuildContext context){
             ),
             const SizedBox(height: Dimensions.paddingSizeExtraSmall),
 
+<<<<<<< HEAD
             if((Provider.of<SplashProvider>(context, listen: false).configModel?.isGuestCheckout ?? false))...[
               Center(child: TextButton(
                 style: TextButton.styleFrom(minimumSize: const Size(1, 40)),
@@ -227,6 +228,8 @@ void _showBottomSheet(BuildContext context){
               const SizedBox(height: Dimensions.paddingSizeDefault),
             ]
 
+=======
+>>>>>>> origin/development
           ]),
         );
       }

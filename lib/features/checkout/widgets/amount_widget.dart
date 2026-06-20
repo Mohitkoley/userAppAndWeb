@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+=======
+import 'package:flutter_grocery/common/providers/cart_provider.dart';
+>>>>>>> origin/development
 import 'package:flutter_grocery/common/widgets/custom_directionality_widget.dart';
 import 'package:flutter_grocery/features/checkout/domain/models/check_out_model.dart';
 import 'package:flutter_grocery/features/checkout/widgets/total_amount_widget.dart';
@@ -84,6 +88,21 @@ class AmountWidget extends StatelessWidget {
 
               if(ResponsiveHelper.isDesktop(context))...[
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+<<<<<<< HEAD
+=======
+                  Text(getTranslated('total_point_value', context), style: poppinsSemiBold.copyWith(
+                    fontSize: Dimensions.fontSizeLarge,
+                    color: Theme.of(context).textTheme.bodyMedium?.color,
+                  )),
+
+                  Text('${Provider.of<CartProvider>(context).getTotalCartPointValue()} ${getTranslated('points', context)}', style: poppinsSemiBold.copyWith(
+                    fontSize: Dimensions.fontSizeLarge, color: Theme.of(context).primaryColor,
+                  )),
+                ]),
+                const SizedBox(height: Dimensions.paddingSizeSmall),
+
+                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+>>>>>>> origin/development
                   Text(getTranslated('total_amount', context), style: poppinsSemiBold.copyWith(
                     fontSize: Dimensions.fontSizeLarge,
                     color: Theme.of(context).textTheme.bodyMedium?.color,

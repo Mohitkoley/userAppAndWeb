@@ -75,7 +75,11 @@ class MenuListWebWidget extends StatelessWidget {
           child: Center(
             child: Consumer<ProfileProvider>(
               builder: (context, profileProvider, child) {
+<<<<<<< HEAD
                 if ((splashProvider.configModel?.referEarnStatus ?? false) && profileProvider.userInfoModel?.referCode != null) {
+=======
+                if (splashProvider.configModel?.referEarnStatus ?? false) {
+>>>>>>> origin/development
                   final MenuModel referMenu = MenuModel(icon: Images.referralIcon, title: getTranslated('referAndEarn', context), route: () => RouteHelper.getReferAndEarnRoute());
                   menuList.removeWhere((menu) => menu.route == referMenu.route);
                   menuList.insert(6, referMenu);
@@ -110,7 +114,11 @@ class MenuListWebWidget extends StatelessWidget {
                                           const SizedBox(height: 80),
 
                                           Text(
+<<<<<<< HEAD
                                             getTranslated('guest', context),
+=======
+                                            getTranslated('welcome', context),
+>>>>>>> origin/development
                                             style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeExtraLarge, color: Theme.of(context).textTheme.bodyLarge?.color?.withValues(alpha: 0.6)),
                                           ),
                                         ],

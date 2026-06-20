@@ -43,7 +43,11 @@ class _OnlySocialLoginWidgetState extends State<OnlySocialLoginWidget> {
   ) async {
     if (isRoute) {
       if (token != null) {
+<<<<<<< HEAD
         RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+=======
+        RouteHelper.getRouteAfterLogin();
+>>>>>>> origin/development
       } else if (tempToken != null) {
         RouteHelper.getOtpRegistration(
           tempToken,
@@ -518,6 +522,7 @@ class _OnlySocialLoginWidgetState extends State<OnlySocialLoginWidget> {
                                   height: Dimensions.paddingSizeLarge,
                                 ),
                               ],
+<<<<<<< HEAD
 
                               if (configModel?.isGuestCheckout == true &&
                                   !Navigator.canPop(context)) ...[
@@ -574,6 +579,8 @@ class _OnlySocialLoginWidgetState extends State<OnlySocialLoginWidget> {
                                 ),
                                 SizedBox(height: size.height * 0.03),
                               ],
+=======
+>>>>>>> origin/development
                             ],
                           ),
                         ),

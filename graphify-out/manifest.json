@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "/Users/mohitkoley/flutter_projects/freelance/oleyshop/userAppAndWeb/test/widget_test.dart": 1771991568.0,
   "/Users/mohitkoley/flutter_projects/freelance/oleyshop/userAppAndWeb/web/firebase-messaging-sw.js": 1775380527.7520063,
   "/Users/mohitkoley/flutter_projects/freelance/oleyshop/userAppAndWeb/ios/Runner/Runner-Bridging-Header.h": 1771991568.0,
@@ -577,4 +578,3071 @@
   "/Users/mohitkoley/flutter_projects/freelance/oleyshop/userAppAndWeb/assets/image/order_placed.png": 1771991568.0,
   "/Users/mohitkoley/flutter_projects/freelance/oleyshop/userAppAndWeb/android/app/src/main/res/raw/notification.mp3": 1771991568.0,
   "/Users/mohitkoley/flutter_projects/freelance/oleyshop/userAppAndWeb/assets/notification.wav": 1771991568.0
+=======
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.githooks/pre-push": {
+    "mtime": 1780593826.176236,
+    "ast_hash": "82b085aa7f9deabd038ce45a97f55857",
+    "semantic_hash": "82b085aa7f9deabd038ce45a97f55857"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.vscode/launch.json": {
+    "mtime": 1780593826.1765063,
+    "ast_hash": "af881f31892a147cf8858a133fc6e77f",
+    "semantic_hash": "af881f31892a147cf8858a133fc6e77f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/build.gradle.kts": {
+    "mtime": 1780593826.1770616,
+    "ast_hash": "11ad4fceb56c1c2b991209fac5755a1b",
+    "semantic_hash": "11ad4fceb56c1c2b991209fac5755a1b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/google-services.json": {
+    "mtime": 1780593826.1771486,
+    "ast_hash": "162c4414d96e82efb418b33b370e61a9",
+    "semantic_hash": "162c4414d96e82efb418b33b370e61a9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java": {
+    "mtime": 1780595144.0424452,
+    "ast_hash": "44937cf7002a9e2a57f58ce38a0dc33a",
+    "semantic_hash": "44937cf7002a9e2a57f58ce38a0dc33a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/kotlin/com/u6amtech/grofresh/MainActivity.kt": {
+    "mtime": 1780597806.289094,
+    "ast_hash": "8a0983fb6d0b4bde295d89eea56c57cc",
+    "semantic_hash": "8a0983fb6d0b4bde295d89eea56c57cc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/kotlin/com/u6amtech/grofresh/MyApplication.kt": {
+    "mtime": 1780597891.4867563,
+    "ast_hash": "155da45dc32ba1d4f50bb641b3ccb62a",
+    "semantic_hash": "155da45dc32ba1d4f50bb641b3ccb62a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/build.gradle.kts": {
+    "mtime": 1781072045.592978,
+    "ast_hash": "e2ef32fde1a1176960a906c54475c79d",
+    "semantic_hash": "e2ef32fde1a1176960a906c54475c79d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/gradlew": {
+    "mtime": 1780596240.280976,
+    "ast_hash": "7f1cd7eb3f75a1dc85cd37753972a6e2",
+    "semantic_hash": "7f1cd7eb3f75a1dc85cd37753972a6e2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/settings.gradle.kts": {
+    "mtime": 1780596314.4147913,
+    "ast_hash": "5c0d2588bd06fbe18db287bb1a6ffbf8",
+    "semantic_hash": "5c0d2588bd06fbe18db287bb1a6ffbf8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/language/ar.json": {
+    "mtime": 1781072045.5963054,
+    "ast_hash": "d72fd485b43c57510a3f0f5cfa1ea977",
+    "semantic_hash": "d72fd485b43c57510a3f0f5cfa1ea977"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/language/bn.json": {
+    "mtime": 1781072045.5968444,
+    "ast_hash": "f0184bafaf0d2ff727d08e841b8500d8",
+    "semantic_hash": "f0184bafaf0d2ff727d08e841b8500d8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/language/en.json": {
+    "mtime": 1781072045.5972593,
+    "ast_hash": "ad63ebcdbc499ba36885e43626bf412c",
+    "semantic_hash": "ad63ebcdbc499ba36885e43626bf412c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Flutter/flutter_export_environment.sh": {
+    "mtime": 1781162998.8006322,
+    "ast_hash": "2eab93976d344c69f791abc64b6dabda",
+    "semantic_hash": "2eab93976d344c69f791abc64b6dabda"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/AppDelegate.swift": {
+    "mtime": 1780593826.225014,
+    "ast_hash": "4bc0b54f22cd329ee178e8bc8002c9ed",
+    "semantic_hash": "4bc0b54f22cd329ee178e8bc8002c9ed"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1780593826.2277188,
+    "ast_hash": "12ee8441b744cdabc72ddb1cacdd82d1",
+    "semantic_hash": "12ee8441b744cdabc72ddb1cacdd82d1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json": {
+    "mtime": 1780593826.2278483,
+    "ast_hash": "770f4f65e02ca2fc57f46f4f4148d15d",
+    "semantic_hash": "770f4f65e02ca2fc57f46f4f4148d15d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/GeneratedPluginRegistrant.h": {
+    "mtime": 1780595125.3499665,
+    "ast_hash": "decb9041b5e91a07e66f4664e5dac408",
+    "semantic_hash": "decb9041b5e91a07e66f4664e5dac408"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/GeneratedPluginRegistrant.m": {
+    "mtime": 1780595125.3510094,
+    "ast_hash": "9446b63317954f8d37961db7bffc5538",
+    "semantic_hash": "9446b63317954f8d37961db7bffc5538"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Runner-Bridging-Header.h": {
+    "mtime": 1780593826.228514,
+    "ast_hash": "e07862ac930ed4d8479185d52c6cc66d",
+    "semantic_hash": "e07862ac930ed4d8479185d52c6cc66d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/app_mode_enum.dart": {
+    "mtime": 1780593826.2288232,
+    "ast_hash": "e92ba073b530cce0bc9231eeda5d114e",
+    "semantic_hash": "e92ba073b530cce0bc9231eeda5d114e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/data_source_enum.dart": {
+    "mtime": 1780593826.22889,
+    "ast_hash": "69ebdb39ad005d87585294ee0f659aa0",
+    "semantic_hash": "69ebdb39ad005d87585294ee0f659aa0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/footer_type_enum.dart": {
+    "mtime": 1780593826.2289634,
+    "ast_hash": "7a5d54f944764d335dd16fa1e0e86e14",
+    "semantic_hash": "7a5d54f944764d335dd16fa1e0e86e14"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/html_type_enum.dart": {
+    "mtime": 1780593826.229037,
+    "ast_hash": "236452c9de36a8aaafaafe7184c5c1e4",
+    "semantic_hash": "236452c9de36a8aaafaafe7184c5c1e4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/local_caches_type_enum.dart": {
+    "mtime": 1780593826.2291005,
+    "ast_hash": "41ef97c9b0050c70913bc45d2474d74e",
+    "semantic_hash": "41ef97c9b0050c70913bc45d2474d74e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/notification_type.dart": {
+    "mtime": 1780593826.229169,
+    "ast_hash": "cc7b462099122ae577b4043d065e82cb",
+    "semantic_hash": "cc7b462099122ae577b4043d065e82cb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/order_type_enum.dart": {
+    "mtime": 1780593826.2292352,
+    "ast_hash": "81522d283077c5b71726b8adf8328ecc",
+    "semantic_hash": "81522d283077c5b71726b8adf8328ecc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/popup_menu_type_enum.dart": {
+    "mtime": 1780593826.2293067,
+    "ast_hash": "db6fb4f66f397c48655dda7b39fc4cad",
+    "semantic_hash": "db6fb4f66f397c48655dda7b39fc4cad"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/enums/product_filter_type_enum.dart": {
+    "mtime": 1780593826.2293787,
+    "ast_hash": "ea14b1b896cd17f95cd6d9c7cf17ae99",
+    "semantic_hash": "ea14b1b896cd17f95cd6d9c7cf17ae99"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/api_response_model.dart": {
+    "mtime": 1780593826.2296097,
+    "ast_hash": "b0d3ae53fb9694e76ebaf8f0d6920211",
+    "semantic_hash": "b0d3ae53fb9694e76ebaf8f0d6920211"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/cart_model.dart": {
+    "mtime": 1781072045.6225624,
+    "ast_hash": "29143db140894cafa5d184a8f9b7efb9",
+    "semantic_hash": "29143db140894cafa5d184a8f9b7efb9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/config_model.dart": {
+    "mtime": 1780593826.2298133,
+    "ast_hash": "688791c3ad65f87c7e4f219f3044907d",
+    "semantic_hash": "688791c3ad65f87c7e4f219f3044907d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/delivery_info_model.dart": {
+    "mtime": 1780593826.2299078,
+    "ast_hash": "f979c0c4f6a3c6978ca4e6ce831e996e",
+    "semantic_hash": "f979c0c4f6a3c6978ca4e6ce831e996e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/error_response_model.dart": {
+    "mtime": 1780593826.2299838,
+    "ast_hash": "a9095876994d661715c2158586f2b9e8",
+    "semantic_hash": "a9095876994d661715c2158586f2b9e8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/image_full_url.dart": {
+    "mtime": 1780593826.2300663,
+    "ast_hash": "9b24bee9167f2983024fd7d8c62b63c8",
+    "semantic_hash": "9b24bee9167f2983024fd7d8c62b63c8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/language_model.dart": {
+    "mtime": 1780593826.2301495,
+    "ast_hash": "f2b95b318ef7fabd7b1586a906949360",
+    "semantic_hash": "f2b95b318ef7fabd7b1586a906949360"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/notification_body.dart": {
+    "mtime": 1780593826.2302296,
+    "ast_hash": "2fc6f6cd81ef4e22a15324e7a1984dc7",
+    "semantic_hash": "2fc6f6cd81ef4e22a15324e7a1984dc7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/payment_response_model.dart": {
+    "mtime": 1780593826.230316,
+    "ast_hash": "e3fe089d913e739722afb976d9f17ad7",
+    "semantic_hash": "e3fe089d913e739722afb976d9f17ad7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/place_details_model.dart": {
+    "mtime": 1780593826.2304044,
+    "ast_hash": "dd71a046ad56c6b2e31723fa9f6c43f1",
+    "semantic_hash": "dd71a046ad56c6b2e31723fa9f6c43f1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/place_order_model.dart": {
+    "mtime": 1781072045.622738,
+    "ast_hash": "81a22b35ff2c4e48df24e62c8656bc21",
+    "semantic_hash": "81a22b35ff2c4e48df24e62c8656bc21"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/product_model.dart": {
+    "mtime": 1781072045.623047,
+    "ast_hash": "a92804f3e25bbf81e63974dee7113edf",
+    "semantic_hash": "a92804f3e25bbf81e63974dee7113edf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/response_model.dart": {
+    "mtime": 1780593826.2307293,
+    "ast_hash": "b56ddd5f1f0c98c260e6694c9d72a4f1",
+    "semantic_hash": "b56ddd5f1f0c98c260e6694c9d72a4f1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/models/review_model.dart": {
+    "mtime": 1781072045.6232219,
+    "ast_hash": "ef2a7bbb1fa779df7ffeb0d5d4d9e1d2",
+    "semantic_hash": "ef2a7bbb1fa779df7ffeb0d5d4d9e1d2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/cart_provider.dart": {
+    "mtime": 1781072355.7867258,
+    "ast_hash": "af4bb8bd88c2b0ad738ae9a40516a58c",
+    "semantic_hash": "af4bb8bd88c2b0ad738ae9a40516a58c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/language_provider.dart": {
+    "mtime": 1780593826.2310412,
+    "ast_hash": "56a42dc7a0605487bad33fe85ab75739",
+    "semantic_hash": "56a42dc7a0605487bad33fe85ab75739"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/localization_provider.dart": {
+    "mtime": 1780593826.2311308,
+    "ast_hash": "5e9581d74b0a65e862e23dbe08be1724",
+    "semantic_hash": "5e9581d74b0a65e862e23dbe08be1724"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/news_letter_provider.dart": {
+    "mtime": 1780593826.2312143,
+    "ast_hash": "f1f9a0676f86910ea9da5fbd67379cb2",
+    "semantic_hash": "f1f9a0676f86910ea9da5fbd67379cb2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/product_provider.dart": {
+    "mtime": 1780593826.231318,
+    "ast_hash": "1295974dee558ed544cd7904df480275",
+    "semantic_hash": "1295974dee558ed544cd7904df480275"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/search_filter_provider.dart": {
+    "mtime": 1780593826.2313979,
+    "ast_hash": "d598f18c9747b558726a78aaf3da15bc",
+    "semantic_hash": "d598f18c9747b558726a78aaf3da15bc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/providers/theme_provider.dart": {
+    "mtime": 1780593826.2314727,
+    "ast_hash": "928302971a9b0b3a0fc97e6fddc5ed58",
+    "semantic_hash": "928302971a9b0b3a0fc97e6fddc5ed58"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/reposotories/cart_repo.dart": {
+    "mtime": 1780593826.2316039,
+    "ast_hash": "9a14fb318c68aed5d3142469361b0bee",
+    "semantic_hash": "9a14fb318c68aed5d3142469361b0bee"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/reposotories/data_sync_repo.dart": {
+    "mtime": 1780593826.2316859,
+    "ast_hash": "4ac24b430e74ef1c5a86fe036bbfdcb4",
+    "semantic_hash": "4ac24b430e74ef1c5a86fe036bbfdcb4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/reposotories/language_repo.dart": {
+    "mtime": 1780593826.2317703,
+    "ast_hash": "3fb10e8cd676e37fddfb990bd7a11d37",
+    "semantic_hash": "3fb10e8cd676e37fddfb990bd7a11d37"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/reposotories/news_letter_repo.dart": {
+    "mtime": 1780593826.2318614,
+    "ast_hash": "76b94e5819a47626fb2436793cac1945",
+    "semantic_hash": "76b94e5819a47626fb2436793cac1945"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/reposotories/product_repo.dart": {
+    "mtime": 1780593826.231926,
+    "ast_hash": "0f3f0ea422dc566924f0119f12a9491d",
+    "semantic_hash": "0f3f0ea422dc566924f0119f12a9491d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/app_bar_base_widget.dart": {
+    "mtime": 1780593826.232046,
+    "ast_hash": "20c9a07e281119e3fb0d8adb3b89ebf9",
+    "semantic_hash": "20c9a07e281119e3fb0d8adb3b89ebf9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/cookies_widget.dart": {
+    "mtime": 1780593826.232158,
+    "ast_hash": "b0d7809456c365b680480348d2593c7b",
+    "semantic_hash": "b0d7809456c365b680480348d2593c7b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_alert_dialog_widget.dart": {
+    "mtime": 1780593826.2322478,
+    "ast_hash": "21b39a758703f0d73e0e564fc033923b",
+    "semantic_hash": "21b39a758703f0d73e0e564fc033923b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_app_bar_widget.dart": {
+    "mtime": 1780593826.2324917,
+    "ast_hash": "04fe84a6b782ec1de7d69846ea00e24b",
+    "semantic_hash": "04fe84a6b782ec1de7d69846ea00e24b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_asset_image_widget.dart": {
+    "mtime": 1780593826.232582,
+    "ast_hash": "eada3e1406a6022c62c23bd74e34987d",
+    "semantic_hash": "eada3e1406a6022c62c23bd74e34987d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_button_widget.dart": {
+    "mtime": 1780593826.2326581,
+    "ast_hash": "c851898e5e3e38044e4a7fb986599b5d",
+    "semantic_hash": "c851898e5e3e38044e4a7fb986599b5d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_directionality_widget.dart": {
+    "mtime": 1780593826.2327352,
+    "ast_hash": "fa826508f591d3aea68bec69732e07d6",
+    "semantic_hash": "fa826508f591d3aea68bec69732e07d6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_divider_widget.dart": {
+    "mtime": 1780593826.2328093,
+    "ast_hash": "e206bd17750d59ca36a0d14c52eb0f40",
+    "semantic_hash": "e206bd17750d59ca36a0d14c52eb0f40"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_image_widget.dart": {
+    "mtime": 1780593826.232886,
+    "ast_hash": "dbca6b2cdea0824fbdb1cdae288356a3",
+    "semantic_hash": "dbca6b2cdea0824fbdb1cdae288356a3"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_ink_well_widget.dart": {
+    "mtime": 1780593826.232956,
+    "ast_hash": "33242032731a6d60f1c6128622231c36",
+    "semantic_hash": "33242032731a6d60f1c6128622231c36"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_loader_widget.dart": {
+    "mtime": 1780593826.2330441,
+    "ast_hash": "f39fb0413beaf50298e12b8df7c7960e",
+    "semantic_hash": "f39fb0413beaf50298e12b8df7c7960e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_mask_info.dart": {
+    "mtime": 1780593826.2331226,
+    "ast_hash": "1b1035695bf7121db63334b4dcfa6e2f",
+    "semantic_hash": "1b1035695bf7121db63334b4dcfa6e2f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_pop_scope_handel_deep_link_widget.dart": {
+    "mtime": 1780593826.2331917,
+    "ast_hash": "efce06c9749f37d45667c6491e6fb6b2",
+    "semantic_hash": "efce06c9749f37d45667c6491e6fb6b2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_pop_scope_widget.dart": {
+    "mtime": 1780593826.2332702,
+    "ast_hash": "7c8d9d2a0029e52887cfa3f64993a8eb",
+    "semantic_hash": "7c8d9d2a0029e52887cfa3f64993a8eb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_shadow_widget.dart": {
+    "mtime": 1780593826.2333486,
+    "ast_hash": "920fab07827bdd7af354259c6da3108e",
+    "semantic_hash": "920fab07827bdd7af354259c6da3108e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_single_child_list_widget.dart": {
+    "mtime": 1780593826.2334256,
+    "ast_hash": "6e8538be82d8794a6eba8553092f37f6",
+    "semantic_hash": "6e8538be82d8794a6eba8553092f37f6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_slider_list_widget.dart": {
+    "mtime": 1780593826.233503,
+    "ast_hash": "d2fe7cc8ecd15733c6d350ccc2ed0abf",
+    "semantic_hash": "d2fe7cc8ecd15733c6d350ccc2ed0abf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_text_field_widget.dart": {
+    "mtime": 1780593826.2336056,
+    "ast_hash": "bc7bab14e650e1519ca1a45fcab0640a",
+    "semantic_hash": "bc7bab14e650e1519ca1a45fcab0640a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_toast.dart": {
+    "mtime": 1780593826.2336802,
+    "ast_hash": "7f4739610ba90216fc2b83095dd9c9b9",
+    "semantic_hash": "7f4739610ba90216fc2b83095dd9c9b9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_tooltip.dart": {
+    "mtime": 1780593826.2337828,
+    "ast_hash": "133c6774f285ea026f322c8344a06a79",
+    "semantic_hash": "133c6774f285ea026f322c8344a06a79"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/custom_zoom_widget.dart": {
+    "mtime": 1780593826.2338612,
+    "ast_hash": "34ed3a58328e2893a864fad8046d415a",
+    "semantic_hash": "34ed3a58328e2893a864fad8046d415a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/discount_tag.dart": {
+    "mtime": 1780593826.2339802,
+    "ast_hash": "592809c04403cf4978ccffef9a05e31a",
+    "semantic_hash": "592809c04403cf4978ccffef9a05e31a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/footer_web_widget.dart": {
+    "mtime": 1780593826.234147,
+    "ast_hash": "f84e786598bb9e77722386c12cb0eb2a",
+    "semantic_hash": "f84e786598bb9e77722386c12cb0eb2a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/indicator_circle_widget.dart": {
+    "mtime": 1780593826.2342486,
+    "ast_hash": "c1634258e02361c5d263556a7e219a03",
+    "semantic_hash": "c1634258e02361c5d263556a7e219a03"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/key_value_item_widget.dart": {
+    "mtime": 1780593826.2343473,
+    "ast_hash": "7bcc490858371dded437cee6c3c58f9e",
+    "semantic_hash": "7bcc490858371dded437cee6c3c58f9e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/language_hover_widget.dart": {
+    "mtime": 1780593826.2344627,
+    "ast_hash": "fb47ff9af15ce7aee6bd26c52cdb9f44",
+    "semantic_hash": "fb47ff9af15ce7aee6bd26c52cdb9f44"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/main_app_bar_widget.dart": {
+    "mtime": 1780593826.2346158,
+    "ast_hash": "affa04a8496096fcb4f0d0a43c7300df",
+    "semantic_hash": "affa04a8496096fcb4f0d0a43c7300df"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/no_data_widget.dart": {
+    "mtime": 1780593826.2347033,
+    "ast_hash": "ccbbf1a9ed75e4df0e391428abfbd150",
+    "semantic_hash": "ccbbf1a9ed75e4df0e391428abfbd150"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/not_login_widget.dart": {
+    "mtime": 1780593826.2348108,
+    "ast_hash": "28d8d378e77139622fbe98a21dbee97c",
+    "semantic_hash": "28d8d378e77139622fbe98a21dbee97c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/notification_dialog_web_widget.dart": {
+    "mtime": 1780593826.2349162,
+    "ast_hash": "31c1b0bc268e6b6cb7437c2b71f8cd34",
+    "semantic_hash": "31c1b0bc268e6b6cb7437c2b71f8cd34"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/on_hover_widget.dart": {
+    "mtime": 1780593826.2349904,
+    "ast_hash": "c9cb367a2834e30c20dfbc8579ad4a8d",
+    "semantic_hash": "c9cb367a2834e30c20dfbc8579ad4a8d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/paginated_list_widget.dart": {
+    "mtime": 1780593826.2350707,
+    "ast_hash": "44802a23b04c9c328ac6b5ab4435da2c",
+    "semantic_hash": "44802a23b04c9c328ac6b5ab4435da2c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/phone_number_field_widget.dart": {
+    "mtime": 1780593826.2351491,
+    "ast_hash": "530fd2952d38063776a853fac2552e0e",
+    "semantic_hash": "530fd2952d38063776a853fac2552e0e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/price_item_widget.dart": {
+    "mtime": 1780593826.2352192,
+    "ast_hash": "2f614fcda3c4390789a177f0d81a06e2",
+    "semantic_hash": "2f614fcda3c4390789a177f0d81a06e2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/product_point_value_widget.dart": {
+    "mtime": 1780593826.2353818,
+    "ast_hash": "ce9d285c86065220609a19a0ee48b9fe",
+    "semantic_hash": "ce9d285c86065220609a19a0ee48b9fe"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/product_widget.dart": {
+    "mtime": 1780593826.2354681,
+    "ast_hash": "3d85fa40bd91f9b4d32fb63170e891d1",
+    "semantic_hash": "3d85fa40bd91f9b4d32fb63170e891d1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/profile_hover_widget.dart": {
+    "mtime": 1780593826.2355528,
+    "ast_hash": "0b302ce85346f74f0a0e2c5c5af96021",
+    "semantic_hash": "0b302ce85346f74f0a0e2c5c5af96021"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/search_filter_widget.dart": {
+    "mtime": 1780593826.235662,
+    "ast_hash": "17044bbc42daa81c6f8c25445a58d081",
+    "semantic_hash": "17044bbc42daa81c6f8c25445a58d081"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/text_hover_widget.dart": {
+    "mtime": 1780593826.2357445,
+    "ast_hash": "6699d8bebb278e9ccc87621b55b8bf09",
+    "semantic_hash": "6699d8bebb278e9ccc87621b55b8bf09"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/third_party_chat_widget.dart": {
+    "mtime": 1780593826.235822,
+    "ast_hash": "195c2b25e05a9d533b40e1487732564d",
+    "semantic_hash": "195c2b25e05a9d533b40e1487732564d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/title_widget.dart": {
+    "mtime": 1780593826.2359092,
+    "ast_hash": "a35c49ad873ab10661436bfc00ae4b00",
+    "semantic_hash": "a35c49ad873ab10661436bfc00ae4b00"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/web_app_bar_widget.dart": {
+    "mtime": 1780593826.2360005,
+    "ast_hash": "71e071af42dbd84541be4a070568ad39",
+    "semantic_hash": "71e071af42dbd84541be4a070568ad39"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/web_product_shimmer_widget.dart": {
+    "mtime": 1780593826.2360902,
+    "ast_hash": "dd81d7fbb0ac694f50dc97674df7825c",
+    "semantic_hash": "dd81d7fbb0ac694f50dc97674df7825c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/common/widgets/wish_button_widget.dart": {
+    "mtime": 1780593826.2361622,
+    "ast_hash": "c8c95710008c1419586f85b31fe0fa58",
+    "semantic_hash": "c8c95710008c1419586f85b31fe0fa58"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/data/datasource/local/cache_response.dart": {
+    "mtime": 1780593826.236388,
+    "ast_hash": "f5f8543e73d8ca7876023b3f2745a6b2",
+    "semantic_hash": "f5f8543e73d8ca7876023b3f2745a6b2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/data/datasource/local/cache_response.g.dart": {
+    "mtime": 1780593826.2364948,
+    "ast_hash": "621a80b5df09b5e9df803ba0f8b26499",
+    "semantic_hash": "621a80b5df09b5e9df803ba0f8b26499"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/data/datasource/remote/dio/dio_client.dart": {
+    "mtime": 1780593826.2366557,
+    "ast_hash": "31d2ee08445a5cae79a32e8f5091208b",
+    "semantic_hash": "31d2ee08445a5cae79a32e8f5091208b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/data/datasource/remote/dio/logging_interceptor.dart": {
+    "mtime": 1780593826.236731,
+    "ast_hash": "6ab4bddd509faa4b8fd147d17d0a74e7",
+    "semantic_hash": "6ab4bddd509faa4b8fd147d17d0a74e7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/data/datasource/remote/exception/api_error_handler.dart": {
+    "mtime": 1780593826.2368467,
+    "ast_hash": "af27103606a6b65e291f610e342441c8",
+    "semantic_hash": "af27103606a6b65e291f610e342441c8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/di_container.dart": {
+    "mtime": 1781072045.6237595,
+    "ast_hash": "44b11afccf7b0b18ba19b3dea3f2b30f",
+    "semantic_hash": "44b11afccf7b0b18ba19b3dea3f2b30f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/domain/models/address_model.dart": {
+    "mtime": 1780593826.237189,
+    "ast_hash": "a532bcf28db4b81a99cc1e6b51b19a38",
+    "semantic_hash": "a532bcf28db4b81a99cc1e6b51b19a38"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/domain/models/prediction_model.dart": {
+    "mtime": 1780593826.2372642,
+    "ast_hash": "d1769d76789fd7cbb5795d25b1702b5e",
+    "semantic_hash": "d1769d76789fd7cbb5795d25b1702b5e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/domain/reposotories/location_repo.dart": {
+    "mtime": 1780593826.2373972,
+    "ast_hash": "cfceb82a6bbbe60d4fb3985c45c0aa2c",
+    "semantic_hash": "cfceb82a6bbbe60d4fb3985c45c0aa2c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/providers/location_provider.dart": {
+    "mtime": 1780593826.2375355,
+    "ast_hash": "bd6cbef5a9f17f81b08e5daea44b00e6",
+    "semantic_hash": "bd6cbef5a9f17f81b08e5daea44b00e6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/screens/add_new_address_screen.dart": {
+    "mtime": 1780593826.2376702,
+    "ast_hash": "846570e0db68ad48fd6b0b14d89c3f38",
+    "semantic_hash": "846570e0db68ad48fd6b0b14d89c3f38"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/screens/address_list_screen.dart": {
+    "mtime": 1780593826.2377868,
+    "ast_hash": "b1dce19f661364a3f34396e0226c23c7",
+    "semantic_hash": "b1dce19f661364a3f34396e0226c23c7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/screens/select_location_screen.dart": {
+    "mtime": 1780593826.237891,
+    "ast_hash": "def591a1d749089b252dc3ae589259d0",
+    "semantic_hash": "def591a1d749089b252dc3ae589259d0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/add_address_widget.dart": {
+    "mtime": 1780593826.2380247,
+    "ast_hash": "85ab1ff05e9ec2d86623046976b44f0b",
+    "semantic_hash": "85ab1ff05e9ec2d86623046976b44f0b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/address_details_widget.dart": {
+    "mtime": 1780593826.2381282,
+    "ast_hash": "e1533573fd6f4dff4f2bcc26ad88e57d",
+    "semantic_hash": "e1533573fd6f4dff4f2bcc26ad88e57d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/adress_widget.dart": {
+    "mtime": 1780593826.2382352,
+    "ast_hash": "8b669f10a0bf82803bd5ed2cb69d39a2",
+    "semantic_hash": "8b669f10a0bf82803bd5ed2cb69d39a2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/map_widget.dart": {
+    "mtime": 1780593826.23833,
+    "ast_hash": "6cb9e9b865010e7897d6abd44010c4ac",
+    "semantic_hash": "6cb9e9b865010e7897d6abd44010c4ac"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/map_with_lable_widget.dart": {
+    "mtime": 1780593826.2384145,
+    "ast_hash": "bf87ea99bae6370d226aebe1dfeb64cf",
+    "semantic_hash": "bf87ea99bae6370d226aebe1dfeb64cf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/permission_dialog_widget.dart": {
+    "mtime": 1780593826.2385283,
+    "ast_hash": "cb0593c3daa3df0c8abc75dba2bf5888",
+    "semantic_hash": "cb0593c3daa3df0c8abc75dba2bf5888"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/search_dialog_widget.dart": {
+    "mtime": 1780593826.238603,
+    "ast_hash": "095c96f7c4c6989d121a5de6abc65927",
+    "semantic_hash": "095c96f7c4c6989d121a5de6abc65927"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/address/widgets/search_item_widget.dart": {
+    "mtime": 1780593826.2386754,
+    "ast_hash": "7199b5e67aef537f37bc16e5d7c6aedf",
+    "semantic_hash": "7199b5e67aef537f37bc16e5d7c6aedf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/domain/models/signup_model.dart": {
+    "mtime": 1780593826.2388687,
+    "ast_hash": "0f2174fb37133d53bf53fd4790d0586b",
+    "semantic_hash": "0f2174fb37133d53bf53fd4790d0586b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/domain/models/social_login_model.dart": {
+    "mtime": 1780593826.238939,
+    "ast_hash": "d077b423f1528bc9f317bd49949857ef",
+    "semantic_hash": "d077b423f1528bc9f317bd49949857ef"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/domain/models/user_log_data.dart": {
+    "mtime": 1780593826.239005,
+    "ast_hash": "b09eedaaab22ca43e18e6c6e471cd962",
+    "semantic_hash": "b09eedaaab22ca43e18e6c6e471cd962"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/domain/reposotories/auth_repo.dart": {
+    "mtime": 1780593826.2391248,
+    "ast_hash": "d0a54c0e18de933934c22f98b4920e2b",
+    "semantic_hash": "d0a54c0e18de933934c22f98b4920e2b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/enum/from_page_enum.dart": {
+    "mtime": 1780593826.2392266,
+    "ast_hash": "b3460d803235b9c7f66c8d45e58ecb59",
+    "semantic_hash": "b3460d803235b9c7f66c8d45e58ecb59"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/enum/social_login_options_enum.dart": {
+    "mtime": 1780593826.239313,
+    "ast_hash": "5644876a58726fe46c93d8821a51b0fc",
+    "semantic_hash": "5644876a58726fe46c93d8821a51b0fc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/enum/verification_type_enum.dart": {
+    "mtime": 1780593826.2393825,
+    "ast_hash": "ea37f27516adf3ba8009f14024903373",
+    "semantic_hash": "ea37f27516adf3ba8009f14024903373"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/providers/auth_provider.dart": {
+    "mtime": 1780593826.2395408,
+    "ast_hash": "0fccb202df932f5262e4ea9f426955fc",
+    "semantic_hash": "0fccb202df932f5262e4ea9f426955fc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/providers/facebook_login_provider.dart": {
+    "mtime": 1780593826.239629,
+    "ast_hash": "0315dccccce88137c3886b948de53c56",
+    "semantic_hash": "0315dccccce88137c3886b948de53c56"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/providers/verification_provider.dart": {
+    "mtime": 1780593826.23974,
+    "ast_hash": "71f2ca0f1ea2b9a8cead2ecfb28d0f59",
+    "semantic_hash": "71f2ca0f1ea2b9a8cead2ecfb28d0f59"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/create_account_screen.dart": {
+    "mtime": 1780593826.2398953,
+    "ast_hash": "74fdbc4e0815d3c57494fe0bcdf3b267",
+    "semantic_hash": "74fdbc4e0815d3c57494fe0bcdf3b267"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/create_new_password_screen.dart": {
+    "mtime": 1780593826.2400398,
+    "ast_hash": "5c4c141a64fb400043949b13cba6e12f",
+    "semantic_hash": "5c4c141a64fb400043949b13cba6e12f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/forgot_password_screen.dart": {
+    "mtime": 1780593826.2401285,
+    "ast_hash": "48796f5dbf5cf8c2b41d4b7943b6957c",
+    "semantic_hash": "48796f5dbf5cf8c2b41d4b7943b6957c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/login_screen.dart": {
+    "mtime": 1780593826.2402525,
+    "ast_hash": "2e5ff99980362ea4ce40ba142107366c",
+    "semantic_hash": "2e5ff99980362ea4ce40ba142107366c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/otp_registration_screen.dart": {
+    "mtime": 1780593826.2407234,
+    "ast_hash": "e19a6744f9ccb30485f95a86be02cb3f",
+    "semantic_hash": "e19a6744f9ccb30485f95a86be02cb3f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/send_otp_screen.dart": {
+    "mtime": 1780593826.2408512,
+    "ast_hash": "1f5cb8e1ee7a189d6a82f85cf5b561e5",
+    "semantic_hash": "1f5cb8e1ee7a189d6a82f85cf5b561e5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/screens/verification_screen.dart": {
+    "mtime": 1780593826.2409785,
+    "ast_hash": "9fabea1ba91dfe6bbbea555afcdee902",
+    "semantic_hash": "9fabea1ba91dfe6bbbea555afcdee902"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/widgets/country_code_picker_widget.dart": {
+    "mtime": 1780593826.2411783,
+    "ast_hash": "2c71da8f3feb8f93496114b663ab604d",
+    "semantic_hash": "2c71da8f3feb8f93496114b663ab604d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/widgets/existing_account_bottom_sheet.dart": {
+    "mtime": 1780593826.2412822,
+    "ast_hash": "5366364ce6669afc632388aacbc46365",
+    "semantic_hash": "5366364ce6669afc632388aacbc46365"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/widgets/media_button_view.dart": {
+    "mtime": 1780593826.2413762,
+    "ast_hash": "1bb15c060a9acff2540de49c805dbac8",
+    "semantic_hash": "1bb15c060a9acff2540de49c805dbac8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/widgets/only_social_login_screen.dart": {
+    "mtime": 1780593826.2415364,
+    "ast_hash": "f37f271cc8c64789457650db0efa1588",
+    "semantic_hash": "f37f271cc8c64789457650db0efa1588"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/auth/widgets/social_login_widget.dart": {
+    "mtime": 1780593826.2416775,
+    "ast_hash": "d912360c4251262c8b909eaf447e7034",
+    "semantic_hash": "d912360c4251262c8b909eaf447e7034"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/screens/cart_screen.dart": {
+    "mtime": 1780593826.241928,
+    "ast_hash": "023af051f83d9a8e6ab8adbc4ee42850",
+    "semantic_hash": "023af051f83d9a8e6ab8adbc4ee42850"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/cart_button_widget.dart": {
+    "mtime": 1780593826.2420843,
+    "ast_hash": "1540491aede39e8fd4e8fd48b9989ac8",
+    "semantic_hash": "1540491aede39e8fd4e8fd48b9989ac8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/cart_details_widget.dart": {
+    "mtime": 1781072355.7880921,
+    "ast_hash": "05eab6d05133a735d5bfe4bf56313f53",
+    "semantic_hash": "05eab6d05133a735d5bfe4bf56313f53"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/cart_item_widget.dart": {
+    "mtime": 1781072355.787365,
+    "ast_hash": "1ef5fbe203de3330f95497237b63ad02",
+    "semantic_hash": "1ef5fbe203de3330f95497237b63ad02"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/cart_product_list_widget.dart": {
+    "mtime": 1780593826.2424011,
+    "ast_hash": "8b59c00e404cfbfb428b6f062d88c599",
+    "semantic_hash": "8b59c00e404cfbfb428b6f062d88c599"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/coupon_widget.dart": {
+    "mtime": 1780593826.2425008,
+    "ast_hash": "ca2af2affb333ae00996b1ee166ab04f",
+    "semantic_hash": "ca2af2affb333ae00996b1ee166ab04f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/delivery_option_widget.dart": {
+    "mtime": 1780593826.242613,
+    "ast_hash": "6d1d998638f6fd5c62b8420b18a6148d",
+    "semantic_hash": "6d1d998638f6fd5c62b8420b18a6148d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/discounted_price_widget.dart": {
+    "mtime": 1780593826.2427137,
+    "ast_hash": "3e683d7e40742b3800431dbb5800786e",
+    "semantic_hash": "3e683d7e40742b3800431dbb5800786e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/cart/widgets/free_delivery_progressbar_widget.dart": {
+    "mtime": 1780593826.242806,
+    "ast_hash": "9ce033e8c616238e37b087f3111be63a",
+    "semantic_hash": "9ce033e8c616238e37b087f3111be63a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/domain/models/category_model.dart": {
+    "mtime": 1780593826.2430599,
+    "ast_hash": "105baf726caa6e9c0ff85311434d9711",
+    "semantic_hash": "105baf726caa6e9c0ff85311434d9711"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/domain/models/category_product_model.dart": {
+    "mtime": 1780593826.2431393,
+    "ast_hash": "87655872a6140f50e1bbad4c3b89fc25",
+    "semantic_hash": "87655872a6140f50e1bbad4c3b89fc25"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/domain/reposotories/category_repo.dart": {
+    "mtime": 1780593826.2432616,
+    "ast_hash": "dc594babe1c9029a2523af42e84ed9e1",
+    "semantic_hash": "dc594babe1c9029a2523af42e84ed9e1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/providers/category_provider.dart": {
+    "mtime": 1780593826.2433956,
+    "ast_hash": "5651d350d6a62826a342f66f881428f4",
+    "semantic_hash": "5651d350d6a62826a342f66f881428f4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/screens/all_categories_screen.dart": {
+    "mtime": 1780593826.243621,
+    "ast_hash": "4fc8de700daaa43c49bfa4bb094a4177",
+    "semantic_hash": "4fc8de700daaa43c49bfa4bb094a4177"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/widgets/category_item_widget.dart": {
+    "mtime": 1780593826.2437837,
+    "ast_hash": "634807c5677c6e5a555db2f448345c9b",
+    "semantic_hash": "634807c5677c6e5a555db2f448345c9b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/category/widgets/sub_category_shimmer_widget.dart": {
+    "mtime": 1780593826.2438767,
+    "ast_hash": "d2db20f70fcb62bb4529886e5e50535c",
+    "semantic_hash": "d2db20f70fcb62bb4529886e5e50535c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/domain/models/chat_model.dart": {
+    "mtime": 1780593826.2441893,
+    "ast_hash": "37a91e815eb589e7b1cb79b4e42f964b",
+    "semantic_hash": "37a91e815eb589e7b1cb79b4e42f964b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/domain/reposotories/chat_repo.dart": {
+    "mtime": 1780593826.2443151,
+    "ast_hash": "650afc032590990e0c9f98ff3012dbc2",
+    "semantic_hash": "650afc032590990e0c9f98ff3012dbc2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/providers/chat_provider.dart": {
+    "mtime": 1780593826.2444587,
+    "ast_hash": "9b3e47178fb09fcab6c2c1112ff2a2af",
+    "semantic_hash": "9b3e47178fb09fcab6c2c1112ff2a2af"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/screens/chat_screen.dart": {
+    "mtime": 1780593826.2446249,
+    "ast_hash": "242194afbd51e1de0b63684fdc3253ed",
+    "semantic_hash": "242194afbd51e1de0b63684fdc3253ed"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/widgets/emoji_picker_widget.dart": {
+    "mtime": 1780593826.2448075,
+    "ast_hash": "bc11c37fdc8f4a87a6fc80efccd361d6",
+    "semantic_hash": "bc11c37fdc8f4a87a6fc80efccd361d6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/widgets/image_dialog_widget.dart": {
+    "mtime": 1780593826.2449174,
+    "ast_hash": "035b9d59edc8123c2420331fb12095c6",
+    "semantic_hash": "035b9d59edc8123c2420331fb12095c6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/widgets/message_bubble_shimmer_widget.dart": {
+    "mtime": 1780593826.245014,
+    "ast_hash": "9b8c8fdc9e616e43180db678535667a9",
+    "semantic_hash": "9b8c8fdc9e616e43180db678535667a9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/chat/widgets/message_bubble_widget.dart": {
+    "mtime": 1780593826.2451494,
+    "ast_hash": "e0c33640a15212f71a6c525ee03ca005",
+    "semantic_hash": "e0c33640a15212f71a6c525ee03ca005"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/domain/models/check_out_model.dart": {
+    "mtime": 1780593826.2453783,
+    "ast_hash": "51d738d8cc920c03286eef963450aa4a",
+    "semantic_hash": "51d738d8cc920c03286eef963450aa4a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/enums/weight_charge_conditions.dart": {
+    "mtime": 1780593826.2454984,
+    "ast_hash": "b5a30deda70abc7447d3185eee527a3d",
+    "semantic_hash": "b5a30deda70abc7447d3185eee527a3d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/enums/weight_charge_type.dart": {
+    "mtime": 1780593826.2456067,
+    "ast_hash": "e4531df3bd7bc04ee06eaa2889be1394",
+    "semantic_hash": "e4531df3bd7bc04ee06eaa2889be1394"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/screens/checkout_screen.dart": {
+    "mtime": 1780593826.2457387,
+    "ast_hash": "2cd67c029cc4b7ebdfd3c7df084fde95",
+    "semantic_hash": "2cd67c029cc4b7ebdfd3c7df084fde95"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/screens/order_success_screen.dart": {
+    "mtime": 1780593826.2458668,
+    "ast_hash": "7eca3fdb36b2fd84ad6a83267287c79d",
+    "semantic_hash": "7eca3fdb36b2fd84ad6a83267287c79d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/add_address_dialog.dart": {
+    "mtime": 1780593826.245993,
+    "ast_hash": "38c4275bec8d6998cd627eb44df3e890",
+    "semantic_hash": "38c4275bec8d6998cd627eb44df3e890"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/amount_widget.dart": {
+    "mtime": 1780593826.2460866,
+    "ast_hash": "eab4f2bdfbbe16c10a12fd2fce0f376f",
+    "semantic_hash": "eab4f2bdfbbe16c10a12fd2fce0f376f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/delivery_address_widget.dart": {
+    "mtime": 1780593826.2461762,
+    "ast_hash": "b850c2c670fadc2959919eabb7c94362",
+    "semantic_hash": "b850c2c670fadc2959919eabb7c94362"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/delivery_fee_dialog_widget.dart": {
+    "mtime": 1780593826.246252,
+    "ast_hash": "49889a1dc57f46297193ee728c2b0253",
+    "semantic_hash": "49889a1dc57f46297193ee728c2b0253"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/details_widget.dart": {
+    "mtime": 1780593826.246334,
+    "ast_hash": "e12bb816846388baaaca3f1a75d8e527",
+    "semantic_hash": "e12bb816846388baaaca3f1a75d8e527"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/image_note_upload_widget.dart": {
+    "mtime": 1780593826.2464278,
+    "ast_hash": "e0b17a14120a0c2eb97b9400781ecdef",
+    "semantic_hash": "e0b17a14120a0c2eb97b9400781ecdef"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/incomplete_offline_payment_dialog.dart": {
+    "mtime": 1780593826.2465324,
+    "ast_hash": "e2dd473cc1e9fbb747e9796057f2ccee",
+    "semantic_hash": "e2dd473cc1e9fbb747e9796057f2ccee"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/offline_payment_widget.dart": {
+    "mtime": 1780593826.2466052,
+    "ast_hash": "d37b79f1cac182d01084b961f0da534a",
+    "semantic_hash": "d37b79f1cac182d01084b961f0da534a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/partial_alert_message_widget.dart": {
+    "mtime": 1780593826.2466946,
+    "ast_hash": "a24dfb31552d816989b3f7650ab0b5bf",
+    "semantic_hash": "a24dfb31552d816989b3f7650ab0b5bf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/payment_button_widget.dart": {
+    "mtime": 1780593826.2467928,
+    "ast_hash": "18f21738804c65068cf19459da827fa8",
+    "semantic_hash": "18f21738804c65068cf19459da827fa8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/payment_method_bottom_sheet_widget.dart": {
+    "mtime": 1780593826.2469814,
+    "ast_hash": "928ecced14c90fcb90e05c149d2dd704",
+    "semantic_hash": "928ecced14c90fcb90e05c149d2dd704"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/payment_method_widget.dart": {
+    "mtime": 1780593826.2471273,
+    "ast_hash": "75da11d583707d12f2fc9f33890d1978",
+    "semantic_hash": "75da11d583707d12f2fc9f33890d1978"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/payment_section_widget.dart": {
+    "mtime": 1780593826.2472172,
+    "ast_hash": "7b4103fd45c884a79cdaaee2a5a96c50",
+    "semantic_hash": "7b4103fd45c884a79cdaaee2a5a96c50"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/place_order_button_widget.dart": {
+    "mtime": 1781072355.7896266,
+    "ast_hash": "eb699523c1e5bd601f08f99e618ad6d9",
+    "semantic_hash": "eb699523c1e5bd601f08f99e618ad6d9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/shipping_policy_bottom_sheet.dart": {
+    "mtime": 1780593826.2475677,
+    "ast_hash": "30ec0d2f235d402ea78c3b466fa3a5f4",
+    "semantic_hash": "30ec0d2f235d402ea78c3b466fa3a5f4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/total_amount_widget.dart": {
+    "mtime": 1781072355.7889001,
+    "ast_hash": "af75930cba630730026343e473912c66",
+    "semantic_hash": "af75930cba630730026343e473912c66"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/checkout/widgets/upside_expansion_widget.dart": {
+    "mtime": 1780593826.2477314,
+    "ast_hash": "1bf4ba38f0bd9b4548cb10d41306ebb7",
+    "semantic_hash": "1bf4ba38f0bd9b4548cb10d41306ebb7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/coupon/domain/models/coupon_model.dart": {
+    "mtime": 1780593826.2479782,
+    "ast_hash": "0a966cf2bd1b3aef045a138ea6377b49",
+    "semantic_hash": "0a966cf2bd1b3aef045a138ea6377b49"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/coupon/domain/reposotories/coupon_repo.dart": {
+    "mtime": 1780593826.2480965,
+    "ast_hash": "e579a0df48771d3d8f2e37ebe07b1238",
+    "semantic_hash": "e579a0df48771d3d8f2e37ebe07b1238"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/coupon/providers/coupon_provider.dart": {
+    "mtime": 1780593826.248229,
+    "ast_hash": "4d65224844ca936095dda587fdea7ae8",
+    "semantic_hash": "4d65224844ca936095dda587fdea7ae8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/coupon/screens/coupon_screen.dart": {
+    "mtime": 1780593826.2484126,
+    "ast_hash": "784318c8ba43e42a6ac718619319e536",
+    "semantic_hash": "784318c8ba43e42a6ac718619319e536"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/coupon/widgets/coupon_bottom_sheet_widget.dart": {
+    "mtime": 1780593826.2485552,
+    "ast_hash": "1c32cf8fdde75b02ff8f5fc19d867c62",
+    "semantic_hash": "1c32cf8fdde75b02ff8f5fc19d867c62"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/coupon/widgets/coupon_card_widget.dart": {
+    "mtime": 1780593826.248687,
+    "ast_hash": "ae06853f96ff9b0e4d9258ec9cbd11f2",
+    "semantic_hash": "ae06853f96ff9b0e4d9258ec9cbd11f2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/domain/models/banner_model.dart": {
+    "mtime": 1780593826.2489219,
+    "ast_hash": "32d6628e7521af27ca244ceb0a93b6ff",
+    "semantic_hash": "32d6628e7521af27ca244ceb0a93b6ff"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/domain/reposotories/banner_repo.dart": {
+    "mtime": 1780593826.249059,
+    "ast_hash": "210021b8114a6dc703a5c887c0d81a49",
+    "semantic_hash": "210021b8114a6dc703a5c887c0d81a49"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/providers/banner_provider.dart": {
+    "mtime": 1780593826.2491896,
+    "ast_hash": "c8f53a03df4cde791bc9e5ed3eae684e",
+    "semantic_hash": "c8f53a03df4cde791bc9e5ed3eae684e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/providers/flash_deal_provider.dart": {
+    "mtime": 1780593826.2493021,
+    "ast_hash": "1005d60f9b3304820cc82ada4d1453cf",
+    "semantic_hash": "1005d60f9b3304820cc82ada4d1453cf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/screens/home_item_screen.dart": {
+    "mtime": 1780593826.2494984,
+    "ast_hash": "caa472727990d05df5b3ebdb1a80872f",
+    "semantic_hash": "caa472727990d05df5b3ebdb1a80872f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/screens/home_screens.dart": {
+    "mtime": 1780593826.2496405,
+    "ast_hash": "ee6a1f8c1ad141ac0970a1ae15d63303",
+    "semantic_hash": "ee6a1f8c1ad141ac0970a1ae15d63303"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/all_product_list_widget.dart": {
+    "mtime": 1780593826.2497835,
+    "ast_hash": "eb4db8f7a37404e43624af20b6daa931",
+    "semantic_hash": "eb4db8f7a37404e43624af20b6daa931"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/banners_widget.dart": {
+    "mtime": 1780593826.2498634,
+    "ast_hash": "4b1f3deb2743e80d08e6577f1ab3d027",
+    "semantic_hash": "4b1f3deb2743e80d08e6577f1ab3d027"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/category_page_widget.dart": {
+    "mtime": 1780593826.2499812,
+    "ast_hash": "b9121fd97cb583c3bf1152154670c736",
+    "semantic_hash": "b9121fd97cb583c3bf1152154670c736"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/category_shimmer_widget.dart": {
+    "mtime": 1780593826.2500923,
+    "ast_hash": "964bd6d962653a4736878ab3d7e651c1",
+    "semantic_hash": "964bd6d962653a4736878ab3d7e651c1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/category_web_widget.dart": {
+    "mtime": 1780593826.2501857,
+    "ast_hash": "eadb1208446b10a1ddf46d936bdc0a24",
+    "semantic_hash": "eadb1208446b10a1ddf46d936bdc0a24"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/flash_deal_home_card_widget.dart": {
+    "mtime": 1780593826.2502737,
+    "ast_hash": "71c76424830bf43fe955fb3d93a9bf06",
+    "semantic_hash": "71c76424830bf43fe955fb3d93a9bf06"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/home_item_widget.dart": {
+    "mtime": 1780593826.2503574,
+    "ast_hash": "48bfb3321c6297e8aa7dc1083c5cec8e",
+    "semantic_hash": "48bfb3321c6297e8aa7dc1083c5cec8e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/home/widgets/title_with_time_widget.dart": {
+    "mtime": 1780593826.250474,
+    "ast_hash": "1384cd09b360ddc97bb795c6e5495c06",
+    "semantic_hash": "1384cd09b360ddc97bb795c6e5495c06"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/html/screens/html_viewer_screen.dart": {
+    "mtime": 1780593826.2508264,
+    "ast_hash": "f21d28f75e547f3df2eeb5e64053125c",
+    "semantic_hash": "f21d28f75e547f3df2eeb5e64053125c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/maintainance/screens/maintainance_screen.dart": {
+    "mtime": 1780593826.2510822,
+    "ast_hash": "019c3a1bc77604a79e9a3d9174ec0bb6",
+    "semantic_hash": "019c3a1bc77604a79e9a3d9174ec0bb6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/member/domain/models/member_matrix_model.dart": {
+    "mtime": 1781072045.6247387,
+    "ast_hash": "79c3ec268d6d890d7a21b50070cc6fbf",
+    "semantic_hash": "79c3ec268d6d890d7a21b50070cc6fbf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/member/domain/reposotories/member_repo.dart": {
+    "mtime": 1781072045.6250777,
+    "ast_hash": "fec8be3c403a78f8ae7acbb1606c06c0",
+    "semantic_hash": "fec8be3c403a78f8ae7acbb1606c06c0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/member/providers/member_provider.dart": {
+    "mtime": 1781072045.6253593,
+    "ast_hash": "69a4ee02ebb9d718f952f2590af45e6e",
+    "semantic_hash": "69a4ee02ebb9d718f952f2590af45e6e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/member/screens/member_screen.dart": {
+    "mtime": 1781072045.6257763,
+    "ast_hash": "9b76214b1788cd2332676582f9e2ff40",
+    "semantic_hash": "9b76214b1788cd2332676582f9e2ff40"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/domain/enums/drawer_state_enun.dart": {
+    "mtime": 1780593826.2512949,
+    "ast_hash": "d7d7e461bee0e8c5023702e1ed092614",
+    "semantic_hash": "d7d7e461bee0e8c5023702e1ed092614"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/domain/models/custom_drawer_controller_model.dart": {
+    "mtime": 1780593826.2514057,
+    "ast_hash": "2085512f6b5b10b211df0b9af0329776",
+    "semantic_hash": "2085512f6b5b10b211df0b9af0329776"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/domain/models/main_screen_model.dart": {
+    "mtime": 1780593826.251481,
+    "ast_hash": "90233a748ad52deb3ae7b4a50bd473e1",
+    "semantic_hash": "90233a748ad52deb3ae7b4a50bd473e1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/domain/models/menu_model.dart": {
+    "mtime": 1780593826.2515543,
+    "ast_hash": "caadbb73172bed884c18e30f2c5ec3db",
+    "semantic_hash": "caadbb73172bed884c18e30f2c5ec3db"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/screens/main_screen.dart": {
+    "mtime": 1780593826.251726,
+    "ast_hash": "34a232f2648bacabb65aec6310b7f12a",
+    "semantic_hash": "34a232f2648bacabb65aec6310b7f12a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/screens/menu_screen.dart": {
+    "mtime": 1780593826.2518628,
+    "ast_hash": "3833ebeff2b92cd423d49509602ae509",
+    "semantic_hash": "3833ebeff2b92cd423d49509602ae509"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/screens/setting_screen.dart": {
+    "mtime": 1780593826.2519457,
+    "ast_hash": "43c0509d739f73e01e10f8dc504df39a",
+    "semantic_hash": "43c0509d739f73e01e10f8dc504df39a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/widgets/acount_delete_dialog_widget.dart": {
+    "mtime": 1780593826.2520754,
+    "ast_hash": "a33e163451733104b65b14061fda799f",
+    "semantic_hash": "a33e163451733104b65b14061fda799f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/widgets/currency_dialog_widget.dart": {
+    "mtime": 1780593826.2522228,
+    "ast_hash": "728abc47f6db2eec0eaa001dfbcba033",
+    "semantic_hash": "728abc47f6db2eec0eaa001dfbcba033"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/widgets/custom_drawer_widget.dart": {
+    "mtime": 1780593826.2523398,
+    "ast_hash": "fee7a1a051b721019870045fa1e614ed",
+    "semantic_hash": "fee7a1a051b721019870045fa1e614ed"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/widgets/menu_item_web_widget.dart": {
+    "mtime": 1780593826.2524586,
+    "ast_hash": "8b32ab13ce4f88f3f91d3da0915da3be",
+    "semantic_hash": "8b32ab13ce4f88f3f91d3da0915da3be"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/widgets/menu_list_web_widget.dart": {
+    "mtime": 1781072045.6262789,
+    "ast_hash": "f3121c1e6ec15b6d6a4281036eb0d53c",
+    "semantic_hash": "f3121c1e6ec15b6d6a4281036eb0d53c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/menu/widgets/sign_out_dialog_widget.dart": {
+    "mtime": 1780593826.2526863,
+    "ast_hash": "0f455f2d4ff82588b5844caeb73e4c7d",
+    "semantic_hash": "0f455f2d4ff82588b5844caeb73e4c7d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/not_found/screens/not_found_screen.dart": {
+    "mtime": 1780593826.252889,
+    "ast_hash": "a3a43be9be52005ecd89dd8b0c66dd2a",
+    "semantic_hash": "a3a43be9be52005ecd89dd8b0c66dd2a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/notification/domain/models/notification_model.dart": {
+    "mtime": 1780593826.2531118,
+    "ast_hash": "c9710242383dfc0cd2fd0d65c3ced9b6",
+    "semantic_hash": "c9710242383dfc0cd2fd0d65c3ced9b6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/notification/domain/reposotories/notification_repo.dart": {
+    "mtime": 1780593826.2532325,
+    "ast_hash": "676abe268d2a6f1ed5f848bafadf2f0e",
+    "semantic_hash": "676abe268d2a6f1ed5f848bafadf2f0e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/notification/providers/notification_provider.dart": {
+    "mtime": 1780593826.253343,
+    "ast_hash": "21fb01d8c402d6239afb9ff84d11553a",
+    "semantic_hash": "21fb01d8c402d6239afb9ff84d11553a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/notification/screens/notification_screen.dart": {
+    "mtime": 1780593826.2534983,
+    "ast_hash": "c1a337406d3f5c47d11c679b9fa39b4e",
+    "semantic_hash": "c1a337406d3f5c47d11c679b9fa39b4e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/notification/widgets/notification_dialog_widget.dart": {
+    "mtime": 1780593826.2536397,
+    "ast_hash": "1896c4299740fe531dd7a2722d37193f",
+    "semantic_hash": "1896c4299740fe531dd7a2722d37193f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/notification/widgets/notification_item_widget.dart": {
+    "mtime": 1780593826.253727,
+    "ast_hash": "aa745fa5c5944fe0b93835f8947f0c15",
+    "semantic_hash": "aa745fa5c5944fe0b93835f8947f0c15"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/onboarding/domain/models/onboarding_model.dart": {
+    "mtime": 1780593826.2539532,
+    "ast_hash": "6b670c156a0327192d17b0db45e7422c",
+    "semantic_hash": "6b670c156a0327192d17b0db45e7422c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/onboarding/domain/reposotories/onboarding_repo.dart": {
+    "mtime": 1780593826.2540708,
+    "ast_hash": "e05700529632cb3d391c8a8d57b93d14",
+    "semantic_hash": "e05700529632cb3d391c8a8d57b93d14"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/onboarding/providers/onboarding_provider.dart": {
+    "mtime": 1780593826.2541802,
+    "ast_hash": "6fe8690ffe03751b2ddb8d52bb79de20",
+    "semantic_hash": "6fe8690ffe03751b2ddb8d52bb79de20"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/onboarding/screens/on_boarding_screen.dart": {
+    "mtime": 1780593826.2543,
+    "ast_hash": "337d5f0289d0c2e723f1ed778bb04b2f",
+    "semantic_hash": "337d5f0289d0c2e723f1ed778bb04b2f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/onboarding/widgets/on_boarding_widget.dart": {
+    "mtime": 1780593826.25441,
+    "ast_hash": "2ef0fe47535b0d8881c2b55f8d488eaa",
+    "semantic_hash": "2ef0fe47535b0d8881c2b55f8d488eaa"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/delivery_man_model.dart": {
+    "mtime": 1780593826.254614,
+    "ast_hash": "08f6e9058b17c81f5639a2d2bfcdfe4c",
+    "semantic_hash": "08f6e9058b17c81f5639a2d2bfcdfe4c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/distance_model.dart": {
+    "mtime": 1780593826.2546928,
+    "ast_hash": "94b3c82dd81d7037f01591b44cf71459",
+    "semantic_hash": "94b3c82dd81d7037f01591b44cf71459"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/offline_payment_model.dart": {
+    "mtime": 1780593826.254764,
+    "ast_hash": "6655de043f6a9513cb9f1fc196ed4838",
+    "semantic_hash": "6655de043f6a9513cb9f1fc196ed4838"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/order_details_model.dart": {
+    "mtime": 1781072045.6266282,
+    "ast_hash": "a44c06609d3cedf65e286a46a122df65",
+    "semantic_hash": "a44c06609d3cedf65e286a46a122df65"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/order_model.dart": {
+    "mtime": 1780593826.254918,
+    "ast_hash": "087acbd9cdc06ad59f1941a5f19c545f",
+    "semantic_hash": "087acbd9cdc06ad59f1941a5f19c545f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/review_body_model.dart": {
+    "mtime": 1780593826.255006,
+    "ast_hash": "d73b9057a26c9c1bfb021317ca36bb06",
+    "semantic_hash": "d73b9057a26c9c1bfb021317ca36bb06"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/models/timeslote_model.dart": {
+    "mtime": 1780593826.2550771,
+    "ast_hash": "0e5aca51627471b3cf11158f5d792cda",
+    "semantic_hash": "0e5aca51627471b3cf11158f5d792cda"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/domain/reposotories/order_repo.dart": {
+    "mtime": 1780593826.255186,
+    "ast_hash": "499f51d93c7cf1e0134c019f6a70793c",
+    "semantic_hash": "499f51d93c7cf1e0134c019f6a70793c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/enums/delivery_charge_type.dart": {
+    "mtime": 1780593826.2552886,
+    "ast_hash": "d02f8e5a5614f9a786960689ce9669e5",
+    "semantic_hash": "d02f8e5a5614f9a786960689ce9669e5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/providers/image_note_provider.dart": {
+    "mtime": 1780593826.2554042,
+    "ast_hash": "d89cca187a1c74ec00218bd190914f9b",
+    "semantic_hash": "d89cca187a1c74ec00218bd190914f9b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/providers/order_provider.dart": {
+    "mtime": 1780593826.2554998,
+    "ast_hash": "99bdf8422eadc74e061163b3e2b7fac4",
+    "semantic_hash": "99bdf8422eadc74e061163b3e2b7fac4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/screens/order_details_screen.dart": {
+    "mtime": 1780593826.2556481,
+    "ast_hash": "f1a11d9629c201d9f74fd53d7cddf8fc",
+    "semantic_hash": "f1a11d9629c201d9f74fd53d7cddf8fc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/screens/order_list_screen.dart": {
+    "mtime": 1780593826.2557268,
+    "ast_hash": "2ead3d94d66b8e90abf42def1e881601",
+    "semantic_hash": "2ead3d94d66b8e90abf42def1e881601"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/screens/order_search_screen.dart": {
+    "mtime": 1780593826.255815,
+    "ast_hash": "ca33b2989a8162b7e036171a9428753e",
+    "semantic_hash": "ca33b2989a8162b7e036171a9428753e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/bring_change_input_widget.dart": {
+    "mtime": 1780593826.255959,
+    "ast_hash": "9e8cf7386c74bc3379aaad93ed35bb87",
+    "semantic_hash": "9e8cf7386c74bc3379aaad93ed35bb87"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/custom_stepper_widget.dart": {
+    "mtime": 1780593826.2560408,
+    "ast_hash": "14b551931495cb5725818105d3396510",
+    "semantic_hash": "14b551931495cb5725818105d3396510"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/delivery_man_widget.dart": {
+    "mtime": 1780593826.2561255,
+    "ast_hash": "ca446ed491657e4b641648e362f4bd3c",
+    "semantic_hash": "ca446ed491657e4b641648e362f4bd3c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_amount_widget.dart": {
+    "mtime": 1780593826.2561955,
+    "ast_hash": "196bfa13a99de3ab313d92d22507c7b2",
+    "semantic_hash": "196bfa13a99de3ab313d92d22507c7b2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_button_widget.dart": {
+    "mtime": 1780593826.2562842,
+    "ast_hash": "f24035100bd1f63c85265114829a21ad",
+    "semantic_hash": "f24035100bd1f63c85265114829a21ad"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_cancel_widget.dart": {
+    "mtime": 1780593826.2563512,
+    "ast_hash": "9a0b60bc2fde123cc4332099f01d51ee",
+    "semantic_hash": "9a0b60bc2fde123cc4332099f01d51ee"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_details_button_view.dart": {
+    "mtime": 1780593826.2564301,
+    "ast_hash": "2546d44237656ed353eee084aabf63b1",
+    "semantic_hash": "2546d44237656ed353eee084aabf63b1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_history_widget.dart": {
+    "mtime": 1780593826.2565048,
+    "ast_hash": "0aa40ad6069ca584c8be9884ef4b1c04",
+    "semantic_hash": "0aa40ad6069ca584c8be9884ef4b1c04"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_info_widget.dart": {
+    "mtime": 1780593826.2566113,
+    "ast_hash": "e220e3a55c20af7874020d5cc9b2ac9f",
+    "semantic_hash": "e220e3a55c20af7874020d5cc9b2ac9f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_item_widget.dart": {
+    "mtime": 1780593826.256717,
+    "ast_hash": "368b2a7db459f226bda90558e66bf7c5",
+    "semantic_hash": "368b2a7db459f226bda90558e66bf7c5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_map_info_widget.dart": {
+    "mtime": 1780593826.2567923,
+    "ast_hash": "e73d7895f4ba96a5f247729926c9ce0a",
+    "semantic_hash": "e73d7895f4ba96a5f247729926c9ce0a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/order_widget.dart": {
+    "mtime": 1780593826.256865,
+    "ast_hash": "2c246873b4bcd988d44c6c71f68311ee",
+    "semantic_hash": "2c246873b4bcd988d44c6c71f68311ee"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/ordered_product_list_widget.dart": {
+    "mtime": 1780593826.2569752,
+    "ast_hash": "3b7299b32fd4bcf56cb948304b655c54",
+    "semantic_hash": "3b7299b32fd4bcf56cb948304b655c54"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/ordered_product_variation_widget.dart": {
+    "mtime": 1780593826.2570543,
+    "ast_hash": "15a4d347d0aa5effa3bc8e9d37b0e7c8",
+    "semantic_hash": "15a4d347d0aa5effa3bc8e9d37b0e7c8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/payment_info_widget.dart": {
+    "mtime": 1780593826.2571578,
+    "ast_hash": "006ecef40afe502592b9a63625e7f445",
+    "semantic_hash": "006ecef40afe502592b9a63625e7f445"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/re_order_dialog_widget.dart": {
+    "mtime": 1780593826.2572641,
+    "ast_hash": "6e5ae5ff7f3cc778f2357aecf1c435cd",
+    "semantic_hash": "6e5ae5ff7f3cc778f2357aecf1c435cd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/switch_payment_confirmation_widget.dart": {
+    "mtime": 1780593826.2573428,
+    "ast_hash": "5b9da263f094fb64f5e0a8660179a64d",
+    "semantic_hash": "5b9da263f094fb64f5e0a8660179a64d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/track_order_shimmer_widget.dart": {
+    "mtime": 1780593826.257422,
+    "ast_hash": "baff44deb9bbeda594fda3d63089399d",
+    "semantic_hash": "baff44deb9bbeda594fda3d63089399d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/track_order_web_widget.dart": {
+    "mtime": 1780593826.257513,
+    "ast_hash": "bab85e3067667640460479c3c6616e88",
+    "semantic_hash": "bab85e3067667640460479c3c6616e88"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order/widgets/tracking_map_widget.dart": {
+    "mtime": 1780593826.2576935,
+    "ast_hash": "7e543f7e5939e4c03241ac8501e66c11",
+    "semantic_hash": "7e543f7e5939e4c03241ac8501e66c11"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/domain/repositories/time_repo.dart": {
+    "mtime": 1780593826.2579165,
+    "ast_hash": "b69384836679df31c3817709de5f4284",
+    "semantic_hash": "b69384836679df31c3817709de5f4284"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/providers/tracker_provider.dart": {
+    "mtime": 1780593826.2580547,
+    "ast_hash": "2e3255c7d433b8ddc56625c35adbd8f8",
+    "semantic_hash": "2e3255c7d433b8ddc56625c35adbd8f8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/screens/track_map_screen.dart": {
+    "mtime": 1780593826.2582016,
+    "ast_hash": "75bb2dda512f695463f6acbb1aae8bbf",
+    "semantic_hash": "75bb2dda512f695463f6acbb1aae8bbf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/screens/track_map_screen_web.dart": {
+    "mtime": 1780593826.2582846,
+    "ast_hash": "7352fd7d58249a0b1c8e3772fab715da",
+    "semantic_hash": "7352fd7d58249a0b1c8e3772fab715da"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/screens/track_order_screen.dart": {
+    "mtime": 1780593826.2584028,
+    "ast_hash": "cb2874831d01cba096d4b7545637d504",
+    "semantic_hash": "cb2874831d01cba096d4b7545637d504"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/custom_stepper_widget.dart": {
+    "mtime": 1780593826.2585268,
+    "ast_hash": "75e6d100edbd9fc109c4b31504fd2eca",
+    "semantic_hash": "75e6d100edbd9fc109c4b31504fd2eca"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/location_timeline_widget.dart": {
+    "mtime": 1780593826.258602,
+    "ast_hash": "e74ff4c982b314d91d3ce73016d34c08",
+    "semantic_hash": "e74ff4c982b314d91d3ce73016d34c08"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/timer_widget.dart": {
+    "mtime": 1780593826.2586825,
+    "ast_hash": "813dfdf9a53063afd6298987a10d0390",
+    "semantic_hash": "813dfdf9a53063afd6298987a10d0390"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/track_map_button_widget.dart": {
+    "mtime": 1780593826.2587585,
+    "ast_hash": "6ed536375f8090c6caa94e9f022842bd",
+    "semantic_hash": "6ed536375f8090c6caa94e9f022842bd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/track_map_deliveryman_info.dart": {
+    "mtime": 1780593826.2588363,
+    "ast_hash": "b54d7220b24eae61c61fe645d061585d",
+    "semantic_hash": "b54d7220b24eae61c61fe645d061585d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/track_map_timer_widget.dart": {
+    "mtime": 1780593826.2589293,
+    "ast_hash": "772b3e2e55ce5985963ae11b13c4611c",
+    "semantic_hash": "772b3e2e55ce5985963ae11b13c4611c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/order_track/widgets/tracking_map_widget.dart": {
+    "mtime": 1780593826.2590134,
+    "ast_hash": "c6d995bb614fc521c869fbb74e141e97",
+    "semantic_hash": "c6d995bb614fc521c869fbb74e141e97"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/payment/screens/payment_screen.dart": {
+    "mtime": 1780593826.2591865,
+    "ast_hash": "fccffdfcb2670bfd977e1d913b45ab0f",
+    "semantic_hash": "fccffdfcb2670bfd977e1d913b45ab0f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/payment/screens/web_payment_screen.dart": {
+    "mtime": 1780593826.259276,
+    "ast_hash": "0a787e32fcbc98a583ff125335109b07",
+    "semantic_hash": "0a787e32fcbc98a583ff125335109b07"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/payment/widgets/cancel_dialog_widget.dart": {
+    "mtime": 1780593826.2593915,
+    "ast_hash": "d8b0d489c101295115d65353e998a9ce",
+    "semantic_hash": "d8b0d489c101295115d65353e998a9ce"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/screens/category_product_screen.dart": {
+    "mtime": 1780593826.2595704,
+    "ast_hash": "d98d72be90fa3a53b6fb2ab0560647cc",
+    "semantic_hash": "d98d72be90fa3a53b6fb2ab0560647cc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/screens/preview_screen.dart": {
+    "mtime": 1780593826.2596657,
+    "ast_hash": "275f20c305e4bf73a2434a6a12213888",
+    "semantic_hash": "275f20c305e4bf73a2434a6a12213888"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/screens/product_details_screen.dart": {
+    "mtime": 1780593826.2597811,
+    "ast_hash": "c5912159cf38c18b82adbba9949ef3e0",
+    "semantic_hash": "c5912159cf38c18b82adbba9949ef3e0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/screens/product_image_screen.dart": {
+    "mtime": 1780593826.259899,
+    "ast_hash": "d33f6ece2f8712961c1d6ec68a3f8818",
+    "semantic_hash": "d33f6ece2f8712961c1d6ec68a3f8818"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/category_cart_title_widget.dart": {
+    "mtime": 1780593826.2600226,
+    "ast_hash": "0318e595284d33a92b3086717ee6f0a7",
+    "semantic_hash": "0318e595284d33a92b3086717ee6f0a7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/category_sidebar.dart": {
+    "mtime": 1780593826.2601008,
+    "ast_hash": "9157a84db4a516fe376b06a9a8851663",
+    "semantic_hash": "9157a84db4a516fe376b06a9a8851663"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/details_app_bar_widget.dart": {
+    "mtime": 1780593826.2601895,
+    "ast_hash": "5508c0c2f57f739ef1b0a8babcf81a42",
+    "semantic_hash": "5508c0c2f57f739ef1b0a8babcf81a42"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/product_description_widget.dart": {
+    "mtime": 1780593826.2602842,
+    "ast_hash": "9974f49ce69c65a82490d5441f3cdb64",
+    "semantic_hash": "9974f49ce69c65a82490d5441f3cdb64"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/product_image_widget.dart": {
+    "mtime": 1780593826.2604117,
+    "ast_hash": "69d4756145c43e2fd0f57af960d5a324",
+    "semantic_hash": "69d4756145c43e2fd0f57af960d5a324"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/product_review_widget.dart": {
+    "mtime": 1780593826.260557,
+    "ast_hash": "97dd1042c4d8ca1a9169ef1395378bf4",
+    "semantic_hash": "97dd1042c4d8ca1a9169ef1395378bf4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/product_title_widget.dart": {
+    "mtime": 1780593826.2608578,
+    "ast_hash": "52f8ef4a5fc079735c86e004923fd618",
+    "semantic_hash": "52f8ef4a5fc079735c86e004923fd618"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/quantity_button_widget.dart": {
+    "mtime": 1780593826.2609499,
+    "ast_hash": "2728ec174bac572d449cff7eb9d412f6",
+    "semantic_hash": "2728ec174bac572d449cff7eb9d412f6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/rating_bar_widget.dart": {
+    "mtime": 1780593826.2610385,
+    "ast_hash": "e47d6273dcfab5b5947803050561f0e0",
+    "semantic_hash": "e47d6273dcfab5b5947803050561f0e0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/rating_line_widget.dart": {
+    "mtime": 1780593826.2611222,
+    "ast_hash": "d62112581679cfc6d93720636b6b5e0c",
+    "semantic_hash": "d62112581679cfc6d93720636b6b5e0c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/selected_product_widget.dart": {
+    "mtime": 1780593826.261212,
+    "ast_hash": "9fc91ce0bb4e7fe6257290f249357849",
+    "semantic_hash": "9fc91ce0bb4e7fe6257290f249357849"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/product/widgets/variation_widget.dart": {
+    "mtime": 1780593826.2613273,
+    "ast_hash": "3696a63219e9f4be5dd043dbce445148",
+    "semantic_hash": "3696a63219e9f4be5dd043dbce445148"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/domain/models/member_status_model.dart": {
+    "mtime": 1781072045.626731,
+    "ast_hash": "1d608f5040b3b73d909a1641ceb229ed",
+    "semantic_hash": "1d608f5040b3b73d909a1641ceb229ed"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/domain/models/userinfo_model.dart": {
+    "mtime": 1781072045.6270483,
+    "ast_hash": "8d28e5a56e28b00db79b3398ef377bb7",
+    "semantic_hash": "8d28e5a56e28b00db79b3398ef377bb7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/domain/reposotories/profile_repo.dart": {
+    "mtime": 1781072045.6271944,
+    "ast_hash": "cf416f07c5ade0e7eec792839027af40",
+    "semantic_hash": "cf416f07c5ade0e7eec792839027af40"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/providers/profile_provider.dart": {
+    "mtime": 1781072045.6273415,
+    "ast_hash": "d7c00b96d789fb1bf2b444582ac28ae9",
+    "semantic_hash": "d7c00b96d789fb1bf2b444582ac28ae9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/screens/profile_edit_screen.dart": {
+    "mtime": 1780593826.2619514,
+    "ast_hash": "492918a7a58f5c3d69272dccdbeb8854",
+    "semantic_hash": "492918a7a58f5c3d69272dccdbeb8854"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/screens/profile_screen.dart": {
+    "mtime": 1780593826.2620523,
+    "ast_hash": "0a20e0260d5d184765b59396a1511f89",
+    "semantic_hash": "0a20e0260d5d184765b59396a1511f89"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/widgets/member_point_status_widget.dart": {
+    "mtime": 1781072045.627643,
+    "ast_hash": "a2a2b53f43624111bcc1cb4ddcdcd03a",
+    "semantic_hash": "a2a2b53f43624111bcc1cb4ddcdcd03a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/widgets/profile_details_widget.dart": {
+    "mtime": 1781072045.6280937,
+    "ast_hash": "6a6d9e9ad35bab66895b062140e2fa5e",
+    "semantic_hash": "6a6d9e9ad35bab66895b062140e2fa5e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/widgets/profile_header_widget.dart": {
+    "mtime": 1780593826.2622633,
+    "ast_hash": "f0e799eb2ce26ed345d588c784e81035",
+    "semantic_hash": "f0e799eb2ce26ed345d588c784e81035"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/profile/widgets/profile_menu_web_widget.dart": {
+    "mtime": 1780593826.2623348,
+    "ast_hash": "1596d42867b479b8de0a8bf7129d0041",
+    "semantic_hash": "1596d42867b479b8de0a8bf7129d0041"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/refer_and_earn/helper/refer_helper.dart": {
+    "mtime": 1780593826.262495,
+    "ast_hash": "1409a7aaf228f020a5b115db8c18dc43",
+    "semantic_hash": "1409a7aaf228f020a5b115db8c18dc43"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/refer_and_earn/screens/refer_and_earn_screen.dart": {
+    "mtime": 1781072045.6284602,
+    "ast_hash": "109834629f7a4bee95cb11c849fc0f61",
+    "semantic_hash": "109834629f7a4bee95cb11c849fc0f61"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/refer_and_earn/screens/refer_hint_widget.dart": {
+    "mtime": 1780593826.2629282,
+    "ast_hash": "cd528616fe10a9d1991dcdf0e33b1f15",
+    "semantic_hash": "cd528616fe10a9d1991dcdf0e33b1f15"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/review/providers/review_provider.dart": {
+    "mtime": 1780593826.2631426,
+    "ast_hash": "ce61bc6f41e5ae3707eea9fbbc307d3c",
+    "semantic_hash": "ce61bc6f41e5ae3707eea9fbbc307d3c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/review/screens/rate_review_screen.dart": {
+    "mtime": 1780593826.2633214,
+    "ast_hash": "a1f5ce8119ac603e5df739535676bcd8",
+    "semantic_hash": "a1f5ce8119ac603e5df739535676bcd8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/review/widgets/deliver_man_review_widget.dart": {
+    "mtime": 1780593826.2634685,
+    "ast_hash": "539d330779ac3413042bca7873ad2557",
+    "semantic_hash": "539d330779ac3413042bca7873ad2557"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/review/widgets/product_review_widget.dart": {
+    "mtime": 1780593826.263576,
+    "ast_hash": "6052a7a50cff0df76429eb7044e482f7",
+    "semantic_hash": "6052a7a50cff0df76429eb7044e482f7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/search/domain/reposotories/search_repo.dart": {
+    "mtime": 1780593826.263818,
+    "ast_hash": "aae6dbb86d568cdb875ed81009771941",
+    "semantic_hash": "aae6dbb86d568cdb875ed81009771941"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/search/providers/search_provider.dart": {
+    "mtime": 1780593826.263954,
+    "ast_hash": "5b35afe28f62f8f35b22e1ec5be363e5",
+    "semantic_hash": "5b35afe28f62f8f35b22e1ec5be363e5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/search/screens/search_result_screen.dart": {
+    "mtime": 1780593826.2641087,
+    "ast_hash": "ec2c869fbccd51fbb33330fc5371132a",
+    "semantic_hash": "ec2c869fbccd51fbb33330fc5371132a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/search/screens/search_screen.dart": {
+    "mtime": 1780593826.2642124,
+    "ast_hash": "f1e05a0a1f5dffe4b0ececa1479910c5",
+    "semantic_hash": "f1e05a0a1f5dffe4b0ececa1479910c5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/search/widgets/filter_widget.dart": {
+    "mtime": 1780593826.2644684,
+    "ast_hash": "325171540c342bb51d65d69d17a844e9",
+    "semantic_hash": "325171540c342bb51d65d69d17a844e9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/splash/domain/reposotories/splash_repo.dart": {
+    "mtime": 1780593826.264751,
+    "ast_hash": "fdbe4b5792e3a507b651ead17df5e719",
+    "semantic_hash": "fdbe4b5792e3a507b651ead17df5e719"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/splash/providers/splash_provider.dart": {
+    "mtime": 1781072045.6288614,
+    "ast_hash": "1805f84a9d70d11e2a86f81da0987efd",
+    "semantic_hash": "1805f84a9d70d11e2a86f81da0987efd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/splash/screens/splash_screen.dart": {
+    "mtime": 1780593826.2650619,
+    "ast_hash": "fc041b491a1990fe8b9f53b84eda0e24",
+    "semantic_hash": "fc041b491a1990fe8b9f53b84eda0e24"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/support/screens/support_screen.dart": {
+    "mtime": 1780593826.2653444,
+    "ast_hash": "57b8dd8cea4090884575ec53a0ec8b03",
+    "semantic_hash": "57b8dd8cea4090884575ec53a0ec8b03"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/update/screens/update_screen.dart": {
+    "mtime": 1780593826.2655323,
+    "ast_hash": "3031d6286b7ce97fe40732b8ddba8c13",
+    "semantic_hash": "3031d6286b7ce97fe40732b8ddba8c13"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/domain/models/wallet_bonus_model.dart": {
+    "mtime": 1780593826.265736,
+    "ast_hash": "0f3461557d260dbd1a09b1101e140ef4",
+    "semantic_hash": "0f3461557d260dbd1a09b1101e140ef4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/domain/models/wallet_filter_model.dart": {
+    "mtime": 1780593826.2658129,
+    "ast_hash": "3ac0f57f93af922e6754decbdfa33c76",
+    "semantic_hash": "3ac0f57f93af922e6754decbdfa33c76"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/domain/models/wallet_model.dart": {
+    "mtime": 1780593826.2658954,
+    "ast_hash": "79d289d7e9c9fa08b2cd84648cfb7e2f",
+    "semantic_hash": "79d289d7e9c9fa08b2cd84648cfb7e2f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/domain/reposotories/wallet_repo.dart": {
+    "mtime": 1780593826.2660136,
+    "ast_hash": "6a5b5d5f44137faeeda006b16aca77b0",
+    "semantic_hash": "6a5b5d5f44137faeeda006b16aca77b0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/providers/wallet_provider.dart": {
+    "mtime": 1780593826.2661371,
+    "ast_hash": "f3f782932e7a93186a1f83c4e07b5d12",
+    "semantic_hash": "f3f782932e7a93186a1f83c4e07b5d12"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/screens/loyalty_screen.dart": {
+    "mtime": 1781072045.629041,
+    "ast_hash": "4f73fab6c44a54d8295a6a187d588dd5",
+    "semantic_hash": "4f73fab6c44a54d8295a6a187d588dd5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/screens/wallet_screen.dart": {
+    "mtime": 1781072045.6293952,
+    "ast_hash": "63d01e9094311a0acce07d2279da2746",
+    "semantic_hash": "63d01e9094311a0acce07d2279da2746"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/add_fund_dialogue_widget.dart": {
+    "mtime": 1780593826.2664979,
+    "ast_hash": "b53e8f4b1996606f8a390d6e0d06735a",
+    "semantic_hash": "b53e8f4b1996606f8a390d6e0d06735a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/bonus_slider_widget.dart": {
+    "mtime": 1780593826.2666075,
+    "ast_hash": "2e99a72c95c0810862b9380f94f14af2",
+    "semantic_hash": "2e99a72c95c0810862b9380f94f14af2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/convert_money_widget.dart": {
+    "mtime": 1780593826.2666924,
+    "ast_hash": "27b968ac37c5cbc12e6c1fadfd86ca0d",
+    "semantic_hash": "27b968ac37c5cbc12e6c1fadfd86ca0d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/history_widget.dart": {
+    "mtime": 1780593826.2667782,
+    "ast_hash": "3df7ae80d7fee46d4d40fac66e5e341c",
+    "semantic_hash": "3df7ae80d7fee46d4d40fac66e5e341c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/tab_button_widget.dart": {
+    "mtime": 1780593826.2668667,
+    "ast_hash": "07db2aa36195e594aea1a10396d1f8be",
+    "semantic_hash": "07db2aa36195e594aea1a10396d1f8be"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/wallet_card_widget.dart": {
+    "mtime": 1780593826.2669566,
+    "ast_hash": "db30751632fed33e8ae961ef0b72fa46",
+    "semantic_hash": "db30751632fed33e8ae961ef0b72fa46"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/wallet_history_list_widget.dart": {
+    "mtime": 1780593826.2670383,
+    "ast_hash": "7d6475fed689914de467997b36a65206",
+    "semantic_hash": "7d6475fed689914de467997b36a65206"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/wallet_shimmer_widget.dart": {
+    "mtime": 1780593826.2671375,
+    "ast_hash": "e6a0c923bc67e2a79fa31b06e6f5986d",
+    "semantic_hash": "e6a0c923bc67e2a79fa31b06e6f5986d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wallet_and_loyalty/widgets/wallet_uses_manual_widget.dart": {
+    "mtime": 1780593826.2673266,
+    "ast_hash": "5c1de43cce7e0bf6b267f0da01cc9226",
+    "semantic_hash": "5c1de43cce7e0bf6b267f0da01cc9226"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wishlist/domain/models/wishlist_model.dart": {
+    "mtime": 1780593826.2676063,
+    "ast_hash": "6e590e158baf3e6b94bcdaff2c36506c",
+    "semantic_hash": "6e590e158baf3e6b94bcdaff2c36506c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wishlist/domain/reposotories/wishlist_repo.dart": {
+    "mtime": 1780593826.2677777,
+    "ast_hash": "c6fe7f160b21c7b2ad8092db14bbac05",
+    "semantic_hash": "c6fe7f160b21c7b2ad8092db14bbac05"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wishlist/providers/wishlist_provider.dart": {
+    "mtime": 1780593826.2679207,
+    "ast_hash": "183bd0a46425fb6d802435925c5d4d5e",
+    "semantic_hash": "183bd0a46425fb6d802435925c5d4d5e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/features/wishlist/screens/wishlist_screen.dart": {
+    "mtime": 1780593826.2680824,
+    "ast_hash": "de56f4e8edb4959ff583eba130a4826c",
+    "semantic_hash": "de56f4e8edb4959ff583eba130a4826c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/address_helper.dart": {
+    "mtime": 1780593826.2682729,
+    "ast_hash": "448cb9dd8cfb61fef0b87f73d882e34f",
+    "semantic_hash": "448cb9dd8cfb61fef0b87f73d882e34f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/api_checker_helper.dart": {
+    "mtime": 1780593826.268364,
+    "ast_hash": "55954fb68b8db8243e398b7a1c8484bd",
+    "semantic_hash": "55954fb68b8db8243e398b7a1c8484bd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/auth_helper.dart": {
+    "mtime": 1780593826.2684493,
+    "ast_hash": "4a1d7958ac6db6e1fa587bbf38ac8784",
+    "semantic_hash": "4a1d7958ac6db6e1fa587bbf38ac8784"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/cart_helper.dart": {
+    "mtime": 1780593826.2685418,
+    "ast_hash": "5aa201143f91f40241c20b4a0926ace5",
+    "semantic_hash": "5aa201143f91f40241c20b4a0926ace5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/checkout_helper.dart": {
+    "mtime": 1780593826.2686718,
+    "ast_hash": "79d55eeef88b03a7b7ac3b4c4e5234b4",
+    "semantic_hash": "79d55eeef88b03a7b7ac3b4c4e5234b4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/custom_snackbar_helper.dart": {
+    "mtime": 1780593826.2687764,
+    "ast_hash": "a3a857f491d2e133ed0dbebe129a9f57",
+    "semantic_hash": "a3a857f491d2e133ed0dbebe129a9f57"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/data_sync_helper.dart": {
+    "mtime": 1780593826.2688527,
+    "ast_hash": "bfb9961abd4f96021c2cd3b4d54b3555",
+    "semantic_hash": "bfb9961abd4f96021c2cd3b4d54b3555"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/date_converter_helper.dart": {
+    "mtime": 1780593826.2689333,
+    "ast_hash": "d156249b6e248571e3d6c65686863f10",
+    "semantic_hash": "d156249b6e248571e3d6c65686863f10"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/db_helper.dart": {
+    "mtime": 1780593826.2690094,
+    "ast_hash": "82caad2f1d02c7c3317b55a5da9c83f3",
+    "semantic_hash": "82caad2f1d02c7c3317b55a5da9c83f3"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/dialog_helper.dart": {
+    "mtime": 1780593826.2691035,
+    "ast_hash": "fd70eebd9e29e864e34aff56745bdaef",
+    "semantic_hash": "fd70eebd9e29e864e34aff56745bdaef"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/email_checker_helper.dart": {
+    "mtime": 1780593826.2691808,
+    "ast_hash": "326ea2f82a7a6b5d1aa230f2a9ce1787",
+    "semantic_hash": "326ea2f82a7a6b5d1aa230f2a9ce1787"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/file_validation_helper.dart": {
+    "mtime": 1780593826.26928,
+    "ast_hash": "1167a93ab65f4804acc898fb4ee91bc6",
+    "semantic_hash": "1167a93ab65f4804acc898fb4ee91bc6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/html_string_checker.dart": {
+    "mtime": 1780593826.2693622,
+    "ast_hash": "36d1835ff31fc750cadd5dace9c971f2",
+    "semantic_hash": "36d1835ff31fc750cadd5dace9c971f2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/maintenance_helper.dart": {
+    "mtime": 1780593826.2694407,
+    "ast_hash": "854b2c782169c1f1d143817713db2840",
+    "semantic_hash": "854b2c782169c1f1d143817713db2840"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/notification_helper.dart": {
+    "mtime": 1780593826.26954,
+    "ast_hash": "a2d3fd192eb385b3505893eaa51178c6",
+    "semantic_hash": "a2d3fd192eb385b3505893eaa51178c6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/order_helper.dart": {
+    "mtime": 1780593826.2696414,
+    "ast_hash": "d6e81953100b5f34f9487fe35d699a44",
+    "semantic_hash": "d6e81953100b5f34f9487fe35d699a44"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/phone_number_checker_helper.dart": {
+    "mtime": 1780593826.269729,
+    "ast_hash": "7e186c589862fa6456ce142e076d9c7b",
+    "semantic_hash": "7e186c589862fa6456ce142e076d9c7b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/price_converter_helper.dart": {
+    "mtime": 1780593826.2698066,
+    "ast_hash": "faacc346241a6c0573c01a78db2444d8",
+    "semantic_hash": "faacc346241a6c0573c01a78db2444d8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/responsive_helper.dart": {
+    "mtime": 1780593826.2698798,
+    "ast_hash": "7ef5cc955520d5e78eedef911144f9d6",
+    "semantic_hash": "7ef5cc955520d5e78eedef911144f9d6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/route_helper.dart": {
+    "mtime": 1781072045.6301155,
+    "ast_hash": "54521fbda18731cdd7229bf107ff466e",
+    "semantic_hash": "54521fbda18731cdd7229bf107ff466e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/string_parser.dart": {
+    "mtime": 1780593826.2700894,
+    "ast_hash": "d1f738c1e134cab424db3e8ae20df06a",
+    "semantic_hash": "d1f738c1e134cab424db3e8ae20df06a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/helper/wallet_helper.dart": {
+    "mtime": 1780593826.2701702,
+    "ast_hash": "7118983500378991a707a40b21b8fd4b",
+    "semantic_hash": "7118983500378991a707a40b21b8fd4b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/localization/app_localization.dart": {
+    "mtime": 1780593826.270309,
+    "ast_hash": "60ec4218bfd8d3334f09d73da9cf01d7",
+    "semantic_hash": "60ec4218bfd8d3334f09d73da9cf01d7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/localization/language_constraints.dart": {
+    "mtime": 1780593826.2703974,
+    "ast_hash": "405b2ba4b0962211a3415e8b921e4280",
+    "semantic_hash": "405b2ba4b0962211a3415e8b921e4280"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/main.dart": {
+    "mtime": 1781072045.6305125,
+    "ast_hash": "c3964301becbab0ca4177f6f07138630",
+    "semantic_hash": "c3964301becbab0ca4177f6f07138630"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/theme/dark_theme.dart": {
+    "mtime": 1780593826.2706194,
+    "ast_hash": "c1fe7e6e7a0bc1bd96bdcb51157634be",
+    "semantic_hash": "c1fe7e6e7a0bc1bd96bdcb51157634be"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/theme/light_theme.dart": {
+    "mtime": 1780593826.2706954,
+    "ast_hash": "a2341a7ff4c08ac245213cd0c25ee7cb",
+    "semantic_hash": "a2341a7ff4c08ac245213cd0c25ee7cb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/app_constants.dart": {
+    "mtime": 1781072060.9890661,
+    "ast_hash": "348894434303490ae5e24e76f6eb5a72",
+    "semantic_hash": "348894434303490ae5e24e76f6eb5a72"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/color_resources.dart": {
+    "mtime": 1780593826.2709386,
+    "ast_hash": "b8653308aae36bc4c175c6a1a4aed160",
+    "semantic_hash": "b8653308aae36bc4c175c6a1a4aed160"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/dimensions.dart": {
+    "mtime": 1780593826.2710829,
+    "ast_hash": "dbecd8f4ccdd20284fa58f30fe9e3f8a",
+    "semantic_hash": "dbecd8f4ccdd20284fa58f30fe9e3f8a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/images.dart": {
+    "mtime": 1780593826.2712507,
+    "ast_hash": "b21ec9e672e6014628d4ff71cb83375e",
+    "semantic_hash": "b21ec9e672e6014628d4ff71cb83375e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/order_constants.dart": {
+    "mtime": 1780593826.2713447,
+    "ast_hash": "e81907301301cc931c1893cfe675eb44",
+    "semantic_hash": "e81907301301cc931c1893cfe675eb44"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/product_type.dart": {
+    "mtime": 1780593826.2714229,
+    "ast_hash": "d323cf732da8ed30accc381242d0eaef",
+    "semantic_hash": "d323cf732da8ed30accc381242d0eaef"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/lib/utill/styles.dart": {
+    "mtime": 1780593826.271509,
+    "ast_hash": "3cb4d2636e7db4fe34d579d8fb1c3be8",
+    "semantic_hash": "3cb4d2636e7db4fe34d579d8fb1c3be8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/package.json": {
+    "mtime": 1780593826.2717962,
+    "ast_hash": "0713d45abd1cafe77b033905a86cf470",
+    "semantic_hash": "0713d45abd1cafe77b033905a86cf470"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/test/widget_test.dart": {
+    "mtime": 1781072045.631529,
+    "ast_hash": "b7675a81d82e383a7be7d73a87d67bbd",
+    "semantic_hash": "b7675a81d82e383a7be7d73a87d67bbd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/.well-known/assetlinks.json": {
+    "mtime": 1780593826.272478,
+    "ast_hash": "56760afdc2398143c11a5adecdf5a753",
+    "semantic_hash": "56760afdc2398143c11a5adecdf5a753"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/firebase-messaging-sw.js": {
+    "mtime": 1780593826.2747977,
+    "ast_hash": "6227d49a78bd4e81e9774382d594a7fe",
+    "semantic_hash": "6227d49a78bd4e81e9774382d594a7fe"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/manifest.json": {
+    "mtime": 1780593826.2767854,
+    "ast_hash": "9857acde2258868eb2ca152e29cc5e80",
+    "semantic_hash": "9857acde2258868eb2ca152e29cc5e80"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/AGENTS.md": {
+    "mtime": 1781427488.883096,
+    "ast_hash": "b50d496ff471039533b1a2804af1e2db",
+    "semantic_hash": "b50d496ff471039533b1a2804af1e2db"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/SKILL.md": {
+    "mtime": 1781427485.831167,
+    "ast_hash": "97c2755905a5a0e53b96b31c725a7010",
+    "semantic_hash": "97c2755905a5a0e53b96b31c725a7010"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/add-watch.md": {
+    "mtime": 1781427474.4891877,
+    "ast_hash": "0df0589623217ca38a12bdcabfb42f4c",
+    "semantic_hash": "0df0589623217ca38a12bdcabfb42f4c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/exports.md": {
+    "mtime": 1781427474.4893904,
+    "ast_hash": "c04ddf8f1f5ef5e262ebec491a523c74",
+    "semantic_hash": "c04ddf8f1f5ef5e262ebec491a523c74"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/extraction-spec.md": {
+    "mtime": 1781427474.4896383,
+    "ast_hash": "24808b03abfeaf5f6435bb69c0125b2c",
+    "semantic_hash": "24808b03abfeaf5f6435bb69c0125b2c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/github-and-merge.md": {
+    "mtime": 1781427474.489807,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/hooks.md": {
+    "mtime": 1781427474.4900188,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/query.md": {
+    "mtime": 1781427474.4902022,
+    "ast_hash": "8b40ed8c9e9060fc215219a8fc964091",
+    "semantic_hash": "8b40ed8c9e9060fc215219a8fc964091"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/transcribe.md": {
+    "mtime": 1781427474.4903464,
+    "ast_hash": "70f6aa30d6211f3a2c7e9fc45479f50c",
+    "semantic_hash": "70f6aa30d6211f3a2c7e9fc45479f50c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/graphify/references/update.md": {
+    "mtime": 1781427474.4905658,
+    "ast_hash": "0dad167a95bdb389f02fecffb60b1bc8",
+    "semantic_hash": "0dad167a95bdb389f02fecffb60b1bc8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/rules/graphify.md": {
+    "mtime": 1781427485.831644,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": "f1e53ecc9194573d3c28fc116c743a2e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/.agents/workflows/graphify.md": {
+    "mtime": 1781427485.831826,
+    "ast_hash": "0bc020d491fca99550c1ea3de0a5f862",
+    "semantic_hash": "0bc020d491fca99550c1ea3de0a5f862"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/AGENTS.md": {
+    "mtime": 1780593826.1765974,
+    "ast_hash": "4e4673e24bed008aec23038c48f78831",
+    "semantic_hash": "4e4673e24bed008aec23038c48f78831"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/README.md": {
+    "mtime": 1780593826.1766806,
+    "ast_hash": "e69194e0cb6f2827961570921d40a6e1",
+    "semantic_hash": "e69194e0cb6f2827961570921d40a6e1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/analysis_options.yaml": {
+    "mtime": 1780593826.176756,
+    "ast_hash": "b606ba3f3bd06a3f151abd17193462e0",
+    "semantic_hash": "b606ba3f3bd06a3f151abd17193462e0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/api_routes.md": {
+    "mtime": 1781072045.5935988,
+    "ast_hash": "15e8886ca185ad8ef3dc25182208403b",
+    "semantic_hash": "15e8886ca185ad8ef3dc25182208403b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/devtools_options.yaml": {
+    "mtime": 1780593826.2048736,
+    "ast_hash": "d1ff5187b1b67653e7357395895e8449",
+    "semantic_hash": "d1ff5187b1b67653e7357395895e8449"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md": {
+    "mtime": 1780593826.2281451,
+    "ast_hash": "e175e436acacf76c814d83532d0b662c",
+    "semantic_hash": "e175e436acacf76c814d83532d0b662c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/public/index.html": {
+    "mtime": 1780593826.2719483,
+    "ast_hash": "e6176cca072da54a991195e1736ad5bb",
+    "semantic_hash": "e6176cca072da54a991195e1736ad5bb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/pubspec.yaml": {
+    "mtime": 1781072045.6312873,
+    "ast_hash": "0cfa626b290ea6d09528b0ac245e103f",
+    "semantic_hash": "0cfa626b290ea6d09528b0ac245e103f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/index.html": {
+    "mtime": 1781072045.6358652,
+    "ast_hash": "e91480a8ee86f733af2a6f16f248adfc",
+    "semantic_hash": "e91480a8ee86f733af2a6f16f248adfc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/drawable/notification_icon.png": {
+    "mtime": 1780593826.1779826,
+    "ast_hash": "ab12b819e834099db707b8961c45d502",
+    "semantic_hash": "ab12b819e834099db707b8961c45d502"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1781072045.5871966,
+    "ast_hash": "bf4b26f1aecf5c6ab896473f89f56f82",
+    "semantic_hash": "bf4b26f1aecf5c6ab896473f89f56f82"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-hdpi/ic_launcher_background.png": {
+    "mtime": 1781072045.5873053,
+    "ast_hash": "ba40856af77faf36adb0713495078860",
+    "semantic_hash": "ba40856af77faf36adb0713495078860"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png": {
+    "mtime": 1781072045.5874863,
+    "ast_hash": "8e51720d92671e8fba2372a3d9b1b427",
+    "semantic_hash": "8e51720d92671e8fba2372a3d9b1b427"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-hdpi/ic_launcher_monochrome.png": {
+    "mtime": 1781072045.587632,
+    "ast_hash": "8e51720d92671e8fba2372a3d9b1b427",
+    "semantic_hash": "8e51720d92671e8fba2372a3d9b1b427"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1781072045.587772,
+    "ast_hash": "863c82c4491d1b365edaf2bfacead00a",
+    "semantic_hash": "863c82c4491d1b365edaf2bfacead00a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-mdpi/ic_launcher_background.png": {
+    "mtime": 1781072045.5880213,
+    "ast_hash": "c4f6259a3016002d8c895ba5c9e6ba0f",
+    "semantic_hash": "c4f6259a3016002d8c895ba5c9e6ba0f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png": {
+    "mtime": 1781072045.588266,
+    "ast_hash": "2bc1bee4b1800001d70f81bba9ccf605",
+    "semantic_hash": "2bc1bee4b1800001d70f81bba9ccf605"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-mdpi/ic_launcher_monochrome.png": {
+    "mtime": 1781072045.58853,
+    "ast_hash": "2bc1bee4b1800001d70f81bba9ccf605",
+    "semantic_hash": "2bc1bee4b1800001d70f81bba9ccf605"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1781072045.5886817,
+    "ast_hash": "7f97ccfdf05944227c0dee05cc41aea8",
+    "semantic_hash": "7f97ccfdf05944227c0dee05cc41aea8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xhdpi/ic_launcher_background.png": {
+    "mtime": 1781072045.5888064,
+    "ast_hash": "f05cbbe5497c98fb5231f0569ad975cc",
+    "semantic_hash": "f05cbbe5497c98fb5231f0569ad975cc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png": {
+    "mtime": 1781072045.5889885,
+    "ast_hash": "536098e58880a413982c624016810519",
+    "semantic_hash": "536098e58880a413982c624016810519"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xhdpi/ic_launcher_monochrome.png": {
+    "mtime": 1781072045.5891974,
+    "ast_hash": "536098e58880a413982c624016810519",
+    "semantic_hash": "536098e58880a413982c624016810519"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1781072045.5894995,
+    "ast_hash": "b199f6adea39ad5ce902aa85cbac0a5b",
+    "semantic_hash": "b199f6adea39ad5ce902aa85cbac0a5b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.png": {
+    "mtime": 1781072045.5896752,
+    "ast_hash": "136c1dc30b04545732920f75dcd2e0cb",
+    "semantic_hash": "136c1dc30b04545732920f75dcd2e0cb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png": {
+    "mtime": 1781072045.5900922,
+    "ast_hash": "e1f20b3ad91edfb2554e8a89ce2e552d",
+    "semantic_hash": "e1f20b3ad91edfb2554e8a89ce2e552d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_monochrome.png": {
+    "mtime": 1781072045.5903373,
+    "ast_hash": "e1f20b3ad91edfb2554e8a89ce2e552d",
+    "semantic_hash": "e1f20b3ad91edfb2554e8a89ce2e552d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1781072045.5907376,
+    "ast_hash": "570b622627ea54529eea65c1365faa14",
+    "semantic_hash": "570b622627ea54529eea65c1365faa14"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png": {
+    "mtime": 1781072045.5913544,
+    "ast_hash": "803a9ed7e85087e97a95320ce15af13d",
+    "semantic_hash": "803a9ed7e85087e97a95320ce15af13d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png": {
+    "mtime": 1781072045.5918279,
+    "ast_hash": "2875bf943085c0d4fb74e201aa818839",
+    "semantic_hash": "2875bf943085c0d4fb74e201aa818839"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_monochrome.png": {
+    "mtime": 1781072045.5925374,
+    "ast_hash": "2875bf943085c0d4fb74e201aa818839",
+    "semantic_hash": "2875bf943085c0d4fb74e201aa818839"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/app_logo.png": {
+    "mtime": 1781072045.5945468,
+    "ast_hash": "f3eab7023419d68063434610b1435356",
+    "semantic_hash": "f3eab7023419d68063434610b1435356"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/app_store.png": {
+    "mtime": 1780593826.184989,
+    "ast_hash": "c1336a091ce3f06b23be6805575bd83d",
+    "semantic_hash": "c1336a091ce3f06b23be6805575bd83d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/apple_logo.png": {
+    "mtime": 1780593826.1853368,
+    "ast_hash": "6e4f5b96860ac0b0bbf8c5d1fa797e72",
+    "semantic_hash": "6e4f5b96860ac0b0bbf8c5d1fa797e72"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/arabic.png": {
+    "mtime": 1780593826.1854277,
+    "ast_hash": "a39296665f237666b6d436b6de291e66",
+    "semantic_hash": "a39296665f237666b6d436b6de291e66"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/bd.png": {
+    "mtime": 1780593826.1855068,
+    "ast_hash": "2627cbaec0b220098a0f9a3514954415",
+    "semantic_hash": "2627cbaec0b220098a0f9a3514954415"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/box.png": {
+    "mtime": 1780593826.1856763,
+    "ast_hash": "cc60bc199b4645875544df0fa0150147",
+    "semantic_hash": "cc60bc199b4645875544df0fa0150147"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/call.png": {
+    "mtime": 1780593826.1857536,
+    "ast_hash": "ae84d046565aa31c08222352d7509974",
+    "semantic_hash": "ae84d046565aa31c08222352d7509974"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/call_email_icon.png": {
+    "mtime": 1780593826.1858182,
+    "ast_hash": "797f51dd0e359d5610a5463216447fcb",
+    "semantic_hash": "797f51dd0e359d5610a5463216447fcb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/call_icon.png": {
+    "mtime": 1780593826.1858819,
+    "ast_hash": "2ad15356239c9df08d2313ad0b0bdedc",
+    "semantic_hash": "2ad15356239c9df08d2313ad0b0bdedc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/camera.png": {
+    "mtime": 1780593826.1859455,
+    "ast_hash": "44c4b08813fde5dfb024a46bd4fa20b5",
+    "semantic_hash": "44c4b08813fde5dfb024a46bd4fa20b5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/cancellation_policy.png": {
+    "mtime": 1780593826.1860545,
+    "ast_hash": "1b2100cbcc353d8853261f2715c22b72",
+    "semantic_hash": "1b2100cbcc353d8853261f2715c22b72"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/cart.png": {
+    "mtime": 1780593826.1861267,
+    "ast_hash": "b4c77c6c415f4816e723d234dd825003",
+    "semantic_hash": "b4c77c6c415f4816e723d234dd825003"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/cart_bold.png": {
+    "mtime": 1780593826.1861982,
+    "ast_hash": "e2f60eb0ecc8d098263fb60d0c92a036",
+    "semantic_hash": "e2f60eb0ecc8d098263fb60d0c92a036"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/cash_on_delivery.png": {
+    "mtime": 1780593826.186265,
+    "ast_hash": "24b498be937b68fd8a4e86c00cc64bcd",
+    "semantic_hash": "24b498be937b68fd8a4e86c00cc64bcd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/chat.png": {
+    "mtime": 1780593826.1863296,
+    "ast_hash": "496d5e586db38fd1516ddff572d3897e",
+    "semantic_hash": "496d5e586db38fd1516ddff572d3897e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/clear.png": {
+    "mtime": 1780593826.1863925,
+    "ast_hash": "9b298cf73376b73ee64800f7c92ad909",
+    "semantic_hash": "9b298cf73376b73ee64800f7c92ad909"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/close_lock.png": {
+    "mtime": 1780593826.1864605,
+    "ast_hash": "f0c62d0c763d92243543de6b56aa2edb",
+    "semantic_hash": "f0c62d0c763d92243543de6b56aa2edb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/converted.png": {
+    "mtime": 1780593826.1865253,
+    "ast_hash": "16e76d22f6836d45ff8fb7270f1e8cbb",
+    "semantic_hash": "16e76d22f6836d45ff8fb7270f1e8cbb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/copy_icon.png": {
+    "mtime": 1780593826.1865933,
+    "ast_hash": "6ce78ca61738d1aec348244771868dda",
+    "semantic_hash": "6ce78ca61738d1aec348244771868dda"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/coupon_apply.png": {
+    "mtime": 1780593826.1866605,
+    "ast_hash": "ca3da3acb33e71133fa29696f7e9274f",
+    "semantic_hash": "ca3da3acb33e71133fa29696f7e9274f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/coupon_bg.png": {
+    "mtime": 1780593826.1867645,
+    "ast_hash": "2f714385adf51ff950665503605f40b0",
+    "semantic_hash": "2f714385adf51ff950665503605f40b0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/coupon_offer_icon.png": {
+    "mtime": 1780593826.1868625,
+    "ast_hash": "ba4fd6ded4fc4b679f161559b7a1d82c",
+    "semantic_hash": "ba4fd6ded4fc4b679f161559b7a1d82c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/cross_icon.png": {
+    "mtime": 1780593826.1869276,
+    "ast_hash": "a6617ec59eab2bd24c6d200a05bc2b2e",
+    "semantic_hash": "a6617ec59eab2bd24c6d200a05bc2b2e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/delivery_address_icon.png": {
+    "mtime": 1780593826.1869946,
+    "ast_hash": "086e49833ac12293b342359971d3f175",
+    "semantic_hash": "086e49833ac12293b342359971d3f175"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/delivery_boy_marker.png": {
+    "mtime": 1780593826.1870615,
+    "ast_hash": "6f2c6bf68d89fbba9fb34be4cfcc4db1",
+    "semantic_hash": "6f2c6bf68d89fbba9fb34be4cfcc4db1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/delivery_tooltip_icon.png": {
+    "mtime": 1780593826.1871257,
+    "ast_hash": "47ea68e5dc805e9edb1768b859e286d6",
+    "semantic_hash": "47ea68e5dc805e9edb1768b859e286d6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/destination_marker.png": {
+    "mtime": 1780593826.1871855,
+    "ast_hash": "152557d7aaeb8e86b2876c7f41192331",
+    "semantic_hash": "152557d7aaeb8e86b2876c7f41192331"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/done.png": {
+    "mtime": 1780593826.1872475,
+    "ast_hash": "fe9b69bc31073bda51453d728131ed3c",
+    "semantic_hash": "fe9b69bc31073bda51453d728131ed3c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/earning.png": {
+    "mtime": 1780593826.1873214,
+    "ast_hash": "b57df371a5c7c569c56c9dfd4a1af65f",
+    "semantic_hash": "b57df371a5c7c569c56c9dfd4a1af65f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/email.png": {
+    "mtime": 1780593826.1873918,
+    "ast_hash": "ac4d4cfff5e13db2ac14c439af78dbfd",
+    "semantic_hash": "ac4d4cfff5e13db2ac14c439af78dbfd"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/email_verification_background.png": {
+    "mtime": 1780593826.1874783,
+    "ast_hash": "4a5666d126ce30b1ac2738e5f9febbf0",
+    "semantic_hash": "4a5666d126ce30b1ac2738e5f9febbf0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/email_with_background.png": {
+    "mtime": 1780593826.1875434,
+    "ast_hash": "60b9a4ba3c326e939783b7057cc1d8ca",
+    "semantic_hash": "60b9a4ba3c326e939783b7057cc1d8ca"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/empty_order_image.png": {
+    "mtime": 1780593826.187686,
+    "ast_hash": "a40a33d58ddcf7dbcde7333e56bde079",
+    "semantic_hash": "a40a33d58ddcf7dbcde7333e56bde079"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/england.png": {
+    "mtime": 1780593826.1877656,
+    "ast_hash": "7c798fee494e0522966fce8919f458c1",
+    "semantic_hash": "7c798fee494e0522966fce8919f458c1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/facebook.png": {
+    "mtime": 1780593826.187832,
+    "ast_hash": "13773848b0b4a0f4f3060608b7445dc7",
+    "semantic_hash": "13773848b0b4a0f4f3060608b7445dc7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/facebook_social_logo.png": {
+    "mtime": 1780593826.1878994,
+    "ast_hash": "5b8a63d4a341fad83f21a8d66dd5cc2c",
+    "semantic_hash": "5b8a63d4a341fad83f21a8d66dd5cc2c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/faq.png": {
+    "mtime": 1780593826.187961,
+    "ast_hash": "48001b2a43899eb78d461ffc587103fc",
+    "semantic_hash": "48001b2a43899eb78d461ffc587103fc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/favourite_icon.png": {
+    "mtime": 1780593826.1880305,
+    "ast_hash": "75362de5d17145a6f29d9a9f6da435f9",
+    "semantic_hash": "75362de5d17145a6f29d9a9f6da435f9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/favourite_no_data.png": {
+    "mtime": 1780593826.1881468,
+    "ast_hash": "cc7b0a17cd8039fe6044a2e54b8f0315",
+    "semantic_hash": "cc7b0a17cd8039fe6044a2e54b8f0315"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/flash_deal.png": {
+    "mtime": 1780593826.1882079,
+    "ast_hash": "9ce1b1cda0e4e5f6aadfe6d1dbb9505a",
+    "semantic_hash": "9ce1b1cda0e4e5f6aadfe6d1dbb9505a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/gift_box_dark.gif": {
+    "mtime": 1780593826.18958,
+    "ast_hash": "955c7fbec1327c74fce4aa3e1d505abc",
+    "semantic_hash": "955c7fbec1327c74fce4aa3e1d505abc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/giftbox.gif": {
+    "mtime": 1780593826.1903765,
+    "ast_hash": "0f9042b692714dabc3dddabb0042578d",
+    "semantic_hash": "0f9042b692714dabc3dddabb0042578d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/gmail.png": {
+    "mtime": 1780593826.1904926,
+    "ast_hash": "1c2e51c7d9b66a3aa422c90fbc955b7a",
+    "semantic_hash": "1c2e51c7d9b66a3aa422c90fbc955b7a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/google.png": {
+    "mtime": 1780593826.1905613,
+    "ast_hash": "8f852186a4439d0a8960d05360cbeb7e",
+    "semantic_hash": "8f852186a4439d0a8960d05360cbeb7e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/home.png": {
+    "mtime": 1780593826.1906223,
+    "ast_hash": "0b1bd9e31948919f837f9c47a331b5b9",
+    "semantic_hash": "0b1bd9e31948919f837f9c47a331b5b9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/i_mark.png": {
+    "mtime": 1780593826.1906848,
+    "ast_hash": "8a55fff504ef613be6dd817dfad2f422",
+    "semantic_hash": "8a55fff504ef613be6dd817dfad2f422"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/icon_feather_shopping_bag.png": {
+    "mtime": 1780593826.190754,
+    "ast_hash": "4ee18032cfd2d4700b536be8f4fd9053",
+    "semantic_hash": "4ee18032cfd2d4700b536be8f4fd9053"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/image.png": {
+    "mtime": 1780593826.1908169,
+    "ast_hash": "389e383900c474b0f14d1a6c31147ce1",
+    "semantic_hash": "389e383900c474b0f14d1a6c31147ce1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/instagram_icon.png": {
+    "mtime": 1780593826.190888,
+    "ast_hash": "57f7b3fdfda88d049b28ed73dc5ac4f9",
+    "semantic_hash": "57f7b3fdfda88d049b28ed73dc5ac4f9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/language.png": {
+    "mtime": 1780593826.1909742,
+    "ast_hash": "f50eee8d2a2c6158f3f1b9c84c827194",
+    "semantic_hash": "f50eee8d2a2c6158f3f1b9c84c827194"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/line.png": {
+    "mtime": 1780593826.1910398,
+    "ast_hash": "9321aad2eef1075c395c5581731caaa0",
+    "semantic_hash": "9321aad2eef1075c395c5581731caaa0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/linkedin_icon.png": {
+    "mtime": 1780593826.191112,
+    "ast_hash": "58a64ec2676adb7ce7ce6d0714e22009",
+    "semantic_hash": "58a64ec2676adb7ce7ce6d0714e22009"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/list.png": {
+    "mtime": 1780593826.191176,
+    "ast_hash": "48d9d25190610b7543349d83ff9c8fe3",
+    "semantic_hash": "48d9d25190610b7543349d83ff9c8fe3"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/location.png": {
+    "mtime": 1780593826.1912525,
+    "ast_hash": "ce2cef60ea305339909f62d9ceb56cf6",
+    "semantic_hash": "ce2cef60ea305339909f62d9ceb56cf6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/location_banner_image.png": {
+    "mtime": 1780593826.1913679,
+    "ast_hash": "cb860f81f3384423bf9bfbbca9f03e9f",
+    "semantic_hash": "cb860f81f3384423bf9bfbbca9f03e9f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/lock_icon.png": {
+    "mtime": 1780593826.1914625,
+    "ast_hash": "c42c51bb07f18f0421ef92e5613121a9",
+    "semantic_hash": "c42c51bb07f18f0421ef92e5613121a9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/loyal.png": {
+    "mtime": 1780593826.1915455,
+    "ast_hash": "0c84463ada070852d9016c3520544e74",
+    "semantic_hash": "0c84463ada070852d9016c3520544e74"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/loyalty_background.png": {
+    "mtime": 1780593826.1916761,
+    "ast_hash": "88ef6e2edb9539e46ea8bf941af93b18",
+    "semantic_hash": "88ef6e2edb9539e46ea8bf941af93b18"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/loyalty_icon.png": {
+    "mtime": 1780593826.1918297,
+    "ast_hash": "8ec173ed8462cdbdb24097df8fefc945",
+    "semantic_hash": "8ec173ed8462cdbdb24097df8fefc945"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/maintenance.png": {
+    "mtime": 1780593826.1920085,
+    "ast_hash": "86e7b5c47a98a3d3506164f2a6700072",
+    "semantic_hash": "86e7b5c47a98a3d3506164f2a6700072"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/map-bg.png": {
+    "mtime": 1780593826.1921427,
+    "ast_hash": "504b718a2f7785c6ccd9b7cd52a9b85c",
+    "semantic_hash": "504b718a2f7785c6ccd9b7cd52a9b85c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/messenger.png": {
+    "mtime": 1780593826.1922367,
+    "ast_hash": "678cac1b5a7644a456363097849f2aca",
+    "semantic_hash": "678cac1b5a7644a456363097849f2aca"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/more_icon.png": {
+    "mtime": 1780593826.192313,
+    "ast_hash": "48ff3c6f038517a804486147c591027d",
+    "semantic_hash": "48ff3c6f038517a804486147c591027d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/no_map_background.png": {
+    "mtime": 1780593826.1924083,
+    "ast_hash": "53e47c90797e009d7d9abdb8c4c921dc",
+    "semantic_hash": "53e47c90797e009d7d9abdb8c4c921dc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/not_found.png": {
+    "mtime": 1780593826.1925454,
+    "ast_hash": "e07eb4c7dbda7e126c83f98604c141ac",
+    "semantic_hash": "e07eb4c7dbda7e126c83f98604c141ac"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/not_verified.png": {
+    "mtime": 1780593826.1926255,
+    "ast_hash": "d575c38d18f520b3172337a342ce597f",
+    "semantic_hash": "d575c38d18f520b3172337a342ce597f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/note.png": {
+    "mtime": 1780593826.1927228,
+    "ast_hash": "74d8a144001b20f95fc0eca4d2c38d7c",
+    "semantic_hash": "74d8a144001b20f95fc0eca4d2c38d7c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/offline.png": {
+    "mtime": 1780593826.1931677,
+    "ast_hash": "64ca046ad710c78f151164d5cd5cba07",
+    "semantic_hash": "64ca046ad710c78f151164d5cd5cba07"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/offline_payment.png": {
+    "mtime": 1780593826.193582,
+    "ast_hash": "3bd84d1b1261e43a1abd15212794e9e9",
+    "semantic_hash": "3bd84d1b1261e43a1abd15212794e9e9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/on_boarding_1.png": {
+    "mtime": 1780593826.193859,
+    "ast_hash": "7757e9c3bb43ebf7c6e6481aa01ff027",
+    "semantic_hash": "7757e9c3bb43ebf7c6e6481aa01ff027"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/on_boarding_2.png": {
+    "mtime": 1780593826.1947098,
+    "ast_hash": "003524c6184bd1b2d248cbba7752f029",
+    "semantic_hash": "003524c6184bd1b2d248cbba7752f029"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/on_boarding_3.png": {
+    "mtime": 1780593826.1952147,
+    "ast_hash": "2d738103b09dd5db43bb44571ecacf49",
+    "semantic_hash": "2d738103b09dd5db43bb44571ecacf49"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/open_lock.png": {
+    "mtime": 1780593826.195288,
+    "ast_hash": "43a9fa242acd95a606733e55bf510a3b",
+    "semantic_hash": "43a9fa242acd95a606733e55bf510a3b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order.png": {
+    "mtime": 1780593826.1955242,
+    "ast_hash": "e8df4362c0c38ae8d2e6fd6ded1a2cec",
+    "semantic_hash": "e8df4362c0c38ae8d2e6fd6ded1a2cec"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order_accepted.png": {
+    "mtime": 1780593826.19559,
+    "ast_hash": "d72837b140169b6df59c433c1f51b256",
+    "semantic_hash": "d72837b140169b6df59c433c1f51b256"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order_bag.png": {
+    "mtime": 1780593826.1956499,
+    "ast_hash": "9c418103314d50eb0ffec459798d90a0",
+    "semantic_hash": "9c418103314d50eb0ffec459798d90a0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order_delivered.png": {
+    "mtime": 1780593826.1957223,
+    "ast_hash": "9e00a6c9d3f4cade999123530a5ea1fa",
+    "semantic_hash": "9e00a6c9d3f4cade999123530a5ea1fa"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order_details.png": {
+    "mtime": 1780593826.1957884,
+    "ast_hash": "98f7d949368bfd8fe84633bc88826a06",
+    "semantic_hash": "98f7d949368bfd8fe84633bc88826a06"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order_place.png": {
+    "mtime": 1780593826.1958585,
+    "ast_hash": "a8f872f7d76d9bb91e80cc838d878408",
+    "semantic_hash": "a8f872f7d76d9bb91e80cc838d878408"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/order_placed.png": {
+    "mtime": 1780593826.195998,
+    "ast_hash": "3cf99674ef6ccc9e10c0a09555fc4900",
+    "semantic_hash": "3cf99674ef6ccc9e10c0a09555fc4900"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/out_for_delivery.png": {
+    "mtime": 1780593826.1960683,
+    "ast_hash": "9a035ee6ca324b375acb6b8aa2679cda",
+    "semantic_hash": "9a035ee6ca324b375acb6b8aa2679cda"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/partial_pay.png": {
+    "mtime": 1780593826.1961405,
+    "ast_hash": "56a23deead96a6bae1599520acf46674",
+    "semantic_hash": "56a23deead96a6bae1599520acf46674"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/percentage.png": {
+    "mtime": 1780593826.1962838,
+    "ast_hash": "14191fb2e8b6fe14946b7b97aa28bca0",
+    "semantic_hash": "14191fb2e8b6fe14946b7b97aa28bca0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/phone_verification_background.png": {
+    "mtime": 1780593826.1963778,
+    "ast_hash": "a89a39c986bc2423dce72dfe877bbab5",
+    "semantic_hash": "a89a39c986bc2423dce72dfe877bbab5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/pinterest.png": {
+    "mtime": 1780593826.1964383,
+    "ast_hash": "2a3fd7d46f6ea96c8b7af1545350d69f",
+    "semantic_hash": "2a3fd7d46f6ea96c8b7af1545350d69f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/place_holder.png": {
+    "mtime": 1780593826.1965554,
+    "ast_hash": "6fb355551260a856125e1f22397315d4",
+    "semantic_hash": "6fb355551260a856125e1f22397315d4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/placeholder.jpeg": {
+    "mtime": 1780593826.1966598,
+    "ast_hash": "bfea41ae262aa062f67001ebba1aee13",
+    "semantic_hash": "bfea41ae262aa062f67001ebba1aee13"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/placeholder.jpg": {
+    "mtime": 1780593826.1967595,
+    "ast_hash": "81abc0d9b59a9aba9191102834f2d978",
+    "semantic_hash": "81abc0d9b59a9aba9191102834f2d978"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/play_store.png": {
+    "mtime": 1780593826.1968741,
+    "ast_hash": "94f406ea3f95300a7afa91d6d25fbf6c",
+    "semantic_hash": "94f406ea3f95300a7afa91d6d25fbf6c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/preparing_items.png": {
+    "mtime": 1780593826.1969502,
+    "ast_hash": "2e114a95a980ba738a74527a642d00a2",
+    "semantic_hash": "2e114a95a980ba738a74527a642d00a2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/pro_place_holder.png": {
+    "mtime": 1780593826.1970806,
+    "ast_hash": "a8aa22eacdd97555b1342044132a91ff",
+    "semantic_hash": "a8aa22eacdd97555b1342044132a91ff"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/profile.png": {
+    "mtime": 1780593826.1971512,
+    "ast_hash": "bfe2cf0c4cecfa071be1727a9b885569",
+    "semantic_hash": "bfe2cf0c4cecfa071be1727a9b885569"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/refer_banner.png": {
+    "mtime": 1780593826.1973937,
+    "ast_hash": "649c2cf65b3922a351bbcab584374bf7",
+    "semantic_hash": "649c2cf65b3922a351bbcab584374bf7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/referral_icon.png": {
+    "mtime": 1780593826.1975114,
+    "ast_hash": "c0e9bde7207134731dd2a1315be605c7",
+    "semantic_hash": "c0e9bde7207134731dd2a1315be605c7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/restaurant_marker.png": {
+    "mtime": 1780593826.1975842,
+    "ast_hash": "d008d552a6608ce260108f2ebf8fb9a6",
+    "semantic_hash": "d008d552a6608ce260108f2ebf8fb9a6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/search.png": {
+    "mtime": 1780593826.197664,
+    "ast_hash": "a6b09b1fec3d43f94c5e14adca76fb49",
+    "semantic_hash": "a6b09b1fec3d43f94c5e14adca76fb49"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/send.png": {
+    "mtime": 1780593826.1977258,
+    "ast_hash": "507bfa6b99f901ddd8029183c3108ac2",
+    "semantic_hash": "507bfa6b99f901ddd8029183c3108ac2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/settings.png": {
+    "mtime": 1780593826.1977963,
+    "ast_hash": "669febfabc30889de5c9185c67e212f6",
+    "semantic_hash": "669febfabc30889de5c9185c67e212f6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/share.png": {
+    "mtime": 1780593826.1979015,
+    "ast_hash": "3a81b37c364c7a764b48009542b6a9f3",
+    "semantic_hash": "3a81b37c364c7a764b48009542b6a9f3"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/shopping_cart.png": {
+    "mtime": 1780593826.1980417,
+    "ast_hash": "7bc4e6ae017bf290d2a44b1fa7f40e9d",
+    "semantic_hash": "7bc4e6ae017bf290d2a44b1fa7f40e9d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/support.png": {
+    "mtime": 1780593826.1981988,
+    "ast_hash": "7ea8654f8920f9fbfb248f815809b69d",
+    "semantic_hash": "7ea8654f8920f9fbfb248f815809b69d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/telegram.png": {
+    "mtime": 1780593826.1983283,
+    "ast_hash": "222ad0b7291823b24bab790c7ccfe0d7",
+    "semantic_hash": "222ad0b7291823b24bab790c7ccfe0d7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/tooltip_icon.png": {
+    "mtime": 1780593826.198397,
+    "ast_hash": "ce153d211fc85250ab9d9ee542277d00",
+    "semantic_hash": "ce153d211fc85250ab9d9ee542277d00"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/twitter.png": {
+    "mtime": 1780593826.1984694,
+    "ast_hash": "801e5b4667bcbb01cbdca51e176b7a52",
+    "semantic_hash": "801e5b4667bcbb01cbdca51e176b7a52"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/unselected_restaurant_marker.png": {
+    "mtime": 1780593826.198539,
+    "ast_hash": "c7a30404e00578b467e7879a4859fc2f",
+    "semantic_hash": "c7a30404e00578b467e7879a4859fc2f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/update.png": {
+    "mtime": 1780593826.1989472,
+    "ast_hash": "b7cfdbc8ad908a9db95e78e36a0edda8",
+    "semantic_hash": "b7cfdbc8ad908a9db95e78e36a0edda8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/user.png": {
+    "mtime": 1780593826.1990318,
+    "ast_hash": "ad1775b4fb03f6f32e1ea3fed011499e",
+    "semantic_hash": "ad1775b4fb03f6f32e1ea3fed011499e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/verified.png": {
+    "mtime": 1780593826.1991034,
+    "ast_hash": "dfa942968c1ae3de081d5cad79b19b45",
+    "semantic_hash": "dfa942968c1ae3de081d5cad79b19b45"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/viber.png": {
+    "mtime": 1780593826.199187,
+    "ast_hash": "236393c982634fc6f5b0fc2ac5afbdf3",
+    "semantic_hash": "236393c982634fc6f5b0fc2ac5afbdf3"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/wallet_background.png": {
+    "mtime": 1780593826.1993077,
+    "ast_hash": "b8adcb23dc41f39e2be90fcf67463fea",
+    "semantic_hash": "b8adcb23dc41f39e2be90fcf67463fea"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/wallet_banner.png": {
+    "mtime": 1780593826.199558,
+    "ast_hash": "db2ca44a3c443d6fa12b17708de15f68",
+    "semantic_hash": "db2ca44a3c443d6fa12b17708de15f68"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/wallet_card_shape.png": {
+    "mtime": 1780593826.199707,
+    "ast_hash": "4eae27d3a217a67677ea83dab8427623",
+    "semantic_hash": "4eae27d3a217a67677ea83dab8427623"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/wallet_icon.png": {
+    "mtime": 1780593826.1997986,
+    "ast_hash": "bbaa06ad36f3bc3fa17b609690e107e9",
+    "semantic_hash": "bbaa06ad36f3bc3fa17b609690e107e9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/wallet_payment.png": {
+    "mtime": 1780593826.199908,
+    "ast_hash": "5d62aae85ddb8a867b9cddb90033e41e",
+    "semantic_hash": "5d62aae85ddb8a867b9cddb90033e41e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/ware_house.png": {
+    "mtime": 1780593826.1999805,
+    "ast_hash": "b86a395e5737e33a76d8774934d66870",
+    "semantic_hash": "b86a395e5737e33a76d8774934d66870"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/web_bar_logo_place_holder.png": {
+    "mtime": 1781072045.594895,
+    "ast_hash": "f3eab7023419d68063434610b1435356",
+    "semantic_hash": "f3eab7023419d68063434610b1435356"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/whatsapp.png": {
+    "mtime": 1780593826.2008345,
+    "ast_hash": "2c186cc0c57f59a93681e611c686813d",
+    "semantic_hash": "2c186cc0c57f59a93681e611c686813d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/image/youtube.png": {
+    "mtime": 1780593826.20105,
+    "ast_hash": "8e6fc4e3802ffded64526ab7e3b346e0",
+    "semantic_hash": "8e6fc4e3802ffded64526ab7e3b346e0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/about_us.svg": {
+    "mtime": 1780593826.2028306,
+    "ast_hash": "6c012674e42a598f4b8d7f6269291acc",
+    "semantic_hash": "6c012674e42a598f4b8d7f6269291acc"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/address_list.svg": {
+    "mtime": 1780593826.2029233,
+    "ast_hash": "4b5e65ae816d348d642eba297470c17a",
+    "semantic_hash": "4b5e65ae816d348d642eba297470c17a"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/cancellation_policy.svg": {
+    "mtime": 1780593826.2030096,
+    "ast_hash": "85a683bdcfa3d078490d9ce25d1fec51",
+    "semantic_hash": "85a683bdcfa3d078490d9ce25d1fec51"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/coupon.svg": {
+    "mtime": 1780593826.2030926,
+    "ast_hash": "13c8382ef1e931746eb45ce494b846bb",
+    "semantic_hash": "13c8382ef1e931746eb45ce494b846bb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/edit_profile.svg": {
+    "mtime": 1780593826.2031727,
+    "ast_hash": "7553346721021412eb7591272fcd549b",
+    "semantic_hash": "7553346721021412eb7591272fcd549b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/flash_sale.svg": {
+    "mtime": 1780593826.2035086,
+    "ast_hash": "d328328d8b1ca620c95985f9e931db7e",
+    "semantic_hash": "d328328d8b1ca620c95985f9e931db7e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/login.svg": {
+    "mtime": 1780593826.2036083,
+    "ast_hash": "7a63cf352aac40451d419faf695d88a9",
+    "semantic_hash": "7a63cf352aac40451d419faf695d88a9"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/logout.svg": {
+    "mtime": 1780593826.2036972,
+    "ast_hash": "6ebada1f2ef84df4f26729e70d6c06d8",
+    "semantic_hash": "6ebada1f2ef84df4f26729e70d6c06d8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/loyalty_point.svg": {
+    "mtime": 1780593826.2037807,
+    "ast_hash": "db4468b34e44a04331dac5d156235c8b",
+    "semantic_hash": "db4468b34e44a04331dac5d156235c8b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/message.svg": {
+    "mtime": 1780593826.2038662,
+    "ast_hash": "a08a24e7f2c7c634e97f132dda719dd5",
+    "semantic_hash": "a08a24e7f2c7c634e97f132dda719dd5"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/notification.svg": {
+    "mtime": 1780593826.2039533,
+    "ast_hash": "79e9cfb5890001a425539ded1326b2d2",
+    "semantic_hash": "79e9cfb5890001a425539ded1326b2d2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/order_failed.svg": {
+    "mtime": 1780593826.2040324,
+    "ast_hash": "d16d42caa02f72abb1ca30efd7e0e89b",
+    "semantic_hash": "d16d42caa02f72abb1ca30efd7e0e89b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/order_list.svg": {
+    "mtime": 1780593826.2041132,
+    "ast_hash": "a081ea06aa963fee7f92da4178db69a6",
+    "semantic_hash": "a081ea06aa963fee7f92da4178db69a6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/privacy_policy.svg": {
+    "mtime": 1780593826.2042093,
+    "ast_hash": "4ac83d8cac89a7d8d26840a1810440b2",
+    "semantic_hash": "4ac83d8cac89a7d8d26840a1810440b2"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/refer.svg": {
+    "mtime": 1780593826.2042973,
+    "ast_hash": "66ecc0adcdd9e6a626648ff39de97bd7",
+    "semantic_hash": "66ecc0adcdd9e6a626648ff39de97bd7"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/refund_policy.svg": {
+    "mtime": 1780593826.2043798,
+    "ast_hash": "76a53e79b171554ebc733d8a039aa423",
+    "semantic_hash": "76a53e79b171554ebc733d8a039aa423"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/return_policy.svg": {
+    "mtime": 1780593826.2044566,
+    "ast_hash": "0e46e456ceaaa78d1d75f9ad316eb03f",
+    "semantic_hash": "0e46e456ceaaa78d1d75f9ad316eb03f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/support.svg": {
+    "mtime": 1780593826.2045448,
+    "ast_hash": "11f81d599a8e4f9b8737d074f9df75e6",
+    "semantic_hash": "11f81d599a8e4f9b8737d074f9df75e6"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/terms_and_conditions.svg": {
+    "mtime": 1780593826.2046394,
+    "ast_hash": "9dde2ecaaf40d828eac40c94d61af67b",
+    "semantic_hash": "9dde2ecaaf40d828eac40c94d61af67b"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/track_order.svg": {
+    "mtime": 1780593826.204717,
+    "ast_hash": "72927b672068964010fa05caed005eb4",
+    "semantic_hash": "72927b672068964010fa05caed005eb4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/svg/wallet.svg": {
+    "mtime": 1780593826.2047987,
+    "ast_hash": "daa02b377ae00c68a82c544ce94ca804",
+    "semantic_hash": "daa02b377ae00c68a82c544ce94ca804"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/flutter_01.png": {
+    "mtime": 1780593826.204908,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-20@2x.png": {
+    "mtime": 1781072045.6111066,
+    "ast_hash": "a06e0e705bb75e6b408792967120aef1",
+    "semantic_hash": "a06e0e705bb75e6b408792967120aef1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-20@2x~ipad.png": {
+    "mtime": 1781072045.6112494,
+    "ast_hash": "a06e0e705bb75e6b408792967120aef1",
+    "semantic_hash": "a06e0e705bb75e6b408792967120aef1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-20@3x.png": {
+    "mtime": 1781072045.6114514,
+    "ast_hash": "49869d6b4f65b702ac87dc8ff4fdcacb",
+    "semantic_hash": "49869d6b4f65b702ac87dc8ff4fdcacb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-20~ipad.png": {
+    "mtime": 1781072045.6116114,
+    "ast_hash": "ccd6ab16c509073bb5072d4e8c3ebea0",
+    "semantic_hash": "ccd6ab16c509073bb5072d4e8c3ebea0"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-29.png": {
+    "mtime": 1781072045.611743,
+    "ast_hash": "fce4f049f5873d75c01147e019b53b98",
+    "semantic_hash": "fce4f049f5873d75c01147e019b53b98"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-29@2x.png": {
+    "mtime": 1781072045.6119065,
+    "ast_hash": "3e3e5ec36d949162b13539081019d149",
+    "semantic_hash": "3e3e5ec36d949162b13539081019d149"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-29@2x~ipad.png": {
+    "mtime": 1781072045.6138415,
+    "ast_hash": "3e3e5ec36d949162b13539081019d149",
+    "semantic_hash": "3e3e5ec36d949162b13539081019d149"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-29@3x.png": {
+    "mtime": 1781072045.6156027,
+    "ast_hash": "89e1a94a2770f9e3134e44f1086b7164",
+    "semantic_hash": "89e1a94a2770f9e3134e44f1086b7164"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-29~ipad.png": {
+    "mtime": 1781072045.6157658,
+    "ast_hash": "fce4f049f5873d75c01147e019b53b98",
+    "semantic_hash": "fce4f049f5873d75c01147e019b53b98"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-40@2x.png": {
+    "mtime": 1781072045.6158972,
+    "ast_hash": "865f9c5ed7a58a7b6f9aa041bf3e8f4d",
+    "semantic_hash": "865f9c5ed7a58a7b6f9aa041bf3e8f4d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-40@2x~ipad.png": {
+    "mtime": 1781072045.6160283,
+    "ast_hash": "865f9c5ed7a58a7b6f9aa041bf3e8f4d",
+    "semantic_hash": "865f9c5ed7a58a7b6f9aa041bf3e8f4d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-40@3x.png": {
+    "mtime": 1781072045.6171455,
+    "ast_hash": "7827042df81a1a39f1d682d10a5f61a4",
+    "semantic_hash": "7827042df81a1a39f1d682d10a5f61a4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-40~ipad.png": {
+    "mtime": 1781072045.6173291,
+    "ast_hash": "a06e0e705bb75e6b408792967120aef1",
+    "semantic_hash": "a06e0e705bb75e6b408792967120aef1"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-60@2x~car.png": {
+    "mtime": 1781072045.6174755,
+    "ast_hash": "7827042df81a1a39f1d682d10a5f61a4",
+    "semantic_hash": "7827042df81a1a39f1d682d10a5f61a4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-60@3x~car.png": {
+    "mtime": 1781072045.6179485,
+    "ast_hash": "c99b136d6f2162ba06c29a892ea06152",
+    "semantic_hash": "c99b136d6f2162ba06c29a892ea06152"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon-83.5@2x~ipad.png": {
+    "mtime": 1781072045.6183076,
+    "ast_hash": "d7648506a880a7536db1d5f85e13bef4",
+    "semantic_hash": "d7648506a880a7536db1d5f85e13bef4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon@2x.png": {
+    "mtime": 1781072045.6185808,
+    "ast_hash": "7827042df81a1a39f1d682d10a5f61a4",
+    "semantic_hash": "7827042df81a1a39f1d682d10a5f61a4"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon@2x~ipad.png": {
+    "mtime": 1781072045.618763,
+    "ast_hash": "57ec3aa67719ae0dea78d9632f72f721",
+    "semantic_hash": "57ec3aa67719ae0dea78d9632f72f721"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon@3x.png": {
+    "mtime": 1781072045.6190124,
+    "ast_hash": "c99b136d6f2162ba06c29a892ea06152",
+    "semantic_hash": "c99b136d6f2162ba06c29a892ea06152"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png": {
+    "mtime": 1781072045.6218553,
+    "ast_hash": "3371ac99ec7bf59029d096b92064cf4d",
+    "semantic_hash": "3371ac99ec7bf59029d096b92064cf4d"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/AppIcon.appiconset/AppIcon~ipad.png": {
+    "mtime": 1781072045.6223698,
+    "ast_hash": "12ebd756b01c0088f6ed84d47bc2301f",
+    "semantic_hash": "12ebd756b01c0088f6ed84d47bc2301f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png": {
+    "mtime": 1780593826.2279165,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png": {
+    "mtime": 1780593826.227995,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png": {
+    "mtime": 1780593826.2280674,
+    "ast_hash": "978c1bee49d7ad5fc1a4d81099b13e18",
+    "semantic_hash": "978c1bee49d7ad5fc1a4d81099b13e18"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/assets/cart_icon.svg": {
+    "mtime": 1780593826.2725925,
+    "ast_hash": "8784e72ea5b21cab6526a5acb422180c",
+    "semantic_hash": "8784e72ea5b21cab6526a5acb422180c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/assets/logo.svg": {
+    "mtime": 1781072045.6319566,
+    "ast_hash": "efeae4a71edd0cc1ad9282fa0f5743ec",
+    "semantic_hash": "efeae4a71edd0cc1ad9282fa0f5743ec"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/assets/menu_icon.svg": {
+    "mtime": 1780593826.2732642,
+    "ast_hash": "c5c7a9b045de51674c791035d8528ceb",
+    "semantic_hash": "c5c7a9b045de51674c791035d8528ceb"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/assets/meta_banner.png": {
+    "mtime": 1780593826.273908,
+    "ast_hash": "ebacad85595ddc1b9943bea0e3c16531",
+    "semantic_hash": "ebacad85595ddc1b9943bea0e3c16531"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/assets/preloader.svg": {
+    "mtime": 1780593826.274,
+    "ast_hash": "88b0c74ab1e3389e1118ec4a8c90f8cf",
+    "semantic_hash": "88b0c74ab1e3389e1118ec4a8c90f8cf"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/favicon.png": {
+    "mtime": 1781072045.6325574,
+    "ast_hash": "ac220c0459b7b4910129805a3e54d895",
+    "semantic_hash": "ac220c0459b7b4910129805a3e54d895"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/Icon-192.png": {
+    "mtime": 1781072045.6330137,
+    "ast_hash": "f8bc9eda8e82adf1de12cbb461177598",
+    "semantic_hash": "f8bc9eda8e82adf1de12cbb461177598"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/Icon-512.png": {
+    "mtime": 1781072045.6334858,
+    "ast_hash": "db747e1f34c8a39fc8686c9ba2ff4f7f",
+    "semantic_hash": "db747e1f34c8a39fc8686c9ba2ff4f7f"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/Icon-maskable-192.png": {
+    "mtime": 1780593826.275303,
+    "ast_hash": "c457ef57daa1d16f64b27b786ec2ea3c",
+    "semantic_hash": "c457ef57daa1d16f64b27b786ec2ea3c"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/Icon-maskable-512.png": {
+    "mtime": 1780593826.2754233,
+    "ast_hash": "301a7604d45b3e739efc881eb04896ea",
+    "semantic_hash": "301a7604d45b3e739efc881eb04896ea"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/app_logo.png": {
+    "mtime": 1781072045.6340473,
+    "ast_hash": "f3eab7023419d68063434610b1435356",
+    "semantic_hash": "f3eab7023419d68063434610b1435356"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/apple-touch-icon copy.png": {
+    "mtime": 1781072045.6345706,
+    "ast_hash": "c99b136d6f2162ba06c29a892ea06152",
+    "semantic_hash": "c99b136d6f2162ba06c29a892ea06152"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/apple-touch-icon.png": {
+    "mtime": 1780593826.2762544,
+    "ast_hash": "753161dc76e7aee963180d1143465f6e",
+    "semantic_hash": "753161dc76e7aee963180d1143465f6e"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/icon-192-maskable.png": {
+    "mtime": 1781072045.6351588,
+    "ast_hash": "71f5365c919622fff00d638d1ca01c39",
+    "semantic_hash": "71f5365c919622fff00d638d1ca01c39"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/web/icons/icon-512-maskable.png": {
+    "mtime": 1781072045.6354883,
+    "ast_hash": "f3eab7023419d68063434610b1435356",
+    "semantic_hash": "f3eab7023419d68063434610b1435356"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/android/app/src/main/res/raw/notification.mp3": {
+    "mtime": 1780593826.1806111,
+    "ast_hash": "df13bab8cdfb67b2de207fe97b1e43c8",
+    "semantic_hash": "df13bab8cdfb67b2de207fe97b1e43c8"
+  },
+  "/Users/mohitkoley/StudioProjects/userAppAndWeb/assets/notification.wav": {
+    "mtime": 1780593826.2023482,
+    "ast_hash": "e41a22d8980a779fad7942fda37c963a",
+    "semantic_hash": "e41a22d8980a779fad7942fda37c963a"
+  }
+>>>>>>> origin/development
 }

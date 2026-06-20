@@ -211,6 +211,7 @@ class _SendOtpScreenState extends State<SendOtpScreen> {
 
                     ]),
 
+<<<<<<< HEAD
                     if(configModel.isGuestCheckout == true && !Navigator.canPop(context))...[
                       Center(child: InkWell(
                         onTap: () => RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil),
@@ -233,6 +234,8 @@ class _SendOtpScreenState extends State<SendOtpScreen> {
                       )),
                     ],
 
+=======
+>>>>>>> origin/development
                   ])),
                 )),
 

@@ -12,7 +12,12 @@ class AppConstants {
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
   static const String fontFamily = 'Poppins';
   static const String baseUrl = 'https://oleyshop.com/admin';
+<<<<<<< HEAD
   //   static const String baseUrl = 'https://oweref-ip-42-108-66-10.tunnelmole.net';
+=======
+//   static const String baseUrl =
+//       'https://lszekj-ip-42-108-64-16.tunnelmole.net';
+>>>>>>> origin/development
   static const String webHostUrl = 'https://oleyshop.com';
   static const String googleServerClientId =
       '977728681518-d349j92n47l8m4eksmfg1a8deid6sqsu.apps.googleusercontent.com';

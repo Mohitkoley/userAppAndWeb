@@ -203,7 +203,11 @@ class _LoginScreenState extends State<LoginScreen> {
           }else {
             authProvider.clearUserLogData();
           }
+<<<<<<< HEAD
           RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+=======
+          RouteHelper.getRouteAfterLogin();
+>>>>>>> origin/development
         }
       });
 
@@ -436,6 +440,7 @@ class _LoginFormWidget extends StatelessWidget {
             ),
             const SizedBox(height: Dimensions.paddingSizeDefault),
 
+<<<<<<< HEAD
             if(configModel?.isGuestCheckout ?? false)...[
               Center(child: TextButton(
                 onPressed: () => RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil),
@@ -448,6 +453,8 @@ class _LoginFormWidget extends StatelessWidget {
               )),
             ],
 
+=======
+>>>>>>> origin/development
             const SizedBox(height: Dimensions.paddingSizeLarge),
 
           ])),

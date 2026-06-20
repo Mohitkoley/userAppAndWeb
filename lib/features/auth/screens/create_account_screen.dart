@@ -171,7 +171,11 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
       );
       authProvider.registration(context, signUpModel, config).then((status) async {
         if (status.isSuccess) {
+<<<<<<< HEAD
           RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+=======
+          RouteHelper.getRouteAfterLogin();
+>>>>>>> origin/development
         }
       });
     }
@@ -348,4 +352,8 @@ class _FromWidget extends StatelessWidget {
       ],
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/development
