@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_grocery/common/widgets/custom_button_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_loader_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_pop_scope_handel_deep_link_widget.dart';
 import 'package:flutter_grocery/common/widgets/footer_web_widget.dart';
@@ -11,7 +10,6 @@ import 'package:flutter_grocery/features/member/domain/models/member_matrix_mode
 import 'package:flutter_grocery/features/member/providers/member_provider.dart';
 import 'package:flutter_grocery/features/profile/providers/profile_provider.dart';
 import 'package:flutter_grocery/features/profile/widgets/member_point_status_widget.dart';
-import 'package:flutter_grocery/helper/custom_snackbar_helper.dart';
 import 'package:flutter_grocery/helper/responsive_helper.dart';
 import 'package:flutter_grocery/localization/language_constraints.dart';
 import 'package:flutter_grocery/utill/dimensions.dart';
@@ -28,28 +26,25 @@ class MemberScreen extends StatefulWidget {
 }
 
 class _MemberScreenState extends State<MemberScreen> {
-  final TextEditingController _userIdController = TextEditingController();
-  final TextEditingController _amountController = TextEditingController();
   late bool _isLoggedIn;
 
   @override
   void initState() {
     super.initState();
-    _isLoggedIn = Provider.of<AuthProvider>(context, listen: false).isLoggedIn();
+    _isLoggedIn = Provider.of<AuthProvider>(
+      context,
+      listen: false,
+    ).isLoggedIn();
 
     if (_isLoggedIn) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         Provider.of<ProfileProvider>(context, listen: false).getUserInfo(true);
-        Provider.of<MemberProvider>(context, listen: false).getMemberDashboard(reload: true);
+        Provider.of<MemberProvider>(
+          context,
+          listen: false,
+        ).getMemberDashboard(reload: true);
       });
     }
-  }
-
-  @override
-  void dispose() {
-    _userIdController.dispose();
-    _amountController.dispose();
-    super.dispose();
   }
 
   @override
@@ -58,53 +53,96 @@ class _MemberScreenState extends State<MemberScreen> {
       child: Scaffold(
         appBar: widget.showAppBar
             ? ResponsiveHelper.isDesktop(context)
-                  ? const PreferredSize(preferredSize: Size.fromHeight(100), child: WebAppBarWidget())
+                  ? const PreferredSize(
+                      preferredSize: Size.fromHeight(100),
+                      child: WebAppBarWidget(),
+                    )
                   : AppBar(
-                      title: Text(getTranslated('member_network', context), style: poppinsMedium.copyWith(color: Theme.of(context).primaryColor)),
+                      title: Text(
+                        getTranslated('member_network', context),
+                        style: poppinsMedium.copyWith(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
                       backgroundColor: Theme.of(context).cardColor,
-                      iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
+                      iconTheme: IconThemeData(
+                        color: Theme.of(context).primaryColor,
+                      ),
                     )
             : null,
         body: !_isLoggedIn
             ? const NotLoggedInWidget()
             : Consumer<MemberProvider>(
                 builder: (context, memberProvider, _) {
-                  if (memberProvider.isLoading && memberProvider.matrixStatus == null) {
-                    return Center(child: CustomLoaderWidget(color: Theme.of(context).primaryColor));
+                  if (memberProvider.isLoading &&
+                      memberProvider.matrixStatus == null) {
+                    return Center(
+                      child: CustomLoaderWidget(
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    );
                   }
 
                   return RefreshIndicator(
-                    onRefresh: () => memberProvider.getMemberDashboard(reload: true),
+                    onRefresh: () =>
+                        memberProvider.getMemberDashboard(reload: true),
                     child: SingleChildScrollView(
                       physics: const AlwaysScrollableScrollPhysics(),
                       child: Center(
                         child: ConstrainedBox(
-                          constraints: const BoxConstraints(maxWidth: Dimensions.webScreenWidth),
+                          constraints: const BoxConstraints(
+                            maxWidth: Dimensions.webScreenWidth,
+                          ),
                           child: Padding(
-                            padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                            padding: const EdgeInsets.all(
+                              Dimensions.paddingSizeDefault,
+                            ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Consumer<ProfileProvider>(
                                   builder: (context, profileProvider, _) {
-                                    return MemberPointStatusWidget(userInfoModel: profileProvider.userInfoModel, memberStatusModel: profileProvider.memberStatusModel);
+                                    return MemberPointStatusWidget(
+                                      userInfoModel:
+                                          profileProvider.userInfoModel,
+                                      memberStatusModel:
+                                          profileProvider.memberStatusModel,
+                                    );
                                   },
                                 ),
-                                const SizedBox(height: Dimensions.paddingSizeDefault),
-                                _StatusSection(status: memberProvider.matrixStatus),
-                                const SizedBox(height: Dimensions.paddingSizeDefault),
-                                _TransferPointsSection(userIdController: _userIdController, amountController: _amountController, isLoading: memberProvider.isTransferLoading, onSubmit: () => _transferPoints(memberProvider)),
-                                const SizedBox(height: Dimensions.paddingSizeDefault),
-                                _ResponsiveTwoColumn(
-                                  first: _TeamSection(team: memberProvider.matrixTeam),
-                                  second: _IncentiveSection(incentiveHistory: memberProvider.incentiveHistory),
+                                const SizedBox(
+                                  height: Dimensions.paddingSizeDefault,
                                 ),
-                                const SizedBox(height: Dimensions.paddingSizeDefault),
-                                _ResponsiveTwoColumn(
-                                  first: _TreeSection(node: memberProvider.matrixTree),
-                                  second: _LevelsSection(levels: memberProvider.levels),
+                                _StatusSection(
+                                  status: memberProvider.matrixStatus,
                                 ),
-                                if (ResponsiveHelper.isDesktop(context)) const FooterWebWidget(footerType: FooterType.nonSliver),
+                                const SizedBox(
+                                  height: Dimensions.paddingSizeDefault,
+                                ),
+                                _ResponsiveTwoColumn(
+                                  first: _TeamSection(
+                                    team: memberProvider.matrixTeam,
+                                  ),
+                                  second: _IncentiveSection(
+                                    incentiveHistory:
+                                        memberProvider.incentiveHistory,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: Dimensions.paddingSizeDefault,
+                                ),
+                                _ResponsiveTwoColumn(
+                                  first: _TreeSection(
+                                    node: memberProvider.matrixTree,
+                                  ),
+                                  second: _LevelsSection(
+                                    levels: memberProvider.levels,
+                                  ),
+                                ),
+                                if (ResponsiveHelper.isDesktop(context))
+                                  const FooterWebWidget(
+                                    footerType: FooterType.nonSliver,
+                                  ),
                               ],
                             ),
                           ),
@@ -116,27 +154,6 @@ class _MemberScreenState extends State<MemberScreen> {
               ),
       ),
     );
-  }
-
-  Future<void> _transferPoints(MemberProvider memberProvider) async {
-    final int? toUserId = int.tryParse(_userIdController.text.trim());
-    final int? amount = int.tryParse(_amountController.text.trim());
-
-    if (toUserId == null || toUserId < 1) {
-      showCustomSnackBarHelper(getTranslated('enter_receiver_user_id', context));
-      return;
-    } else if (amount == null || amount < 1) {
-      showCustomSnackBarHelper(getTranslated('enter_valid_point_amount', context));
-      return;
-    }
-
-    final response = await memberProvider.transferPoints(toUserId: toUserId, amount: amount);
-    showCustomSnackBarHelper(response.message ?? '', isError: !response.isSuccess);
-
-    if (response.isSuccess) {
-      _userIdController.clear();
-      _amountController.clear();
-    }
   }
 }
 
@@ -187,13 +204,26 @@ class _SectionCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).cardColor,
         borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
-        border: Border.all(color: Theme.of(context).disabledColor.withValues(alpha: 0.18)),
-        boxShadow: [BoxShadow(color: Theme.of(context).shadowColor.withValues(alpha: 0.04), blurRadius: 12, offset: const Offset(0, 4))],
+        border: Border.all(
+          color: Theme.of(context).disabledColor.withValues(alpha: 0.18),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Theme.of(context).shadowColor.withValues(alpha: 0.04),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeDefault)),
+          Text(
+            title,
+            style: poppinsSemiBold.copyWith(
+              fontSize: Dimensions.fontSizeDefault,
+            ),
+          ),
           const SizedBox(height: Dimensions.paddingSizeSmall),
           child,
         ],
@@ -213,16 +243,62 @@ class _StatusSection extends StatelessWidget {
       title: getTranslated('matrix_status', context),
       child: status == null
           ? _EmptyText(text: getTranslated('no_result_found', context))
-          : Wrap(
-              spacing: Dimensions.paddingSizeSmall,
-              runSpacing: Dimensions.paddingSizeSmall,
+          : Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _MetricTile(label: getTranslated('current_level', context), value: '${status!.currentLevel}'),
-                _MetricTile(label: getTranslated('position', context), value: status!.currentPosition ?? '-'),
-                _MetricTile(label: getTranslated('team_members', context), value: '${status!.totalTeamMembers}'),
-                _MetricTile(label: getTranslated('direct_active', context), value: '${status!.directReferralsActive}/${status!.directReferralsFilled}'),
-                _MetricTile(label: getTranslated('next_level', context), value: status!.nextLevel?.positionName ?? '-'),
-                _MetricTile(label: getTranslated('remaining_members', context), value: '${status!.nextLevel?.remainingMembers ?? 0}'),
+                Wrap(
+                  spacing: Dimensions.paddingSizeSmall,
+                  runSpacing: Dimensions.paddingSizeSmall,
+                  children: [
+                    _MetricTile(
+                      label: getTranslated('current_level', context),
+                      value: '${status!.currentLevel}',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('position', context),
+                      value: status!.currentPosition ?? '-',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('team_members', context),
+                      value: '${status!.totalTeamMembers}',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('direct_active', context),
+                      value:
+                          '${status!.directReferralsActive}/${status!.directReferralsFilled}',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('next_level', context),
+                      value: status!.nextLevel?.positionName ?? '-',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('remaining_members', context),
+                      value: '${status!.nextLevel?.remainingMembers ?? 0}',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('directs_ready', context),
+                      value:
+                          '${status!.nextLevel?.directsReady ?? 0}/${status!.nextLevel?.directsRequired ?? 0}',
+                    ),
+                    _MetricTile(
+                      label: getTranslated('incentives_eligible', context),
+                      value: getTranslated(
+                        status!.incentivesEligible ? 'yes' : 'no',
+                        context,
+                      ),
+                    ),
+                  ],
+                ),
+                if (status!.nextLevel?.condition.isNotEmpty ?? false) ...[
+                  const SizedBox(height: Dimensions.paddingSizeSmall),
+                  Text(
+                    status!.nextLevel!.condition,
+                    style: poppinsRegular.copyWith(
+                      fontSize: Dimensions.fontSizeSmall,
+                      color: Theme.of(context).hintColor,
+                    ),
+                  ),
+                ],
               ],
             ),
     );
@@ -240,7 +316,10 @@ class _MetricTile extends StatelessWidget {
     return Container(
       width: 160,
       padding: const EdgeInsets.all(Dimensions.paddingSizeSmall),
-      decoration: BoxDecoration(color: Theme.of(context).primaryColor.withValues(alpha: 0.07), borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault)),
+      decoration: BoxDecoration(
+        color: Theme.of(context).primaryColor.withValues(alpha: 0.07),
+        borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -248,71 +327,21 @@ class _MetricTile extends StatelessWidget {
             label,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).hintColor),
+            style: poppinsRegular.copyWith(
+              fontSize: Dimensions.fontSizeExtraSmall,
+              color: Theme.of(context).hintColor,
+            ),
           ),
           const SizedBox(height: 4),
           Text(
             value,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: poppinsSemiBold.copyWith(fontSize: Dimensions.fontSizeDefault),
+            style: poppinsSemiBold.copyWith(
+              fontSize: Dimensions.fontSizeDefault,
+            ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _TransferPointsSection extends StatelessWidget {
-  final TextEditingController userIdController;
-  final TextEditingController amountController;
-  final bool isLoading;
-  final VoidCallback onSubmit;
-
-  const _TransferPointsSection({required this.userIdController, required this.amountController, required this.isLoading, required this.onSubmit});
-
-  @override
-  Widget build(BuildContext context) {
-    return _SectionCard(
-      title: getTranslated('transfer_points', context),
-      child: LayoutBuilder(
-        builder: (context, constraints) {
-          final Widget receiverField = TextField(
-            controller: userIdController,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(labelText: getTranslated('receiver_user_id', context), border: const OutlineInputBorder()),
-          );
-          final Widget amountField = TextField(
-            controller: amountController,
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(labelText: getTranslated('points', context), border: const OutlineInputBorder()),
-          );
-          final Widget button = CustomButtonWidget(isLoading: isLoading, buttonText: getTranslated('transfer', context), onPressed: onSubmit);
-
-          if (constraints.maxWidth < 620) {
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                receiverField,
-                const SizedBox(height: Dimensions.paddingSizeSmall),
-                amountField,
-                const SizedBox(height: Dimensions.paddingSizeSmall),
-                button,
-              ],
-            );
-          }
-
-          return Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(child: receiverField),
-              const SizedBox(width: Dimensions.paddingSizeSmall),
-              Expanded(child: amountField),
-              const SizedBox(width: Dimensions.paddingSizeSmall),
-              SizedBox(width: 160, child: button),
-            ],
-          );
-        },
       ),
     );
   }
@@ -329,7 +358,16 @@ class _TeamSection extends StatelessWidget {
       title: '${getTranslated('team_members', context)} (${team?.total ?? 0})',
       child: (team?.members.isNotEmpty ?? false)
           ? Column(
-              children: team!.members.map((member) => _InfoRow(title: member.name, subtitle: '${member.phone} • ${getTranslated('position', context)} ${member.position}', trailing: member.isMember ? getTranslated('member', context) : getTranslated('not_member', context))).toList(),
+              children: team!.members
+                  .map(
+                    (member) => _InfoRow(
+                      title: member.name,
+                      subtitle:
+                          '${getTranslated('position', context)} ${member.position} • ${getTranslated('level', context)} ${member.level}',
+                      trailing: member.positionName ?? '-',
+                    ),
+                  )
+                  .toList(),
             )
           : _EmptyText(text: getTranslated('no_result_found', context)),
     );
@@ -344,14 +382,31 @@ class _IncentiveSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return _SectionCard(
-      title: '${getTranslated('incentive_history', context)} (${incentiveHistory?.totalIncentive.toStringAsFixed(0) ?? 0})',
+      title:
+          '${getTranslated('incentive_history', context)} (${incentiveHistory?.totalIncentive.toStringAsFixed(0) ?? 0})',
       child: (incentiveHistory?.history.isNotEmpty ?? false)
           ? Column(
-              children: incentiveHistory!.history.map((item) => _InfoRow(title: '${item.positionName} - ${item.amount.toStringAsFixed(0)}', subtitle: '${getTranslated('level', context)} ${item.level} • ${item.totalTeamMembers} ${getTranslated('team_members', context)}', trailing: item.status)).toList(),
+              children: incentiveHistory!.history
+                  .map(
+                    (item) => _InfoRow(
+                      title:
+                          '${item.positionName} - ${item.amount.toStringAsFixed(0)}',
+                      subtitle:
+                          '${getTranslated('level', context)} ${item.level} • ${_formatDate(item.creditedAt)}',
+                      trailing: item.status,
+                    ),
+                  )
+                  .toList(),
             )
           : _EmptyText(text: getTranslated('no_result_found', context)),
     );
   }
+}
+
+String _formatDate(String value) {
+  final DateTime? date = DateTime.tryParse(value)?.toLocal();
+  if (date == null) return value;
+  return '${date.day.toString().padLeft(2, '0')}/${date.month.toString().padLeft(2, '0')}/${date.year}';
 }
 
 class _TreeSection extends StatelessWidget {
@@ -363,7 +418,9 @@ class _TreeSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return _SectionCard(
       title: getTranslated('matrix_tree', context),
-      child: node == null ? _EmptyText(text: getTranslated('no_result_found', context)) : _TreeNodeView(node: node!),
+      child: node == null
+          ? _EmptyText(text: getTranslated('no_result_found', context))
+          : _TreeNodeView(node: node!),
     );
   }
 }
@@ -376,11 +433,22 @@ class _TreeNodeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: node.depth * Dimensions.paddingSizeDefault),
+      padding: EdgeInsets.only(
+        left: node.depth * Dimensions.paddingSizeDefault,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _InfoRow(title: node.name, subtitle: node.phone, trailing: node.isMember ? getTranslated('member', context) : getTranslated('not_member', context)),
+          _InfoRow(
+            title: node.name,
+            subtitle:
+                '${node.phone} • ${getTranslated('level', context)} ${node.matrixLevel}',
+            trailing:
+                node.matrixPosition ??
+                (node.isMember
+                    ? getTranslated('member', context)
+                    : getTranslated('not_member', context)),
+          ),
           ...node.children.map((child) => _TreeNodeView(node: child)),
         ],
       ),
@@ -399,7 +467,17 @@ class _LevelsSection extends StatelessWidget {
       title: getTranslated('matrix_levels', context),
       child: levels.isNotEmpty
           ? Column(
-              children: levels.map((level) => _InfoRow(title: '${getTranslated('level', context)} ${level.level} - ${level.positionName}', subtitle: '${getTranslated('required_members', context)} ${level.requiredMembers}', trailing: level.incentiveAmount.toStringAsFixed(0))).toList(),
+              children: levels
+                  .map(
+                    (level) => _InfoRow(
+                      title:
+                          '${getTranslated('level', context)} ${level.level} - ${level.positionName}',
+                      subtitle:
+                          '${getTranslated('required_members', context)} ${level.requiredMembers}',
+                      trailing: level.incentiveAmount.toStringAsFixed(0),
+                    ),
+                  )
+                  .toList(),
             )
           : _EmptyText(text: getTranslated('no_result_found', context)),
     );
@@ -411,12 +489,18 @@ class _InfoRow extends StatelessWidget {
   final String subtitle;
   final String trailing;
 
-  const _InfoRow({required this.title, required this.subtitle, required this.trailing});
+  const _InfoRow({
+    required this.title,
+    required this.subtitle,
+    required this.trailing,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraSmall),
+      padding: const EdgeInsets.symmetric(
+        vertical: Dimensions.paddingSizeExtraSmall,
+      ),
       child: Row(
         children: [
           Expanded(
@@ -427,14 +511,19 @@ class _InfoRow extends StatelessWidget {
                   title,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeSmall),
+                  style: poppinsMedium.copyWith(
+                    fontSize: Dimensions.fontSizeSmall,
+                  ),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   subtitle,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).hintColor),
+                  style: poppinsRegular.copyWith(
+                    fontSize: Dimensions.fontSizeExtraSmall,
+                    color: Theme.of(context).hintColor,
+                  ),
                 ),
               ],
             ),
@@ -444,7 +533,10 @@ class _InfoRow extends StatelessWidget {
             trailing,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeExtraSmall, color: Theme.of(context).primaryColor),
+            style: poppinsMedium.copyWith(
+              fontSize: Dimensions.fontSizeExtraSmall,
+              color: Theme.of(context).primaryColor,
+            ),
           ),
         ],
       ),
@@ -459,6 +551,9 @@ class _EmptyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: poppinsRegular.copyWith(color: Theme.of(context).hintColor));
+    return Text(
+      text,
+      style: poppinsRegular.copyWith(color: Theme.of(context).hintColor),
+    );
   }
 }

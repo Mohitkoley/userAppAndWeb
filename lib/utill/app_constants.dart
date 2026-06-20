@@ -12,8 +12,8 @@ class AppConstants {
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
   static const String fontFamily = 'Poppins';
   static const String baseUrl = 'https://oleyshop.com/admin';
-//   static const String baseUrl =
-//       'https://lszekj-ip-42-108-64-16.tunnelmole.net';
+  //   static const String baseUrl =
+  //       'https://lszekj-ip-42-108-64-16.tunnelmole.net';
   static const String webHostUrl = 'https://oleyshop.com';
   static const String googleServerClientId =
       '977728681518-d349j92n47l8m4eksmfg1a8deid6sqsu.apps.googleusercontent.com';
@@ -45,15 +45,13 @@ class AppConstants {
   static const String couponUri = '/api/v1/coupon/list';
   static const String couponApplyUri = '/api/v1/coupon/apply?code=';
   static const String customerInfoUri = '/api/v1/customer/info';
-  static const String customerMemberStatusUri =
-      '/api/v1/customer/member-status';
-  static const String matrixStatusUri = '/api/v1/customer/matrix/status';
-  static const String matrixTeamUri = '/api/v1/customer/matrix/team';
-  static const String matrixTreeUri = '/api/v1/customer/matrix/tree';
+  static const String customerMemberStatusUri = '/api/v1/member-status';
+  static const String matrixStatusUri = '/api/v1/matrix/status';
+  static const String matrixTeamUri = '/api/v1/matrix/team';
+  static const String matrixTreeUri = '/api/v1/matrix/tree';
   static const String matrixIncentiveHistoryUri =
-      '/api/v1/customer/matrix/incentive-history';
-  static const String matrixLevelsUri = '/api/v1/customer/matrix/levels';
-  static const String transferPointsUri = '/api/v1/customer/transfer-points';
+      '/api/v1/matrix/incentive-history';
+  static const String matrixLevelsUri = '/api/v1/matrix/levels';
   static const String updateProfileUri = '/api/v1/customer/update-profile';
   static const String addressListUri = '/api/v1/customer/address/list';
   static const String removeAddressUri =

@@ -26,9 +26,11 @@ class MemberRepo {
     }
   }
 
-  Future<ApiResponseModel> getMatrixTree({int depth = 2}) async {
+  Future<ApiResponseModel> getMatrixTree({int depth = 3}) async {
     try {
-      final response = await dioClient!.get('${AppConstants.matrixTreeUri}?depth=$depth');
+      final response = await dioClient!.get(
+        '${AppConstants.matrixTreeUri}?depth=$depth',
+      );
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));
@@ -37,7 +39,9 @@ class MemberRepo {
 
   Future<ApiResponseModel> getMatrixIncentiveHistory() async {
     try {
-      final response = await dioClient!.get(AppConstants.matrixIncentiveHistoryUri);
+      final response = await dioClient!.get(
+        AppConstants.matrixIncentiveHistoryUri,
+      );
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));
@@ -47,15 +51,6 @@ class MemberRepo {
   Future<ApiResponseModel> getMatrixLevels() async {
     try {
       final response = await dioClient!.get(AppConstants.matrixLevelsUri);
-      return ApiResponseModel.withSuccess(response);
-    } catch (e) {
-      return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));
-    }
-  }
-
-  Future<ApiResponseModel> transferPoints({required int toUserId, required int amount}) async {
-    try {
-      final response = await dioClient!.post(AppConstants.transferPointsUri, data: {'to_user_id': toUserId, 'amount': amount});
       return ApiResponseModel.withSuccess(response);
     } catch (e) {
       return ApiResponseModel.withError(ApiErrorHandler.getMessage(e));

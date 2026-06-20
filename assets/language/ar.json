@@ -745,6 +745,8 @@
   "direct_active": "النشطون المباشرون",
   "next_level": "المستوى التالي",
   "remaining_members": "الأعضاء المتبقون",
+  "directs_ready": "الإحالات المباشرة الجاهزة",
+  "incentives_eligible": "مؤهل للحوافز",
   "transfer_points": "تحويل النقاط",
   "receiver_user_id": "معرف المستخدم المستلم",
   "transfer": "تحويل",

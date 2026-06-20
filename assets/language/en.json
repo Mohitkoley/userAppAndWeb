@@ -759,6 +759,8 @@
   "direct_active": "Direct Active",
   "next_level": "Next Level",
   "remaining_members": "Remaining Members",
+  "directs_ready": "Directs Ready",
+  "incentives_eligible": "Incentives Eligible",
   "transfer_points": "Transfer Points",
   "receiver_user_id": "Receiver User ID",
   "transfer": "Transfer",
