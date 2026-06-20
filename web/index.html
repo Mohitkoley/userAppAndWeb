@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+  <meta name="google-signin-client_id" content="977728681518-d349j92n47l8m4eksmfg1a8deid6sqsu.apps.googleusercontent.com">  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Oley Shop">
+  <!-- DEMO ONLY -->
+<!--  <meta name="robots" content="nofollow, noindex, max-snippet:1, max-video-preview:1, max-image-preview:standard">-->
+<!--  <link rel="canonical" href="YOUR_DOMAIN_HERE" />-->
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Online Grocery Store | Fresh Groceries Delivered to Your Door">
+  <meta property="og:description" content="Shop fresh groceries, fruits, vegetables, meat, and daily essentials online. Fast delivery, great prices, and a smooth shopping experience. Order now!">
+  <meta property="og:url" content="oleyshop.com">
+  <meta property="og:site_name" content="Oley Shop">
+  <meta property="og:image" content="oleyshop.com/assets/meta_banner.png">
+  <meta property="og:image:secure_url" content="oleyshop.com/assets/meta_banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Oley Shop">
+  <meta property="og:updated_time" content="2026-02-25T14:00:00+06:00">
+
+  <!-- Twitter -->
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Online Grocery Store | Fresh Groceries Delivered to Your Door">
+  <meta name="twitter:description" content="Shop fresh groceries, fruits, vegetables, meat, and daily essentials online. Fast delivery, great prices, and a smooth shopping experience. Order now!">
+  <meta name="twitter:image" content="oleyshop.com/assets/meta_banner.png">
+  <meta name="twitter:site" content="@oleyshop">
+  <meta name="twitter:creator" content="@oleyshop">
+
+  <!-- Robots and SEO -->
+  <meta name="author" content="Oley Shop">
+
+
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_grocery">
+
+  <link rel="apple-touch-icon" href="icons/app_logo.png">
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+
+  <title>Oleyshop</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>.grecaptcha-badge { visibility: hidden;} </style>
+
+</head>
+<body>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJOlEbXZNGB3ztTNlxDTA_BZu7owRREA8&loading=async&callback=Function.prototype" async></script>
+
+<script type="application/javascript" src="assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+
+<div class="preloader">
+  <div class="preloader-container">
+    <img width="55" class="preloader-img" src="assets/preloader.svg" alt="">
+    <div class="loader"></div>
+  </div>
+</div>
+<!-- Header -->
+<header class="header">
+  <div class="header-top-line"></div>
+  <div class="header-container d-flex align-items-center justify-content-between">
+    <div class="header-start d-flex gap-4 align-items-center">
+      <img class="logo" src="assets/logo.svg" alt="">
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+    </div>
+    <div class="header-end d-flex align-items-center gap-4">
+      <div class="placeholder placeholder-wide"></div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      <img class="svg" src="assets/cart_icon.svg" alt="">
+      <img class="svg" src="assets/menu_icon.svg" alt="">
+    </div>
+  </div>
+</header>
+
+<script>
+  // Check if localStorage is supported in the browser
+  if (typeof Storage !== "undefined") {
+    var itemValue = localStorage.getItem("flutter.theme");
+    document.body.classList.toggle("theme-dark", itemValue === "true");
+  }
+
+</script>
+
+
+<script>
+  {{flutter_bootstrap_js}}
+</script>
+
+
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyA_bmwUlrOdffxegB9A16_D-EOZ2k04Sec",
+    authDomain: "oley-shop.firebaseapp.com",
+    projectId: "oley-shop",
+    storageBucket: "oley-shop.firebasestorage.app",
+    messagingSenderId: "977728681518",
+    appId: "1:977728681518:web:89aaec07f7180f6d9f91bf",
+    measurementId: "G-6V4W99CYB6"
+  };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+</body>
+</html>
