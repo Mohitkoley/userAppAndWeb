@@ -57,12 +57,8 @@ class SplashProvider extends ChangeNotifier {
   bool get fromSetting => _fromSetting;
   bool get firstTimeConnectionCheck => _firstTimeConnectionCheck;
   bool get cookiesShow => _cookiesShow;
-<<<<<<< HEAD
-  List<OfflinePaymentModel?>? get offlinePaymentModelList => _offlinePaymentModelList;
-=======
   List<OfflinePaymentModel?>? get offlinePaymentModelList =>
       _offlinePaymentModelList;
->>>>>>> origin/development
 
   void _startTimer(DateTime startTime) {
     Timer.periodic(const Duration(seconds: 30), (Timer timer) {
@@ -75,15 +71,6 @@ class SplashProvider extends ChangeNotifier {
     });
   }
 
-<<<<<<< HEAD
-  Future<ConfigModel?> initConfig(BuildContext context, {bool fromNotification = false, DataSourceEnum source = DataSourceEnum.local}) async {
-    if (source == DataSourceEnum.local) {
-      ApiResponseModel<CacheResponseData> responseModel = await splashRepo!.getConfig(source: DataSourceEnum.local);
-
-      if (responseModel.isSuccess) {
-        _configModel = ConfigModel.fromJson(jsonDecode(responseModel.response!.response));
-        _baseUrls = _configModel?.baseUrls;
-=======
   Future<ConfigModel?> initConfig(
     BuildContext context, {
     bool fromNotification = false,
@@ -97,23 +84,12 @@ class SplashProvider extends ChangeNotifier {
         _updateConfig(
           ConfigModel.fromJson(jsonDecode(responseModel.response!.response)),
         );
->>>>>>> origin/development
         if (context.mounted) {
           _onConfigAction(context, fromNotification);
         }
       }
 
       if (context.mounted) {
-<<<<<<< HEAD
-        initConfig(context, fromNotification: fromNotification, source: DataSourceEnum.client);
-      }
-    } else {
-      ApiResponseModel<Response> apiResponseModel = await splashRepo!.getConfig(source: DataSourceEnum.client);
-
-      if (apiResponseModel.isSuccess) {
-        _configModel = ConfigModel.fromJson(apiResponseModel.response?.data);
-        _baseUrls = _configModel?.baseUrls;
-=======
         initConfig(
           context,
           fromNotification: fromNotification,
@@ -127,7 +103,6 @@ class SplashProvider extends ChangeNotifier {
 
       if (apiResponseModel.isSuccess) {
         _updateConfig(ConfigModel.fromJson(apiResponseModel.response?.data));
->>>>>>> origin/development
 
         if (context.mounted) {
           await _onConfigAction(context, fromNotification);
@@ -138,19 +113,6 @@ class SplashProvider extends ChangeNotifier {
     return _configModel;
   }
 
-<<<<<<< HEAD
-  Future<void> _onConfigAction(BuildContext context, bool fromNotification) async {
-    if (_configModel != null) {
-      if (!MaintenanceHelper.isMaintenanceModeEnable(configModel)) {
-        if (MaintenanceHelper.checkWebMaintenanceMode(configModel) || MaintenanceHelper.checkCustomerMaintenanceMode(configModel)) {
-          if (MaintenanceHelper.isCustomizeMaintenance(configModel)) {
-            DateTime now = DateTime.now();
-            DateTime specifiedDateTime = DateTime.parse(_configModel!.maintenanceMode!.maintenanceTypeAndDuration!.startDate!);
-
-            Duration difference = specifiedDateTime.difference(now);
-
-            if (difference.inMinutes > 0 && (difference.inMinutes < 60 || difference.inMinutes == 60)) {
-=======
   Future<void> _onConfigAction(
     BuildContext context,
     bool fromNotification,
@@ -172,7 +134,6 @@ class SplashProvider extends ChangeNotifier {
 
             if (difference.inMinutes > 0 &&
                 (difference.inMinutes < 60 || difference.inMinutes == 60)) {
->>>>>>> origin/development
               _startTimer(specifiedDateTime);
             }
           }
@@ -180,11 +141,6 @@ class SplashProvider extends ChangeNotifier {
       }
 
       if (fromNotification) {
-<<<<<<< HEAD
-        if (MaintenanceHelper.isMaintenanceModeEnable(configModel) && (MaintenanceHelper.checkCustomerMaintenanceMode(configModel) || MaintenanceHelper.checkWebMaintenanceMode(configModel))) {
-          RouteHelper.getMaintenanceRoute(action: RouteAction.pushNamedAndRemoveUntil);
-        } else if (!MaintenanceHelper.isMaintenanceModeEnable(configModel) && ModalRoute.of(context)?.settings.name == RouteHelper.maintenance) {
-=======
         if (MaintenanceHelper.isMaintenanceModeEnable(configModel) &&
             (MaintenanceHelper.checkCustomerMaintenanceMode(configModel) ||
                 MaintenanceHelper.checkWebMaintenanceMode(configModel))) {
@@ -193,33 +149,19 @@ class SplashProvider extends ChangeNotifier {
           );
         } else if (!MaintenanceHelper.isMaintenanceModeEnable(configModel) &&
             ModalRoute.of(context)?.settings.name == RouteHelper.maintenance) {
->>>>>>> origin/development
           RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
         }
       }
 
-<<<<<<< HEAD
-      final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
-=======
       final AuthProvider authProvider = Provider.of<AuthProvider>(
         context,
         listen: false,
       );
->>>>>>> origin/development
 
       if (authProvider.getGuestId() == null && !authProvider.isLoggedIn()) {
         authProvider.addOrUpdateGuest();
         authProvider.subscribeToTopic();
       }
-<<<<<<< HEAD
-
-      initializeScreenList();
-
-      notifyListeners();
-    }
-  }
-
-=======
     }
   }
 
@@ -230,7 +172,6 @@ class SplashProvider extends ChangeNotifier {
     notifyListeners();
   }
 
->>>>>>> origin/development
   void setFirstTimeConnectionCheck(bool isChecked) {
     _firstTimeConnectionCheck = isChecked;
   }
@@ -266,22 +207,15 @@ class SplashProvider extends ChangeNotifier {
 
   void cookiesStatusChange(String? data) {
     if (data != null) {
-<<<<<<< HEAD
-      splashRepo!.sharedPreferences!.setString(AppConstants.cookingManagement, data);
-=======
       splashRepo!.sharedPreferences!.setString(
         AppConstants.cookingManagement,
         data,
       );
->>>>>>> origin/development
     }
     _cookiesShow = false;
     notifyListeners();
   }
 
-<<<<<<< HEAD
-  bool getAcceptCookiesStatus(String? data) => splashRepo!.sharedPreferences!.getString(AppConstants.cookingManagement) != null && splashRepo!.sharedPreferences!.getString(AppConstants.cookingManagement) == data;
-=======
   bool getAcceptCookiesStatus(String? data) =>
       splashRepo!.sharedPreferences!.getString(
             AppConstants.cookingManagement,
@@ -291,22 +225,16 @@ class SplashProvider extends ChangeNotifier {
             AppConstants.cookingManagement,
           ) ==
           data;
->>>>>>> origin/development
 
   Future<void> getOfflinePaymentMethod(bool isReload) async {
     if (_offlinePaymentModelList == null || isReload) {
       _offlinePaymentModelList = null;
     }
     if (_offlinePaymentModelList == null) {
-<<<<<<< HEAD
-      ApiResponseModel apiResponse = await splashRepo!.getOfflinePaymentMethod();
-      if (apiResponse.response != null && apiResponse.response!.statusCode == 200) {
-=======
       ApiResponseModel apiResponse = await splashRepo!
           .getOfflinePaymentMethod();
       if (apiResponse.response != null &&
           apiResponse.response!.statusCode == 200) {
->>>>>>> origin/development
         _offlinePaymentModelList = [];
 
         apiResponse.response?.data.forEach((v) {
@@ -321,16 +249,11 @@ class SplashProvider extends ChangeNotifier {
 
   Future<void> getDeliveryInfo() async {
     DataSyncHelper.fetchAndSyncData(
-<<<<<<< HEAD
-      fetchFromLocal: () => splashRepo!.getDeliveryInfo<CacheResponseData>(source: DataSourceEnum.local),
-      fetchFromClient: () => splashRepo!.getDeliveryInfo(source: DataSourceEnum.client),
-=======
       fetchFromLocal: () => splashRepo!.getDeliveryInfo<CacheResponseData>(
         source: DataSourceEnum.local,
       ),
       fetchFromClient: () =>
           splashRepo!.getDeliveryInfo(source: DataSourceEnum.client),
->>>>>>> origin/development
       onResponse: (data, _) {
         _deliveryInfoModelList = [];
 
@@ -345,28 +268,6 @@ class SplashProvider extends ChangeNotifier {
   void initializeScreenList() {
     _screenList = [
       MainScreenModel(const HomeScreen(), 'home', Images.home, true),
-<<<<<<< HEAD
-      MainScreenModel(const AllCategoriesScreen(), 'all_categories', Images.list, true),
-      MainScreenModel(const CartScreen(), 'shopping_bag', Images.orderBag, true),
-      MainScreenModel(const WishListScreen(), 'favourite', Images.favouriteIcon, true),
-      MainScreenModel(const OrderListScreen(), 'my_order', Images.orderList, true),
-      MainScreenModel(const OrderSearchScreen(), 'order_track', Images.orderDetails, true),
-      MainScreenModel(const AddressListScreen(), 'address', Images.location, true),
-      MainScreenModel(const CouponScreen(), 'coupon', Images.coupon, true),
-      MainScreenModel(const ChatScreen(orderId: "", profileImage: "", userName: "", senderType: "admin"), 'live_chat', Images.chat, true),
-      MainScreenModel(const WalletScreen(), 'wallet', Images.wallet, true),
-      MainScreenModel(const LoyaltyScreen(), 'loyalty_point', Images.loyaltyIcon, _configModel?.loyaltyPointStatus ?? false),
-      MainScreenModel(const MemberScreen(showAppBar: false), 'member_network', Images.referralIcon, true),
-      MainScreenModel(const ReferAndEarnScreen(showAppBar: false), 'referAndEarn', Images.referralIcon, _configModel?.referEarnStatus ?? false),
-      MainScreenModel(const SettingsScreen(), 'settings', Images.settings, true),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.termsAndCondition), 'terms_and_condition', Images.termsAndConditions, true),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.privacyPolicy), 'privacy_policy', Images.privacyPolicy, true),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.aboutUs), 'about_us', Images.aboutUs, true),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.returnPolicy), 'return_policy', Images.returnPolicy, _configModel?.returnPolicyStatus ?? false),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.refundPolicy), 'refund_policy', Images.refundPolicy, _configModel?.refundPolicyStatus ?? false),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.cancellationPolicy), 'cancellation_policy', Images.cancellationPolicy, _configModel?.cancellationPolicyStatus ?? false),
-      MainScreenModel(const HtmlViewerScreen(htmlType: HtmlType.faq), 'faq', Images.faq, true),
-=======
       MainScreenModel(
         const AllCategoriesScreen(),
         'all_categories',
@@ -482,7 +383,6 @@ class SplashProvider extends ChangeNotifier {
         Images.faq,
         true,
       ),
->>>>>>> origin/development
     ];
   }
 }

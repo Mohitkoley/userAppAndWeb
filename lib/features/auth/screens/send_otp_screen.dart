@@ -211,31 +211,6 @@ class _SendOtpScreenState extends State<SendOtpScreen> {
 
                     ]),
 
-<<<<<<< HEAD
-                    if(configModel.isGuestCheckout == true && !Navigator.canPop(context))...[
-                      Center(child: InkWell(
-                        onTap: () => RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil),
-                        child: RichText(text: TextSpan(children: [
-
-                          TextSpan(text: '${getTranslated('continue_as_a', context)} ',
-                            style: poppinsRegular.copyWith(
-                              fontSize: Dimensions.fontSizeSmall,
-                              color: Theme.of(context).hintColor,
-                            ),
-                          ),
-
-                          TextSpan(text: getTranslated('guest', context),
-                            style: poppinsRegular.copyWith(
-                              color: Theme.of(context).colorScheme.onSurface,
-                            ),
-                          ),
-
-                        ])),
-                      )),
-                    ],
-
-=======
->>>>>>> origin/development
                   ])),
                 )),
 

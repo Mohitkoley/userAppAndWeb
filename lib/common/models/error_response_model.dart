@@ -6,20 +6,6 @@ class ErrorResponseModel {
 
   List<Errors>? get errors => _errors;
 
-<<<<<<< HEAD
-  ErrorResponseModel({
-    List<Errors>? errors}){
-    _errors = errors;
-  }
-
-  ErrorResponseModel.fromJson(dynamic json) {
-    if (json?["errors"] != null) {
-      _errors = [];
-      json["errors"].forEach((v) {
-        _errors!.add(Errors.fromJson(v));
-      });
-    }
-=======
   ErrorResponseModel({List<Errors>? errors}) {
     _errors = _withFallback(errors);
   }
@@ -48,7 +34,6 @@ class ErrorResponseModel {
     }
 
     _errors = _withFallback(parsedErrors);
->>>>>>> origin/development
   }
 
   Map<String, dynamic> toJson() {
@@ -59,8 +44,6 @@ class ErrorResponseModel {
     return map;
   }
 
-<<<<<<< HEAD
-=======
   static List<Errors> _withFallback(List<Errors>? errors) {
     if (errors != null && errors.isNotEmpty) {
       return errors;
@@ -68,7 +51,6 @@ class ErrorResponseModel {
 
     return [Errors(code: '', message: 'Unexpected error occurred')];
   }
->>>>>>> origin/development
 }
 
 /// code : "l_name"
@@ -81,22 +63,12 @@ class Errors {
   String? get code => _code;
   String? get message => _message;
 
-<<<<<<< HEAD
-  Errors({
-    String? code,
-    String? message}){
-=======
   Errors({String? code, String? message}) {
->>>>>>> origin/development
     _code = code;
     _message = message;
   }
 
   Errors.fromJson(dynamic json) {
-<<<<<<< HEAD
-    _code = json["code"];
-    _message = json["message"];
-=======
     if (json is Map) {
       _code = json["code"]?.toString();
       _message = json["message"]?.toString() ?? json.toString();
@@ -104,7 +76,6 @@ class Errors {
       _code = '';
       _message = json?.toString() ?? 'Unexpected error occurred';
     }
->>>>>>> origin/development
   }
 
   Map<String, dynamic> toJson() {
@@ -113,9 +84,4 @@ class Errors {
     map["message"] = _message;
     return map;
   }
-<<<<<<< HEAD
-
 }
-=======
-}
->>>>>>> origin/development

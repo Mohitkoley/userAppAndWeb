@@ -203,11 +203,7 @@ class _LoginScreenState extends State<LoginScreen> {
           }else {
             authProvider.clearUserLogData();
           }
-<<<<<<< HEAD
-          RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
-=======
           RouteHelper.getRouteAfterLogin();
->>>>>>> origin/development
         }
       });
 
@@ -440,21 +436,6 @@ class _LoginFormWidget extends StatelessWidget {
             ),
             const SizedBox(height: Dimensions.paddingSizeDefault),
 
-<<<<<<< HEAD
-            if(configModel?.isGuestCheckout ?? false)...[
-              Center(child: TextButton(
-                onPressed: () => RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil),
-                child: RichText(text: TextSpan(children: [
-
-                  TextSpan(text: '${getTranslated('continue_as_a', context)} ',  style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).hintColor.withValues(alpha: 0.6))),
-                  TextSpan(text: getTranslated('guest', context), style: poppinsRegular.copyWith(color: Theme.of(context).primaryColor)),
-
-                ])),
-              )),
-            ],
-
-=======
->>>>>>> origin/development
             const SizedBox(height: Dimensions.paddingSizeLarge),
 
           ])),

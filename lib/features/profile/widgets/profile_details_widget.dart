@@ -19,11 +19,7 @@ class ProfileDetailsWidget extends StatelessWidget {
     return Consumer<ProfileProvider>(
       builder: (context, profileProvider, _) {
         final bool showWallet = Provider.of<SplashProvider>(context, listen: false).configModel?.walletStatus ?? false;
-<<<<<<< HEAD
-        final bool showReferAndEarn = (Provider.of<SplashProvider>(context, listen: false).configModel?.referEarnStatus ?? false) && (profileProvider.userInfoModel?.referCode?.isNotEmpty ?? false);
-=======
         final bool showReferAndEarn = (Provider.of<SplashProvider>(context, listen: false).configModel?.referEarnStatus ?? false);
->>>>>>> origin/development
 
         return profileProvider.isLoading
             ? CustomLoaderWidget(color: Theme.of(context).primaryColor)
@@ -75,29 +71,6 @@ class ProfileDetailsWidget extends StatelessWidget {
 
                       if (profileProvider.userInfoModel != null) ...[MemberPointStatusWidget(userInfoModel: profileProvider.userInfoModel, memberStatusModel: profileProvider.memberStatusModel), const SizedBox(height: Dimensions.paddingSizeExtraLarge)],
 
-<<<<<<< HEAD
-                      if (profileProvider.userInfoModel != null) ...[
-                        InkWell(
-                          borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
-                          onTap: () => RouteHelper.getMemberRoute(),
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeSmall),
-                            child: Row(
-                              children: [
-                                Icon(Icons.groups_outlined, size: 24, color: Theme.of(context).primaryColor),
-                                const SizedBox(width: Dimensions.paddingSizeDefault),
-                                Expanded(
-                                  child: Text(getTranslated('member_network', context), style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeDefault)),
-                                ),
-                                Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).hintColor),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const Divider(),
-                        const SizedBox(height: Dimensions.paddingSizeExtraLarge),
-                      ],
-=======
                       // if (profileProvider.userInfoModel != null) ...[
                       //   InkWell(
                       //     borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
@@ -119,7 +92,6 @@ class ProfileDetailsWidget extends StatelessWidget {
                       //   const Divider(),
                       //   const SizedBox(height: Dimensions.paddingSizeExtraLarge),
                       // ],
->>>>>>> origin/development
 
                       if (showWallet) ...[
                         InkWell(

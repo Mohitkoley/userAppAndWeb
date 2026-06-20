@@ -259,11 +259,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                                       } else {
                                         authProvider.clearUserLogData();
                                       }
-<<<<<<< HEAD
-                                      RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
-=======
                                       RouteHelper.getRouteAfterLogin();
->>>>>>> origin/development
 
                                     }else if((responseModel != null && responseModel.isSuccess) && tempToken != null){
                                       RouteHelper.getOtpRegistration(tempToken, userInput, action: RouteAction.pushNamedAndRemoveUntil);
@@ -294,11 +290,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                                         } else {
                                           authProvider.clearUserLogData();
                                         }
-<<<<<<< HEAD
-                                        RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
-=======
                                         RouteHelper.getRouteAfterLogin();
->>>>>>> origin/development
                                       }
                                     });
                                   }else if(!isPhone && AuthHelper.isEmailVerificationEnable(config)){
@@ -313,11 +305,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                                             loginType: FromPage.login.name,
                                           ));
                                         }
-<<<<<<< HEAD
-                                        RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
-=======
                                         RouteHelper.getRouteAfterLogin();
->>>>>>> origin/development
                                       }
                                     });
                                   }

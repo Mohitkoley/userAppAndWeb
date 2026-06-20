@@ -152,14 +152,10 @@ class PlaceOrderButtonWidget extends StatelessWidget {
                         isLoading: orderProvider.isLoading,
                         borderRadius: fromOfflinePayment ? Dimensions.radiusSizeLarge : Dimensions.radiusSizeDefault,
                         buttonText: fromOfflinePayment ? getTranslated('confirm_payment', context) : getTranslated('place_order', context),
-<<<<<<< HEAD
-                        onPressed: () async {
-=======
                         backgroundColor: cartPointValue < 6500 ? Theme.of(context).hintColor.withValues(alpha: 0.6) : null,
                         onPressed: cartPointValue < 6500 ? () {
                             showCustomSnackBarHelper('Please add more items or increase the quantity to reach the minimum requirement of 6,500 points.');
                         } : () async {
->>>>>>> origin/development
                           final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
                           final ProfileProvider profileProvider = Provider.of<ProfileProvider>(context, listen: false);
 

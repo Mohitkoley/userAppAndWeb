@@ -65,11 +65,8 @@ import 'package:provider/provider.dart';
 enum RouteAction { push, pushReplacement, pushNamedAndRemoveUntil }
 
 class RouteHelper {
-<<<<<<< HEAD
-=======
   static String? _postLoginRoute;
 
->>>>>>> origin/development
   static const String splash = '/splash';
   static const String orderDetails = '/order-details';
   static const String onBoarding = '/on-boarding';
@@ -131,9 +128,6 @@ class RouteHelper {
     return _navigateRoute(menu, route: action);
   }
 
-<<<<<<< HEAD
-  static String getLoginRoute({RouteAction? action}) => _navigateRoute(login, route: action);
-=======
   static String getLoginRoute({RouteAction? action}) {
     _postLoginRoute = null;
     return _navigateRoute(login, route: action);
@@ -144,7 +138,6 @@ class RouteHelper {
     _postLoginRoute = null;
     return _navigateRoute(route, route: action);
   }
->>>>>>> origin/development
   static String getTermsRoute({RouteAction? action}) => _navigateRoute(termsScreen, route: action);
   static String getPolicyRoute({RouteAction? action}) => _navigateRoute(policyScreen, route: action);
   static String getAboutUsRoute({RouteAction? action}) => _navigateRoute(aboutUsScreen, route: action);
@@ -418,10 +411,7 @@ class RouteHelper {
             child: CheckoutScreen(orderType: state.uri.queryParameters['type'] ?? '', tax: double.parse(utf8.decode(base64Decode(state.uri.queryParameters['tax'] ?? ''))), discount: double.parse(utf8.decode(base64Decode(state.uri.queryParameters['discount'] ?? ''))), couponDiscount: double.parse(utf8.decode(base64Decode(state.uri.queryParameters['couponDiscount'] ?? ''))), amount: double.parse(utf8.decode(base64Decode(state.uri.queryParameters['amount'] ?? ''))), couponCode: utf8.decode(base64Decode(state.uri.queryParameters['code'] ?? '')), freeDeliveryType: utf8.decode(base64Decode(state.uri.queryParameters['c-type'] ?? '')), weight: double.parse(utf8.decode(base64Decode(state.uri.queryParameters['weight'] ?? '')))),
           );
         },
-<<<<<<< HEAD
-=======
         redirect: _redirectCheckoutUser,
->>>>>>> origin/development
       ),
       GoRoute(
         path: notification,
@@ -738,8 +728,6 @@ class RouteHelper {
 
     return isLoggedIn ? menu : null;
   }
-<<<<<<< HEAD
-=======
 
   static String? _redirectCheckoutUser(BuildContext context, GoRouterState state) {
     final bool isLoggedIn = Provider.of<AuthProvider>(context, listen: false).isLoggedIn();
@@ -751,5 +739,4 @@ class RouteHelper {
     _postLoginRoute = state.uri.toString();
     return login;
   }
->>>>>>> origin/development
 }
