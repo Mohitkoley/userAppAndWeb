@@ -16,7 +16,6 @@ import 'package:flutter_grocery/features/auth/domain/reposotories/auth_repo.dart
 import 'package:flutter_grocery/features/auth/enum/from_page_enum.dart';
 import 'package:flutter_grocery/features/auth/enum/social_login_options_enum.dart';
 import 'package:flutter_grocery/features/auth/enum/verification_type_enum.dart';
-import 'package:flutter_grocery/features/auth/providers/facebook_login_provider.dart';
 import 'package:flutter_grocery/features/auth/providers/verification_provider.dart';
 import 'package:flutter_grocery/features/profile/domain/models/userinfo_model.dart';
 import 'package:flutter_grocery/features/profile/providers/profile_provider.dart';
@@ -220,16 +219,36 @@ class AuthProvider with ChangeNotifier {
       context,
       listen: false,
     );
+    final WishListProvider wishListProvider = Provider.of<WishListProvider>(
+      context,
+      listen: false,
+    );
+    final CartProvider cartProvider = Provider.of<CartProvider>(
+      context,
+      listen: false,
+    );
     _isLoading = true;
     notifyListeners();
     ApiResponseModel? response = await authRepo?.deleteUser();
-    _isLoading = false;
 
     if (response?.response?.statusCode == 200) {
-      splashProvider.removeSharedData();
+      // reset all the data and remove the user from the app
+      await splashProvider.removeSharedData();
+      authRepo?.clearToken();
+      wishListProvider.clearWishList();
+      cartProvider.getCartData(isUpdate: true);
+      splashProvider.setPageIndex(0);
+      socialLogout();
+      addOrUpdateGuest();
+
+      _isLoading = false;
+      notifyListeners();
+
       showCustomSnackBarHelper('your_account_remove_successfully'.tr);
-      RouteHelper.getLoginRoute(action: RouteAction.pushNamedAndRemoveUntil);
+      RouteHelper.getSplashRoute(action: RouteAction.pushNamedAndRemoveUntil);
     } else {
+      _isLoading = false;
+      notifyListeners();
       Navigator.of(Get.context!).pop();
       ApiCheckerHelper.checkApi(response!);
     }

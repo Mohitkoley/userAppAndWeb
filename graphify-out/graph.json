@@ -278,9 +278,9 @@
       "file_type": "rationale",
       "source_file": "ios/Flutter/ephemeral/flutter_lldb_helper.py",
       "source_location": "L8",
-      "id": "ephemeral_flutter_lldb_helper_rationale_8",
       "community": 32,
-      "norm_label": "intercept notify_debugger_about_rx_pages and touch the pages."
+      "norm_label": "intercept notify_debugger_about_rx_pages and touch the pages.",
+      "id": "ephemeral_flutter_lldb_helper_rationale_8"
     },
     {
       "label": "build.gradle.kts",
