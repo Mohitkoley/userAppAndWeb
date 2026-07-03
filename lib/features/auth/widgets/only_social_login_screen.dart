@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grocery/common/enums/footer_type_enum.dart';
 import 'package:flutter_grocery/common/models/config_model.dart';
 import 'package:flutter_grocery/common/widgets/custom_alert_dialog_widget.dart';
-import 'package:flutter_grocery/common/widgets/custom_asset_image_widget.dart';
+import 'package:flutter_grocery/common/widgets/ecommerce_logo_widget.dart';
 import 'package:flutter_grocery/common/widgets/custom_pop_scope_widget.dart';
 import 'package:flutter_grocery/common/widgets/footer_web_widget.dart';
 import 'package:flutter_grocery/common/widgets/web_app_bar_widget.dart';
@@ -144,14 +144,13 @@ class _OnlySocialLoginWidgetState extends State<OnlySocialLoginWidget> {
 
                               Directionality(
                                 textDirection: TextDirection.ltr,
-                                child: CustomAssetImageWidget(
-                                  Images.appLogo,
+                                child: EcommerceLogoWidget(
                                   height: ResponsiveHelper.isDesktop(context)
                                       ? MediaQuery.of(context).size.height *
                                             0.15
                                       : MediaQuery.of(context).size.height /
                                             4.5,
-                                  fit: BoxFit.scaleDown,
+                                  fit: BoxFit.contain,
                                 ),
                               ),
 

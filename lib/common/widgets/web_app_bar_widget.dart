@@ -31,10 +31,8 @@ import 'package:flutter_grocery/utill/images.dart';
 import 'package:flutter_grocery/utill/styles.dart';
 import 'package:provider/provider.dart';
 
-
 class WebAppBarWidget extends StatefulWidget implements PreferredSizeWidget {
   const WebAppBarWidget({super.key});
-
 
   @override
   State<WebAppBarWidget> createState() => _WebAppBarWidgetState();
@@ -48,11 +46,27 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeProvider themeProvider =  Provider.of<ThemeProvider>(context, listen: false);
-    Provider.of<LanguageProvider>(context, listen: false).initializeAllLanguages(context);
-    final SplashProvider splashProvider = Provider.of<SplashProvider>(context, listen: false);
+    final ThemeProvider themeProvider = Provider.of<ThemeProvider>(
+      context,
+      listen: false,
+    );
+    Provider.of<LanguageProvider>(
+      context,
+      listen: false,
+    ).initializeAllLanguages(context);
+    final SplashProvider splashProvider = Provider.of<SplashProvider>(
+      context,
+      listen: false,
+    );
 
-    LanguageModel currentLanguage = AppConstants.languages.firstWhere((language) => language.languageCode == Provider.of<LocalizationProvider>(context, listen: false).locale.languageCode);
+    LanguageModel currentLanguage = AppConstants.languages.firstWhere(
+      (language) =>
+          language.languageCode ==
+          Provider.of<LocalizationProvider>(
+            context,
+            listen: false,
+          ).locale.languageCode,
+    );
 
     return Container(
       decoration: BoxDecoration(
@@ -60,9 +74,9 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.10),
             blurRadius: 20,
-            offset: const Offset(0,10),
-          )
-        ]
+            offset: const Offset(0, 10),
+          ),
+        ],
       ),
       child: Column(
         children: [
@@ -70,31 +84,38 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
             color: Theme.of(context).secondaryHeaderColor,
             height: 40,
             child: Center(
-              child: SizedBox( width: Dimensions.webScreenWidth,
+              child: SizedBox(
+                width: Dimensions.webScreenWidth,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraSmall),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: Dimensions.paddingSizeExtraSmall,
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                        child: Text('dark_mode'.tr, style: poppinsMedium.copyWith(
-                          color: Theme.of(context).textTheme.bodyLarge?.color,
-                          fontSize: Dimensions.paddingSizeDefault,
-                        )),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: Dimensions.paddingSizeExtraSmall,
+                        ),
+                        child: Text(
+                          'dark_mode'.tr,
+                          style: poppinsMedium.copyWith(
+                            color: Theme.of(context).textTheme.bodyLarge?.color,
+                            fontSize: Dimensions.paddingSizeDefault,
+                          ),
+                        ),
                       ),
                       // StatusWidget(),
                       Transform.scale(
                         scale: 0.6,
                         child: Switch(
-                          onChanged: (bool isActive) => themeProvider.toggleTheme(),
+                          onChanged: (bool isActive) =>
+                              themeProvider.toggleTheme(),
                           value: themeProvider.darkTheme,
                           activeTrackColor: Theme.of(context).primaryColor,
                           inactiveThumbColor: Colors.white,
                           activeThumbColor: Colors.white,
                           inactiveTrackColor: Theme.of(context).primaryColor,
-
                         ),
                       ),
                       const SizedBox(width: Dimensions.paddingSizeSmall),
@@ -103,22 +124,42 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
                         height: Dimensions.paddingSizeLarge,
 
                         child: MouseRegion(
-                          onHover: (details){
-                            _showPopupMenu(details.position, context, PopupMenuType.language);
+                          onHover: (details) {
+                            _showPopupMenu(
+                              details.position,
+                              context,
+                              PopupMenuType.language,
+                            );
                           },
                           child: InkWell(
-                            onTap: () => showDialogHelper(context, const CurrencyDialogWidget()),
+                            onTap: () => showDialogHelper(
+                              context,
+                              const CurrencyDialogWidget(),
+                            ),
                             child: Row(
                               children: [
-                                Text('${currentLanguage.languageCode?.toUpperCase()}',style: poppinsMedium.copyWith(color: Theme.of(context).textTheme.bodyLarge?.color)),
-                                const SizedBox(width: Dimensions.paddingSizeExtraSmall),
-                                Icon(Icons.expand_more, color: Theme.of(context).textTheme.bodyLarge?.color)
+                                Text(
+                                  '${currentLanguage.languageCode?.toUpperCase()}',
+                                  style: poppinsMedium.copyWith(
+                                    color: Theme.of(
+                                      context,
+                                    ).textTheme.bodyLarge?.color,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: Dimensions.paddingSizeExtraSmall,
+                                ),
+                                Icon(
+                                  Icons.expand_more,
+                                  color: Theme.of(
+                                    context,
+                                  ).textTheme.bodyLarge?.color,
+                                ),
                               ],
                             ),
                           ),
                         ),
                       ),
-
                     ],
                   ),
                 ),
@@ -126,198 +167,327 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
             ),
           ),
           Expanded(
-            child: Container(color: Theme.of(context).cardColor,
+            child: Container(
+              color: Theme.of(context).cardColor,
               child: Center(
                 child: SizedBox(
-                    width: 1170,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Row(children: [
+                  width: 1170,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        children: [
                           InkWell(
                             onTap: () {
-                              if(ModalRoute.of(context)!.settings.name != RouteHelper.menu) {
+                              if (ModalRoute.of(context)!.settings.name !=
+                                  RouteHelper.menu) {
                                 RouteHelper.getMainRoute();
                               }
                             },
                             child: Row(
                               children: [
-                                SizedBox(height: 50,
-                                    child: Consumer<SplashProvider>(
-                                      builder:(context, splash, child) => CustomImageWidget(
-                                        placeholder: Images.webBarLogoPlaceHolder,
-                                        image: splash.baseUrls != null ? '${splash.baseUrls!.ecommerceImageUrl}/${splash.configModel!.ecommerceLogo}' : '',
-                                        fit: BoxFit.contain,
-                                        width: 115,
-                                      ),
-                                    )),
-
+                                SizedBox(
+                                  height: 50,
+                                  child: Consumer<SplashProvider>(
+                                    builder: (context, splash, child) =>
+                                        CustomImageWidget(
+                                          placeholder: Images.placeHolder,
+                                          image: splash.baseUrls != null
+                                              ? '${splash.baseUrls!.ecommerceImageUrl}/${splash.configModel!.ecommerceLogo}'
+                                              : '',
+                                          fit: BoxFit.contain,
+                                          width: 115,
+                                        ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
                           const SizedBox(width: 30),
 
-                          TextHoverWidget(builder: (isHovered) {
-                            return InkWell(
-                              onTap: () {
-                                if(ModalRoute.of(context)!.settings.name != RouteHelper.menu) {
-                                  RouteHelper.getMainRoute();
-                                }
-                              },
-                              child: Text('home'.tr, style: isHovered ?
-                              poppinsSemiBold.copyWith(color: Theme.of(context).primaryColor,
-                                  fontSize: Dimensions.fontSizeLarge) :
-                              poppinsMedium.copyWith(color: Theme.of(context).textTheme.bodyLarge?.color,
-                                  fontSize: Dimensions.fontSizeLarge)),
-                            );
-                          }),
+                          TextHoverWidget(
+                            builder: (isHovered) {
+                              return InkWell(
+                                onTap: () {
+                                  if (ModalRoute.of(context)!.settings.name !=
+                                      RouteHelper.menu) {
+                                    RouteHelper.getMainRoute();
+                                  }
+                                },
+                                child: Text(
+                                  'home'.tr,
+                                  style: isHovered
+                                      ? poppinsSemiBold.copyWith(
+                                          color: Theme.of(context).primaryColor,
+                                          fontSize: Dimensions.fontSizeLarge,
+                                        )
+                                      : poppinsMedium.copyWith(
+                                          color: Theme.of(
+                                            context,
+                                          ).textTheme.bodyLarge?.color,
+                                          fontSize: Dimensions.fontSizeLarge,
+                                        ),
+                                ),
+                              );
+                            },
+                          ),
                           const SizedBox(width: 30),
 
                           TextHoverWidget(
                             builder: (isHovered) {
-                              return MouseRegion(onHover: (details){
-                                if(Provider.of<CategoryProvider>(context, listen: false).categoryList != null){
-                                  _showPopupMenu(details.position, context, PopupMenuType.category);
-                                }
-                              },
-                                child: Row(children: [
-
-                                  Text('categories'.tr,
-                                      style: isHovered ? poppinsSemiBold.copyWith(color: Theme.of(context).primaryColor, fontSize: Dimensions.fontSizeLarge) :
-                                        poppinsMedium.copyWith(color: Theme.of(context).textTheme.bodyLarge?.color,
-                                        fontSize: Dimensions.fontSizeLarge),
+                              return MouseRegion(
+                                onHover: (details) {
+                                  if (Provider.of<CategoryProvider>(
+                                        context,
+                                        listen: false,
+                                      ).categoryList !=
+                                      null) {
+                                    _showPopupMenu(
+                                      details.position,
+                                      context,
+                                      PopupMenuType.category,
+                                    );
+                                  }
+                                },
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'categories'.tr,
+                                      style: isHovered
+                                          ? poppinsSemiBold.copyWith(
+                                              color: Theme.of(
+                                                context,
+                                              ).primaryColor,
+                                              fontSize:
+                                                  Dimensions.fontSizeLarge,
+                                            )
+                                          : poppinsMedium.copyWith(
+                                              color: Theme.of(
+                                                context,
+                                              ).textTheme.bodyLarge?.color,
+                                              fontSize:
+                                                  Dimensions.fontSizeLarge,
+                                            ),
                                     ),
-                                  const SizedBox(width: Dimensions.paddingSizeExtraSmall),
+                                    const SizedBox(
+                                      width: Dimensions.paddingSizeExtraSmall,
+                                    ),
 
-                                  Icon(Icons.expand_more, color: Theme.of(context).primaryColor, size: 20),
-
-                                ]),
+                                    Icon(
+                                      Icons.expand_more,
+                                      color: Theme.of(context).primaryColor,
+                                      size: 20,
+                                    ),
+                                  ],
+                                ),
                               );
-                            }),
-                        ]),
+                            },
+                          ),
+                        ],
+                      ),
 
-
-                        Row(children: [
+                      Row(
+                        children: [
                           Container(
                             width: 500,
                             decoration: BoxDecoration(
-                              color:  Theme.of(context).disabledColor.withValues(alpha: 0.05),
-                              borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
+                              color: Theme.of(
+                                context,
+                              ).disabledColor.withValues(alpha: 0.05),
+                              borderRadius: BorderRadius.circular(
+                                Dimensions.radiusSizeDefault,
+                              ),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 0,vertical: 2),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 0,
+                              vertical: 2,
+                            ),
                             child: Consumer<SearchProvider>(
-                                builder: (context,search,_) {
-                                  return CustomTextFieldWidget(
-                                    hintText: getTranslated('search_for_products', context),
-                                    isShowBorder: false,
-                                    fillColor: Colors.transparent,
-                                    isElevation: false,
-                                    isShowSuffixIcon: true,
-                                    imageColor: Theme.of(context).primaryColor,
-                                    suffixAssetUrl: !search.isSearch ? Images.close : Images.search,
-                                    onChanged: (str){
-                                      str.length = 0;
-                                      search.setSearchValue(str);
-                                    },
-                                    onSuffixTap: () {
-                                      if(search.searchController.text.trim().isNotEmpty && search.isSearch == true){
-                                         RouteHelper.getSearchResultRoute(search.searchController.text);
-                                        search.onChangeSearchStatus();
-                                      }
-                                      else if (search.searchController.text.trim().isNotEmpty && search.isSearch == false) {
-                                        search.searchController.clear();
-                                        search.setSearchValue('');
-                                        search.onChangeSearchStatus();
-                                      }
-                                    },
-                                    controller: search.searchController,
-                                    inputAction: TextInputAction.search,
-                                    isIcon: true,
-                                    onSubmit: (text) {
-                                      if (search.searchController.text.trim().isNotEmpty) {
+                              builder: (context, search, _) {
+                                return CustomTextFieldWidget(
+                                  hintText: getTranslated(
+                                    'search_for_products',
+                                    context,
+                                  ),
+                                  isShowBorder: false,
+                                  fillColor: Colors.transparent,
+                                  isElevation: false,
+                                  isShowSuffixIcon: true,
+                                  imageColor: Theme.of(context).primaryColor,
+                                  suffixAssetUrl: !search.isSearch
+                                      ? Images.close
+                                      : Images.search,
+                                  onChanged: (str) {
+                                    str.length = 0;
+                                    search.setSearchValue(str);
+                                  },
+                                  onSuffixTap: () {
+                                    if (search.searchController.text
+                                            .trim()
+                                            .isNotEmpty &&
+                                        search.isSearch == true) {
+                                      RouteHelper.getSearchResultRoute(
+                                        search.searchController.text,
+                                      );
+                                      search.onChangeSearchStatus();
+                                    } else if (search.searchController.text
+                                            .trim()
+                                            .isNotEmpty &&
+                                        search.isSearch == false) {
+                                      search.searchController.clear();
+                                      search.setSearchValue('');
+                                      search.onChangeSearchStatus();
+                                    }
+                                  },
+                                  controller: search.searchController,
+                                  inputAction: TextInputAction.search,
+                                  isIcon: true,
+                                  onSubmit: (text) {
+                                    if (search.searchController.text
+                                        .trim()
+                                        .isNotEmpty) {
+                                      RouteHelper.getSearchResultRoute(
+                                        search.searchController.text,
+                                      );
 
-                                        RouteHelper.getSearchResultRoute(search.searchController.text);
-
-                                        search.onChangeSearchStatus();
-                                      }
-
-                                    },);
-                                }
+                                      search.onChangeSearchStatus();
+                                    }
+                                  },
+                                );
+                              },
                             ),
                           ),
                           const SizedBox(width: 70),
 
-                          OnHoverWidget(child: InkWell(
-                            onTap: () {
-                              if(ModalRoute.of(context)!.settings.name != RouteHelper.favorite) {
-                                RouteHelper.getFavoriteRoute();
-                              }
-
-                            },
-                            child: Consumer<WishListProvider>(builder: (context, wishListProvider, _)=> _ItemCountView(
-                              count: wishListProvider.wishList?.length ?? 0, icon: Icons.favorite,
-                            )),
-                          )),
-                          const SizedBox(width: Dimensions.paddingSizeExtraLarge),
-
-                          OnHoverWidget(child: InkWell(
-                            onTap: () {
-                              if(ModalRoute.of(context)!.settings.name != RouteHelper.cart) {
-                                RouteHelper.getCartScreen();
-                              }
-
-                            },
-                            child: Consumer<CartProvider>(builder: (context, cartProvider, _)=> _ItemCountView(
-                              count: cartProvider.getTotalCartQuantity(), icon: Icons.shopping_cart,
-                            )),
-                          )),
-                          const SizedBox(width: Dimensions.paddingSizeExtraLarge),
-
-                          Consumer<AuthProvider>(builder: (context, authProvider, _)=> InkWell(
-                            onTap: () => !authProvider.isLoggedIn() ? RouteHelper.getLoginRoute(action: RouteAction.push) : (){},
-                            child: TextHoverWidget(builder: (isHover)=> OnHoverWidget(child: MouseRegion(
-                              onHover: (details){
-                                if(authProvider.isLoggedIn()) {
-                                  _showPopupMenu(details.position, context, PopupMenuType.profile);
+                          OnHoverWidget(
+                            child: InkWell(
+                              onTap: () {
+                                if (ModalRoute.of(context)!.settings.name !=
+                                    RouteHelper.favorite) {
+                                  RouteHelper.getFavoriteRoute();
                                 }
                               },
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                                child: authProvider.isLoggedIn() ? Consumer<ProfileProvider>(
-                                  builder: (context, profileProvider, _) {
-                                    return ClipRRect(
-                                      borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault),
-                                      child: CustomImageWidget(
-                                        image: '${splashProvider.baseUrls!.customerImageUrl}/${profileProvider.userInfoModel != null ? profileProvider.userInfoModel!.image : ''}',
-                                        placeholder: Images.profile,
-                                        height: 32,
-                                        width: 32,
+                              child: Consumer<WishListProvider>(
+                                builder: (context, wishListProvider, _) =>
+                                    _ItemCountView(
+                                      count:
+                                          wishListProvider.wishList?.length ??
+                                          0,
+                                      icon: Icons.favorite,
+                                    ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: Dimensions.paddingSizeExtraLarge,
+                          ),
+
+                          OnHoverWidget(
+                            child: InkWell(
+                              onTap: () {
+                                if (ModalRoute.of(context)!.settings.name !=
+                                    RouteHelper.cart) {
+                                  RouteHelper.getCartScreen();
+                                }
+                              },
+                              child: Consumer<CartProvider>(
+                                builder: (context, cartProvider, _) =>
+                                    _ItemCountView(
+                                      count: cartProvider
+                                          .getTotalCartQuantity(),
+                                      icon: Icons.shopping_cart,
+                                    ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: Dimensions.paddingSizeExtraLarge,
+                          ),
+
+                          Consumer<AuthProvider>(
+                            builder: (context, authProvider, _) => InkWell(
+                              onTap: () => !authProvider.isLoggedIn()
+                                  ? RouteHelper.getLoginRoute(
+                                      action: RouteAction.push,
+                                    )
+                                  : () {},
+                              child: TextHoverWidget(
+                                builder: (isHover) => OnHoverWidget(
+                                  child: MouseRegion(
+                                    onHover: (details) {
+                                      if (authProvider.isLoggedIn()) {
+                                        _showPopupMenu(
+                                          details.position,
+                                          context,
+                                          PopupMenuType.profile,
+                                        );
+                                      }
+                                    },
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                        horizontal:
+                                            Dimensions.paddingSizeExtraSmall,
                                       ),
-                                    );
-                                  }
-                                ) : Icon(
-                                  Icons.person, size: Dimensions.paddingSizeExtraLarge,
-                                  color: isHover ? Theme.of(context).primaryColor : Theme.of(context).focusColor,
+                                      child: authProvider.isLoggedIn()
+                                          ? Consumer<ProfileProvider>(
+                                              builder: (context, profileProvider, _) {
+                                                return ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                        Dimensions
+                                                            .radiusSizeDefault,
+                                                      ),
+                                                  child: CustomImageWidget(
+                                                    image:
+                                                        '${splashProvider.baseUrls!.customerImageUrl}/${profileProvider.userInfoModel != null ? profileProvider.userInfoModel!.image : ''}',
+                                                    placeholder: Images.profile,
+                                                    height: 32,
+                                                    width: 32,
+                                                  ),
+                                                );
+                                              },
+                                            )
+                                          : Icon(
+                                              Icons.person,
+                                              size: Dimensions
+                                                  .paddingSizeExtraLarge,
+                                              color: isHover
+                                                  ? Theme.of(
+                                                      context,
+                                                    ).primaryColor
+                                                  : Theme.of(
+                                                      context,
+                                                    ).focusColor,
+                                            ),
+                                    ),
+                                  ),
                                 ),
-                              )))),
+                              ),
+                            ),
+                          ),
 
-                          )),
-
-                          const SizedBox(width: Dimensions.paddingSizeExtraLarge),
+                          const SizedBox(
+                            width: Dimensions.paddingSizeExtraLarge,
+                          ),
 
                           IconButton(
                             onPressed: () {
-                              if(ModalRoute.of(context)!.settings.name != RouteHelper.profileMenus) {
+                              if (ModalRoute.of(context)!.settings.name !=
+                                  RouteHelper.profileMenus) {
                                 RouteHelper.getProfileMenus();
                               }
-
                             },
-                            icon: Icon(Icons.menu,size: Dimensions.fontSizeOverLarge, color: Theme.of(context).primaryColor),
+                            icon: Icon(
+                              Icons.menu,
+                              size: Dimensions.fontSizeOverLarge,
+                              color: Theme.of(context).primaryColor,
+                            ),
                           ),
-                        ]),
-                      ],
-                    )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -329,44 +499,56 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
 
   List<PopupMenuEntry<Object>> _popUpMenuList(BuildContext context) {
     List<PopupMenuEntry<Object>> list = <PopupMenuEntry<Object>>[];
-    List<CategoryModel>? categoryList =  Provider.of<CategoryProvider>(context, listen: false).categoryList;
+    List<CategoryModel>? categoryList = Provider.of<CategoryProvider>(
+      context,
+      listen: false,
+    ).categoryList;
 
-    list.add(PopupMenuItem(
-      padding: EdgeInsets.zero,
-      value: categoryList,
-      child: _CategoryHoverWidget(categoryList: categoryList),
-    ));
+    list.add(
+      PopupMenuItem(
+        padding: EdgeInsets.zero,
+        value: categoryList,
+        child: _CategoryHoverWidget(categoryList: categoryList),
+      ),
+    );
 
     return list;
   }
 
   List<PopupMenuEntry<Object>> _popUpLanguageList(BuildContext context) {
-    List<PopupMenuEntry<Object>> languagePopupMenuEntryList = <PopupMenuEntry<Object>>[];
-    List<LanguageModel> languageList =  AppConstants.languages;
+    List<PopupMenuEntry<Object>> languagePopupMenuEntryList =
+        <PopupMenuEntry<Object>>[];
+    List<LanguageModel> languageList = AppConstants.languages;
     languagePopupMenuEntryList.add(
-        PopupMenuItem(
-          padding: EdgeInsets.zero,
-          value: languageList,
-          child: MouseRegion(
-            onExit: (_)=> Navigator.of(context).pop(),
-            child: LanguageHoverWidget(languageList: languageList),
-          ),
-        ));
+      PopupMenuItem(
+        padding: EdgeInsets.zero,
+        value: languageList,
+        child: MouseRegion(
+          onExit: (_) => Navigator.of(context).pop(),
+          child: LanguageHoverWidget(languageList: languageList),
+        ),
+      ),
+    );
     return languagePopupMenuEntryList;
   }
 
   List<PopupMenuEntry<Object>> _profilePopUpMenuList(BuildContext context) {
-    List<PopupMenuEntry<Object>> profilePopupMenuEntryList = <PopupMenuEntry<Object>>[];
+    List<PopupMenuEntry<Object>> profilePopupMenuEntryList =
+        <PopupMenuEntry<Object>>[];
 
-    profilePopupMenuEntryList.add( PopupMenuItem(
-      padding: EdgeInsets.zero,
-      child: ProfileHoverWidget(currentRoute: ModalRoute.of(context)?.settings.name)
-    ));
+    profilePopupMenuEntryList.add(
+      PopupMenuItem(
+        padding: EdgeInsets.zero,
+        child: ProfileHoverWidget(
+          currentRoute: ModalRoute.of(context)?.settings.name,
+        ),
+      ),
+    );
 
     return profilePopupMenuEntryList;
   }
 
-  List<PopupMenuEntry<Object>> _getPopupItems(PopupMenuType type){
+  List<PopupMenuEntry<Object>> _getPopupItems(PopupMenuType type) {
     switch (type) {
       case PopupMenuType.language:
         return _popUpLanguageList(context);
@@ -377,68 +559,96 @@ class _WebAppBarWidgetState extends State<WebAppBarWidget> {
     }
   }
 
-  void _showPopupMenu(Offset offset, BuildContext context, PopupMenuType type) async {
+  void _showPopupMenu(
+    Offset offset,
+    BuildContext context,
+    PopupMenuType type,
+  ) async {
     double left = offset.dx;
     double top = offset.dy;
-    final RenderBox overlay = Overlay.of(context).context.findRenderObject() as RenderBox;
+    final RenderBox overlay =
+        Overlay.of(context).context.findRenderObject() as RenderBox;
 
     await showMenu(
       context: context,
-      position: RelativeRect.fromLTRB(left, top, overlay.size.width, overlay.size.height),
+      position: RelativeRect.fromLTRB(
+        left,
+        top,
+        overlay.size.width,
+        overlay.size.height,
+      ),
       items: _getPopupItems(type),
       elevation: 8.0,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(
-        Radius.circular(12),
-      )),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(12)),
+      ),
     );
-
   }
 
   Size get preferredSize => const Size(double.maxFinite, 160);
 }
 
-
-
-
 class _ItemCountView extends StatelessWidget {
   final int count;
   final IconData icon;
-  const _ItemCountView({
-    required this.count, required this.icon,
-  });
+  const _ItemCountView({required this.count, required this.icon});
 
   @override
   Widget build(BuildContext context) {
+    final AuthProvider authProvider = Provider.of<AuthProvider>(
+      context,
+      listen: false,
+    );
 
-    final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
-
-    return TextHoverWidget(builder: (isHover)=> Stack(clipBehavior: Clip.none, children: [
-      Icon(icon, color: isHover ? Theme.of(context).primaryColor : Theme.of(context).focusColor,
-        size: Dimensions.paddingSizeExtraLarge,
-      ),
-
-      if(count > 0 && ( (icon == Icons.favorite && authProvider.isLoggedIn()) || (icon != Icons.favorite))) Positioned(top: -15, right: -10, child: Container(
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          border: Border.all(color: Theme.of(context).cardColor, width: 2),
-        ),
-        child: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Theme.of(context).primaryColor,
+    return TextHoverWidget(
+      builder: (isHover) => Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Icon(
+            icon,
+            color: isHover
+                ? Theme.of(context).primaryColor
+                : Theme.of(context).focusColor,
+            size: Dimensions.paddingSizeExtraLarge,
           ),
-          padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
-          child: Text('$count',style: poppinsRegular.copyWith(
-            color: Colors.white,
-            fontSize: Dimensions.fontSizeExtraSmall,
-          )),
-        ),
-      )),
-    ]));
+
+          if (count > 0 &&
+              ((icon == Icons.favorite && authProvider.isLoggedIn()) ||
+                  (icon != Icons.favorite)))
+            Positioned(
+              top: -15,
+              right: -10,
+              child: Container(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(
+                    color: Theme.of(context).cardColor,
+                    width: 2,
+                  ),
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Theme.of(context).primaryColor,
+                  ),
+                  padding: const EdgeInsets.all(
+                    Dimensions.paddingSizeExtraSmall,
+                  ),
+                  child: Text(
+                    '$count',
+                    style: poppinsRegular.copyWith(
+                      color: Colors.white,
+                      fontSize: Dimensions.fontSizeExtraSmall,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
   }
 }
-
-
 
 class _CategoryHoverWidget extends StatefulWidget {
   final List<CategoryModel>? categoryList;
@@ -453,7 +663,9 @@ class _CategoryHoverWidgetState extends State<_CategoryHoverWidget> {
 
   List<CategoryModel> _getDisplayedCategories() {
     final categoryList = widget.categoryList ?? [];
-    return categoryList.length > 10 ? categoryList.take(10).toList() : categoryList;
+    return categoryList.length > 10
+        ? categoryList.take(10).toList()
+        : categoryList;
   }
 
   bool _hasMoreCategories() {
@@ -467,68 +679,108 @@ class _CategoryHoverWidgetState extends State<_CategoryHoverWidget> {
     final bool hasMoreCategories = _hasMoreCategories();
 
     return MouseRegion(
-      onExit: isExited ? null : (_)=> Navigator.of(context).pop(),
+      onExit: isExited ? null : (_) => Navigator.of(context).pop(),
       child: Container(
         color: Theme.of(context).cardColor,
         padding: const EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
         child: Column(
-            children: [
-              ...displayedCategories.map((category) => InkWell(
+          children: [
+            ...displayedCategories.map(
+              (category) => InkWell(
                 onTap: () async {
                   setState(() {
                     isExited = true;
                   });
 
-                  Future.delayed(const Duration(milliseconds: 0)).then((value) async{
-                    RouteHelper.getCategoryProductsRoute(categoryId: category.id.toString());
+                  Future.delayed(const Duration(milliseconds: 0)).then((
+                    value,
+                  ) async {
+                    RouteHelper.getCategoryProductsRoute(
+                      categoryId: category.id.toString(),
+                    );
                   });
                 },
                 child: TextHoverWidget(
-                    builder: (isHover) {
-                      return Container(
-                        padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraSmall, horizontal: Dimensions.paddingSizeDefault),
-                        decoration: BoxDecoration(color: isHover ? ColorResources.getGreyColor(context) : Theme.of(context).cardColor, borderRadius: BorderRadius.circular(8)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(width: 200,child: Text(category.name ?? '', overflow: TextOverflow.ellipsis,maxLines: 1,)),
-                          ],
-                        ),
-                      );
-                    }
-                ),
-              )),
-              if(hasMoreCategories)
-                InkWell(
-                  onTap: () async {
-                    setState(() {
-                      isExited = true;
-                    });
-
-                    Future.delayed(const Duration(milliseconds: 0)).then((value) async{
-                      RouteHelper.getAllCategoryScreen();
-                    });
+                  builder: (isHover) {
+                    return Container(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: Dimensions.paddingSizeExtraSmall,
+                        horizontal: Dimensions.paddingSizeDefault,
+                      ),
+                      decoration: BoxDecoration(
+                        color: isHover
+                            ? ColorResources.getGreyColor(context)
+                            : Theme.of(context).cardColor,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          SizedBox(
+                            width: 200,
+                            child: Text(
+                              category.name ?? '',
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
                   },
-                  child: TextHoverWidget(
-                    builder: (isHover) {
-                      return Container(
-                        padding: const EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraSmall, horizontal: Dimensions.paddingSizeDefault),
-                        decoration: BoxDecoration(color: Theme.of(context).primaryColor, borderRadius: BorderRadius.circular(Dimensions.radiusSizeDefault)),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text('see_more'.tr, overflow: TextOverflow.ellipsis,maxLines: 1, style: poppinsSemiBold.copyWith(color: Theme.of(context).cardColor)),
-                            Icon(Icons.keyboard_arrow_right_rounded, color: Theme.of(context).cardColor)
-                          ],
+                ),
+              ),
+            ),
+            if (hasMoreCategories)
+              InkWell(
+                onTap: () async {
+                  setState(() {
+                    isExited = true;
+                  });
+
+                  Future.delayed(const Duration(milliseconds: 0)).then((
+                    value,
+                  ) async {
+                    RouteHelper.getAllCategoryScreen();
+                  });
+                },
+                child: TextHoverWidget(
+                  builder: (isHover) {
+                    return Container(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: Dimensions.paddingSizeExtraSmall,
+                        horizontal: Dimensions.paddingSizeDefault,
+                      ),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).primaryColor,
+                        borderRadius: BorderRadius.circular(
+                          Dimensions.radiusSizeDefault,
                         ),
-                      );
-                    }
-                  ),
-                )
-            ]
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'see_more'.tr,
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 1,
+                            style: poppinsSemiBold.copyWith(
+                              color: Theme.of(context).cardColor,
+                            ),
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_right_rounded,
+                            color: Theme.of(context).cardColor,
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              ),
+          ],
         ),
       ),
     );
   }
 }
-

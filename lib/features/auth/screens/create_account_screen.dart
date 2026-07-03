@@ -41,83 +41,145 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
   final TextEditingController _numberController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _confirmPasswordController = TextEditingController();
+  final TextEditingController _confirmPasswordController =
+      TextEditingController();
   final TextEditingController _referTextController = TextEditingController();
 
   String? countryCode;
 
   @override
   void initState() {
-    countryCode = CountryCode.fromCountryCode(Provider.of<SplashProvider>(context, listen: false).configModel!.country!).dialCode;
-    Provider.of<AuthProvider>(context, listen: false).updateRegistrationErrorMessage('', false);
+    countryCode = CountryCode.fromCountryCode(
+      Provider.of<SplashProvider>(context, listen: false).configModel!.country!,
+    ).dialCode;
+    Provider.of<AuthProvider>(
+      context,
+      listen: false,
+    ).updateRegistrationErrorMessage('', false);
 
-    if (Provider.of<SplashProvider>(context, listen: false).configModel?.referEarnStatus == true && (widget.referralCode?.isNotEmpty ?? false)) {
+    if (Provider.of<SplashProvider>(
+              context,
+              listen: false,
+            ).configModel?.referEarnStatus ==
+            true &&
+        (widget.referralCode?.isNotEmpty ?? false)) {
       _referTextController.text = widget.referralCode ?? '';
     }
 
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
-    final config = Provider.of<SplashProvider>(context, listen: false).configModel!;
+    final config = Provider.of<SplashProvider>(
+      context,
+      listen: false,
+    ).configModel!;
     final double width = MediaQuery.of(context).size.width;
-
 
     return CustomPopScopeHandelDeepLinkWidget(
       child: Scaffold(
-        appBar: ResponsiveHelper.isDesktop(context)? const PreferredSize(preferredSize: Size.fromHeight(120), child: WebAppBarWidget()) :null,
-        body: Consumer<AuthProvider>(builder: (context, authProvider, child) => SafeArea(
-          child:  Center(
-            child: Container(
-              margin: ResponsiveHelper.isTab(context)?
-              EdgeInsets.symmetric(horizontal: width-700 > 0 ? (width-700)/4 : Dimensions.paddingSizeDefault, vertical: Dimensions.paddingSizeLarge)
-                  : null,
-              decoration: ResponsiveHelper.isTab(context) ? BoxDecoration(
-                color: Theme.of(context).cardColor, borderRadius: BorderRadius.circular(10),
-                boxShadow: [BoxShadow(color: Theme.of(context).shadowColor, blurRadius: 5, spreadRadius: 1)],
-              ):null,
-              child: CustomScrollView(slivers: [
-
-                SliverFillRemaining(
-                    hasScrollBody: false,
-                    child: Center(child: Column(mainAxisSize: MainAxisSize.min, children: [
-                      Center(
-                        child: Container(
-                          width: ResponsiveHelper.isDesktop(context) ? Dimensions.webScreenWidth : null,
-                          padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
-                          margin: EdgeInsets.symmetric(vertical: Dimensions.paddingSizeExtraLarge),
-                          decoration: ResponsiveHelper.isDesktop(context) ? BoxDecoration(
-                            color: Theme.of(context).cardColor, borderRadius: BorderRadius.circular(10),
-                            boxShadow: [BoxShadow(color: Theme.of(context).shadowColor, blurRadius: 5, spreadRadius: 1)],
-                          ):null,
-                          child: Center(
-                            child: SizedBox(
-                                width:  width > 700 ? 700 : width,
-                                child: _FromWidget(authProvider: authProvider, config: config,)),
+        appBar: ResponsiveHelper.isDesktop(context)
+            ? const PreferredSize(
+                preferredSize: Size.fromHeight(120),
+                child: WebAppBarWidget(),
+              )
+            : null,
+        body: Consumer<AuthProvider>(
+          builder: (context, authProvider, child) => SafeArea(
+            child: Center(
+              child: Container(
+                margin: ResponsiveHelper.isTab(context)
+                    ? EdgeInsets.symmetric(
+                        horizontal: width - 700 > 0
+                            ? (width - 700) / 4
+                            : Dimensions.paddingSizeDefault,
+                        vertical: Dimensions.paddingSizeLarge,
+                      )
+                    : null,
+                decoration: ResponsiveHelper.isTab(context)
+                    ? BoxDecoration(
+                        color: Theme.of(context).cardColor,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Theme.of(context).shadowColor,
+                            blurRadius: 5,
+                            spreadRadius: 1,
                           ),
+                        ],
+                      )
+                    : null,
+                child: CustomScrollView(
+                  slivers: [
+                    SliverFillRemaining(
+                      hasScrollBody: false,
+                      child: Center(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Center(
+                              child: Container(
+                                width: ResponsiveHelper.isDesktop(context)
+                                    ? Dimensions.webScreenWidth
+                                    : null,
+                                padding: const EdgeInsets.all(
+                                  Dimensions.paddingSizeDefault,
+                                ),
+                                margin: EdgeInsets.symmetric(
+                                  vertical: Dimensions.paddingSizeExtraLarge,
+                                ),
+                                decoration: ResponsiveHelper.isDesktop(context)
+                                    ? BoxDecoration(
+                                        color: Theme.of(context).cardColor,
+                                        borderRadius: BorderRadius.circular(10),
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Theme.of(
+                                              context,
+                                            ).shadowColor,
+                                            blurRadius: 5,
+                                            spreadRadius: 1,
+                                          ),
+                                        ],
+                                      )
+                                    : null,
+                                child: Center(
+                                  child: SizedBox(
+                                    width: width > 700 ? 700 : width,
+                                    child: _FromWidget(
+                                      authProvider: authProvider,
+                                      config: config,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                            ResponsiveHelper.isDesktop(context)
+                                ? const SizedBox(height: 50)
+                                : const SizedBox(),
+                          ],
                         ),
                       ),
+                    ),
 
-                      ResponsiveHelper.isDesktop(context) ? const SizedBox(height: 50,) : const SizedBox(),
-
-
-                    ]))),
-
-                const FooterWebWidget(footerType: FooterType.sliver),
-
-              ]),
+                    const FooterWebWidget(footerType: FooterType.sliver),
+                  ],
+                ),
+              ),
             ),
           ),
-        )),
+        ),
       ),
     );
-
   }
 
   void _onSignUpPress(ConfigModel config) {
-    final AuthProvider authProvider = Provider.of<AuthProvider>(context, listen: false);
+    final AuthProvider authProvider = Provider.of<AuthProvider>(
+      context,
+      listen: false,
+    );
 
     String firstName = _firstNameController.text.trim();
     String lastName = _lastNameController.text.trim();
@@ -127,40 +189,35 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
     String confirmPassword = _confirmPasswordController.text.trim();
 
     String phoneWithCountryCode = (countryCode ?? '') + number;
-    bool isPhoneValid = PhoneNumberCheckerHelper.isPhoneValidWithCountryCode(phoneWithCountryCode);
+    bool isPhoneValid = PhoneNumberCheckerHelper.isPhoneValidWithCountryCode(
+      phoneWithCountryCode,
+    );
 
     if (firstName.isEmpty) {
       showCustomSnackBarHelper(getTranslated('enter_first_name', context));
-
-    }else if (lastName.isEmpty) {
+    } else if (lastName.isEmpty) {
       showCustomSnackBarHelper(getTranslated('enter_last_name', context));
-
-    }else if (number.isEmpty) {
+    } else if (number.isEmpty) {
       showCustomSnackBarHelper(getTranslated('enter_phone_number', context));
-
-    }else if(!isPhoneValid){
+    } else if (!isPhoneValid) {
       showCustomSnackBarHelper(getTranslated('invalid_phone_number', context));
-
-    }else if (password.isEmpty) {
+    } else if (password.isEmpty) {
       showCustomSnackBarHelper(getTranslated('enter_password', context));
-
-    }else if (password.length < 6) {
+    } else if (password.length < 6) {
       showCustomSnackBarHelper(getTranslated('password_should_be', context));
-
-    }else if (confirmPassword.isEmpty) {
-      showCustomSnackBarHelper(getTranslated('enter_confirm_password', context));
-
-    }else if(password != confirmPassword) {
-      showCustomSnackBarHelper(getTranslated('password_did_not_match', context));
-
-    }else if (email.isEmpty) {
+    } else if (confirmPassword.isEmpty) {
+      showCustomSnackBarHelper(
+        getTranslated('enter_confirm_password', context),
+      );
+    } else if (password != confirmPassword) {
+      showCustomSnackBarHelper(
+        getTranslated('password_did_not_match', context),
+      );
+    } else if (email.isEmpty) {
       showCustomSnackBarHelper(getTranslated('enter_email_address', context));
-
-    }else if (EmailCheckerHelper.isNotValid(email)) {
+    } else if (EmailCheckerHelper.isNotValid(email)) {
       showCustomSnackBarHelper(getTranslated('enter_valid_email', context));
-
-    }else {
-
+    } else {
       SignUpModel signUpModel = SignUpModel(
         fName: firstName,
         lName: lastName,
@@ -169,14 +226,15 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
         phone: '$countryCode$number',
         referralCode: _referTextController.text.trim(),
       );
-      authProvider.registration(context, signUpModel, config).then((status) async {
+      authProvider.registration(context, signUpModel, config).then((
+        status,
+      ) async {
         if (status.isSuccess) {
           RouteHelper.getRouteAfterLogin();
         }
       });
     }
   }
-
 }
 
 class _FromWidget extends StatelessWidget {
@@ -186,17 +244,25 @@ class _FromWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final createAccountState = context.findAncestorStateOfType<_CreateAccountScreenState>();
+    final createAccountState = context
+        .findAncestorStateOfType<_CreateAccountScreenState>();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 30),
 
-        Center(child: Text(
-          getTranslated('create_account', context),
-          style: poppinsMedium.copyWith(fontSize: 24, color: Theme.of(context).textTheme.bodyLarge?.color?.withValues(alpha: 0.6)),
-        )),
+        Center(
+          child: Text(
+            getTranslated('create_account', context),
+            style: poppinsMedium.copyWith(
+              fontSize: 24,
+              color: Theme.of(
+                context,
+              ).textTheme.bodyLarge?.color?.withValues(alpha: 0.6),
+            ),
+          ),
+        ),
         const SizedBox(height: 30),
 
         // for first name section
@@ -246,28 +312,32 @@ class _FromWidget extends StatelessWidget {
           isShowBorder: true,
           controller: createAccountState?._emailController,
           focusNode: createAccountState?._emailFocus,
-          nextFocus: config.referEarnStatus! ? createAccountState?._referTextFocus : createAccountState?._passwordFocus,
+          nextFocus: config.referEarnStatus!
+              ? createAccountState?._referTextFocus
+              : createAccountState?._passwordFocus,
           inputType: TextInputType.emailAddress,
         ),
         const SizedBox(height: Dimensions.paddingSizeLarge),
 
-
         //refer code
-        if(config.referEarnStatus!)...[
-          Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-
-            CustomTextFieldWidget(
-              title: '${ getTranslated('refer_code', context)} (${getTranslated('optional', context)})',
-              hintText: 'ABCD1234',
-              isShowBorder: true,
-              controller: createAccountState?._referTextController,
-              focusNode: createAccountState?._referTextFocus,
-              nextFocus: createAccountState?._passwordFocus,
-              inputType: TextInputType.text,
-            ),
-            const SizedBox(height: Dimensions.paddingSizeLarge),
-
-          ],),
+        if (config.referEarnStatus!) ...[
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomTextFieldWidget(
+                title:
+                    '${getTranslated('refer_code', context)} (${getTranslated('optional', context)})',
+                hintText: 'ABCD1234',
+                isShowBorder: true,
+                controller: createAccountState?._referTextController,
+                focusNode: createAccountState?._referTextFocus,
+                nextFocus: createAccountState?._passwordFocus,
+                inputType: TextInputType.text,
+                isEnabled: false,
+              ),
+              const SizedBox(height: Dimensions.paddingSizeLarge),
+            ],
+          ),
         ],
 
         // for password section
@@ -294,21 +364,28 @@ class _FromWidget extends StatelessWidget {
           isShowSuffixIcon: true,
           inputAction: TextInputAction.done,
         ),
-        const SizedBox(height : Dimensions.paddingSizeLarge),
+        const SizedBox(height: Dimensions.paddingSizeLarge),
 
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             authProvider.registrationErrorMessage!.isNotEmpty
-                ? CircleAvatar(backgroundColor: Theme.of(context).primaryColor, radius: 5)
+                ? CircleAvatar(
+                    backgroundColor: Theme.of(context).primaryColor,
+                    radius: 5,
+                  )
                 : const SizedBox.shrink(),
             const SizedBox(width: 8),
 
-            Expanded(child: Text(
-              authProvider.registrationErrorMessage ?? "",
-              style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).primaryColor),
-            )),
-
+            Expanded(
+              child: Text(
+                authProvider.registrationErrorMessage ?? "",
+                style: poppinsRegular.copyWith(
+                  fontSize: Dimensions.fontSizeSmall,
+                  color: Theme.of(context).primaryColor,
+                ),
+              ),
+            ),
           ],
         ),
 
@@ -318,7 +395,7 @@ class _FromWidget extends StatelessWidget {
         CustomButtonWidget(
           isLoading: authProvider.isLoading,
           buttonText: getTranslated('signup', context),
-          onPressed: ()=> createAccountState?._onSignUpPress(config),
+          onPressed: () => createAccountState?._onSignUpPress(config),
         ),
 
         // for already an account
@@ -330,19 +407,29 @@ class _FromWidget extends StatelessWidget {
           },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Text(
-                getTranslated('already_have_account', context),
-                style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).hintColor.withValues(alpha: 0.6)),
-              ),
-              const SizedBox(width: Dimensions.paddingSizeSmall),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  getTranslated('already_have_account', context),
+                  style: poppinsRegular.copyWith(
+                    fontSize: Dimensions.fontSizeSmall,
+                    color: Theme.of(context).hintColor.withValues(alpha: 0.6),
+                  ),
+                ),
+                const SizedBox(width: Dimensions.paddingSizeSmall),
 
-              Text(
-                getTranslated('login', context),
-                style: poppinsMedium.copyWith(fontSize: Dimensions.fontSizeSmall, color: Theme.of(context).textTheme.bodyLarge?.color?.withValues(alpha: 0.6)),
-              ),
-
-            ]),
+                Text(
+                  getTranslated('login', context),
+                  style: poppinsMedium.copyWith(
+                    fontSize: Dimensions.fontSizeSmall,
+                    color: Theme.of(
+                      context,
+                    ).textTheme.bodyLarge?.color?.withValues(alpha: 0.6),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ],

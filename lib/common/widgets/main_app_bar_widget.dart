@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_grocery/common/widgets/ecommerce_logo_widget.dart';
 import 'package:flutter_grocery/helper/route_helper.dart';
 import 'package:flutter_grocery/localization/app_localization.dart';
 import 'package:flutter_grocery/features/auth/providers/auth_provider.dart';
 import 'package:flutter_grocery/common/providers/cart_provider.dart';
 import 'package:flutter_grocery/utill/app_constants.dart';
 import 'package:flutter_grocery/utill/dimensions.dart';
-import 'package:flutter_grocery/utill/images.dart';
 import 'package:flutter_grocery/utill/styles.dart';
 import 'package:provider/provider.dart';
-
 
 class MainAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const MainAppBarWidget({super.key});
@@ -28,16 +27,22 @@ class MainAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               child: InkWell(
                 onTap: () => RouteHelper.getMainRoute(),
                 child: Row(
-                children: [
-                  Image.asset(Images.appLogo, color: Theme.of(context).primaryColor),
-                  const SizedBox(width: Dimensions.paddingSizeSmall),
-                  Text(AppConstants.appName, style: poppinsMedium.copyWith(color: Theme.of(context).primaryColor)),
-                ],
-              )),
+                  children: [
+                    const EcommerceLogoWidget(height: 28),
+                    const SizedBox(width: Dimensions.paddingSizeSmall),
+                    Text(
+                      AppConstants.appName,
+                      style: poppinsMedium.copyWith(
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             const _MenuBarWidget(),
           ],
-        )
+        ),
       ),
     );
   }
@@ -46,22 +51,24 @@ class MainAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   Size get preferredSize => const Size(double.maxFinite, 50);
 }
 
-
 class _MenuBarWidget extends StatelessWidget {
   const _MenuBarWidget();
 
   List<MenuItems> getMenus(BuildContext context) {
-    final bool isLoggedIn = Provider.of<AuthProvider>(context, listen: false).isLoggedIn();
+    final bool isLoggedIn = Provider.of<AuthProvider>(
+      context,
+      listen: false,
+    ).isLoggedIn();
     return [
       MenuItems(
-          title: 'home'.tr,
-          icon: Icons.home_filled,
-          onTap: () => RouteHelper.getMainRoute(),
+        title: 'home'.tr,
+        icon: Icons.home_filled,
+        onTap: () => RouteHelper.getMainRoute(),
       ),
       MenuItems(
         title: 'all_categories'.tr,
         icon: Icons.category,
-        onTap: () => RouteHelper.getAllCategoryScreen()
+        onTap: () => RouteHelper.getAllCategoryScreen(),
       ),
 
       MenuItems(
@@ -80,15 +87,13 @@ class _MenuBarWidget extends StatelessWidget {
             title: 'about_us'.tr,
             onTap: () => RouteHelper.getAboutUsRoute(),
           ),
-
         ],
       ),
-
 
       MenuItems(
         title: 'search'.tr,
         icon: Icons.search,
-        onTap: () =>  RouteHelper.getSearchProduct(),
+        onTap: () => RouteHelper.getSearchProduct(),
       ),
 
       MenuItems(
@@ -97,44 +102,43 @@ class _MenuBarWidget extends StatelessWidget {
         onTap: () => RouteHelper.getProfileMenus(),
       ),
 
-
-      isLoggedIn ?  MenuItems(
-        title: 'profile'.tr,
-        icon: Icons.person,
-        onTap: () => RouteHelper.getProfileScreen(),
-      ):  MenuItems(
-        title: 'login'.tr,
-        icon: Icons.lock,
-        onTap: () => RouteHelper.getLoginRoute(action: RouteAction.push),
-      ),
+      isLoggedIn
+          ? MenuItems(
+              title: 'profile'.tr,
+              icon: Icons.person,
+              onTap: () => RouteHelper.getProfileScreen(),
+            )
+          : MenuItems(
+              title: 'login'.tr,
+              icon: Icons.lock,
+              onTap: () => RouteHelper.getLoginRoute(action: RouteAction.push),
+            ),
       MenuItems(
         title: '',
         icon: Icons.shopping_cart,
         onTap: () => RouteHelper.getCartScreen(),
       ),
-
     ];
   }
 
   @override
   Widget build(BuildContext context) {
-
     return SizedBox(
       width: 800,
       child: PlutoMenuBarWidget(
         backgroundColor: Theme.of(context).cardColor,
         gradient: false,
         goBackButtonText: 'Back',
-        textStyle: TextStyle(color: Theme.of(context).textTheme.bodyLarge!.color),
+        textStyle: TextStyle(
+          color: Theme.of(context).textTheme.bodyLarge!.color,
+        ),
         moreIconColor: Theme.of(context).textTheme.bodyLarge!.color,
         menuIconColor: Theme.of(context).textTheme.bodyLarge!.color,
         menus: getMenus(context),
-
       ),
     );
   }
 }
-
 
 class PlutoMenuBarWidget extends StatefulWidget {
   /// Pass [MenuItems] to List.
@@ -180,7 +184,8 @@ class PlutoMenuBarWidget extends StatefulWidget {
   /// [TextStyle] of Menu title.
   final TextStyle textStyle;
 
-  PlutoMenuBarWidget({super.key,
+  PlutoMenuBarWidget({
+    super.key,
     required this.menus,
     this.goBackButtonText = 'Go back',
     this.height = 45,
@@ -191,7 +196,7 @@ class PlutoMenuBarWidget extends StatefulWidget {
     this.moreIconColor = Colors.black54,
     this.gradient = true,
     this.textStyle = const TextStyle(),
-  })  : assert(menus.isNotEmpty);
+  }) : assert(menus.isNotEmpty);
 
   @override
   State<PlutoMenuBarWidget> createState() => _PlutoMenuBarWidgetState();
@@ -231,7 +236,6 @@ class _PlutoMenuBarWidgetState extends State<PlutoMenuBarWidget> {
   }
 }
 
-
 class MenuItems {
   /// Menu title
   final String? title;
@@ -244,20 +248,12 @@ class MenuItems {
   /// Passing [MenuItems] to a [List] creates a sub-menu.
   final List<MenuItems>? children;
 
-  MenuItems({
-    this.title,
-    this.icon,
-    this.onTap,
-    this.children,
-  }) : _key = GlobalKey();
+  MenuItems({this.title, this.icon, this.onTap, this.children})
+    : _key = GlobalKey();
 
-  MenuItems._back({
-    this.title,
-    this.icon,
-    this.onTap,
-    this.children,
-  })  : _key = GlobalKey(),
-        _isBack = true;
+  MenuItems._back({this.title, this.icon, this.onTap, this.children})
+    : _key = GlobalKey(),
+      _isBack = true;
 
   final GlobalKey _key;
 
@@ -290,29 +286,23 @@ class _MenuWidget extends StatelessWidget {
   final TextStyle? textStyle;
 
   _MenuWidget(
-      this.menu, {
-        this.goBackButtonText,
-        this.height,
-        this.backgroundColor,
-        this.menuIconColor,
-        this.menuIconSize,
-        this.moreIconColor,
-        this.textStyle,
-      }) : super(key: menu._key);
+    this.menu, {
+    this.goBackButtonText,
+    this.height,
+    this.backgroundColor,
+    this.menuIconColor,
+    this.menuIconSize,
+    this.moreIconColor,
+    this.textStyle,
+  }) : super(key: menu._key);
 
   Widget _buildPopupItem(MenuItems menu) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         if (menu.icon != null) ...[
-          Icon(
-            menu.icon,
-            color: menuIconColor,
-            size: menuIconSize,
-          ),
-          const SizedBox(
-            width: 5,
-          ),
+          Icon(menu.icon, color: menuIconColor, size: menuIconSize),
+          const SizedBox(width: 5),
         ],
         Expanded(
           child: Padding(
@@ -326,19 +316,17 @@ class _MenuWidget extends StatelessWidget {
           ),
         ),
         if (menu._hasChildren && !menu._isBack)
-          Icon(
-            Icons.arrow_right,
-            color: moreIconColor,
-          ),
+          Icon(Icons.arrow_right, color: moreIconColor),
       ],
     );
   }
 
   Future<MenuItems?> _showPopupMenu(
-      BuildContext context,
-      List<MenuItems> menuItems,
-      ) async {
-    final RenderBox overlay = Overlay.of(context).context.findRenderObject() as RenderBox;
+    BuildContext context,
+    List<MenuItems> menuItems,
+  ) async {
+    final RenderBox overlay =
+        Overlay.of(context).context.findRenderObject() as RenderBox;
 
     final Offset position = menu._position + Offset(0, height! - 11);
 
@@ -361,16 +349,13 @@ class _MenuWidget extends StatelessWidget {
     );
   }
 
-  Widget _getMenu(
-      BuildContext context,
-      MenuItems menu,
-      ) {
+  Widget _getMenu(BuildContext context, MenuItems menu) {
     Future<MenuItems?> getSelectedMenu(
-        MenuItems menu, {
-          MenuItems? fromPreviousMenu,
-          int? stackIdx,
-          List<MenuItems>? stack,
-        }) async {
+      MenuItems menu, {
+      MenuItems? fromPreviousMenu,
+      int? stackIdx,
+      List<MenuItems>? stack,
+    }) async {
       if (!menu._hasChildren) {
         return menu;
       }
@@ -378,18 +363,17 @@ class _MenuWidget extends StatelessWidget {
       final items = [...menu.children!];
 
       if (fromPreviousMenu != null) {
-        items.add(MenuItems._back(
-          title: goBackButtonText,
-          children: fromPreviousMenu.children,
-          onTap: null,
-          icon: null,
-        ));
+        items.add(
+          MenuItems._back(
+            title: goBackButtonText,
+            children: fromPreviousMenu.children,
+            onTap: null,
+            icon: null,
+          ),
+        );
       }
 
-      MenuItems? selectedMenu0 = await _showPopupMenu(
-        context,
-        items,
-      );
+      MenuItems? selectedMenu0 = await _showPopupMenu(context, items);
 
       if (selectedMenu0 == null) {
         return null;
@@ -445,36 +429,43 @@ class _MenuWidget extends StatelessWidget {
           children: [
             if (menu.icon != null) ...[
               Stack(
-                clipBehavior: Clip.none, children: [
-                Icon(menu.icon, size: menuIconSize,color: menuIconColor,),
-                menu.title!.isEmpty? Positioned(
-                  top: -7, right: -7,
-                  child: Container(
-                    padding: const EdgeInsets.all(4),
-                    alignment: Alignment.center,
-                    decoration: const BoxDecoration(shape: BoxShape.circle, color: Colors.red),
-                    child: Center(
-                      child: Text(
-                          Provider.of<CartProvider>(context).cartList.length.toString(),
-                          style: const TextStyle(color: Colors.white, fontSize: 8) //poppinsMedium.copyWith(color: ColorResources.COLOR_WHITE, fontSize: 8),
-                      ),
-                    ),
-                  ),
-                ):const SizedBox()
-              ],
+                clipBehavior: Clip.none,
+                children: [
+                  Icon(menu.icon, size: menuIconSize, color: menuIconColor),
+                  menu.title!.isEmpty
+                      ? Positioned(
+                          top: -7,
+                          right: -7,
+                          child: Container(
+                            padding: const EdgeInsets.all(4),
+                            alignment: Alignment.center,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.red,
+                            ),
+                            child: Center(
+                              child: Text(
+                                Provider.of<CartProvider>(
+                                  context,
+                                ).cartList.length.toString(),
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 8,
+                                ), //poppinsMedium.copyWith(color: ColorResources.COLOR_WHITE, fontSize: 8),
+                              ),
+                            ),
+                          ),
+                        )
+                      : const SizedBox(),
+                ],
               ),
+
               // menu.icon,
               // color: menuIconColor,
               // size: menuIconSize,
-
-              const SizedBox(
-                width: 5,
-              ),
+              const SizedBox(width: 5),
             ],
-            Text(
-              menu.title!,
-              style: textStyle,
-            ),
+            Text(menu.title!, style: textStyle),
           ],
         ),
       ),

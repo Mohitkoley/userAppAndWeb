@@ -9,6 +9,7 @@ import 'package:flutter_grocery/common/enums/notification_type.dart';
 import 'package:flutter_grocery/common/models/config_model.dart';
 import 'package:flutter_grocery/common/models/notification_body.dart';
 import 'package:flutter_grocery/common/widgets/custom_pop_scope_handel_deep_link_widget.dart';
+import 'package:flutter_grocery/common/widgets/ecommerce_logo_widget.dart';
 import 'package:flutter_grocery/helper/custom_snackbar_helper.dart';
 import 'package:flutter_grocery/helper/maintenance_helper.dart';
 import 'package:flutter_grocery/helper/notification_helper.dart';
@@ -21,7 +22,6 @@ import 'package:flutter_grocery/localization/language_constraints.dart';
 import 'package:flutter_grocery/main.dart';
 import 'package:flutter_grocery/utill/app_constants.dart';
 import 'package:flutter_grocery/utill/dimensions.dart';
-import 'package:flutter_grocery/utill/images.dart';
 import 'package:flutter_grocery/utill/styles.dart';
 import 'package:provider/provider.dart';
 
@@ -36,7 +36,6 @@ class _SplashScreenState extends State<SplashScreen> {
   StreamSubscription<List<ConnectivityResult>>? subscription;
   NotificationBody? notificationBody;
   bool isNotLoaded = true;
-
 
   @override
   void dispose() {
@@ -61,8 +60,9 @@ class _SplashScreenState extends State<SplashScreen> {
       final RemoteMessage? remoteMessage = await FirebaseMessaging.instance
           .getInitialMessage();
       if (remoteMessage != null) {
-        notificationBody =
-            NotificationHelper.convertNotification(remoteMessage.data);
+        notificationBody = NotificationHelper.convertNotification(
+          remoteMessage.data,
+        );
       }
     } catch (e) {
       if (kDebugMode) {
@@ -73,15 +73,21 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void _route() {
     final SplashProvider splashProvider = Provider.of<SplashProvider>(
-        context, listen: false);
+      context,
+      listen: false,
+    );
     splashProvider.initConfig(context, source: DataSourceEnum.local).then((
-        configModel) async {
+      configModel,
+    ) async {
       _onConfigAction(configModel, splashProvider, Get.context!);
     });
   }
 
-  void _onConfigAction(ConfigModel? configModel, SplashProvider splashProvider,
-      BuildContext context) {
+  void _onConfigAction(
+    ConfigModel? configModel,
+    SplashProvider splashProvider,
+    BuildContext context,
+  ) {
     if (configModel != null) {
       splashProvider.getDeliveryInfo();
       splashProvider.initializeScreenList();
@@ -91,39 +97,54 @@ class _SplashScreenState extends State<SplashScreen> {
         if (splashProvider.configModel?.playStoreConfig?.minVersion != null) {
           minimumVersion =
               splashProvider.configModel?.playStoreConfig?.minVersion ??
-                  AppConstants.appVersion;
+              AppConstants.appVersion;
         }
       } else if (Platform.isIOS) {
         if (splashProvider.configModel?.appStoreConfig?.minVersion != null) {
           minimumVersion =
               splashProvider.configModel?.appStoreConfig?.minVersion ??
-                  AppConstants.appVersion;
+              AppConstants.appVersion;
         }
       }
       Future.delayed(const Duration(milliseconds: 5)).then((_) {
         if (AppConstants.appVersion < minimumVersion &&
             !ResponsiveHelper.isWeb()) {
-          RouteHelper.getUpdateRoute(action: RouteAction.pushNamedAndRemoveUntil);
-        }
-        else {
+          RouteHelper.getUpdateRoute(
+            action: RouteAction.pushNamedAndRemoveUntil,
+          );
+        } else {
           if (MaintenanceHelper.isMaintenanceModeEnable(configModel) &&
               MaintenanceHelper.isCustomerMaintenanceEnable(configModel)) {
             if (mounted) {
-              RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+              RouteHelper.getMainRoute(
+                action: RouteAction.pushNamedAndRemoveUntil,
+              );
             }
-          }
-          else if (notificationBody != null) {
+          } else if (notificationBody != null) {
             notificationRoute();
-          } else if (Provider.of<AuthProvider>(Get.context!, listen: false).isLoggedIn()) {
-            Provider.of<AuthProvider>(Get.context!, listen: false).updateToken();
-            RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+          } else if (Provider.of<AuthProvider>(
+            Get.context!,
+            listen: false,
+          ).isLoggedIn()) {
+            Provider.of<AuthProvider>(
+              Get.context!,
+              listen: false,
+            ).updateToken();
+            RouteHelper.getMainRoute(
+              action: RouteAction.pushNamedAndRemoveUntil,
+            );
           } else {
-            if (Provider
-                .of<SplashProvider>(Get.context!, listen: false)
-                .showIntro()) {
-              RouteHelper.getOnboardingScreen(action: RouteAction.pushNamedAndRemoveUntil);
+            if (Provider.of<SplashProvider>(
+              Get.context!,
+              listen: false,
+            ).showIntro()) {
+              RouteHelper.getOnboardingScreen(
+                action: RouteAction.pushNamedAndRemoveUntil,
+              );
             } else {
-              RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
+              RouteHelper.getMainRoute(
+                action: RouteAction.pushNamedAndRemoveUntil,
+              );
             }
           }
         }
@@ -134,16 +155,23 @@ class _SplashScreenState extends State<SplashScreen> {
   void _checkConnectivity() {
     bool isFirst = true;
     subscription = Connectivity().onConnectivityChanged.listen((
-        List<ConnectivityResult> result) {
-      bool isConnected = result.contains(ConnectivityResult.wifi) ||
+      List<ConnectivityResult> result,
+    ) {
+      bool isConnected =
+          result.contains(ConnectivityResult.wifi) ||
           result.contains(ConnectivityResult.mobile);
 
       if ((isFirst && !isConnected) || !isFirst && context.mounted) {
-        showCustomSnackBarHelper(getTranslated(
-            isConnected ? 'connected' : 'no_internet_connection', Get.context!),
-            isError: !isConnected);
+        showCustomSnackBarHelper(
+          getTranslated(
+            isConnected ? 'connected' : 'no_internet_connection',
+            Get.context!,
+          ),
+          isError: !isConnected,
+        );
 
-        if (isConnected && ModalRoute.of(Get.context!)?.settings.name == RouteHelper.splash) {
+        if (isConnected &&
+            ModalRoute.of(Get.context!)?.settings.name == RouteHelper.splash) {
           _route();
         }
       }
@@ -156,28 +184,33 @@ class _SplashScreenState extends State<SplashScreen> {
     return CustomPopScopeHandelDeepLinkWidget(
       child: Scaffold(
         body: Consumer<SplashProvider>(
-            builder: (context, splashProvider, _) {
-              if (splashProvider.configModel != null && isNotLoaded) {
-                isNotLoaded = false;
-                _onConfigAction(
-                    splashProvider.configModel, splashProvider, context);
-              }
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Image.asset(Images.appLogo, height: 130, width: 500),
-                  const SizedBox(height: Dimensions.paddingSizeSmall),
-      
-                  Text(AppConstants.appName,
-                      textAlign: TextAlign.center,
-                      style: poppinsMedium.copyWith(
-                        color: Theme.of(context).primaryColor,
-                        fontSize: 30,
-                      )),
-                ],
+          builder: (context, splashProvider, _) {
+            if (splashProvider.configModel != null && isNotLoaded) {
+              isNotLoaded = false;
+              _onConfigAction(
+                splashProvider.configModel,
+                splashProvider,
+                context,
               );
             }
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const EcommerceLogoWidget(height: 130, width: 500),
+                const SizedBox(height: Dimensions.paddingSizeSmall),
+
+                Text(
+                  AppConstants.appName,
+                  textAlign: TextAlign.center,
+                  style: poppinsMedium.copyWith(
+                    color: Theme.of(context).primaryColor,
+                    fontSize: 30,
+                  ),
+                ),
+              ],
+            );
+          },
         ),
       ),
     );
@@ -185,40 +218,50 @@ class _SplashScreenState extends State<SplashScreen> {
 
   void notificationRoute() {
     if (notificationBody?.type?.isNotEmpty ?? false) {
-      NotificationType? notificationType = getNotificationTypeEnum(notificationBody?.type);
+      NotificationType? notificationType = getNotificationTypeEnum(
+        notificationBody?.type,
+      );
 
       switch (notificationType) {
         case NotificationType.order:
-          RouteHelper.getOrderDetailsRoute(notificationBody?.orderId.toString(), action: RouteAction.pushNamedAndRemoveUntil);
+          RouteHelper.getOrderDetailsRoute(
+            notificationBody?.orderId.toString(),
+            action: RouteAction.pushNamedAndRemoveUntil,
+          );
           break;
         case NotificationType.message:
           RouteHelper.getChatRoute(
-              orderId: notificationBody?.orderId.toString() ?? "",
+            orderId: notificationBody?.orderId.toString() ?? "",
             senderType: notificationBody?.senderType ?? "admin",
             userName: notificationBody?.userName ?? "",
             profileImage: notificationBody?.userImage ?? "",
-            isAppBar: true, action: RouteAction.pushNamedAndRemoveUntil
+            isAppBar: true,
+            action: RouteAction.pushNamedAndRemoveUntil,
           );
           break;
         case NotificationType.general:
-          RouteHelper.getNotificationScreen(action: RouteAction.pushNamedAndRemoveUntil);
+          RouteHelper.getNotificationScreen(
+            action: RouteAction.pushNamedAndRemoveUntil,
+          );
           break;
         case NotificationType.wallet:
-          RouteHelper.getWalletRoute(status: '', action: RouteAction.pushNamedAndRemoveUntil);
+          RouteHelper.getWalletRoute(
+            status: '',
+            action: RouteAction.pushNamedAndRemoveUntil,
+          );
           break;
         case null:
-          debugPrint('==============Notification type does not exist============${notificationBody?.type}');
+          debugPrint(
+            '==============Notification type does not exist============${notificationBody?.type}',
+          );
           RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
       }
     }
   }
 }
 
-
 class SplashLogoWidget extends StatelessWidget {
-  const SplashLogoWidget({
-    super.key,
-  });
+  const SplashLogoWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -226,11 +269,7 @@ class SplashLogoWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-
-          Image.asset(
-            Images.appLogo,
-            width: 100,
-          ),
+          const EcommerceLogoWidget(width: 100),
           const SizedBox(height: Dimensions.paddingSizeLarge),
         ],
       ),
