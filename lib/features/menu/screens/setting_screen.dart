@@ -12,8 +12,8 @@ import 'package:flutter_grocery/common/widgets/main_app_bar_widget.dart';
 import 'package:flutter_grocery/features/menu/widgets/currency_dialog_widget.dart';
 import 'package:provider/provider.dart';
 
-import '../../auth/providers/auth_provider.dart';
-import '../widgets/acount_delete_dialog_widget.dart';
+// import '../../auth/providers/auth_provider.dart';
+// import '../widgets/acount_delete_dialog_widget.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -21,7 +21,7 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Provider.of<SplashProvider>(context, listen: false).setFromSetting(true);
-    final authProvider = Provider.of<AuthProvider>(context, listen: false);
+    // final authProvider = Provider.of<AuthProvider>(context, listen: false);
 
     return CustomPopScopeHandelDeepLinkWidget(
       child: Scaffold(
@@ -49,29 +49,29 @@ class SettingsScreen extends StatelessWidget {
                   onTap: () => showDialogHelper(context, const CurrencyDialogWidget()),
                 ),
 
-                authProvider.isLoggedIn() ? ListTile(
-                  onTap: () {
-                    showDialogHelper(context,
-                        AccountDeleteDialogWidget(
-                          icon: Icons.question_mark_sharp,
-                          title: getTranslated('are_you_sure_to_delete_account', context),
-                          description: getTranslated('it_will_remove_your_all_information', context),
-                          onTapFalseText:getTranslated('no', context),
-                          onTapTrueText: getTranslated('yes', context),
-                          isFailed: true,
-                          onTapFalse: () => Navigator.of(context).pop(),
-                          onTapTrue: () => authProvider.deleteUser(context),
-                        ),
-                        dismissible: false,
-                        isFlip: true);
-                  },
-                  leading: Icon(Icons.delete, size: 25, color: Theme.of(context).colorScheme.error),
-                  title: Text(
-                    getTranslated('delete_account', context),
-                    style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeLarge,
-                    ),
-                  ),
-                ) : const SizedBox(),
+                // authProvider.isLoggedIn() ? ListTile(
+                //   onTap: () {
+                //     showDialogHelper(context,
+                //         AccountDeleteDialogWidget(
+                //           icon: Icons.question_mark_sharp,
+                //           title: getTranslated('are_you_sure_to_delete_account', context),
+                //           description: getTranslated('it_will_remove_your_all_information', context),
+                //           onTapFalseText:getTranslated('no', context),
+                //           onTapTrueText: getTranslated('yes', context),
+                //           isFailed: true,
+                //           onTapFalse: () => Navigator.of(context).pop(),
+                //           onTapTrue: () => authProvider.deleteUser(context),
+                //         ),
+                //         dismissible: false,
+                //         isFlip: true);
+                //   },
+                //   leading: Icon(Icons.delete, size: 25, color: Theme.of(context).colorScheme.error),
+                //   title: Text(
+                //     getTranslated('delete_account', context),
+                //     style: poppinsRegular.copyWith(fontSize: Dimensions.fontSizeLarge,
+                //     ),
+                //   ),
+                // ) : const SizedBox(),
               ],
             ),
           ),

@@ -8,6 +8,7 @@ import 'package:flutter_grocery/localization/language_constraints.dart';
 import 'package:flutter_grocery/main.dart';
 import 'package:flutter_grocery/features/splash/providers/splash_provider.dart';
 import 'package:flutter_grocery/helper/custom_snackbar_helper.dart';
+import 'package:flutter_grocery/helper/html_string_checker.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 
@@ -28,7 +29,19 @@ class ApiCheckerHelper {
       Provider.of<SplashProvider>(Get.context!, listen: false).setPageIndex(0);
       RouteHelper.getLoginRoute(action: RouteAction.push);
     } else {
-      showCustomSnackBarHelper(getTranslated(firstError.message, Get.context!));
+      final String? message = firstError.message;
+      final String? code = firstError.code;
+      final bool isHttpStatusError =
+          code != null && int.tryParse(code) != null;
+
+      if (message == null ||
+          message.isEmpty ||
+          isHtmlResponse(message) ||
+          message.length > 200 ||
+          isHttpStatusError) {
+        return;
+      }
+      showCustomSnackBarHelper(getTranslated(message, Get.context!));
     }
   }
 

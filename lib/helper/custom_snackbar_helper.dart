@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_grocery/common/widgets/custom_toast.dart';
+import 'package:flutter_grocery/helper/html_string_checker.dart';
 import 'package:flutter_grocery/helper/responsive_helper.dart';
 import 'package:flutter_grocery/localization/language_constraints.dart';
 import 'package:flutter_grocery/main.dart';
@@ -17,12 +18,19 @@ enum SnackBarWebPosition {topLeft, topRight, bottomLeft, bottomRight, center}
 void showCustomSnackBarHelper(String? message, {
   bool isError = true, bool isToast = false, SnackBarStatus? snackBarStatus, SnackBarWebPosition? snackBarWebPosition = SnackBarWebPosition.topRight}){
 
+  if (message == null || message.isEmpty || isHtmlResponse(message)) {
+    return;
+  }
+
+  final String displayMessage =
+      message.length > 200 ? '${message.substring(0, 200)}...' : message;
+
   final Size size = MediaQuery.of(Get.context!).size;
 
 
   if (ResponsiveHelper.isDesktop(Get.context!)) {
     CustomToast().show(
-      message ?? '',
+      displayMessage,
       isError: isError,
       snackBarStatus: snackBarStatus,
       navigatorKey: navigatorKey,
@@ -60,10 +68,10 @@ void showCustomSnackBarHelper(String? message, {
               ),
               const SizedBox(width: Dimensions.paddingSizeSmall),
 
-              Flexible(child: Text(message ?? '', style: poppinsRegular.copyWith(
+              Flexible(child: Text(displayMessage, style: poppinsRegular.copyWith(
                 color: Colors.white,
                 fontSize: Dimensions.fontSizeDefault,
-              ))),
+              ), maxLines: 2, overflow: TextOverflow.ellipsis)),
 
             ]),
           ),

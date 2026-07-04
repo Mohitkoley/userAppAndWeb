@@ -123,10 +123,15 @@ class _AnimatedToastWidgetState extends State<_AnimatedToastWidget>
           ),
           const SizedBox(width: Dimensions.paddingSizeSmall),
 
-          Flexible(child: Text(widget.message, style: poppinsRegular.copyWith(
-            color: Colors.white,
-            fontSize: Dimensions.fontSizeDefault,
-          ))),
+          Flexible(child: Text(
+            widget.message,
+            style: poppinsRegular.copyWith(
+              color: Colors.white,
+              fontSize: Dimensions.fontSizeDefault,
+            ),
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          )),
         ]),
       ),
     );

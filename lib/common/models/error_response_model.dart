@@ -1,6 +1,8 @@
 /// errors : [{"code":"l_name","message":"The last name field is required."},{"code":"password","message":"The password field is required."}]
 library;
 
+import 'package:flutter_grocery/helper/html_string_checker.dart';
+
 class ErrorResponseModel {
   List<Errors>? _errors;
 
@@ -29,8 +31,15 @@ class ErrorResponseModel {
       }
     } else if (json is List) {
       parsedErrors.addAll(json.map(Errors.fromJson));
+    } else if (json is String) {
+      if (!isHtmlResponse(json)) {
+        parsedErrors.add(Errors(message: json));
+      }
     } else if (json != null) {
-      parsedErrors.add(Errors(message: json.toString()));
+      final message = json.toString();
+      if (!isHtmlResponse(message)) {
+        parsedErrors.add(Errors(message: message));
+      }
     }
 
     _errors = _withFallback(parsedErrors);
@@ -71,10 +80,13 @@ class Errors {
   Errors.fromJson(dynamic json) {
     if (json is Map) {
       _code = json["code"]?.toString();
-      _message = json["message"]?.toString() ?? json.toString();
+      final String? rawMessage =
+          json["message"]?.toString() ?? json.toString();
+      _message = isHtmlResponse(rawMessage) ? null : rawMessage;
     } else {
       _code = '';
-      _message = json?.toString() ?? 'Unexpected error occurred';
+      final String? rawMessage = json?.toString();
+      _message = isHtmlResponse(rawMessage) ? null : rawMessage;
     }
   }
 

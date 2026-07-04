@@ -15,8 +15,8 @@ import 'package:flutter_grocery/utill/styles.dart';
 import 'package:flutter_grocery/common/widgets/footer_web_widget.dart';
 import 'package:provider/provider.dart';
 
-import '../../../helper/dialog_helper.dart';
-import 'acount_delete_dialog_widget.dart';
+// import '../../../helper/dialog_helper.dart';
+// import 'acount_delete_dialog_widget.dart';
 import 'menu_item_web_widget.dart';
 
 class MenuListWebWidget extends StatelessWidget {
@@ -174,33 +174,33 @@ class MenuListWebWidget extends StatelessWidget {
                         ),
                       ),
 
-                      Positioned(
-                        right: 0,
-                        top: 140,
-                        child: isLoggedIn
-                            ? Padding(
-                                padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
-                                child: InkWell(
-                                  onTap: () {
-                                    showDialogHelper(context, AccountDeleteDialogWidget(icon: Icons.question_mark_sharp, title: getTranslated('are_you_sure_to_delete_account', context), description: getTranslated('it_will_remove_your_all_information', context), onTapFalseText: getTranslated('no', context), onTapTrueText: getTranslated('yes', context), isFailed: true, onTapFalse: () => Navigator.of(context).pop(), onTapTrue: () => Provider.of<AuthProvider>(context, listen: false).deleteUser(context)), dismissible: false, isFlip: true);
-                                  },
-                                  child: Row(
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                                        child: Icon(Icons.delete, color: Theme.of(context).primaryColor, size: 16),
-                                      ),
-
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
-                                        child: Text(getTranslated('delete_account', context)),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              )
-                            : const SizedBox(),
-                      ),
+                      // Positioned(
+                      //   right: 0,
+                      //   top: 140,
+                      //   child: isLoggedIn
+                      //       ? Padding(
+                      //           padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
+                      //           child: InkWell(
+                      //             onTap: () {
+                      //               showDialogHelper(context, AccountDeleteDialogWidget(icon: Icons.question_mark_sharp, title: getTranslated('are_you_sure_to_delete_account', context), description: getTranslated('it_will_remove_your_all_information', context), onTapFalseText: getTranslated('no', context), onTapTrueText: getTranslated('yes', context), isFailed: true, onTapFalse: () => Navigator.of(context).pop(), onTapTrue: () => Provider.of<AuthProvider>(context, listen: false).deleteUser(context)), dismissible: false, isFlip: true);
+                      //             },
+                      //             child: Row(
+                      //               children: [
+                      //                 Padding(
+                      //                   padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
+                      //                   child: Icon(Icons.delete, color: Theme.of(context).primaryColor, size: 16),
+                      //                 ),
+                      //
+                      //                 Padding(
+                      //                   padding: const EdgeInsets.symmetric(horizontal: Dimensions.paddingSizeExtraSmall),
+                      //                   child: Text(getTranslated('delete_account', context)),
+                      //                 ),
+                      //               ],
+                      //             ),
+                      //           ),
+                      //         )
+                      //       : const SizedBox(),
+                      // ),
                     ],
                   ),
                 );

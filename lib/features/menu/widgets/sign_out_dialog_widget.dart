@@ -40,13 +40,13 @@ class SignOutDialogWidget extends StatelessWidget {
              Expanded(child: InkWell(
                onTap: () async {
                  auth.signOut().then((value) {
-                  if(context.mounted ) {
+                  if (context.mounted) {
+                    Navigator.pop(context);
                     showCustomSnackBarHelper(getTranslated('logout_successful', context), isError: false);
 
-
-                    if(ResponsiveHelper.isWeb() && ResponsiveHelper.isDesktop(context)) {
+                    if (ResponsiveHelper.isWeb() && ResponsiveHelper.isDesktop(context)) {
                       RouteHelper.getMainRoute(action: RouteAction.pushNamedAndRemoveUntil);
-                    }else {
+                    } else {
                       RouteHelper.getLoginRoute(action: RouteAction.pushNamedAndRemoveUntil);
                     }
                   }

@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_grocery/common/enums/app_mode_enum.dart';
 import 'package:flutter_grocery/common/models/error_response_model.dart';
+import 'package:flutter_grocery/helper/html_string_checker.dart';
 import 'package:flutter_grocery/localization/language_constraints.dart';
 import 'package:flutter_grocery/main.dart';
 import 'package:flutter_grocery/utill/app_constants.dart';
@@ -30,23 +31,51 @@ class ApiErrorHandler {
                   errorDescription = error.response!.statusMessage;
                   break;
                 default:
+                  final dynamic responseData = error.response!.data;
+                  if (responseData is String && isHtmlResponse(responseData)) {
+                    errorDescription = {
+                      'errors': [
+                        {
+                          'code': '${error.response!.statusCode}',
+                          'message': getTranslated(
+                            'unavailable_to_process_data',
+                            Get.context!,
+                          ),
+                        },
+                      ],
+                    };
+                    break;
+                  }
+
                   ErrorResponseModel? errorResponse;
                   try {
-                    errorResponse = ErrorResponseModel.fromJson(error.response!.data);
-                  }catch(e) {
+                    errorResponse = ErrorResponseModel.fromJson(responseData);
+                  } catch (e) {
                     if (kDebugMode) {
                       print('error is -> ${e.toString()}');
                     }
                   }
 
-                  if (errorResponse != null && errorResponse.errors != null && errorResponse.errors!.isNotEmpty) {
+                  if (errorResponse != null &&
+                      errorResponse.errors != null &&
+                      errorResponse.errors!.isNotEmpty &&
+                      !isHtmlResponse(errorResponse.errors!.first.message)) {
                     if (kDebugMode) {
                       print('error----------------== ${errorResponse.errors![0].message} || error: ${error.response!.requestOptions.uri}');
                     }
                     errorDescription = errorResponse.toJson();
                   } else {
-                    errorDescription =
-                    "Failed to load data - status code: ${error.response!.statusCode}";
+                    errorDescription = {
+                      'errors': [
+                        {
+                          'code': '${error.response!.statusCode}',
+                          'message': getTranslated(
+                            'unavailable_to_process_data',
+                            Get.context!,
+                          ),
+                        },
+                      ],
+                    };
                   }
               }
               break;
