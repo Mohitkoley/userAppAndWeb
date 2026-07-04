@@ -13,7 +13,17 @@ import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
 
 class ApiCheckerHelper {
-  static void checkApi(ApiResponseModel apiResponse) {
+  static bool _isOnDashboard() {
+    final context = Get.context;
+    if (context == null) return false;
+
+    final routeName = ModalRoute.of(context)?.settings.name;
+    if (routeName != RouteHelper.menu) return false;
+
+    return Provider.of<SplashProvider>(context, listen: false).pageIndex == 0;
+  }
+
+  static void checkApi(ApiResponseModel apiResponse, {bool showErrorSnackBar = true}) {
     ErrorResponseModel error = getError(apiResponse);
     final Errors firstError = error.errors!.first;
     final bool isUnauthorized =
@@ -28,7 +38,7 @@ class ApiCheckerHelper {
       ).removeSharedData();
       Provider.of<SplashProvider>(Get.context!, listen: false).setPageIndex(0);
       RouteHelper.getLoginRoute(action: RouteAction.push);
-    } else {
+    } else if (showErrorSnackBar && !_isOnDashboard()) {
       final String? message = firstError.message;
       final String? code = firstError.code;
       final bool isHttpStatusError =
